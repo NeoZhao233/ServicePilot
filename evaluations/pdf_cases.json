@@ -1,0 +1,22 @@
+[
+  {"id":"P01","pdf":"policy.pdf","question":"未拆封商品几日内可无理由退货？","expected":"七日内","page":1,"kind":"text"},
+  {"id":"P02","pdf":"policy.pdf","question":"质量故障是否必须未拆封？","expected":"不受未拆封条件限制","page":1,"kind":"text"},
+  {"id":"P03","pdf":"policy.pdf","question":"审核通过后退款多久原路退回？","expected":"三个工作日内","page":1,"kind":"text"},
+  {"id":"T01","pdf":"conditions.pdf","question":"未拆封商品的申请期限是什么？","expected":"签收后7日","page":1,"kind":"table"},
+  {"id":"T02","pdf":"conditions.pdf","question":"质量故障的处理方式是什么？","expected":"检测后维修或换货","page":1,"kind":"table"},
+  {"id":"T03","pdf":"conditions.pdf","question":"人为损坏是否可以无理由退货？","expected":"付费维修","page":1,"kind":"table"},
+  {"id":"T04","pdf":"conditions.pdf","question":"退货条件表中的三列是什么？","expected":"商品状态","page":1,"kind":"table"},
+  {"id":"I01","pdf":"inspection.pdf","question":"文字检测结论是什么？","expected":"设备主板损坏","page":3,"kind":"text"},
+  {"id":"I02","pdf":"inspection.pdf","question":"照片里是否能看到主板烧毁？","expected":"证据不足","page":3,"kind":"image"},
+  {"id":"I03","pdf":"inspection.pdf","question":"主板检测照片关联的是哪一页结论？","expected":"设备主板损坏","page":3,"kind":"relation"},
+  {"id":"S01","pdf":"scan_receipt.pdf","question":"维修凭证的设备编号是什么？","expected":"SP-200","page":1,"kind":"scan"},
+  {"id":"S02","pdf":"scan_receipt.pdf","question":"维修日期是哪天？","expected":"2026-09-20","page":1,"kind":"scan"},
+  {"id":"S03","pdf":"scan_receipt.pdf","question":"保修期多久？","expected":"12 months","page":1,"kind":"scan"},
+  {"id":"D01","pdf":"decorated.pdf","question":"保修凭证须包含什么？","expected":"商品序列号与购买日期","page":1,"kind":"text"},
+  {"id":"D02","pdf":"decorated.pdf","question":"页脚装饰图片能证明保修日期吗？","expected":"证据不足","page":1,"kind":"decoration"},
+  {"id":"N01","pdf":"invoice.pdf","question":"发票中 A12 配件的单价是多少？","expected":"120元","page":1,"kind":"table"},
+  {"id":"N02","pdf":"invoice.pdf","question":"发票合计金额是多少？","expected":"780元","page":1,"kind":"table"},
+  {"id":"M01","pdf":"manual.pdf","question":"无法联网时重置按钮要按多久？","expected":"十秒","page":2,"kind":"text"},
+  {"id":"M02","pdf":"manual.pdf","question":"图2中的按钮是什么颜色？","expected":"证据不足","page":2,"kind":"image"},
+  {"id":"G01","pdf":"gallery.pdf","question":"图B对应哪张图片的图注？","expected":"右侧电池仓","page":1,"kind":"relation"}
+]

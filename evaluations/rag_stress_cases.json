@@ -1,0 +1,1099 @@
+[
+  {
+    "case_id": "stress_single_01",
+    "query": "拆盒看了下没使用，签收第六天想直接退，申请由谁提交？",
+    "relevant_policy_ids": [
+      "POLICY-RETURN-7D"
+    ],
+    "slice": "single",
+    "difficulty": "medium",
+    "source": "synthetic_handwritten"
+  },
+  {
+    "case_id": "stress_single_02",
+    "query": "到货后二十多天发现设备故障，客服要我先准备什么材料？",
+    "relevant_policy_ids": [
+      "POLICY-DAMAGE-30D"
+    ],
+    "slice": "single",
+    "difficulty": "medium",
+    "source": "synthetic_handwritten"
+  },
+  {
+    "case_id": "stress_single_03",
+    "query": "一千多元的平板突然坏了，描述故障并上传照片后由谁审核？",
+    "relevant_policy_ids": [
+      "POLICY-DIGITAL"
+    ],
+    "slice": "single",
+    "difficulty": "medium",
+    "source": "synthetic_handwritten"
+  },
+  {
+    "case_id": "stress_single_04",
+    "query": "跑鞋只在室内试了一下，鞋底和吊牌要保持什么状态？",
+    "relevant_policy_ids": [
+      "POLICY-SPORTSWEAR"
+    ],
+    "slice": "single",
+    "difficulty": "medium",
+    "source": "synthetic_handwritten"
+  },
+  {
+    "case_id": "stress_single_05",
+    "query": "买的点心快过期了，能凭包装照片走售后吗？",
+    "relevant_policy_ids": [
+      "POLICY-FOOD"
+    ],
+    "slice": "single",
+    "difficulty": "medium",
+    "source": "synthetic_handwritten"
+  },
+  {
+    "case_id": "stress_single_06",
+    "query": "只拆开检查过配件，怎样判断商品还算完好？",
+    "relevant_policy_ids": [
+      "POLICY-RETURN-CONDITION"
+    ],
+    "slice": "single",
+    "difficulty": "medium",
+    "source": "synthetic_handwritten"
+  },
+  {
+    "case_id": "stress_single_07",
+    "query": "因质量问题寄回商品，运费和运费险怎么分担？",
+    "relevant_policy_ids": [
+      "POLICY-RETURN-FREIGHT"
+    ],
+    "slice": "single",
+    "difficulty": "medium",
+    "source": "synthetic_handwritten"
+  },
+  {
+    "case_id": "stress_single_08",
+    "query": "已经下载并拆封的数字内容还能按七天反悔退吗？",
+    "relevant_policy_ids": [
+      "POLICY-RETURN-EXCLUDED"
+    ],
+    "slice": "single",
+    "difficulty": "medium",
+    "source": "synthetic_handwritten"
+  },
+  {
+    "case_id": "stress_single_09",
+    "query": "退款审核已过，银行卡通常多久收到款？",
+    "relevant_policy_ids": [
+      "POLICY-REFUND-TIMELINE"
+    ],
+    "slice": "single",
+    "difficulty": "medium",
+    "source": "synthetic_handwritten"
+  },
+  {
+    "case_id": "stress_single_10",
+    "query": "付款的旧账户已注销，售后退款如何安全处理？",
+    "relevant_policy_ids": [
+      "POLICY-REFUND-ORIGINAL"
+    ],
+    "slice": "single",
+    "difficulty": "medium",
+    "source": "synthetic_handwritten"
+  },
+  {
+    "case_id": "stress_single_11",
+    "query": "部分商品退款，原来的优惠券能折成现金吗？",
+    "relevant_policy_ids": [
+      "POLICY-REFUND-COUPON"
+    ],
+    "slice": "single",
+    "difficulty": "medium",
+    "source": "synthetic_handwritten"
+  },
+  {
+    "case_id": "stress_single_12",
+    "query": "售后被拒绝了，我能补证据再让人看一次吗？",
+    "relevant_policy_ids": [
+      "POLICY-REFUND-REJECTED"
+    ],
+    "slice": "single",
+    "difficulty": "medium",
+    "source": "synthetic_handwritten"
+  },
+  {
+    "case_id": "stress_single_13",
+    "query": "包裹发出后在哪看承运商和运单动向？",
+    "relevant_policy_ids": [
+      "POLICY-LOGISTICS-TRACKING"
+    ],
+    "slice": "single",
+    "difficulty": "medium",
+    "source": "synthetic_handwritten"
+  },
+  {
+    "case_id": "stress_single_14",
+    "query": "国内快递两昼夜没新扫描记录，该怎么催查？",
+    "relevant_policy_ids": [
+      "POLICY-LOGISTICS-DELAY"
+    ],
+    "slice": "single",
+    "difficulty": "medium",
+    "source": "synthetic_handwritten"
+  },
+  {
+    "case_id": "stress_single_15",
+    "query": "系统说有人签了，但我和代收点都没拿到，何时发起核查？",
+    "relevant_policy_ids": [
+      "POLICY-LOGISTICS-SIGNED-MISSING"
+    ],
+    "slice": "single",
+    "difficulty": "medium",
+    "source": "synthetic_handwritten"
+  },
+  {
+    "case_id": "stress_single_16",
+    "query": "物流公司确认整件丢了，能选择补发还是退钱？",
+    "relevant_policy_ids": [
+      "POLICY-LOGISTICS-LOST"
+    ],
+    "slice": "single",
+    "difficulty": "medium",
+    "source": "synthetic_handwritten"
+  },
+  {
+    "case_id": "stress_single_17",
+    "query": "开箱发现碎裂，外箱、面单和细节要拍哪些？",
+    "relevant_policy_ids": [
+      "POLICY-DAMAGE-EVIDENCE"
+    ],
+    "slice": "single",
+    "difficulty": "medium",
+    "source": "synthetic_handwritten"
+  },
+  {
+    "case_id": "stress_single_18",
+    "query": "电器冒火花甚至有人触电，应该先停用还是继续排故？",
+    "relevant_policy_ids": [
+      "POLICY-DAMAGE-SAFETY"
+    ],
+    "slice": "single",
+    "difficulty": "medium",
+    "source": "synthetic_handwritten"
+  },
+  {
+    "case_id": "stress_single_19",
+    "query": "退货期已经过了但仍在保修期，机器坏了还能怎样处理？",
+    "relevant_policy_ids": [
+      "POLICY-DAMAGE-WARRANTY"
+    ],
+    "slice": "single",
+    "difficulty": "medium",
+    "source": "synthetic_handwritten"
+  },
+  {
+    "case_id": "stress_single_20",
+    "query": "想换的颜色断货，能等补货或直接退吗？",
+    "relevant_policy_ids": [
+      "POLICY-EXCHANGE-STOCK"
+    ],
+    "slice": "single",
+    "difficulty": "medium",
+    "source": "synthetic_handwritten"
+  },
+  {
+    "case_id": "stress_single_21",
+    "query": "退回的换货商品验收通过，通常多久发新件？",
+    "relevant_policy_ids": [
+      "POLICY-EXCHANGE-TIMELINE"
+    ],
+    "slice": "single",
+    "difficulty": "medium",
+    "source": "synthetic_handwritten"
+  },
+  {
+    "case_id": "stress_single_22",
+    "query": "换大一码鞋子，吊牌鞋底以及价差有什么要求？",
+    "relevant_policy_ids": [
+      "POLICY-EXCHANGE-SIZE"
+    ],
+    "slice": "single",
+    "difficulty": "medium",
+    "source": "synthetic_handwritten"
+  },
+  {
+    "case_id": "stress_single_23",
+    "query": "电子设备性能故障已检测确认，是维修还是换新？",
+    "relevant_policy_ids": [
+      "POLICY-EXCHANGE-DEVICE"
+    ],
+    "slice": "single",
+    "difficulty": "medium",
+    "source": "synthetic_handwritten"
+  },
+  {
+    "case_id": "stress_single_24",
+    "query": "同一笔订单扣了两回，核对流水后多收的钱去哪？",
+    "relevant_policy_ids": [
+      "POLICY-PAYMENT-DUPLICATE"
+    ],
+    "slice": "single",
+    "difficulty": "medium",
+    "source": "synthetic_handwritten"
+  },
+  {
+    "case_id": "stress_single_25",
+    "query": "支付没成功也没形成订单，预授权会一直占着额度吗？",
+    "relevant_policy_ids": [
+      "POLICY-PAYMENT-FAILED"
+    ],
+    "slice": "single",
+    "difficulty": "medium",
+    "source": "synthetic_handwritten"
+  },
+  {
+    "case_id": "stress_single_26",
+    "query": "账户可能被盗刷，先冻结什么并交给哪个团队？",
+    "relevant_policy_ids": [
+      "POLICY-PAYMENT-FRAUD"
+    ],
+    "slice": "single",
+    "difficulty": "medium",
+    "source": "synthetic_handwritten"
+  },
+  {
+    "case_id": "stress_single_27",
+    "query": "订单完成后，电子票据可以送到哪里？",
+    "relevant_policy_ids": [
+      "POLICY-INVOICE-ELECTRONIC"
+    ],
+    "slice": "single",
+    "difficulty": "medium",
+    "source": "synthetic_handwritten"
+  },
+  {
+    "case_id": "stress_single_28",
+    "query": "发票已经开错公司名称，是否需要先红冲再重开？",
+    "relevant_policy_ids": [
+      "POLICY-INVOICE-TITLE"
+    ],
+    "slice": "single",
+    "difficulty": "medium",
+    "source": "synthetic_handwritten"
+  },
+  {
+    "case_id": "stress_single_29",
+    "query": "整单取消并退款后，已经开的票怎么处理？",
+    "relevant_policy_ids": [
+      "POLICY-INVOICE-REFUND"
+    ],
+    "slice": "single",
+    "difficulty": "medium",
+    "source": "synthetic_handwritten"
+  },
+  {
+    "case_id": "stress_single_30",
+    "query": "包裹里比清单少一件，开箱记录和出库重量怎么核对？",
+    "relevant_policy_ids": [
+      "POLICY-MISSING-EVIDENCE"
+    ],
+    "slice": "single",
+    "difficulty": "medium",
+    "source": "synthetic_handwritten"
+  },
+  {
+    "case_id": "stress_single_31",
+    "query": "核实漏发后，缺少商品没库存还能怎样赔付？",
+    "relevant_policy_ids": [
+      "POLICY-MISSING-RESOLUTION"
+    ],
+    "slice": "single",
+    "difficulty": "medium",
+    "source": "synthetic_handwritten"
+  },
+  {
+    "case_id": "stress_single_32",
+    "query": "仓库还没出库，能把收货地址改到同一个配送区域吗？",
+    "relevant_policy_ids": [
+      "POLICY-ADDRESS-BEFORE-SHIP"
+    ],
+    "slice": "single",
+    "difficulty": "medium",
+    "source": "synthetic_handwritten"
+  },
+  {
+    "case_id": "stress_single_33",
+    "query": "快递已经揽收，想转寄到新住址，费用谁确认？",
+    "relevant_policy_ids": [
+      "POLICY-ADDRESS-AFTER-SHIP"
+    ],
+    "slice": "single",
+    "difficulty": "medium",
+    "source": "synthetic_handwritten"
+  },
+  {
+    "case_id": "stress_single_34",
+    "query": "带保价标识的商品付款后降价，几天内可申请？",
+    "relevant_policy_ids": [
+      "POLICY-PRICE-WINDOW"
+    ],
+    "slice": "single",
+    "difficulty": "medium",
+    "source": "synthetic_handwritten"
+  },
+  {
+    "case_id": "stress_single_35",
+    "query": "只是会员专享价比我买时便宜，算保价吗？",
+    "relevant_policy_ids": [
+      "POLICY-PRICE-EXCLUDED"
+    ],
+    "slice": "single",
+    "difficulty": "medium",
+    "source": "synthetic_handwritten"
+  },
+  {
+    "case_id": "stress_single_36",
+    "query": "价保通过后现金与积分的差额分别怎么退？",
+    "relevant_policy_ids": [
+      "POLICY-PRICE-REFUND"
+    ],
+    "slice": "single",
+    "difficulty": "medium",
+    "source": "synthetic_handwritten"
+  },
+  {
+    "case_id": "stress_single_37",
+    "query": "我用家人的账号查他的订单，不验证归属也能看吗？",
+    "relevant_policy_ids": [
+      "POLICY-PRIVACY-IDENTITY"
+    ],
+    "slice": "single",
+    "difficulty": "medium",
+    "source": "synthetic_handwritten"
+  },
+  {
+    "case_id": "stress_pair_01",
+    "query": "退没用过的衣服，包装检查和寄回运费分别怎么算？",
+    "relevant_policy_ids": [
+      "POLICY-RETURN-CONDITION",
+      "POLICY-RETURN-FREIGHT"
+    ],
+    "slice": "pair",
+    "difficulty": "hard",
+    "source": "synthetic_handwritten"
+  },
+  {
+    "case_id": "stress_pair_02",
+    "query": "定制食品发霉了，不能无理由退的话质量售后需要什么？",
+    "relevant_policy_ids": [
+      "POLICY-FOOD",
+      "POLICY-RETURN-EXCLUDED"
+    ],
+    "slice": "pair",
+    "difficulty": "hard",
+    "source": "synthetic_handwritten"
+  },
+  {
+    "case_id": "stress_pair_03",
+    "query": "平板二十天内坏了且超过千元，故障证据和审核谁负责？",
+    "relevant_policy_ids": [
+      "POLICY-DAMAGE-30D",
+      "POLICY-DIGITAL"
+    ],
+    "slice": "pair",
+    "difficulty": "hard",
+    "source": "synthetic_handwritten"
+  },
+  {
+    "case_id": "stress_pair_04",
+    "query": "运动鞋试穿后想换大码，鞋底、吊牌与价差如何处理？",
+    "relevant_policy_ids": [
+      "POLICY-SPORTSWEAR",
+      "POLICY-EXCHANGE-SIZE"
+    ],
+    "slice": "pair",
+    "difficulty": "hard",
+    "source": "synthetic_handwritten"
+  },
+  {
+    "case_id": "stress_pair_05",
+    "query": "退款被拒又发现原付款卡注销，先复核还是改收款路径？",
+    "relevant_policy_ids": [
+      "POLICY-REFUND-ORIGINAL",
+      "POLICY-REFUND-REJECTED"
+    ],
+    "slice": "pair",
+    "difficulty": "hard",
+    "source": "synthetic_handwritten"
+  },
+  {
+    "case_id": "stress_pair_06",
+    "query": "整单退款用了优惠券，款多久到、券能否返还？",
+    "relevant_policy_ids": [
+      "POLICY-REFUND-TIMELINE",
+      "POLICY-REFUND-COUPON"
+    ],
+    "slice": "pair",
+    "difficulty": "hard",
+    "source": "synthetic_handwritten"
+  },
+  {
+    "case_id": "stress_pair_07",
+    "query": "快递轨迹停两天，是去哪看记录并如何发催查工单？",
+    "relevant_policy_ids": [
+      "POLICY-LOGISTICS-TRACKING",
+      "POLICY-LOGISTICS-DELAY"
+    ],
+    "slice": "pair",
+    "difficulty": "hard",
+    "source": "synthetic_handwritten"
+  },
+  {
+    "case_id": "stress_pair_08",
+    "query": "页面显示签收却没收到，查签收证明后承运商确认丢件，能补发吗？",
+    "relevant_policy_ids": [
+      "POLICY-LOGISTICS-SIGNED-MISSING",
+      "POLICY-LOGISTICS-LOST"
+    ],
+    "slice": "pair",
+    "difficulty": "hard",
+    "source": "synthetic_handwritten"
+  },
+  {
+    "case_id": "stress_pair_09",
+    "query": "烤箱开箱破损且漏电，应该停止使用，并拍哪些外箱照片？",
+    "relevant_policy_ids": [
+      "POLICY-DAMAGE-EVIDENCE",
+      "POLICY-DAMAGE-SAFETY"
+    ],
+    "slice": "pair",
+    "difficulty": "hard",
+    "source": "synthetic_handwritten"
+  },
+  {
+    "case_id": "stress_pair_10",
+    "query": "保修期内的数码设备确认故障，维修、换新依据什么？",
+    "relevant_policy_ids": [
+      "POLICY-DAMAGE-WARRANTY",
+      "POLICY-EXCHANGE-DEVICE"
+    ],
+    "slice": "pair",
+    "difficulty": "hard",
+    "source": "synthetic_handwritten"
+  },
+  {
+    "case_id": "stress_pair_11",
+    "query": "换鞋需要大一码但断货，原鞋底完好还能选哪些方案？",
+    "relevant_policy_ids": [
+      "POLICY-EXCHANGE-STOCK",
+      "POLICY-EXCHANGE-SIZE"
+    ],
+    "slice": "pair",
+    "difficulty": "hard",
+    "source": "synthetic_handwritten"
+  },
+  {
+    "case_id": "stress_pair_12",
+    "query": "换货目标规格有库存，旧件验收后多久有新物流单？",
+    "relevant_policy_ids": [
+      "POLICY-EXCHANGE-STOCK",
+      "POLICY-EXCHANGE-TIMELINE"
+    ],
+    "slice": "pair",
+    "difficulty": "hard",
+    "source": "synthetic_handwritten"
+  },
+  {
+    "case_id": "stress_pair_13",
+    "query": "支付失败后重新付，若同一单出现两笔成功扣款该怎么核对？",
+    "relevant_policy_ids": [
+      "POLICY-PAYMENT-DUPLICATE",
+      "POLICY-PAYMENT-FAILED"
+    ],
+    "slice": "pair",
+    "difficulty": "hard",
+    "source": "synthetic_handwritten"
+  },
+  {
+    "case_id": "stress_pair_14",
+    "query": "怀疑别人刷卡，订单又多扣一笔，应先止损再查什么流水？",
+    "relevant_policy_ids": [
+      "POLICY-PAYMENT-DUPLICATE",
+      "POLICY-PAYMENT-FRAUD"
+    ],
+    "slice": "pair",
+    "difficulty": "hard",
+    "source": "synthetic_handwritten"
+  },
+  {
+    "case_id": "stress_pair_15",
+    "query": "电子发票发到邮箱后发现抬头错，如何改？",
+    "relevant_policy_ids": [
+      "POLICY-INVOICE-ELECTRONIC",
+      "POLICY-INVOICE-TITLE"
+    ],
+    "slice": "pair",
+    "difficulty": "hard",
+    "source": "synthetic_handwritten"
+  },
+  {
+    "case_id": "stress_pair_16",
+    "query": "部分退款后原发票和券各如何调整？",
+    "relevant_policy_ids": [
+      "POLICY-REFUND-COUPON",
+      "POLICY-INVOICE-REFUND"
+    ],
+    "slice": "pair",
+    "difficulty": "hard",
+    "source": "synthetic_handwritten"
+  },
+  {
+    "case_id": "stress_pair_17",
+    "query": "少发一件，先交哪些开箱凭证，核实后补发还是退？",
+    "relevant_policy_ids": [
+      "POLICY-MISSING-EVIDENCE",
+      "POLICY-MISSING-RESOLUTION"
+    ],
+    "slice": "pair",
+    "difficulty": "hard",
+    "source": "synthetic_handwritten"
+  },
+  {
+    "case_id": "stress_pair_18",
+    "query": "快递已出库却要改到另一城区，发货前后分别有什么限制？",
+    "relevant_policy_ids": [
+      "POLICY-ADDRESS-BEFORE-SHIP",
+      "POLICY-ADDRESS-AFTER-SHIP"
+    ],
+    "slice": "pair",
+    "difficulty": "hard",
+    "source": "synthetic_handwritten"
+  },
+  {
+    "case_id": "stress_pair_19",
+    "query": "商品付款后第六天下降价，但系会员活动，是否满足价保？",
+    "relevant_policy_ids": [
+      "POLICY-PRICE-WINDOW",
+      "POLICY-PRICE-EXCLUDED"
+    ],
+    "slice": "pair",
+    "difficulty": "hard",
+    "source": "synthetic_handwritten"
+  },
+  {
+    "case_id": "stress_pair_20",
+    "query": "符合条件的直接降价，申请期限及返还方式是什么？",
+    "relevant_policy_ids": [
+      "POLICY-PRICE-WINDOW",
+      "POLICY-PRICE-REFUND"
+    ],
+    "slice": "pair",
+    "difficulty": "hard",
+    "source": "synthetic_handwritten"
+  },
+  {
+    "case_id": "stress_pair_21",
+    "query": "他人用我的订单号要求改地址，身份核验和出库前改址怎么做？",
+    "relevant_policy_ids": [
+      "POLICY-ADDRESS-BEFORE-SHIP",
+      "POLICY-PRIVACY-IDENTITY"
+    ],
+    "slice": "pair",
+    "difficulty": "hard",
+    "source": "synthetic_handwritten"
+  },
+  {
+    "case_id": "stress_pair_22",
+    "query": "签收后第七天发现质量问题，退货期限和质量售后期限一样吗？",
+    "relevant_policy_ids": [
+      "POLICY-RETURN-7D",
+      "POLICY-DAMAGE-30D"
+    ],
+    "slice": "pair",
+    "difficulty": "hard",
+    "source": "synthetic_handwritten"
+  },
+  {
+    "case_id": "stress_pair_23",
+    "query": "新鲜食品外箱破损，质量举证和食品人工审核怎样衔接？",
+    "relevant_policy_ids": [
+      "POLICY-FOOD",
+      "POLICY-DAMAGE-EVIDENCE"
+    ],
+    "slice": "pair",
+    "difficulty": "hard",
+    "source": "synthetic_handwritten"
+  },
+  {
+    "case_id": "stress_pair_24",
+    "query": "无理由退货已批准，费用归谁，款项何时到账？",
+    "relevant_policy_ids": [
+      "POLICY-RETURN-FREIGHT",
+      "POLICY-REFUND-TIMELINE"
+    ],
+    "slice": "pair",
+    "difficulty": "hard",
+    "source": "synthetic_handwritten"
+  },
+  {
+    "case_id": "stress_pair_25",
+    "query": "原支付账户注销且价保差额含积分，差额该如何返还？",
+    "relevant_policy_ids": [
+      "POLICY-REFUND-ORIGINAL",
+      "POLICY-PRICE-REFUND"
+    ],
+    "slice": "pair",
+    "difficulty": "hard",
+    "source": "synthetic_handwritten"
+  },
+  {
+    "case_id": "stress_pair_26",
+    "query": "物流长期停滞后确认丢失，催查转成补发或退款如何办？",
+    "relevant_policy_ids": [
+      "POLICY-LOGISTICS-DELAY",
+      "POLICY-LOGISTICS-LOST"
+    ],
+    "slice": "pair",
+    "difficulty": "hard",
+    "source": "synthetic_handwritten"
+  },
+  {
+    "case_id": "stress_pair_27",
+    "query": "签收记录异常且缺了一件，先核查签收还是提供开箱证据？",
+    "relevant_policy_ids": [
+      "POLICY-LOGISTICS-SIGNED-MISSING",
+      "POLICY-MISSING-EVIDENCE"
+    ],
+    "slice": "pair",
+    "difficulty": "hard",
+    "source": "synthetic_handwritten"
+  },
+  {
+    "case_id": "stress_pair_28",
+    "query": "吹风机触电后仍在保修期，紧急处置和保修路径分别是什么？",
+    "relevant_policy_ids": [
+      "POLICY-DAMAGE-SAFETY",
+      "POLICY-DAMAGE-WARRANTY"
+    ],
+    "slice": "pair",
+    "difficulty": "hard",
+    "source": "synthetic_handwritten"
+  },
+  {
+    "case_id": "stress_pair_29",
+    "query": "数码换新想要的型号缺货，检测通过后还有什么选择？",
+    "relevant_policy_ids": [
+      "POLICY-EXCHANGE-STOCK",
+      "POLICY-EXCHANGE-DEVICE"
+    ],
+    "slice": "pair",
+    "difficulty": "hard",
+    "source": "synthetic_handwritten"
+  },
+  {
+    "case_id": "stress_pair_30",
+    "query": "确认了重复扣款，退款却被驳回，复核材料怎么交？",
+    "relevant_policy_ids": [
+      "POLICY-REFUND-REJECTED",
+      "POLICY-PAYMENT-DUPLICATE"
+    ],
+    "slice": "pair",
+    "difficulty": "hard",
+    "source": "synthetic_handwritten"
+  },
+  {
+    "case_id": "stress_pair_31",
+    "query": "票据抬头写错后整单又退了，要红冲重开还是退款冲销？",
+    "relevant_policy_ids": [
+      "POLICY-INVOICE-TITLE",
+      "POLICY-INVOICE-REFUND"
+    ],
+    "slice": "pair",
+    "difficulty": "hard",
+    "source": "synthetic_handwritten"
+  },
+  {
+    "case_id": "stress_pair_32",
+    "query": "漏发商品无法补发，按实付退款时优惠券如何核算？",
+    "relevant_policy_ids": [
+      "POLICY-REFUND-COUPON",
+      "POLICY-MISSING-RESOLUTION"
+    ],
+    "slice": "pair",
+    "difficulty": "hard",
+    "source": "synthetic_handwritten"
+  },
+  {
+    "case_id": "stress_pair_33",
+    "query": "已付款但还没发货，收货地址和发票抬头都填错了，能改吗？",
+    "relevant_policy_ids": [
+      "POLICY-INVOICE-TITLE",
+      "POLICY-ADDRESS-BEFORE-SHIP"
+    ],
+    "slice": "pair",
+    "difficulty": "hard",
+    "source": "synthetic_handwritten"
+  },
+  {
+    "case_id": "stress_pair_34",
+    "query": "秒杀商品已降价又退款，价保排除和退款到账如何分别看？",
+    "relevant_policy_ids": [
+      "POLICY-REFUND-TIMELINE",
+      "POLICY-PRICE-EXCLUDED"
+    ],
+    "slice": "pair",
+    "difficulty": "hard",
+    "source": "synthetic_handwritten"
+  },
+  {
+    "case_id": "stress_pair_35",
+    "query": "查询家人订单并代办退款，身份归属验证和订单本人确认谁来做？",
+    "relevant_policy_ids": [
+      "POLICY-RETURN-7D",
+      "POLICY-PRIVACY-IDENTITY"
+    ],
+    "slice": "pair",
+    "difficulty": "hard",
+    "source": "synthetic_handwritten"
+  },
+  {
+    "case_id": "stress_pair_36",
+    "query": "卖家确认损坏可退，证据拍摄和返程运费分别如何要求？",
+    "relevant_policy_ids": [
+      "POLICY-RETURN-FREIGHT",
+      "POLICY-DAMAGE-EVIDENCE"
+    ],
+    "slice": "pair",
+    "difficulty": "hard",
+    "source": "synthetic_handwritten"
+  },
+  {
+    "case_id": "stress_triple_01",
+    "query": "高价平板到货两周就冒烟，故障照片、人工审核和安全升级怎么办？",
+    "relevant_policy_ids": [
+      "POLICY-DAMAGE-30D",
+      "POLICY-DIGITAL",
+      "POLICY-DAMAGE-SAFETY"
+    ],
+    "slice": "triple",
+    "difficulty": "hard",
+    "source": "synthetic_handwritten"
+  },
+  {
+    "case_id": "stress_triple_02",
+    "query": "运动鞋第六天想退，室内试穿过，外包装、鞋底和无理由条件如何判断？",
+    "relevant_policy_ids": [
+      "POLICY-RETURN-7D",
+      "POLICY-SPORTSWEAR",
+      "POLICY-RETURN-CONDITION"
+    ],
+    "slice": "triple",
+    "difficulty": "hard",
+    "source": "synthetic_handwritten"
+  },
+  {
+    "case_id": "stress_triple_03",
+    "query": "食物发霉且箱子破了，需要外箱细节照片，并由谁审核质量售后？",
+    "relevant_policy_ids": [
+      "POLICY-DAMAGE-30D",
+      "POLICY-FOOD",
+      "POLICY-DAMAGE-EVIDENCE"
+    ],
+    "slice": "triple",
+    "difficulty": "hard",
+    "source": "synthetic_handwritten"
+  },
+  {
+    "case_id": "stress_triple_04",
+    "query": "定制的食品发生变质，虽不能无理由退，质量照片和人工审核怎样办？",
+    "relevant_policy_ids": [
+      "POLICY-DAMAGE-30D",
+      "POLICY-FOOD",
+      "POLICY-RETURN-EXCLUDED"
+    ],
+    "slice": "triple",
+    "difficulty": "hard",
+    "source": "synthetic_handwritten"
+  },
+  {
+    "case_id": "stress_triple_05",
+    "query": "退款审核通过却没到卡里，原卡已注销，券是否一并返还？",
+    "relevant_policy_ids": [
+      "POLICY-REFUND-TIMELINE",
+      "POLICY-REFUND-ORIGINAL",
+      "POLICY-REFUND-COUPON"
+    ],
+    "slice": "triple",
+    "difficulty": "hard",
+    "source": "synthetic_handwritten"
+  },
+  {
+    "case_id": "stress_triple_06",
+    "query": "国内件两天不动又显示签收却未收到，后来确认丢失，可以退款吗？",
+    "relevant_policy_ids": [
+      "POLICY-LOGISTICS-DELAY",
+      "POLICY-LOGISTICS-SIGNED-MISSING",
+      "POLICY-LOGISTICS-LOST"
+    ],
+    "slice": "triple",
+    "difficulty": "hard",
+    "source": "synthetic_handwritten"
+  },
+  {
+    "case_id": "stress_triple_07",
+    "query": "物流显示签收却没有商品，开箱只剩空盒，核查签收、少件证明与处理方式是什么？",
+    "relevant_policy_ids": [
+      "POLICY-LOGISTICS-SIGNED-MISSING",
+      "POLICY-MISSING-EVIDENCE",
+      "POLICY-MISSING-RESOLUTION"
+    ],
+    "slice": "triple",
+    "difficulty": "hard",
+    "source": "synthetic_handwritten"
+  },
+  {
+    "case_id": "stress_triple_08",
+    "query": "手机刚过退货期却在保，检测故障后想换新但目标型号缺货，怎么办？",
+    "relevant_policy_ids": [
+      "POLICY-DAMAGE-WARRANTY",
+      "POLICY-EXCHANGE-STOCK",
+      "POLICY-EXCHANGE-DEVICE"
+    ],
+    "slice": "triple",
+    "difficulty": "hard",
+    "source": "synthetic_handwritten"
+  },
+  {
+    "case_id": "stress_triple_09",
+    "query": "鞋子尺寸不合，目标尺码没货，退回原鞋后多久能收到换货物流？",
+    "relevant_policy_ids": [
+      "POLICY-EXCHANGE-STOCK",
+      "POLICY-EXCHANGE-TIMELINE",
+      "POLICY-EXCHANGE-SIZE"
+    ],
+    "slice": "triple",
+    "difficulty": "hard",
+    "source": "synthetic_handwritten"
+  },
+  {
+    "case_id": "stress_triple_10",
+    "query": "账号疑似盗用，同订单还重复扣钱，用户要求查询流水时怎样核验身份？",
+    "relevant_policy_ids": [
+      "POLICY-PAYMENT-DUPLICATE",
+      "POLICY-PAYMENT-FRAUD",
+      "POLICY-PRIVACY-IDENTITY"
+    ],
+    "slice": "triple",
+    "difficulty": "hard",
+    "source": "synthetic_handwritten"
+  },
+  {
+    "case_id": "stress_triple_11",
+    "query": "支付失败后补付又重复扣钱，原付款账户已注销，多扣款怎么退？",
+    "relevant_policy_ids": [
+      "POLICY-REFUND-ORIGINAL",
+      "POLICY-PAYMENT-DUPLICATE",
+      "POLICY-PAYMENT-FAILED"
+    ],
+    "slice": "triple",
+    "difficulty": "hard",
+    "source": "synthetic_handwritten"
+  },
+  {
+    "case_id": "stress_triple_12",
+    "query": "电子发票刚开错抬头，后来商品部分退款，票据该如何调整？",
+    "relevant_policy_ids": [
+      "POLICY-INVOICE-ELECTRONIC",
+      "POLICY-INVOICE-TITLE",
+      "POLICY-INVOICE-REFUND"
+    ],
+    "slice": "triple",
+    "difficulty": "hard",
+    "source": "synthetic_handwritten"
+  },
+  {
+    "case_id": "stress_triple_13",
+    "query": "少发商品补发缺货，只能退实付，原优惠券不能折现吧？",
+    "relevant_policy_ids": [
+      "POLICY-REFUND-COUPON",
+      "POLICY-MISSING-EVIDENCE",
+      "POLICY-MISSING-RESOLUTION"
+    ],
+    "slice": "triple",
+    "difficulty": "hard",
+    "source": "synthetic_handwritten"
+  },
+  {
+    "case_id": "stress_triple_14",
+    "query": "发货前地址填错，改完赶上已揽收，包裹停滞两天如何追踪？",
+    "relevant_policy_ids": [
+      "POLICY-LOGISTICS-DELAY",
+      "POLICY-ADDRESS-BEFORE-SHIP",
+      "POLICY-ADDRESS-AFTER-SHIP"
+    ],
+    "slice": "triple",
+    "difficulty": "hard",
+    "source": "synthetic_handwritten"
+  },
+  {
+    "case_id": "stress_triple_15",
+    "query": "有价保标识的订单六天降价但因优惠券差异，若真符合条件积分差额如何退？",
+    "relevant_policy_ids": [
+      "POLICY-PRICE-WINDOW",
+      "POLICY-PRICE-EXCLUDED",
+      "POLICY-PRICE-REFUND"
+    ],
+    "slice": "triple",
+    "difficulty": "hard",
+    "source": "synthetic_handwritten"
+  },
+  {
+    "case_id": "stress_triple_16",
+    "query": "家人账号里的订单要改配送地址，但车已经发了，先核对身份还是找承运商？",
+    "relevant_policy_ids": [
+      "POLICY-ADDRESS-BEFORE-SHIP",
+      "POLICY-ADDRESS-AFTER-SHIP",
+      "POLICY-PRIVACY-IDENTITY"
+    ],
+    "slice": "triple",
+    "difficulty": "hard",
+    "source": "synthetic_handwritten"
+  },
+  {
+    "case_id": "stress_triple_17",
+    "query": "到货商品破损要退，需拍外箱面单和细节，寄回费用由谁承担？",
+    "relevant_policy_ids": [
+      "POLICY-DAMAGE-30D",
+      "POLICY-RETURN-FREIGHT",
+      "POLICY-DAMAGE-EVIDENCE"
+    ],
+    "slice": "triple",
+    "difficulty": "hard",
+    "source": "synthetic_handwritten"
+  },
+  {
+    "case_id": "stress_triple_18",
+    "query": "退货审核被驳回但已寄回，凭证怎么复核，运费谁付，审核通过后何时退款？",
+    "relevant_policy_ids": [
+      "POLICY-RETURN-FREIGHT",
+      "POLICY-REFUND-TIMELINE",
+      "POLICY-REFUND-REJECTED"
+    ],
+    "slice": "triple",
+    "difficulty": "hard",
+    "source": "synthetic_handwritten"
+  },
+  {
+    "case_id": "stress_triple_19",
+    "query": "已支付商品少发且物流签收，先核对代收证明、开箱记录，再决定补发吗？",
+    "relevant_policy_ids": [
+      "POLICY-LOGISTICS-SIGNED-MISSING",
+      "POLICY-MISSING-EVIDENCE",
+      "POLICY-MISSING-RESOLUTION"
+    ],
+    "slice": "triple",
+    "difficulty": "hard",
+    "source": "synthetic_handwritten"
+  },
+  {
+    "case_id": "stress_triple_20",
+    "query": "智能手表冒烟且在保修期，检测可换新但先应如何处置安全风险？",
+    "relevant_policy_ids": [
+      "POLICY-DAMAGE-SAFETY",
+      "POLICY-DAMAGE-WARRANTY",
+      "POLICY-EXCHANGE-DEVICE"
+    ],
+    "slice": "triple",
+    "difficulty": "hard",
+    "source": "synthetic_handwritten"
+  },
+  {
+    "case_id": "stress_quad_01",
+    "query": "运动鞋第六天退货，试穿过但鞋底干净，完好标准与回寄费用如何认定？",
+    "relevant_policy_ids": [
+      "POLICY-RETURN-7D",
+      "POLICY-SPORTSWEAR",
+      "POLICY-RETURN-CONDITION",
+      "POLICY-RETURN-FREIGHT"
+    ],
+    "slice": "quad",
+    "difficulty": "hard",
+    "source": "synthetic_handwritten"
+  },
+  {
+    "case_id": "stress_quad_02",
+    "query": "高价笔记本二十天内起火，先止用，故障与照片凭证、人工审核都需要什么？",
+    "relevant_policy_ids": [
+      "POLICY-DAMAGE-30D",
+      "POLICY-DIGITAL",
+      "POLICY-DAMAGE-EVIDENCE",
+      "POLICY-DAMAGE-SAFETY"
+    ],
+    "slice": "quad",
+    "difficulty": "hard",
+    "source": "synthetic_handwritten"
+  },
+  {
+    "case_id": "stress_quad_03",
+    "query": "退款申请被驳回，原卡已销户，整单优惠券退回后银行卡多久到账？",
+    "relevant_policy_ids": [
+      "POLICY-REFUND-TIMELINE",
+      "POLICY-REFUND-ORIGINAL",
+      "POLICY-REFUND-COUPON",
+      "POLICY-REFUND-REJECTED"
+    ],
+    "slice": "quad",
+    "difficulty": "hard",
+    "source": "synthetic_handwritten"
+  },
+  {
+    "case_id": "stress_quad_04",
+    "query": "物流四十八小时没更新，后来显示签收但无人收，承运商确认丢失后如何查轨迹和索赔？",
+    "relevant_policy_ids": [
+      "POLICY-LOGISTICS-TRACKING",
+      "POLICY-LOGISTICS-DELAY",
+      "POLICY-LOGISTICS-SIGNED-MISSING",
+      "POLICY-LOGISTICS-LOST"
+    ],
+    "slice": "quad",
+    "difficulty": "hard",
+    "source": "synthetic_handwritten"
+  },
+  {
+    "case_id": "stress_quad_05",
+    "query": "鞋子换大号却断货，旧鞋吊牌完好，若等到有货验收后何时发新件？",
+    "relevant_policy_ids": [
+      "POLICY-SPORTSWEAR",
+      "POLICY-EXCHANGE-STOCK",
+      "POLICY-EXCHANGE-TIMELINE",
+      "POLICY-EXCHANGE-SIZE"
+    ],
+    "slice": "quad",
+    "difficulty": "hard",
+    "source": "synthetic_handwritten"
+  },
+  {
+    "case_id": "stress_quad_06",
+    "query": "包裹少一件，核对开箱资料后没库存只能退款，优惠券和发票如何调整？",
+    "relevant_policy_ids": [
+      "POLICY-REFUND-COUPON",
+      "POLICY-INVOICE-REFUND",
+      "POLICY-MISSING-EVIDENCE",
+      "POLICY-MISSING-RESOLUTION"
+    ],
+    "slice": "quad",
+    "difficulty": "hard",
+    "source": "synthetic_handwritten"
+  },
+  {
+    "case_id": "stress_quad_07",
+    "query": "代查家人订单需先验身份；保价商品一周内降价但系会员价，若合规差额退哪里？",
+    "relevant_policy_ids": [
+      "POLICY-PRICE-WINDOW",
+      "POLICY-PRICE-EXCLUDED",
+      "POLICY-PRICE-REFUND",
+      "POLICY-PRIVACY-IDENTITY"
+    ],
+    "slice": "quad",
+    "difficulty": "hard",
+    "source": "synthetic_handwritten"
+  }
+]

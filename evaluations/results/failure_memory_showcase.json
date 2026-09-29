@@ -1,0 +1,83 @@
+{
+  "method": "offline scripted planner; real LangGraph runtime, Trace and SQLite ledger",
+  "scope": "fixed functional showcase, not an online model effectiveness estimate",
+  "normal_refund": {
+    "confirmation_requested": true,
+    "refunds_before_confirmation": 0,
+    "refunds_after_confirmation": 1,
+    "task_completed": true,
+    "response_reports_submission": true,
+    "ledger_checked": true
+  },
+  "stale_plan_fault_injection": {
+    "stale_action_blocked": true,
+    "refunds_created": 0,
+    "verified_failure_types": [
+      "GOAL_DRIFT"
+    ],
+    "candidate_traced": true,
+    "verification_traced": true
+  },
+  "paired_followups": {
+    "B0": {
+      "training_plan_validation_errors": 1,
+      "verified_memories_after_training": 0,
+      "followups": [
+        {
+          "case_id": "followup_1",
+          "plan_validation_errors": 1,
+          "memories_injected": 0,
+          "task_completed": true,
+          "refunds_created": 1
+        },
+        {
+          "case_id": "followup_2",
+          "plan_validation_errors": 1,
+          "memories_injected": 0,
+          "task_completed": true,
+          "refunds_created": 1
+        },
+        {
+          "case_id": "followup_3",
+          "plan_validation_errors": 1,
+          "memories_injected": 0,
+          "task_completed": true,
+          "refunds_created": 1
+        }
+      ],
+      "repeated_plan_errors": 3,
+      "completed_tasks": 3,
+      "duplicate_refunds": 0
+    },
+    "B2": {
+      "training_plan_validation_errors": 1,
+      "verified_memories_after_training": 1,
+      "followups": [
+        {
+          "case_id": "followup_1",
+          "plan_validation_errors": 0,
+          "memories_injected": 1,
+          "task_completed": true,
+          "refunds_created": 1
+        },
+        {
+          "case_id": "followup_2",
+          "plan_validation_errors": 0,
+          "memories_injected": 1,
+          "task_completed": true,
+          "refunds_created": 1
+        },
+        {
+          "case_id": "followup_3",
+          "plan_validation_errors": 0,
+          "memories_injected": 1,
+          "task_completed": true,
+          "refunds_created": 1
+        }
+      ],
+      "repeated_plan_errors": 0,
+      "completed_tasks": 3,
+      "duplicate_refunds": 0
+    }
+  }
+}

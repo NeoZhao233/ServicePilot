@@ -1,0 +1,11 @@
+{
+  "model": "deepseek-flash",
+  "endpoint": "https://api.deepseek.com/responses",
+  "max_requests": 1,
+  "retries": 0,
+  "input_tokens": null,
+  "output_tokens": null,
+  "api_cost": null,
+  "status": "success",
+  "latency_ms": 826.596
+}

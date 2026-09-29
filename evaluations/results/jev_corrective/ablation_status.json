@@ -1,0 +1,171 @@
+{
+  "B0": {
+    "status": "observed",
+    "source": [
+      "live_deepseek"
+    ],
+    "coverage": {
+      "observed": 24,
+      "total": 24
+    },
+    "recall@5": 1.0,
+    "mrr": 0.9583333333333334,
+    "critical_retention": null,
+    "irrelevant_filter_rate": null,
+    "sufficiency_accuracy": null,
+    "sufficiency_observed": 0,
+    "answer_accuracy": null,
+    "answers_adjudicated": 0,
+    "unsupported_promises": null,
+    "rounds": {
+      "n": 24,
+      "mean": 1,
+      "p50": 1.0,
+      "p95": 1
+    },
+    "deepseek_calls": {
+      "n": 24,
+      "mean": 1,
+      "p50": 1.0,
+      "p95": 1
+    },
+    "latency_ms": {
+      "n": 24,
+      "mean": 10796.700256876042,
+      "p50": 10118.919479005854,
+      "p95": 24533.04708300857
+    },
+    "false_filtered_cases": [],
+    "usage": {
+      "input_tokens": 29209,
+      "output_tokens": 55250,
+      "api_cost": null
+    }
+  },
+  "B1": {
+    "status": "not_run",
+    "source": [],
+    "coverage": {
+      "observed": 0,
+      "total": 24
+    },
+    "recall@5": null,
+    "mrr": null,
+    "critical_retention": null,
+    "irrelevant_filter_rate": null,
+    "sufficiency_accuracy": null,
+    "sufficiency_observed": 0,
+    "answer_accuracy": null,
+    "answers_adjudicated": 0,
+    "unsupported_promises": null,
+    "rounds": {
+      "n": 0,
+      "mean": null,
+      "p50": null,
+      "p95": null
+    },
+    "deepseek_calls": {
+      "n": 0,
+      "mean": null,
+      "p50": null,
+      "p95": null
+    },
+    "latency_ms": {
+      "n": 0,
+      "mean": null,
+      "p50": null,
+      "p95": null
+    },
+    "false_filtered_cases": [],
+    "usage": {
+      "input_tokens": null,
+      "output_tokens": null,
+      "api_cost": null
+    },
+    "not_run_reason": "No Jev credentials, live calibration or validated policy metadata"
+  },
+  "B2": {
+    "status": "not_run",
+    "source": [],
+    "coverage": {
+      "observed": 0,
+      "total": 24
+    },
+    "recall@5": null,
+    "mrr": null,
+    "critical_retention": null,
+    "irrelevant_filter_rate": null,
+    "sufficiency_accuracy": null,
+    "sufficiency_observed": 0,
+    "answer_accuracy": null,
+    "answers_adjudicated": 0,
+    "unsupported_promises": null,
+    "rounds": {
+      "n": 0,
+      "mean": null,
+      "p50": null,
+      "p95": null
+    },
+    "deepseek_calls": {
+      "n": 0,
+      "mean": null,
+      "p50": null,
+      "p95": null
+    },
+    "latency_ms": {
+      "n": 0,
+      "mean": null,
+      "p50": null,
+      "p95": null
+    },
+    "false_filtered_cases": [],
+    "usage": {
+      "input_tokens": null,
+      "output_tokens": null,
+      "api_cost": null
+    },
+    "not_run_reason": "No Jev credentials, live calibration or validated policy metadata"
+  },
+  "B3": {
+    "status": "not_run",
+    "source": [],
+    "coverage": {
+      "observed": 0,
+      "total": 24
+    },
+    "recall@5": null,
+    "mrr": null,
+    "critical_retention": null,
+    "irrelevant_filter_rate": null,
+    "sufficiency_accuracy": null,
+    "sufficiency_observed": 0,
+    "answer_accuracy": null,
+    "answers_adjudicated": 0,
+    "unsupported_promises": null,
+    "rounds": {
+      "n": 0,
+      "mean": null,
+      "p50": null,
+      "p95": null
+    },
+    "deepseek_calls": {
+      "n": 0,
+      "mean": null,
+      "p50": null,
+      "p95": null
+    },
+    "latency_ms": {
+      "n": 0,
+      "mean": null,
+      "p50": null,
+      "p95": null
+    },
+    "false_filtered_cases": [],
+    "usage": {
+      "input_tokens": null,
+      "output_tokens": null,
+      "api_cost": null
+    },
+    "not_run_reason": "No Jev credentials, live calibration or validated policy metadata"
+  }
+}

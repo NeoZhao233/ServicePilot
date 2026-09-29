@@ -1,0 +1,1715 @@
+{
+  "note": "hashing-vector is an offline engineering baseline, not a semantic embedding model",
+  "bm25": {
+    "queries": 35,
+    "recall@3": 0.9143,
+    "mrr": 0.9143,
+    "ndcg@3": 0.9143,
+    "predictions": [
+      {
+        "case_id": "return_window",
+        "query": "收到商品几天之内可以退货",
+        "relevant": [
+          "POLICY-RETURN-7D"
+        ],
+        "retrieved": [
+          "POLICY-RETURN-7D",
+          "POLICY-DAMAGE-30D",
+          "POLICY-LOGISTICS-SIGNED-MISSING"
+        ]
+      },
+      {
+        "case_id": "refund_confirmation",
+        "query": "退款申请是否需要本人确认",
+        "relevant": [
+          "POLICY-RETURN-7D"
+        ],
+        "retrieved": [
+          "POLICY-RETURN-7D",
+          "POLICY-REFUND-REJECTED",
+          "POLICY-LOGISTICS-LOST"
+        ]
+      },
+      {
+        "case_id": "damaged_evidence",
+        "query": "东西坏了需要提供什么证明",
+        "relevant": [
+          "POLICY-DAMAGE-30D"
+        ],
+        "retrieved": [
+          "POLICY-DAMAGE-EVIDENCE",
+          "POLICY-DIGITAL",
+          "POLICY-LOGISTICS-SIGNED-MISSING"
+        ]
+      },
+      {
+        "case_id": "quality_window",
+        "query": "产品有故障最晚多久反馈",
+        "relevant": [
+          "POLICY-DAMAGE-30D"
+        ],
+        "retrieved": [
+          "POLICY-EXCHANGE-DEVICE",
+          "POLICY-DIGITAL",
+          "POLICY-DAMAGE-WARRANTY"
+        ]
+      },
+      {
+        "case_id": "expensive_digital",
+        "query": "一千多元的耳机由谁审核",
+        "relevant": [
+          "POLICY-DIGITAL"
+        ],
+        "retrieved": [
+          "POLICY-DIGITAL",
+          "POLICY-REFUND-TIMELINE",
+          "POLICY-PAYMENT-DUPLICATE"
+        ]
+      },
+      {
+        "case_id": "shoes_condition",
+        "query": "鞋子试穿以后退货有什么要求",
+        "relevant": [
+          "POLICY-SPORTSWEAR"
+        ],
+        "retrieved": [
+          "POLICY-SPORTSWEAR",
+          "POLICY-EXCHANGE-SIZE",
+          "POLICY-DAMAGE-EVIDENCE"
+        ]
+      },
+      {
+        "case_id": "food_no_reason",
+        "query": "蛋白粉不喜欢能不能无理由退",
+        "relevant": [
+          "POLICY-FOOD"
+        ],
+        "retrieved": [
+          "POLICY-RETURN-7D",
+          "POLICY-RETURN-EXCLUDED",
+          "POLICY-RETURN-FREIGHT"
+        ]
+      },
+      {
+        "case_id": "spoiled_food",
+        "query": "食品变质了怎么处理",
+        "relevant": [
+          "POLICY-FOOD"
+        ],
+        "retrieved": [
+          "POLICY-FOOD",
+          "POLICY-DAMAGE-30D",
+          "POLICY-EXCHANGE-TIMELINE"
+        ]
+      },
+      {
+        "case_id": "return_condition",
+        "query": "退货时包装配件和吊牌要保持什么状态",
+        "relevant": [
+          "POLICY-RETURN-CONDITION"
+        ],
+        "retrieved": [
+          "POLICY-RETURN-CONDITION",
+          "POLICY-SPORTSWEAR",
+          "POLICY-EXCHANGE-SIZE"
+        ]
+      },
+      {
+        "case_id": "return_freight",
+        "query": "无理由退货的运费由谁承担",
+        "relevant": [
+          "POLICY-RETURN-FREIGHT"
+        ],
+        "retrieved": [
+          "POLICY-RETURN-FREIGHT",
+          "POLICY-RETURN-EXCLUDED",
+          "POLICY-RETURN-7D"
+        ]
+      },
+      {
+        "case_id": "return_excluded",
+        "query": "定制和鲜活商品支持七天退货吗",
+        "relevant": [
+          "POLICY-RETURN-EXCLUDED"
+        ],
+        "retrieved": [
+          "POLICY-RETURN-EXCLUDED",
+          "POLICY-RETURN-7D",
+          "POLICY-RETURN-CONDITION"
+        ]
+      },
+      {
+        "case_id": "refund_timeline",
+        "query": "退款审核通过后银行卡几天到账",
+        "relevant": [
+          "POLICY-REFUND-TIMELINE"
+        ],
+        "retrieved": [
+          "POLICY-REFUND-TIMELINE",
+          "POLICY-INVOICE-ELECTRONIC",
+          "POLICY-DAMAGE-30D"
+        ]
+      },
+      {
+        "case_id": "refund_original",
+        "query": "原支付账户注销后退款退到哪里",
+        "relevant": [
+          "POLICY-REFUND-ORIGINAL"
+        ],
+        "retrieved": [
+          "POLICY-REFUND-ORIGINAL",
+          "POLICY-REFUND-TIMELINE",
+          "POLICY-PAYMENT-DUPLICATE"
+        ]
+      },
+      {
+        "case_id": "refund_coupon",
+        "query": "部分退款时优惠券会折成现金吗",
+        "relevant": [
+          "POLICY-REFUND-COUPON"
+        ],
+        "retrieved": [
+          "POLICY-REFUND-COUPON",
+          "POLICY-INVOICE-REFUND",
+          "POLICY-PRICE-EXCLUDED"
+        ]
+      },
+      {
+        "case_id": "refund_rejected",
+        "query": "退款被驳回如何补充凭证复核",
+        "relevant": [
+          "POLICY-REFUND-REJECTED"
+        ],
+        "retrieved": [
+          "POLICY-REFUND-REJECTED",
+          "POLICY-DAMAGE-EVIDENCE",
+          "POLICY-PAYMENT-DUPLICATE"
+        ]
+      },
+      {
+        "case_id": "tracking",
+        "query": "在哪里看承运商和运单轨迹",
+        "relevant": [
+          "POLICY-LOGISTICS-TRACKING"
+        ],
+        "retrieved": [
+          "POLICY-LOGISTICS-TRACKING",
+          "POLICY-LOGISTICS-DELAY",
+          "POLICY-ADDRESS-AFTER-SHIP"
+        ]
+      },
+      {
+        "case_id": "logistics_delay",
+        "query": "快递不动两天了怎么催查",
+        "relevant": [
+          "POLICY-LOGISTICS-DELAY"
+        ],
+        "retrieved": [
+          "POLICY-LOGISTICS-DELAY",
+          "POLICY-DAMAGE-EVIDENCE",
+          "POLICY-SPORTSWEAR"
+        ]
+      },
+      {
+        "case_id": "signed_missing",
+        "query": "显示签收但没有收到包裹怎么办",
+        "relevant": [
+          "POLICY-LOGISTICS-SIGNED-MISSING"
+        ],
+        "retrieved": [
+          "POLICY-LOGISTICS-SIGNED-MISSING",
+          "POLICY-LOGISTICS-LOST",
+          "POLICY-MISSING-EVIDENCE"
+        ]
+      },
+      {
+        "case_id": "parcel_lost",
+        "query": "承运商确认包裹丢失后能补发吗",
+        "relevant": [
+          "POLICY-LOGISTICS-LOST"
+        ],
+        "retrieved": [
+          "POLICY-LOGISTICS-LOST",
+          "POLICY-ADDRESS-AFTER-SHIP",
+          "POLICY-LOGISTICS-TRACKING"
+        ]
+      },
+      {
+        "case_id": "damage_photos",
+        "query": "破损举证具体要拍哪些照片",
+        "relevant": [
+          "POLICY-DAMAGE-EVIDENCE"
+        ],
+        "retrieved": [
+          "POLICY-DAMAGE-EVIDENCE",
+          "POLICY-DAMAGE-30D",
+          "POLICY-FOOD"
+        ]
+      },
+      {
+        "case_id": "safety_escalation",
+        "query": "充电器起火触电应该如何紧急处理",
+        "relevant": [
+          "POLICY-DAMAGE-SAFETY"
+        ],
+        "retrieved": [
+          "POLICY-DAMAGE-SAFETY",
+          "POLICY-PAYMENT-DUPLICATE",
+          "POLICY-DIGITAL"
+        ]
+      },
+      {
+        "case_id": "warranty_fault",
+        "query": "数码产品过了退货期但在保修期故障",
+        "relevant": [
+          "POLICY-DAMAGE-WARRANTY"
+        ],
+        "retrieved": [
+          "POLICY-DAMAGE-WARRANTY",
+          "POLICY-EXCHANGE-DEVICE",
+          "POLICY-DIGITAL"
+        ]
+      },
+      {
+        "case_id": "exchange_stock",
+        "query": "换货规格没有库存可以怎么选择",
+        "relevant": [
+          "POLICY-EXCHANGE-STOCK"
+        ],
+        "retrieved": [
+          "POLICY-EXCHANGE-STOCK",
+          "POLICY-EXCHANGE-DEVICE",
+          "POLICY-LOGISTICS-LOST"
+        ]
+      },
+      {
+        "case_id": "exchange_timeline",
+        "query": "换货商品验收后多久发出",
+        "relevant": [
+          "POLICY-EXCHANGE-TIMELINE"
+        ],
+        "retrieved": [
+          "POLICY-EXCHANGE-TIMELINE",
+          "POLICY-RETURN-CONDITION",
+          "POLICY-DAMAGE-30D"
+        ]
+      },
+      {
+        "case_id": "shoe_exchange",
+        "query": "鞋码换货对鞋底和吊牌有什么要求",
+        "relevant": [
+          "POLICY-EXCHANGE-SIZE"
+        ],
+        "retrieved": [
+          "POLICY-EXCHANGE-SIZE",
+          "POLICY-SPORTSWEAR",
+          "POLICY-EXCHANGE-STOCK"
+        ]
+      },
+      {
+        "case_id": "duplicate_payment",
+        "query": "同一订单被重复扣款如何退款",
+        "relevant": [
+          "POLICY-PAYMENT-DUPLICATE"
+        ],
+        "retrieved": [
+          "POLICY-PAYMENT-DUPLICATE",
+          "POLICY-REFUND-REJECTED",
+          "POLICY-REFUND-TIMELINE"
+        ]
+      },
+      {
+        "case_id": "payment_failed",
+        "query": "付款失败但有预授权怎么办",
+        "relevant": [
+          "POLICY-PAYMENT-FAILED"
+        ],
+        "retrieved": [
+          "POLICY-PAYMENT-FAILED",
+          "POLICY-LOGISTICS-LOST",
+          "POLICY-REFUND-COUPON"
+        ]
+      },
+      {
+        "case_id": "payment_fraud",
+        "query": "怀疑账户被盗刷需要冻结什么",
+        "relevant": [
+          "POLICY-PAYMENT-FRAUD"
+        ],
+        "retrieved": [
+          "POLICY-PAYMENT-FRAUD",
+          "POLICY-REFUND-ORIGINAL",
+          "POLICY-DIGITAL"
+        ]
+      },
+      {
+        "case_id": "electronic_invoice",
+        "query": "电子发票会发送到哪里",
+        "relevant": [
+          "POLICY-INVOICE-ELECTRONIC"
+        ],
+        "retrieved": [
+          "POLICY-INVOICE-ELECTRONIC",
+          "POLICY-INVOICE-TITLE",
+          "POLICY-INVOICE-REFUND"
+        ]
+      },
+      {
+        "case_id": "invoice_title",
+        "query": "已开具发票怎样修改抬头税号",
+        "relevant": [
+          "POLICY-INVOICE-TITLE"
+        ],
+        "retrieved": [
+          "POLICY-INVOICE-TITLE",
+          "POLICY-INVOICE-ELECTRONIC",
+          "POLICY-ADDRESS-BEFORE-SHIP"
+        ]
+      },
+      {
+        "case_id": "missing_evidence",
+        "query": "包裹少件需要提供开箱和面单吗",
+        "relevant": [
+          "POLICY-MISSING-EVIDENCE"
+        ],
+        "retrieved": [
+          "POLICY-MISSING-EVIDENCE",
+          "POLICY-DAMAGE-EVIDENCE",
+          "POLICY-MISSING-RESOLUTION"
+        ]
+      },
+      {
+        "case_id": "missing_resolution",
+        "query": "核实漏发后是补发还是退款",
+        "relevant": [
+          "POLICY-MISSING-RESOLUTION"
+        ],
+        "retrieved": [
+          "POLICY-MISSING-RESOLUTION",
+          "POLICY-MISSING-EVIDENCE",
+          "POLICY-LOGISTICS-LOST"
+        ]
+      },
+      {
+        "case_id": "address_before_ship",
+        "query": "还没出库可以修改收货地址吗",
+        "relevant": [
+          "POLICY-ADDRESS-BEFORE-SHIP"
+        ],
+        "retrieved": [
+          "POLICY-ADDRESS-BEFORE-SHIP",
+          "POLICY-ADDRESS-AFTER-SHIP",
+          "POLICY-INVOICE-TITLE"
+        ]
+      },
+      {
+        "case_id": "address_after_ship",
+        "query": "发货后让快递转寄会产生费用吗",
+        "relevant": [
+          "POLICY-ADDRESS-AFTER-SHIP"
+        ],
+        "retrieved": [
+          "POLICY-ADDRESS-AFTER-SHIP",
+          "POLICY-DAMAGE-EVIDENCE",
+          "POLICY-EXCHANGE-SIZE"
+        ]
+      },
+      {
+        "case_id": "price_window",
+        "query": "带价保标识的商品降价几天内能申请",
+        "relevant": [
+          "POLICY-PRICE-WINDOW"
+        ],
+        "retrieved": [
+          "POLICY-PRICE-WINDOW",
+          "POLICY-RETURN-CONDITION",
+          "POLICY-RETURN-7D"
+        ]
+      }
+    ]
+  },
+  "hashing_vector": {
+    "queries": 35,
+    "recall@3": 0.9429,
+    "mrr": 0.9143,
+    "ndcg@3": 0.9218,
+    "predictions": [
+      {
+        "case_id": "return_window",
+        "query": "收到商品几天之内可以退货",
+        "relevant": [
+          "POLICY-RETURN-7D"
+        ],
+        "retrieved": [
+          "POLICY-RETURN-7D",
+          "POLICY-RETURN-EXCLUDED",
+          "POLICY-SPORTSWEAR"
+        ]
+      },
+      {
+        "case_id": "refund_confirmation",
+        "query": "退款申请是否需要本人确认",
+        "relevant": [
+          "POLICY-RETURN-7D"
+        ],
+        "retrieved": [
+          "POLICY-RETURN-7D",
+          "POLICY-REFUND-REJECTED",
+          "POLICY-REFUND-COUPON"
+        ]
+      },
+      {
+        "case_id": "damaged_evidence",
+        "query": "东西坏了需要提供什么证明",
+        "relevant": [
+          "POLICY-DAMAGE-30D"
+        ],
+        "retrieved": [
+          "POLICY-DAMAGE-30D",
+          "POLICY-DAMAGE-WARRANTY",
+          "POLICY-DIGITAL"
+        ]
+      },
+      {
+        "case_id": "quality_window",
+        "query": "产品有故障最晚多久反馈",
+        "relevant": [
+          "POLICY-DAMAGE-30D"
+        ],
+        "retrieved": [
+          "POLICY-DAMAGE-30D",
+          "POLICY-DIGITAL",
+          "POLICY-FOOD"
+        ]
+      },
+      {
+        "case_id": "expensive_digital",
+        "query": "一千多元的耳机由谁审核",
+        "relevant": [
+          "POLICY-DIGITAL"
+        ],
+        "retrieved": [
+          "POLICY-DIGITAL",
+          "POLICY-REFUND-REJECTED",
+          "POLICY-PAYMENT-DUPLICATE"
+        ]
+      },
+      {
+        "case_id": "shoes_condition",
+        "query": "鞋子试穿以后退货有什么要求",
+        "relevant": [
+          "POLICY-SPORTSWEAR"
+        ],
+        "retrieved": [
+          "POLICY-SPORTSWEAR",
+          "POLICY-RETURN-7D",
+          "POLICY-RETURN-EXCLUDED"
+        ]
+      },
+      {
+        "case_id": "food_no_reason",
+        "query": "蛋白粉不喜欢能不能无理由退",
+        "relevant": [
+          "POLICY-FOOD"
+        ],
+        "retrieved": [
+          "POLICY-RETURN-EXCLUDED",
+          "POLICY-RETURN-7D",
+          "POLICY-DAMAGE-SAFETY"
+        ]
+      },
+      {
+        "case_id": "spoiled_food",
+        "query": "食品变质了怎么处理",
+        "relevant": [
+          "POLICY-FOOD"
+        ],
+        "retrieved": [
+          "POLICY-FOOD",
+          "POLICY-EXCHANGE-TIMELINE",
+          "POLICY-PAYMENT-DUPLICATE"
+        ]
+      },
+      {
+        "case_id": "return_condition",
+        "query": "退货时包装配件和吊牌要保持什么状态",
+        "relevant": [
+          "POLICY-RETURN-CONDITION"
+        ],
+        "retrieved": [
+          "POLICY-SPORTSWEAR",
+          "POLICY-EXCHANGE-SIZE",
+          "POLICY-PRICE-EXCLUDED"
+        ]
+      },
+      {
+        "case_id": "return_freight",
+        "query": "无理由退货的运费由谁承担",
+        "relevant": [
+          "POLICY-RETURN-FREIGHT"
+        ],
+        "retrieved": [
+          "POLICY-RETURN-FREIGHT",
+          "POLICY-RETURN-EXCLUDED",
+          "POLICY-RETURN-7D"
+        ]
+      },
+      {
+        "case_id": "return_excluded",
+        "query": "定制和鲜活商品支持七天退货吗",
+        "relevant": [
+          "POLICY-RETURN-EXCLUDED"
+        ],
+        "retrieved": [
+          "POLICY-RETURN-EXCLUDED",
+          "POLICY-RETURN-CONDITION",
+          "POLICY-RETURN-7D"
+        ]
+      },
+      {
+        "case_id": "refund_timeline",
+        "query": "退款审核通过后银行卡几天到账",
+        "relevant": [
+          "POLICY-REFUND-TIMELINE"
+        ],
+        "retrieved": [
+          "POLICY-REFUND-TIMELINE",
+          "POLICY-REFUND-REJECTED",
+          "POLICY-PRICE-REFUND"
+        ]
+      },
+      {
+        "case_id": "refund_original",
+        "query": "原支付账户注销后退款退到哪里",
+        "relevant": [
+          "POLICY-REFUND-ORIGINAL"
+        ],
+        "retrieved": [
+          "POLICY-REFUND-ORIGINAL",
+          "POLICY-REFUND-TIMELINE",
+          "POLICY-INVOICE-REFUND"
+        ]
+      },
+      {
+        "case_id": "refund_coupon",
+        "query": "部分退款时优惠券会折成现金吗",
+        "relevant": [
+          "POLICY-REFUND-COUPON"
+        ],
+        "retrieved": [
+          "POLICY-REFUND-COUPON",
+          "POLICY-INVOICE-REFUND",
+          "POLICY-REFUND-ORIGINAL"
+        ]
+      },
+      {
+        "case_id": "refund_rejected",
+        "query": "退款被驳回如何补充凭证复核",
+        "relevant": [
+          "POLICY-REFUND-REJECTED"
+        ],
+        "retrieved": [
+          "POLICY-REFUND-REJECTED",
+          "POLICY-PAYMENT-DUPLICATE",
+          "POLICY-REFUND-ORIGINAL"
+        ]
+      },
+      {
+        "case_id": "tracking",
+        "query": "在哪里看承运商和运单轨迹",
+        "relevant": [
+          "POLICY-LOGISTICS-TRACKING"
+        ],
+        "retrieved": [
+          "POLICY-LOGISTICS-TRACKING",
+          "POLICY-RETURN-FREIGHT",
+          "POLICY-LOGISTICS-DELAY"
+        ]
+      },
+      {
+        "case_id": "logistics_delay",
+        "query": "快递不动两天了怎么催查",
+        "relevant": [
+          "POLICY-LOGISTICS-DELAY"
+        ],
+        "retrieved": [
+          "POLICY-DAMAGE-EVIDENCE",
+          "POLICY-LOGISTICS-DELAY",
+          "POLICY-PRICE-EXCLUDED"
+        ]
+      },
+      {
+        "case_id": "signed_missing",
+        "query": "显示签收但没有收到包裹怎么办",
+        "relevant": [
+          "POLICY-LOGISTICS-SIGNED-MISSING"
+        ],
+        "retrieved": [
+          "POLICY-LOGISTICS-SIGNED-MISSING",
+          "POLICY-DAMAGE-EVIDENCE",
+          "POLICY-LOGISTICS-LOST"
+        ]
+      },
+      {
+        "case_id": "parcel_lost",
+        "query": "承运商确认包裹丢失后能补发吗",
+        "relevant": [
+          "POLICY-LOGISTICS-LOST"
+        ],
+        "retrieved": [
+          "POLICY-LOGISTICS-LOST",
+          "POLICY-FOOD",
+          "POLICY-EXCHANGE-TIMELINE"
+        ]
+      },
+      {
+        "case_id": "damage_photos",
+        "query": "破损举证具体要拍哪些照片",
+        "relevant": [
+          "POLICY-DAMAGE-EVIDENCE"
+        ],
+        "retrieved": [
+          "POLICY-DAMAGE-EVIDENCE",
+          "POLICY-DAMAGE-30D",
+          "POLICY-INVOICE-TITLE"
+        ]
+      },
+      {
+        "case_id": "safety_escalation",
+        "query": "充电器起火触电应该如何紧急处理",
+        "relevant": [
+          "POLICY-DAMAGE-SAFETY"
+        ],
+        "retrieved": [
+          "POLICY-LOGISTICS-LOST",
+          "POLICY-DAMAGE-SAFETY",
+          "POLICY-INVOICE-ELECTRONIC"
+        ]
+      },
+      {
+        "case_id": "warranty_fault",
+        "query": "数码产品过了退货期但在保修期故障",
+        "relevant": [
+          "POLICY-DAMAGE-WARRANTY"
+        ],
+        "retrieved": [
+          "POLICY-DAMAGE-WARRANTY",
+          "POLICY-EXCHANGE-DEVICE",
+          "POLICY-DIGITAL"
+        ]
+      },
+      {
+        "case_id": "exchange_stock",
+        "query": "换货规格没有库存可以怎么选择",
+        "relevant": [
+          "POLICY-EXCHANGE-STOCK"
+        ],
+        "retrieved": [
+          "POLICY-EXCHANGE-STOCK",
+          "POLICY-EXCHANGE-SIZE",
+          "POLICY-EXCHANGE-DEVICE"
+        ]
+      },
+      {
+        "case_id": "exchange_timeline",
+        "query": "换货商品验收后多久发出",
+        "relevant": [
+          "POLICY-EXCHANGE-TIMELINE"
+        ],
+        "retrieved": [
+          "POLICY-EXCHANGE-TIMELINE",
+          "POLICY-EXCHANGE-STOCK",
+          "POLICY-RETURN-CONDITION"
+        ]
+      },
+      {
+        "case_id": "shoe_exchange",
+        "query": "鞋码换货对鞋底和吊牌有什么要求",
+        "relevant": [
+          "POLICY-EXCHANGE-SIZE"
+        ],
+        "retrieved": [
+          "POLICY-EXCHANGE-SIZE",
+          "POLICY-SPORTSWEAR",
+          "POLICY-EXCHANGE-STOCK"
+        ]
+      },
+      {
+        "case_id": "duplicate_payment",
+        "query": "同一订单被重复扣款如何退款",
+        "relevant": [
+          "POLICY-PAYMENT-DUPLICATE"
+        ],
+        "retrieved": [
+          "POLICY-PAYMENT-DUPLICATE",
+          "POLICY-REFUND-COUPON",
+          "POLICY-INVOICE-REFUND"
+        ]
+      },
+      {
+        "case_id": "payment_failed",
+        "query": "付款失败但有预授权怎么办",
+        "relevant": [
+          "POLICY-PAYMENT-FAILED"
+        ],
+        "retrieved": [
+          "POLICY-PAYMENT-FAILED",
+          "POLICY-ADDRESS-AFTER-SHIP",
+          "POLICY-INVOICE-TITLE"
+        ]
+      },
+      {
+        "case_id": "payment_fraud",
+        "query": "怀疑账户被盗刷需要冻结什么",
+        "relevant": [
+          "POLICY-PAYMENT-FRAUD"
+        ],
+        "retrieved": [
+          "POLICY-PAYMENT-FRAUD",
+          "POLICY-REFUND-ORIGINAL",
+          "POLICY-REFUND-TIMELINE"
+        ]
+      },
+      {
+        "case_id": "electronic_invoice",
+        "query": "电子发票会发送到哪里",
+        "relevant": [
+          "POLICY-INVOICE-ELECTRONIC"
+        ],
+        "retrieved": [
+          "POLICY-INVOICE-ELECTRONIC",
+          "POLICY-INVOICE-TITLE",
+          "POLICY-INVOICE-REFUND"
+        ]
+      },
+      {
+        "case_id": "invoice_title",
+        "query": "已开具发票怎样修改抬头税号",
+        "relevant": [
+          "POLICY-INVOICE-TITLE"
+        ],
+        "retrieved": [
+          "POLICY-INVOICE-TITLE",
+          "POLICY-INVOICE-ELECTRONIC",
+          "POLICY-ADDRESS-BEFORE-SHIP"
+        ]
+      },
+      {
+        "case_id": "missing_evidence",
+        "query": "包裹少件需要提供开箱和面单吗",
+        "relevant": [
+          "POLICY-MISSING-EVIDENCE"
+        ],
+        "retrieved": [
+          "POLICY-MISSING-EVIDENCE",
+          "POLICY-MISSING-RESOLUTION",
+          "POLICY-DIGITAL"
+        ]
+      },
+      {
+        "case_id": "missing_resolution",
+        "query": "核实漏发后是补发还是退款",
+        "relevant": [
+          "POLICY-MISSING-RESOLUTION"
+        ],
+        "retrieved": [
+          "POLICY-MISSING-RESOLUTION",
+          "POLICY-INVOICE-REFUND",
+          "POLICY-REFUND-TIMELINE"
+        ]
+      },
+      {
+        "case_id": "address_before_ship",
+        "query": "还没出库可以修改收货地址吗",
+        "relevant": [
+          "POLICY-ADDRESS-BEFORE-SHIP"
+        ],
+        "retrieved": [
+          "POLICY-ADDRESS-BEFORE-SHIP",
+          "POLICY-ADDRESS-AFTER-SHIP",
+          "POLICY-PRICE-REFUND"
+        ]
+      },
+      {
+        "case_id": "address_after_ship",
+        "query": "发货后让快递转寄会产生费用吗",
+        "relevant": [
+          "POLICY-ADDRESS-AFTER-SHIP"
+        ],
+        "retrieved": [
+          "POLICY-ADDRESS-AFTER-SHIP",
+          "POLICY-EXCHANGE-STOCK",
+          "POLICY-EXCHANGE-SIZE"
+        ]
+      },
+      {
+        "case_id": "price_window",
+        "query": "带价保标识的商品降价几天内能申请",
+        "relevant": [
+          "POLICY-PRICE-WINDOW"
+        ],
+        "retrieved": [
+          "POLICY-PRICE-WINDOW",
+          "POLICY-PRICE-REFUND",
+          "POLICY-PRICE-EXCLUDED"
+        ]
+      }
+    ]
+  },
+  "hybrid_rrf": {
+    "queries": 35,
+    "recall@3": 0.9714,
+    "mrr": 0.919,
+    "ndcg@3": 0.9323,
+    "predictions": [
+      {
+        "case_id": "return_window",
+        "query": "收到商品几天之内可以退货",
+        "relevant": [
+          "POLICY-RETURN-7D"
+        ],
+        "retrieved": [
+          "POLICY-RETURN-7D",
+          "POLICY-RETURN-EXCLUDED",
+          "POLICY-FOOD"
+        ]
+      },
+      {
+        "case_id": "refund_confirmation",
+        "query": "退款申请是否需要本人确认",
+        "relevant": [
+          "POLICY-RETURN-7D"
+        ],
+        "retrieved": [
+          "POLICY-RETURN-7D",
+          "POLICY-REFUND-REJECTED",
+          "POLICY-INVOICE-REFUND"
+        ]
+      },
+      {
+        "case_id": "damaged_evidence",
+        "query": "东西坏了需要提供什么证明",
+        "relevant": [
+          "POLICY-DAMAGE-30D"
+        ],
+        "retrieved": [
+          "POLICY-DIGITAL",
+          "POLICY-DAMAGE-30D",
+          "POLICY-MISSING-EVIDENCE"
+        ]
+      },
+      {
+        "case_id": "quality_window",
+        "query": "产品有故障最晚多久反馈",
+        "relevant": [
+          "POLICY-DAMAGE-30D"
+        ],
+        "retrieved": [
+          "POLICY-DIGITAL",
+          "POLICY-EXCHANGE-DEVICE",
+          "POLICY-DAMAGE-30D"
+        ]
+      },
+      {
+        "case_id": "expensive_digital",
+        "query": "一千多元的耳机由谁审核",
+        "relevant": [
+          "POLICY-DIGITAL"
+        ],
+        "retrieved": [
+          "POLICY-DIGITAL",
+          "POLICY-REFUND-TIMELINE",
+          "POLICY-PAYMENT-DUPLICATE"
+        ]
+      },
+      {
+        "case_id": "shoes_condition",
+        "query": "鞋子试穿以后退货有什么要求",
+        "relevant": [
+          "POLICY-SPORTSWEAR"
+        ],
+        "retrieved": [
+          "POLICY-SPORTSWEAR",
+          "POLICY-RETURN-7D",
+          "POLICY-RETURN-EXCLUDED"
+        ]
+      },
+      {
+        "case_id": "food_no_reason",
+        "query": "蛋白粉不喜欢能不能无理由退",
+        "relevant": [
+          "POLICY-FOOD"
+        ],
+        "retrieved": [
+          "POLICY-RETURN-7D",
+          "POLICY-RETURN-EXCLUDED",
+          "POLICY-RETURN-FREIGHT"
+        ]
+      },
+      {
+        "case_id": "spoiled_food",
+        "query": "食品变质了怎么处理",
+        "relevant": [
+          "POLICY-FOOD"
+        ],
+        "retrieved": [
+          "POLICY-FOOD",
+          "POLICY-EXCHANGE-TIMELINE",
+          "POLICY-DAMAGE-30D"
+        ]
+      },
+      {
+        "case_id": "return_condition",
+        "query": "退货时包装配件和吊牌要保持什么状态",
+        "relevant": [
+          "POLICY-RETURN-CONDITION"
+        ],
+        "retrieved": [
+          "POLICY-SPORTSWEAR",
+          "POLICY-EXCHANGE-SIZE",
+          "POLICY-RETURN-CONDITION"
+        ]
+      },
+      {
+        "case_id": "return_freight",
+        "query": "无理由退货的运费由谁承担",
+        "relevant": [
+          "POLICY-RETURN-FREIGHT"
+        ],
+        "retrieved": [
+          "POLICY-RETURN-FREIGHT",
+          "POLICY-RETURN-EXCLUDED",
+          "POLICY-RETURN-7D"
+        ]
+      },
+      {
+        "case_id": "return_excluded",
+        "query": "定制和鲜活商品支持七天退货吗",
+        "relevant": [
+          "POLICY-RETURN-EXCLUDED"
+        ],
+        "retrieved": [
+          "POLICY-RETURN-EXCLUDED",
+          "POLICY-RETURN-7D",
+          "POLICY-RETURN-CONDITION"
+        ]
+      },
+      {
+        "case_id": "refund_timeline",
+        "query": "退款审核通过后银行卡几天到账",
+        "relevant": [
+          "POLICY-REFUND-TIMELINE"
+        ],
+        "retrieved": [
+          "POLICY-REFUND-TIMELINE",
+          "POLICY-PRICE-REFUND",
+          "POLICY-REFUND-REJECTED"
+        ]
+      },
+      {
+        "case_id": "refund_original",
+        "query": "原支付账户注销后退款退到哪里",
+        "relevant": [
+          "POLICY-REFUND-ORIGINAL"
+        ],
+        "retrieved": [
+          "POLICY-REFUND-ORIGINAL",
+          "POLICY-REFUND-TIMELINE",
+          "POLICY-PAYMENT-DUPLICATE"
+        ]
+      },
+      {
+        "case_id": "refund_coupon",
+        "query": "部分退款时优惠券会折成现金吗",
+        "relevant": [
+          "POLICY-REFUND-COUPON"
+        ],
+        "retrieved": [
+          "POLICY-REFUND-COUPON",
+          "POLICY-INVOICE-REFUND",
+          "POLICY-PRICE-EXCLUDED"
+        ]
+      },
+      {
+        "case_id": "refund_rejected",
+        "query": "退款被驳回如何补充凭证复核",
+        "relevant": [
+          "POLICY-REFUND-REJECTED"
+        ],
+        "retrieved": [
+          "POLICY-REFUND-REJECTED",
+          "POLICY-PAYMENT-DUPLICATE",
+          "POLICY-REFUND-ORIGINAL"
+        ]
+      },
+      {
+        "case_id": "tracking",
+        "query": "在哪里看承运商和运单轨迹",
+        "relevant": [
+          "POLICY-LOGISTICS-TRACKING"
+        ],
+        "retrieved": [
+          "POLICY-LOGISTICS-TRACKING",
+          "POLICY-LOGISTICS-DELAY",
+          "POLICY-RETURN-FREIGHT"
+        ]
+      },
+      {
+        "case_id": "logistics_delay",
+        "query": "快递不动两天了怎么催查",
+        "relevant": [
+          "POLICY-LOGISTICS-DELAY"
+        ],
+        "retrieved": [
+          "POLICY-LOGISTICS-DELAY",
+          "POLICY-DAMAGE-EVIDENCE",
+          "POLICY-SPORTSWEAR"
+        ]
+      },
+      {
+        "case_id": "signed_missing",
+        "query": "显示签收但没有收到包裹怎么办",
+        "relevant": [
+          "POLICY-LOGISTICS-SIGNED-MISSING"
+        ],
+        "retrieved": [
+          "POLICY-LOGISTICS-SIGNED-MISSING",
+          "POLICY-LOGISTICS-LOST",
+          "POLICY-DAMAGE-30D"
+        ]
+      },
+      {
+        "case_id": "parcel_lost",
+        "query": "承运商确认包裹丢失后能补发吗",
+        "relevant": [
+          "POLICY-LOGISTICS-LOST"
+        ],
+        "retrieved": [
+          "POLICY-LOGISTICS-LOST",
+          "POLICY-ADDRESS-AFTER-SHIP",
+          "POLICY-MISSING-RESOLUTION"
+        ]
+      },
+      {
+        "case_id": "damage_photos",
+        "query": "破损举证具体要拍哪些照片",
+        "relevant": [
+          "POLICY-DAMAGE-EVIDENCE"
+        ],
+        "retrieved": [
+          "POLICY-DAMAGE-EVIDENCE",
+          "POLICY-DAMAGE-30D",
+          "POLICY-INVOICE-TITLE"
+        ]
+      },
+      {
+        "case_id": "safety_escalation",
+        "query": "充电器起火触电应该如何紧急处理",
+        "relevant": [
+          "POLICY-DAMAGE-SAFETY"
+        ],
+        "retrieved": [
+          "POLICY-DAMAGE-SAFETY",
+          "POLICY-LOGISTICS-LOST",
+          "POLICY-INVOICE-ELECTRONIC"
+        ]
+      },
+      {
+        "case_id": "warranty_fault",
+        "query": "数码产品过了退货期但在保修期故障",
+        "relevant": [
+          "POLICY-DAMAGE-WARRANTY"
+        ],
+        "retrieved": [
+          "POLICY-DAMAGE-WARRANTY",
+          "POLICY-EXCHANGE-DEVICE",
+          "POLICY-DIGITAL"
+        ]
+      },
+      {
+        "case_id": "exchange_stock",
+        "query": "换货规格没有库存可以怎么选择",
+        "relevant": [
+          "POLICY-EXCHANGE-STOCK"
+        ],
+        "retrieved": [
+          "POLICY-EXCHANGE-STOCK",
+          "POLICY-EXCHANGE-DEVICE",
+          "POLICY-EXCHANGE-SIZE"
+        ]
+      },
+      {
+        "case_id": "exchange_timeline",
+        "query": "换货商品验收后多久发出",
+        "relevant": [
+          "POLICY-EXCHANGE-TIMELINE"
+        ],
+        "retrieved": [
+          "POLICY-EXCHANGE-TIMELINE",
+          "POLICY-RETURN-CONDITION",
+          "POLICY-EXCHANGE-STOCK"
+        ]
+      },
+      {
+        "case_id": "shoe_exchange",
+        "query": "鞋码换货对鞋底和吊牌有什么要求",
+        "relevant": [
+          "POLICY-EXCHANGE-SIZE"
+        ],
+        "retrieved": [
+          "POLICY-EXCHANGE-SIZE",
+          "POLICY-SPORTSWEAR",
+          "POLICY-EXCHANGE-STOCK"
+        ]
+      },
+      {
+        "case_id": "duplicate_payment",
+        "query": "同一订单被重复扣款如何退款",
+        "relevant": [
+          "POLICY-PAYMENT-DUPLICATE"
+        ],
+        "retrieved": [
+          "POLICY-PAYMENT-DUPLICATE",
+          "POLICY-REFUND-REJECTED",
+          "POLICY-REFUND-TIMELINE"
+        ]
+      },
+      {
+        "case_id": "payment_failed",
+        "query": "付款失败但有预授权怎么办",
+        "relevant": [
+          "POLICY-PAYMENT-FAILED"
+        ],
+        "retrieved": [
+          "POLICY-PAYMENT-FAILED",
+          "POLICY-REFUND-COUPON",
+          "POLICY-LOGISTICS-LOST"
+        ]
+      },
+      {
+        "case_id": "payment_fraud",
+        "query": "怀疑账户被盗刷需要冻结什么",
+        "relevant": [
+          "POLICY-PAYMENT-FRAUD"
+        ],
+        "retrieved": [
+          "POLICY-PAYMENT-FRAUD",
+          "POLICY-REFUND-ORIGINAL",
+          "POLICY-INVOICE-ELECTRONIC"
+        ]
+      },
+      {
+        "case_id": "electronic_invoice",
+        "query": "电子发票会发送到哪里",
+        "relevant": [
+          "POLICY-INVOICE-ELECTRONIC"
+        ],
+        "retrieved": [
+          "POLICY-INVOICE-ELECTRONIC",
+          "POLICY-INVOICE-TITLE",
+          "POLICY-INVOICE-REFUND"
+        ]
+      },
+      {
+        "case_id": "invoice_title",
+        "query": "已开具发票怎样修改抬头税号",
+        "relevant": [
+          "POLICY-INVOICE-TITLE"
+        ],
+        "retrieved": [
+          "POLICY-INVOICE-TITLE",
+          "POLICY-INVOICE-ELECTRONIC",
+          "POLICY-ADDRESS-BEFORE-SHIP"
+        ]
+      },
+      {
+        "case_id": "missing_evidence",
+        "query": "包裹少件需要提供开箱和面单吗",
+        "relevant": [
+          "POLICY-MISSING-EVIDENCE"
+        ],
+        "retrieved": [
+          "POLICY-MISSING-EVIDENCE",
+          "POLICY-MISSING-RESOLUTION",
+          "POLICY-DIGITAL"
+        ]
+      },
+      {
+        "case_id": "missing_resolution",
+        "query": "核实漏发后是补发还是退款",
+        "relevant": [
+          "POLICY-MISSING-RESOLUTION"
+        ],
+        "retrieved": [
+          "POLICY-MISSING-RESOLUTION",
+          "POLICY-INVOICE-REFUND",
+          "POLICY-LOGISTICS-LOST"
+        ]
+      },
+      {
+        "case_id": "address_before_ship",
+        "query": "还没出库可以修改收货地址吗",
+        "relevant": [
+          "POLICY-ADDRESS-BEFORE-SHIP"
+        ],
+        "retrieved": [
+          "POLICY-ADDRESS-BEFORE-SHIP",
+          "POLICY-ADDRESS-AFTER-SHIP",
+          "POLICY-RETURN-7D"
+        ]
+      },
+      {
+        "case_id": "address_after_ship",
+        "query": "发货后让快递转寄会产生费用吗",
+        "relevant": [
+          "POLICY-ADDRESS-AFTER-SHIP"
+        ],
+        "retrieved": [
+          "POLICY-ADDRESS-AFTER-SHIP",
+          "POLICY-EXCHANGE-SIZE",
+          "POLICY-LOGISTICS-TRACKING"
+        ]
+      },
+      {
+        "case_id": "price_window",
+        "query": "带价保标识的商品降价几天内能申请",
+        "relevant": [
+          "POLICY-PRICE-WINDOW"
+        ],
+        "retrieved": [
+          "POLICY-PRICE-WINDOW",
+          "POLICY-PRICE-REFUND",
+          "POLICY-RETURN-CONDITION"
+        ]
+      }
+    ]
+  },
+  "hybrid_rewrite_rerank": {
+    "queries": 35,
+    "recall@3": 0.9714,
+    "mrr": 0.919,
+    "ndcg@3": 0.9323,
+    "predictions": [
+      {
+        "case_id": "return_window",
+        "query": "收到商品几天之内可以退货",
+        "relevant": [
+          "POLICY-RETURN-7D"
+        ],
+        "retrieved": [
+          "POLICY-RETURN-7D",
+          "POLICY-FOOD",
+          "POLICY-RETURN-EXCLUDED"
+        ]
+      },
+      {
+        "case_id": "refund_confirmation",
+        "query": "退款申请是否需要本人确认",
+        "relevant": [
+          "POLICY-RETURN-7D"
+        ],
+        "retrieved": [
+          "POLICY-RETURN-7D",
+          "POLICY-REFUND-REJECTED",
+          "POLICY-LOGISTICS-LOST"
+        ]
+      },
+      {
+        "case_id": "damaged_evidence",
+        "query": "东西坏了需要提供什么证明",
+        "relevant": [
+          "POLICY-DAMAGE-30D"
+        ],
+        "retrieved": [
+          "POLICY-DIGITAL",
+          "POLICY-DAMAGE-EVIDENCE",
+          "POLICY-DAMAGE-30D"
+        ]
+      },
+      {
+        "case_id": "quality_window",
+        "query": "产品有故障最晚多久反馈",
+        "relevant": [
+          "POLICY-DAMAGE-30D"
+        ],
+        "retrieved": [
+          "POLICY-DIGITAL",
+          "POLICY-EXCHANGE-DEVICE",
+          "POLICY-DAMAGE-30D"
+        ]
+      },
+      {
+        "case_id": "expensive_digital",
+        "query": "一千多元的耳机由谁审核",
+        "relevant": [
+          "POLICY-DIGITAL"
+        ],
+        "retrieved": [
+          "POLICY-DIGITAL",
+          "POLICY-REFUND-TIMELINE",
+          "POLICY-PAYMENT-DUPLICATE"
+        ]
+      },
+      {
+        "case_id": "shoes_condition",
+        "query": "鞋子试穿以后退货有什么要求",
+        "relevant": [
+          "POLICY-SPORTSWEAR"
+        ],
+        "retrieved": [
+          "POLICY-SPORTSWEAR",
+          "POLICY-RETURN-7D",
+          "POLICY-EXCHANGE-SIZE"
+        ]
+      },
+      {
+        "case_id": "food_no_reason",
+        "query": "蛋白粉不喜欢能不能无理由退",
+        "relevant": [
+          "POLICY-FOOD"
+        ],
+        "retrieved": [
+          "POLICY-RETURN-7D",
+          "POLICY-RETURN-EXCLUDED",
+          "POLICY-RETURN-FREIGHT"
+        ]
+      },
+      {
+        "case_id": "spoiled_food",
+        "query": "食品变质了怎么处理",
+        "relevant": [
+          "POLICY-FOOD"
+        ],
+        "retrieved": [
+          "POLICY-FOOD",
+          "POLICY-DAMAGE-30D",
+          "POLICY-EXCHANGE-TIMELINE"
+        ]
+      },
+      {
+        "case_id": "return_condition",
+        "query": "退货时包装配件和吊牌要保持什么状态",
+        "relevant": [
+          "POLICY-RETURN-CONDITION"
+        ],
+        "retrieved": [
+          "POLICY-SPORTSWEAR",
+          "POLICY-RETURN-CONDITION",
+          "POLICY-EXCHANGE-SIZE"
+        ]
+      },
+      {
+        "case_id": "return_freight",
+        "query": "无理由退货的运费由谁承担",
+        "relevant": [
+          "POLICY-RETURN-FREIGHT"
+        ],
+        "retrieved": [
+          "POLICY-RETURN-FREIGHT",
+          "POLICY-RETURN-EXCLUDED",
+          "POLICY-SPORTSWEAR"
+        ]
+      },
+      {
+        "case_id": "return_excluded",
+        "query": "定制和鲜活商品支持七天退货吗",
+        "relevant": [
+          "POLICY-RETURN-EXCLUDED"
+        ],
+        "retrieved": [
+          "POLICY-RETURN-EXCLUDED",
+          "POLICY-RETURN-7D",
+          "POLICY-RETURN-CONDITION"
+        ]
+      },
+      {
+        "case_id": "refund_timeline",
+        "query": "退款审核通过后银行卡几天到账",
+        "relevant": [
+          "POLICY-REFUND-TIMELINE"
+        ],
+        "retrieved": [
+          "POLICY-REFUND-TIMELINE",
+          "POLICY-DAMAGE-30D",
+          "POLICY-PRICE-REFUND"
+        ]
+      },
+      {
+        "case_id": "refund_original",
+        "query": "原支付账户注销后退款退到哪里",
+        "relevant": [
+          "POLICY-REFUND-ORIGINAL"
+        ],
+        "retrieved": [
+          "POLICY-REFUND-ORIGINAL",
+          "POLICY-REFUND-TIMELINE",
+          "POLICY-PAYMENT-DUPLICATE"
+        ]
+      },
+      {
+        "case_id": "refund_coupon",
+        "query": "部分退款时优惠券会折成现金吗",
+        "relevant": [
+          "POLICY-REFUND-COUPON"
+        ],
+        "retrieved": [
+          "POLICY-REFUND-COUPON",
+          "POLICY-INVOICE-REFUND",
+          "POLICY-PRICE-EXCLUDED"
+        ]
+      },
+      {
+        "case_id": "refund_rejected",
+        "query": "退款被驳回如何补充凭证复核",
+        "relevant": [
+          "POLICY-REFUND-REJECTED"
+        ],
+        "retrieved": [
+          "POLICY-REFUND-REJECTED",
+          "POLICY-PAYMENT-DUPLICATE",
+          "POLICY-REFUND-ORIGINAL"
+        ]
+      },
+      {
+        "case_id": "tracking",
+        "query": "在哪里看承运商和运单轨迹",
+        "relevant": [
+          "POLICY-LOGISTICS-TRACKING"
+        ],
+        "retrieved": [
+          "POLICY-LOGISTICS-TRACKING",
+          "POLICY-LOGISTICS-DELAY",
+          "POLICY-ADDRESS-AFTER-SHIP"
+        ]
+      },
+      {
+        "case_id": "logistics_delay",
+        "query": "快递不动两天了怎么催查",
+        "relevant": [
+          "POLICY-LOGISTICS-DELAY"
+        ],
+        "retrieved": [
+          "POLICY-LOGISTICS-DELAY",
+          "POLICY-PRICE-EXCLUDED",
+          "POLICY-DAMAGE-EVIDENCE"
+        ]
+      },
+      {
+        "case_id": "signed_missing",
+        "query": "显示签收但没有收到包裹怎么办",
+        "relevant": [
+          "POLICY-LOGISTICS-SIGNED-MISSING"
+        ],
+        "retrieved": [
+          "POLICY-LOGISTICS-SIGNED-MISSING",
+          "POLICY-LOGISTICS-LOST",
+          "POLICY-DAMAGE-30D"
+        ]
+      },
+      {
+        "case_id": "parcel_lost",
+        "query": "承运商确认包裹丢失后能补发吗",
+        "relevant": [
+          "POLICY-LOGISTICS-LOST"
+        ],
+        "retrieved": [
+          "POLICY-LOGISTICS-LOST",
+          "POLICY-ADDRESS-AFTER-SHIP",
+          "POLICY-LOGISTICS-TRACKING"
+        ]
+      },
+      {
+        "case_id": "damage_photos",
+        "query": "破损举证具体要拍哪些照片",
+        "relevant": [
+          "POLICY-DAMAGE-EVIDENCE"
+        ],
+        "retrieved": [
+          "POLICY-DAMAGE-EVIDENCE",
+          "POLICY-DAMAGE-30D",
+          "POLICY-FOOD"
+        ]
+      },
+      {
+        "case_id": "safety_escalation",
+        "query": "充电器起火触电应该如何紧急处理",
+        "relevant": [
+          "POLICY-DAMAGE-SAFETY"
+        ],
+        "retrieved": [
+          "POLICY-DAMAGE-SAFETY",
+          "POLICY-PAYMENT-DUPLICATE",
+          "POLICY-LOGISTICS-LOST"
+        ]
+      },
+      {
+        "case_id": "warranty_fault",
+        "query": "数码产品过了退货期但在保修期故障",
+        "relevant": [
+          "POLICY-DAMAGE-WARRANTY"
+        ],
+        "retrieved": [
+          "POLICY-DAMAGE-WARRANTY",
+          "POLICY-EXCHANGE-DEVICE",
+          "POLICY-DIGITAL"
+        ]
+      },
+      {
+        "case_id": "exchange_stock",
+        "query": "换货规格没有库存可以怎么选择",
+        "relevant": [
+          "POLICY-EXCHANGE-STOCK"
+        ],
+        "retrieved": [
+          "POLICY-EXCHANGE-STOCK",
+          "POLICY-DAMAGE-30D",
+          "POLICY-EXCHANGE-DEVICE"
+        ]
+      },
+      {
+        "case_id": "exchange_timeline",
+        "query": "换货商品验收后多久发出",
+        "relevant": [
+          "POLICY-EXCHANGE-TIMELINE"
+        ],
+        "retrieved": [
+          "POLICY-EXCHANGE-TIMELINE",
+          "POLICY-RETURN-CONDITION",
+          "POLICY-RETURN-7D"
+        ]
+      },
+      {
+        "case_id": "shoe_exchange",
+        "query": "鞋码换货对鞋底和吊牌有什么要求",
+        "relevant": [
+          "POLICY-EXCHANGE-SIZE"
+        ],
+        "retrieved": [
+          "POLICY-EXCHANGE-SIZE",
+          "POLICY-SPORTSWEAR",
+          "POLICY-EXCHANGE-STOCK"
+        ]
+      },
+      {
+        "case_id": "duplicate_payment",
+        "query": "同一订单被重复扣款如何退款",
+        "relevant": [
+          "POLICY-PAYMENT-DUPLICATE"
+        ],
+        "retrieved": [
+          "POLICY-PAYMENT-DUPLICATE",
+          "POLICY-REFUND-REJECTED",
+          "POLICY-REFUND-TIMELINE"
+        ]
+      },
+      {
+        "case_id": "payment_failed",
+        "query": "付款失败但有预授权怎么办",
+        "relevant": [
+          "POLICY-PAYMENT-FAILED"
+        ],
+        "retrieved": [
+          "POLICY-PAYMENT-FAILED",
+          "POLICY-REFUND-COUPON",
+          "POLICY-LOGISTICS-LOST"
+        ]
+      },
+      {
+        "case_id": "payment_fraud",
+        "query": "怀疑账户被盗刷需要冻结什么",
+        "relevant": [
+          "POLICY-PAYMENT-FRAUD"
+        ],
+        "retrieved": [
+          "POLICY-PAYMENT-FRAUD",
+          "POLICY-REFUND-ORIGINAL",
+          "POLICY-INVOICE-ELECTRONIC"
+        ]
+      },
+      {
+        "case_id": "electronic_invoice",
+        "query": "电子发票会发送到哪里",
+        "relevant": [
+          "POLICY-INVOICE-ELECTRONIC"
+        ],
+        "retrieved": [
+          "POLICY-INVOICE-ELECTRONIC",
+          "POLICY-INVOICE-TITLE",
+          "POLICY-INVOICE-REFUND"
+        ]
+      },
+      {
+        "case_id": "invoice_title",
+        "query": "已开具发票怎样修改抬头税号",
+        "relevant": [
+          "POLICY-INVOICE-TITLE"
+        ],
+        "retrieved": [
+          "POLICY-INVOICE-TITLE",
+          "POLICY-INVOICE-ELECTRONIC",
+          "POLICY-ADDRESS-BEFORE-SHIP"
+        ]
+      },
+      {
+        "case_id": "missing_evidence",
+        "query": "包裹少件需要提供开箱和面单吗",
+        "relevant": [
+          "POLICY-MISSING-EVIDENCE"
+        ],
+        "retrieved": [
+          "POLICY-MISSING-EVIDENCE",
+          "POLICY-DAMAGE-EVIDENCE",
+          "POLICY-DIGITAL"
+        ]
+      },
+      {
+        "case_id": "missing_resolution",
+        "query": "核实漏发后是补发还是退款",
+        "relevant": [
+          "POLICY-MISSING-RESOLUTION"
+        ],
+        "retrieved": [
+          "POLICY-MISSING-RESOLUTION",
+          "POLICY-LOGISTICS-LOST",
+          "POLICY-INVOICE-REFUND"
+        ]
+      },
+      {
+        "case_id": "address_before_ship",
+        "query": "还没出库可以修改收货地址吗",
+        "relevant": [
+          "POLICY-ADDRESS-BEFORE-SHIP"
+        ],
+        "retrieved": [
+          "POLICY-ADDRESS-BEFORE-SHIP",
+          "POLICY-ADDRESS-AFTER-SHIP",
+          "POLICY-RETURN-7D"
+        ]
+      },
+      {
+        "case_id": "address_after_ship",
+        "query": "发货后让快递转寄会产生费用吗",
+        "relevant": [
+          "POLICY-ADDRESS-AFTER-SHIP"
+        ],
+        "retrieved": [
+          "POLICY-ADDRESS-AFTER-SHIP",
+          "POLICY-EXCHANGE-SIZE",
+          "POLICY-LOGISTICS-TRACKING"
+        ]
+      },
+      {
+        "case_id": "price_window",
+        "query": "带价保标识的商品降价几天内能申请",
+        "relevant": [
+          "POLICY-PRICE-WINDOW"
+        ],
+        "retrieved": [
+          "POLICY-PRICE-WINDOW",
+          "POLICY-RETURN-7D",
+          "POLICY-RETURN-CONDITION"
+        ]
+      }
+    ]
+  }
+}

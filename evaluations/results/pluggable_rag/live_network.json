@@ -1,0 +1,214 @@
+{
+  "status": "failed",
+  "attempts": 2,
+  "max_calls": 95,
+  "method": "Shared recorded initial scoring and judgments; logical path latency/usage reuses actual call measurements. Not independently timed chat requests.",
+  "cases_sha256": "91e69c341c447972aa41640d9a56c46cf733b21d347cead8cd0be263e5db76ce",
+  "policies_sha256": "aa50d3fc2c49d7637ece82d240d410b42b73a434abdebd1d05fa1ca82ccff437",
+  "physical_calls": [
+    {
+      "model": "deepseek-flash",
+      "usage": {
+        "input_tokens": 1914,
+        "input_tokens_details": {
+          "cached_tokens": 0
+        },
+        "output_tokens": 2988,
+        "output_tokens_details": {
+          "reasoning_tokens": 2520
+        },
+        "total_tokens": 4902
+      },
+      "elapsed_ms": 13290.123500002665
+    },
+    {
+      "model": "deepseek-flash",
+      "usage": {
+        "input_tokens": 1814,
+        "input_tokens_details": {
+          "cached_tokens": 1024
+        },
+        "output_tokens": 4096,
+        "output_tokens_details": {
+          "reasoning_tokens": 3663
+        },
+        "total_tokens": 5910
+      },
+      "elapsed_ms": 17813.249167011236
+    }
+  ],
+  "runs": [
+    {
+      "group": "B1",
+      "case_id": "para_01",
+      "source": "deepseek_live_shared_prefix",
+      "retrieved_ids": [
+        "POLICY-REFUND-TIMELINE",
+        "POLICY-REFUND-ORIGINAL",
+        "POLICY-RETURN-EXCLUDED",
+        "POLICY-REFUND-COUPON",
+        "POLICY-RETURN-7D"
+      ],
+      "candidate_ids": [
+        "POLICY-REFUND-TIMELINE",
+        "POLICY-RETURN-EXCLUDED",
+        "POLICY-REFUND-COUPON",
+        "POLICY-RETURN-7D",
+        "POLICY-REFUND-ORIGINAL",
+        "POLICY-DAMAGE-30D",
+        "POLICY-REFUND-REJECTED",
+        "POLICY-INVOICE-REFUND",
+        "POLICY-PRICE-REFUND",
+        "POLICY-SPORTSWEAR",
+        "POLICY-EXCHANGE-TIMELINE",
+        "POLICY-PRICE-WINDOW",
+        "POLICY-PAYMENT-DUPLICATE",
+        "POLICY-LOGISTICS-LOST",
+        "POLICY-LOGISTICS-SIGNED-MISSING",
+        "POLICY-RETURN-FREIGHT"
+      ],
+      "filtered_ids": [],
+      "sufficiency": null,
+      "rounds": 1,
+      "deepseek_calls": 1,
+      "latency_ms": 13293.117124994751,
+      "input_tokens": 1914,
+      "output_tokens": 2988,
+      "api_cost": null,
+      "stop_reason": null,
+      "answer_correct": null,
+      "unsupported_promises": null
+    }
+  ],
+  "decisions": [
+    {
+      "case_id": "para_01",
+      "group": "B1",
+      "results": [
+        {
+          "decision": {
+            "documents": [
+              {
+                "policy_id": "POLICY-REFUND-TIMELINE",
+                "score": 1.0,
+                "direct_evidence": true,
+                "reason": "direct"
+              },
+              {
+                "policy_id": "POLICY-RETURN-EXCLUDED",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              },
+              {
+                "policy_id": "POLICY-REFUND-COUPON",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              },
+              {
+                "policy_id": "POLICY-RETURN-7D",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              },
+              {
+                "policy_id": "POLICY-REFUND-ORIGINAL",
+                "score": 0.5,
+                "direct_evidence": false,
+                "reason": "supporting"
+              },
+              {
+                "policy_id": "POLICY-DAMAGE-30D",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              },
+              {
+                "policy_id": "POLICY-REFUND-REJECTED",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              },
+              {
+                "policy_id": "POLICY-INVOICE-REFUND",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              },
+              {
+                "policy_id": "POLICY-PRICE-REFUND",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              },
+              {
+                "policy_id": "POLICY-SPORTSWEAR",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "inapplicable"
+              },
+              {
+                "policy_id": "POLICY-EXCHANGE-TIMELINE",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              },
+              {
+                "policy_id": "POLICY-PRICE-WINDOW",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              },
+              {
+                "policy_id": "POLICY-PAYMENT-DUPLICATE",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              },
+              {
+                "policy_id": "POLICY-LOGISTICS-LOST",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              },
+              {
+                "policy_id": "POLICY-LOGISTICS-SIGNED-MISSING",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              },
+              {
+                "policy_id": "POLICY-RETURN-FREIGHT",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              }
+            ]
+          },
+          "stats": {
+            "provider": "deepseek",
+            "model": "deepseek-flash",
+            "elapsed_ms": 13293.098583992105,
+            "input_tokens": 1914,
+            "output_tokens": 2988,
+            "api_cost": null,
+            "attempts": 1
+          }
+        }
+      ]
+    }
+  ],
+  "source_sha256": {
+    "src/servicepilot/evaluators.py": "a0235259f8807252cf26d32073c55f6063ca318cbf1e5239367c7e2a84fa9efb",
+    "src/servicepilot/corrective_rag.py": "d9b1156671b79f4413d286533b9f591bc86d96b454890dd74cf1c9898c096310",
+    "src/servicepilot/evidence.py": "70558afde007ba45e69a85b513d0a046dfc6126b1b5cf3da496dcf9eb5f9fed2",
+    "scripts/pluggable_rag_eval.py": "abefec1ee69461c711b938b922d6dd56baeac7d2af7de1ac3a0b88c744ed1efb",
+    "evaluations/corrective_rag_cases.json": "aed3ce1d0c49b94b324fee4f908dec51e3901f09042463fcda6982917acf189c"
+  },
+  "failure": {
+    "case_id": "para_01",
+    "group": "B2",
+    "error_type": "ValidationError"
+  }
+}

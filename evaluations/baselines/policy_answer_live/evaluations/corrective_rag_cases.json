@@ -1,0 +1,143 @@
+[
+  {
+    "case_id": "crag_normal",
+    "query": "普通商品未拆封，收货三天能否申请无理由退货？",
+    "relevant_policy_ids": [
+      "POLICY-RETURN-7D",
+      "POLICY-RETURN-CONDITION"
+    ],
+    "critical_policy_ids": [
+      "POLICY-RETURN-CONDITION"
+    ],
+    "irrelevant_policy_ids": [
+      "POLICY-INVOICE-TITLE"
+    ],
+    "expected_sufficiency": "SUFFICIENT",
+    "conditions": {
+      "category": "数码产品",
+      "days_since_delivery": 3
+    },
+    "acceptable_answer": "说明无理由退货期限与完整包装等条件，以订单规则核验为准，不承诺退款已经完成。",
+    "forbidden_promises": [
+      "已退款"
+    ]
+  },
+  {
+    "case_id": "crag_quality_exception",
+    "query": "耳机拆封使用两个月后出现硬件故障，是否还可售后？",
+    "relevant_policy_ids": [
+      "POLICY-DAMAGE-WARRANTY"
+    ],
+    "critical_policy_ids": [
+      "POLICY-DAMAGE-WARRANTY"
+    ],
+    "irrelevant_policy_ids": [
+      "POLICY-INVOICE-TITLE"
+    ],
+    "expected_sufficiency": "SUFFICIENT",
+    "conditions": {
+      "category": "数码产品",
+      "days_since_delivery": 60
+    },
+    "acceptable_answer": "区分七天无理由与质量保修，说明检查和申请流程，不直接承诺无条件退款。",
+    "forbidden_promises": [
+      "超过七天一律不能售后",
+      "无条件立即退款"
+    ]
+  },
+  {
+    "case_id": "crag_missing",
+    "query": "进口定制设备的跨境保修运费与关税由谁承担？",
+    "relevant_policy_ids": [],
+    "critical_policy_ids": [],
+    "irrelevant_policy_ids": [
+      "POLICY-INVOICE-TITLE"
+    ],
+    "expected_sufficiency": "INSUFFICIENT",
+    "conditions": {
+      "category": "定制设备"
+    },
+    "acceptable_answer": "明确现有政策未覆盖跨境保修税费，转人工核对，不猜测费用承担方。",
+    "forbidden_promises": [
+      "商家承担全部关税",
+      "客户承担全部关税"
+    ]
+  },
+  {
+    "case_id": "crag_combination",
+    "query": "审核通过后退款多久到账，原银行卡已经注销怎么办？",
+    "relevant_policy_ids": [
+      "POLICY-REFUND-TIMELINE",
+      "POLICY-REFUND-ORIGINAL"
+    ],
+    "critical_policy_ids": [
+      "POLICY-REFUND-ORIGINAL"
+    ],
+    "irrelevant_policy_ids": [
+      "POLICY-PRICE-REFUND"
+    ],
+    "expected_sufficiency": "SUFFICIENT",
+    "conditions": {},
+    "acceptable_answer": "同时说明到账时效及原支付渠道异常时核对流程，不自行改退款收款账户。",
+    "forbidden_promises": [
+      "直接转到任意新银行卡"
+    ]
+  },
+  {
+    "case_id": "crag_wrong_version",
+    "query": "同一退款政策的两个当前有效版本对运费承担方说法矛盾，按哪个执行？",
+    "relevant_policy_ids": [],
+    "critical_policy_ids": [],
+    "irrelevant_policy_ids": [],
+    "expected_sufficiency": "CONFLICTING",
+    "conditions": {
+      "as_of": "2026-09-24",
+      "requires_overlapping_version_fixture": true
+    },
+    "acceptable_answer": "指出版本冲突并请求核对官方有效政策，不选择有利版本作承诺。",
+    "forbidden_promises": [
+      "任选一个版本即可"
+    ]
+  },
+  {
+    "case_id": "crag_noise",
+    "query": "收到的食品已经变质，包装拆开了还能处理吗？",
+    "relevant_policy_ids": [
+      "POLICY-FOOD"
+    ],
+    "critical_policy_ids": [
+      "POLICY-FOOD"
+    ],
+    "irrelevant_policy_ids": [
+      "POLICY-INVOICE-TITLE",
+      "POLICY-PAYMENT-DUPLICATE"
+    ],
+    "expected_sufficiency": "SUFFICIENT",
+    "conditions": {
+      "category": "食品",
+      "days_since_delivery": 1
+    },
+    "acceptable_answer": "按食品质量问题处理并保留证据，不将拆封食品无理由退货限制当作拒绝质量售后的理由。",
+    "forbidden_promises": [
+      "食品拆封一律不受理"
+    ]
+  },
+  {
+    "case_id": "crag_expired",
+    "query": "只找到已过期的七天退货政策，现在可以按它直接办理吗？",
+    "relevant_policy_ids": [],
+    "critical_policy_ids": [],
+    "irrelevant_policy_ids": [
+      "POLICY-RETURN-7D"
+    ],
+    "expected_sufficiency": "INSUFFICIENT",
+    "conditions": {
+      "as_of": "2026-09-24",
+      "requires_expired_fixture": true
+    },
+    "acceptable_answer": "不能以过期条款办理，请求核对现行政策。",
+    "forbidden_promises": [
+      "直接按过期政策退款"
+    ]
+  }
+]

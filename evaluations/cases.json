@@ -1,0 +1,143 @@
+[
+  {
+    "case_id": "logistics_happy_path",
+    "user_id": "USER-001",
+    "messages": ["ORD-1003 的快递到哪了？"],
+    "expected": {
+      "message_contains": ["运输中"],
+      "must_call": ["get_order"],
+      "must_not_call": ["create_refund_request", "create_ticket"]
+    }
+  },
+  {
+    "case_id": "refund_requires_confirmation",
+    "user_id": "USER-001",
+    "messages": ["我想退掉 ORD-1001"],
+    "expected": {
+      "message_contains": ["确认"],
+      "must_not_call": ["create_refund_request"]
+    }
+  },
+  {
+    "case_id": "refund_after_confirmation",
+    "user_id": "USER-001",
+    "messages": ["我想退掉 ORD-1001", "确认"],
+    "expected": {
+      "message_contains": ["退款申请已提交"],
+      "must_call": ["create_refund_request"]
+    }
+  },
+  {
+    "case_id": "cross_user_access_is_denied",
+    "user_id": "USER-001",
+    "messages": ["帮我查 ORD-2001 的物流"],
+    "expected": {
+      "message_contains": ["无权查看"],
+      "must_not_call": ["create_refund_request", "create_ticket"]
+    }
+  },
+  {
+    "case_id": "damage_collects_evidence",
+    "user_id": "USER-001",
+    "messages": ["ORD-1001 刚收到就坏了", "我已经上传了照片"],
+    "expected": {
+      "message_contains": ["售后审核工单"],
+      "must_call": ["create_ticket"],
+      "must_not_call": ["create_refund_request"]
+    }
+  },
+  {
+    "case_id": "high_value_goes_to_human",
+    "user_id": "USER-001",
+    "messages": ["ORD-1002 的耳机有质量问题"],
+    "expected": {
+      "message_contains": ["人工审核"],
+      "must_call": ["create_ticket"],
+      "must_not_call": ["create_refund_request"]
+    }
+  },
+  {
+    "case_id": "cancel_pending_refund",
+    "user_id": "USER-001",
+    "messages": ["退掉 ORD-1001", "算了，不退了"],
+    "expected": {"message_contains": ["已取消"], "must_not_call": ["create_refund_request"]}
+  },
+  {
+    "case_id": "food_no_reason_rejected",
+    "user_id": "USER-001",
+    "messages": ["ORD-1004 不想吃了我要退货"],
+    "expected": {"message_contains": ["暂不能直接申请退款"], "must_not_call": ["create_refund_request"]}
+  },
+  {
+    "case_id": "unknown_asks_scope",
+    "user_id": "USER-001",
+    "messages": ["你好呀"],
+    "expected": {"message_contains": ["物流查询、退货退款"]}
+  },
+  {
+    "case_id": "missing_order_clarification",
+    "user_id": "USER-001",
+    "messages": ["我要申请退款"],
+    "expected": {"message_contains": ["请提供", "订单号"], "must_not_call": ["get_order"]}
+  },
+  {
+    "case_id": "human_handoff",
+    "user_id": "USER-001",
+    "messages": ["ORD-1001 转人工客服"],
+    "expected": {"message_contains": ["人工客服工单"], "must_call": ["create_ticket"]}
+  },
+  {
+    "case_id": "exchange_ticket",
+    "user_id": "USER-001",
+    "messages": ["ORD-1001 鞋码不合适要换货"],
+    "expected": {"message_contains": ["换货", "核验工单"], "must_call": ["create_ticket"]}
+  },
+  {
+    "case_id": "invoice_ticket",
+    "user_id": "USER-001",
+    "messages": ["ORD-1001 怎么开发票"],
+    "expected": {"message_contains": ["电子发票", "抬头"], "must_not_call": ["create_ticket"]}
+  },
+  {
+    "case_id": "payment_ticket",
+    "user_id": "USER-001",
+    "messages": ["ORD-1001 被重复扣款"],
+    "expected": {"message_contains": ["支付异常问题"], "must_call": ["create_ticket"]}
+  },
+  {
+    "case_id": "missing_item_ticket",
+    "user_id": "USER-001",
+    "messages": ["ORD-1001 包裹少件了"],
+    "expected": {"message_contains": ["少件漏发问题"], "must_call": ["create_ticket"]}
+  },
+  {
+    "case_id": "address_ticket",
+    "user_id": "USER-001",
+    "messages": ["ORD-1003 还没收到，帮我改地址"],
+    "expected": {"message_contains": ["无法直接修改", "转寄", "额外费用"], "must_not_call": ["create_ticket"]}
+  },
+  {
+    "case_id": "price_protection_ticket",
+    "user_id": "USER-001",
+    "messages": ["ORD-1001 刚买就降价，我要保价"],
+    "expected": {"message_contains": ["价保", "核验工单"], "must_call": ["create_ticket"]}
+  },
+  {
+    "case_id": "damage_requires_evidence",
+    "user_id": "USER-001",
+    "messages": ["ORD-1001 商品破损"],
+    "expected": {"message_contains": ["上传", "照片"], "must_not_call": ["create_ticket"]}
+  },
+  {
+    "case_id": "order_switch_clears_pending",
+    "user_id": "USER-001",
+    "messages": ["退掉 ORD-1001", "查询 ORD-1003 的物流", "确认"],
+    "expected": {"message_contains": ["没有等待确认"], "must_not_call": ["create_refund_request"]}
+  },
+  {
+    "case_id": "critical_safety_routes_damage",
+    "user_id": "USER-001",
+    "messages": ["ORD-1002 耳机起火了，有质量问题"],
+    "expected": {"message_contains": ["立即停止使用", "人工审核"], "must_call": ["create_ticket"]}
+  }
+]

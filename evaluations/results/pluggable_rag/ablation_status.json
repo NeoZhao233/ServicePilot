@@ -1,0 +1,3787 @@
+{
+  "status": "partial",
+  "cohorts": [
+    {
+      "artifact_index": 0,
+      "config": {
+        "max_output_tokens": 4096
+      },
+      "common_frozen_case_ids": [],
+      "common_frozen": {
+        "B0": {
+          "status": "not_run",
+          "source": [],
+          "coverage": {
+            "observed": 0,
+            "total": 0
+          },
+          "recall@5": null,
+          "mrr": null,
+          "critical_retention": null,
+          "irrelevant_filter_rate": null,
+          "sufficiency_accuracy": null,
+          "sufficiency_observed": 0,
+          "answer_accuracy": null,
+          "answers_adjudicated": 0,
+          "unsupported_promises": null,
+          "rounds": {
+            "n": 0,
+            "mean": null,
+            "p50": null,
+            "p95": null
+          },
+          "deepseek_calls": {
+            "n": 0,
+            "mean": null,
+            "p50": null,
+            "p95": null
+          },
+          "latency_ms": {
+            "n": 0,
+            "mean": null,
+            "p50": null,
+            "p95": null
+          },
+          "false_filtered_cases": [],
+          "usage": {
+            "input_tokens": null,
+            "output_tokens": null,
+            "api_cost": null
+          }
+        },
+        "B1": {
+          "status": "not_run",
+          "source": [],
+          "coverage": {
+            "observed": 0,
+            "total": 0
+          },
+          "recall@5": null,
+          "mrr": null,
+          "critical_retention": null,
+          "irrelevant_filter_rate": null,
+          "sufficiency_accuracy": null,
+          "sufficiency_observed": 0,
+          "answer_accuracy": null,
+          "answers_adjudicated": 0,
+          "unsupported_promises": null,
+          "rounds": {
+            "n": 0,
+            "mean": null,
+            "p50": null,
+            "p95": null
+          },
+          "deepseek_calls": {
+            "n": 0,
+            "mean": null,
+            "p50": null,
+            "p95": null
+          },
+          "latency_ms": {
+            "n": 0,
+            "mean": null,
+            "p50": null,
+            "p95": null
+          },
+          "false_filtered_cases": [],
+          "usage": {
+            "input_tokens": null,
+            "output_tokens": null,
+            "api_cost": null
+          }
+        },
+        "B2": {
+          "status": "not_run",
+          "source": [],
+          "coverage": {
+            "observed": 0,
+            "total": 0
+          },
+          "recall@5": null,
+          "mrr": null,
+          "critical_retention": null,
+          "irrelevant_filter_rate": null,
+          "sufficiency_accuracy": null,
+          "sufficiency_observed": 0,
+          "answer_accuracy": null,
+          "answers_adjudicated": 0,
+          "unsupported_promises": null,
+          "rounds": {
+            "n": 0,
+            "mean": null,
+            "p50": null,
+            "p95": null
+          },
+          "deepseek_calls": {
+            "n": 0,
+            "mean": null,
+            "p50": null,
+            "p95": null
+          },
+          "latency_ms": {
+            "n": 0,
+            "mean": null,
+            "p50": null,
+            "p95": null
+          },
+          "false_filtered_cases": [],
+          "usage": {
+            "input_tokens": null,
+            "output_tokens": null,
+            "api_cost": null
+          }
+        },
+        "B3": {
+          "status": "not_run",
+          "source": [],
+          "coverage": {
+            "observed": 0,
+            "total": 0
+          },
+          "recall@5": null,
+          "mrr": null,
+          "critical_retention": null,
+          "irrelevant_filter_rate": null,
+          "sufficiency_accuracy": null,
+          "sufficiency_observed": 0,
+          "answer_accuracy": null,
+          "answers_adjudicated": 0,
+          "unsupported_promises": null,
+          "rounds": {
+            "n": 0,
+            "mean": null,
+            "p50": null,
+            "p95": null
+          },
+          "deepseek_calls": {
+            "n": 0,
+            "mean": null,
+            "p50": null,
+            "p95": null
+          },
+          "latency_ms": {
+            "n": 0,
+            "mean": null,
+            "p50": null,
+            "p95": null
+          },
+          "false_filtered_cases": [],
+          "usage": {
+            "input_tokens": null,
+            "output_tokens": null,
+            "api_cost": null
+          }
+        },
+        "B4": {
+          "status": "not_run",
+          "source": [],
+          "coverage": {
+            "observed": 0,
+            "total": 0
+          },
+          "recall@5": null,
+          "mrr": null,
+          "critical_retention": null,
+          "irrelevant_filter_rate": null,
+          "sufficiency_accuracy": null,
+          "sufficiency_observed": 0,
+          "answer_accuracy": null,
+          "answers_adjudicated": 0,
+          "unsupported_promises": null,
+          "rounds": {
+            "n": 0,
+            "mean": null,
+            "p50": null,
+            "p95": null
+          },
+          "deepseek_calls": {
+            "n": 0,
+            "mean": null,
+            "p50": null,
+            "p95": null
+          },
+          "latency_ms": {
+            "n": 0,
+            "mean": null,
+            "p50": null,
+            "p95": null
+          },
+          "false_filtered_cases": [],
+          "usage": {
+            "input_tokens": null,
+            "output_tokens": null,
+            "api_cost": null
+          }
+        }
+      },
+      "complex": {
+        "B0": {
+          "status": "not_run",
+          "source": [],
+          "coverage": {
+            "observed": 0,
+            "total": 7
+          },
+          "recall@5": null,
+          "mrr": null,
+          "critical_retention": null,
+          "irrelevant_filter_rate": null,
+          "sufficiency_accuracy": null,
+          "sufficiency_observed": 0,
+          "answer_accuracy": null,
+          "answers_adjudicated": 0,
+          "unsupported_promises": null,
+          "rounds": {
+            "n": 0,
+            "mean": null,
+            "p50": null,
+            "p95": null
+          },
+          "deepseek_calls": {
+            "n": 0,
+            "mean": null,
+            "p50": null,
+            "p95": null
+          },
+          "latency_ms": {
+            "n": 0,
+            "mean": null,
+            "p50": null,
+            "p95": null
+          },
+          "false_filtered_cases": [],
+          "usage": {
+            "input_tokens": null,
+            "output_tokens": null,
+            "api_cost": null
+          }
+        },
+        "B1": {
+          "status": "not_run",
+          "source": [],
+          "coverage": {
+            "observed": 0,
+            "total": 7
+          },
+          "recall@5": null,
+          "mrr": null,
+          "critical_retention": null,
+          "irrelevant_filter_rate": null,
+          "sufficiency_accuracy": null,
+          "sufficiency_observed": 0,
+          "answer_accuracy": null,
+          "answers_adjudicated": 0,
+          "unsupported_promises": null,
+          "rounds": {
+            "n": 0,
+            "mean": null,
+            "p50": null,
+            "p95": null
+          },
+          "deepseek_calls": {
+            "n": 0,
+            "mean": null,
+            "p50": null,
+            "p95": null
+          },
+          "latency_ms": {
+            "n": 0,
+            "mean": null,
+            "p50": null,
+            "p95": null
+          },
+          "false_filtered_cases": [],
+          "usage": {
+            "input_tokens": null,
+            "output_tokens": null,
+            "api_cost": null
+          }
+        },
+        "B2": {
+          "status": "not_run",
+          "source": [],
+          "coverage": {
+            "observed": 0,
+            "total": 7
+          },
+          "recall@5": null,
+          "mrr": null,
+          "critical_retention": null,
+          "irrelevant_filter_rate": null,
+          "sufficiency_accuracy": null,
+          "sufficiency_observed": 0,
+          "answer_accuracy": null,
+          "answers_adjudicated": 0,
+          "unsupported_promises": null,
+          "rounds": {
+            "n": 0,
+            "mean": null,
+            "p50": null,
+            "p95": null
+          },
+          "deepseek_calls": {
+            "n": 0,
+            "mean": null,
+            "p50": null,
+            "p95": null
+          },
+          "latency_ms": {
+            "n": 0,
+            "mean": null,
+            "p50": null,
+            "p95": null
+          },
+          "false_filtered_cases": [],
+          "usage": {
+            "input_tokens": null,
+            "output_tokens": null,
+            "api_cost": null
+          }
+        },
+        "B3": {
+          "status": "not_run",
+          "source": [],
+          "coverage": {
+            "observed": 0,
+            "total": 7
+          },
+          "recall@5": null,
+          "mrr": null,
+          "critical_retention": null,
+          "irrelevant_filter_rate": null,
+          "sufficiency_accuracy": null,
+          "sufficiency_observed": 0,
+          "answer_accuracy": null,
+          "answers_adjudicated": 0,
+          "unsupported_promises": null,
+          "rounds": {
+            "n": 0,
+            "mean": null,
+            "p50": null,
+            "p95": null
+          },
+          "deepseek_calls": {
+            "n": 0,
+            "mean": null,
+            "p50": null,
+            "p95": null
+          },
+          "latency_ms": {
+            "n": 0,
+            "mean": null,
+            "p50": null,
+            "p95": null
+          },
+          "false_filtered_cases": [],
+          "usage": {
+            "input_tokens": null,
+            "output_tokens": null,
+            "api_cost": null
+          }
+        },
+        "B4": {
+          "status": "not_run",
+          "source": [],
+          "coverage": {
+            "observed": 0,
+            "total": 7
+          },
+          "recall@5": null,
+          "mrr": null,
+          "critical_retention": null,
+          "irrelevant_filter_rate": null,
+          "sufficiency_accuracy": null,
+          "sufficiency_observed": 0,
+          "answer_accuracy": null,
+          "answers_adjudicated": 0,
+          "unsupported_promises": null,
+          "rounds": {
+            "n": 0,
+            "mean": null,
+            "p50": null,
+            "p95": null
+          },
+          "deepseek_calls": {
+            "n": 0,
+            "mean": null,
+            "p50": null,
+            "p95": null
+          },
+          "latency_ms": {
+            "n": 0,
+            "mean": null,
+            "p50": null,
+            "p95": null
+          },
+          "false_filtered_cases": [],
+          "usage": {
+            "input_tokens": null,
+            "output_tokens": null,
+            "api_cost": null
+          }
+        }
+      }
+    },
+    {
+      "artifact_index": 1,
+      "config": {
+        "max_output_tokens": 8192,
+        "timeout_seconds": 65.0
+      },
+      "common_frozen_case_ids": [
+        "para_02",
+        "para_03",
+        "para_04",
+        "para_05",
+        "para_06"
+      ],
+      "common_frozen": {
+        "B0": {
+          "status": "observed",
+          "source": [
+            "live_deepseek"
+          ],
+          "coverage": {
+            "observed": 5,
+            "total": 5
+          },
+          "recall@5": 1.0,
+          "mrr": 0.9,
+          "critical_retention": null,
+          "irrelevant_filter_rate": null,
+          "sufficiency_accuracy": null,
+          "sufficiency_observed": 0,
+          "answer_accuracy": null,
+          "answers_adjudicated": 0,
+          "unsupported_promises": null,
+          "rounds": {
+            "n": 5,
+            "mean": 1,
+            "p50": 1,
+            "p95": 1
+          },
+          "deepseek_calls": {
+            "n": 5,
+            "mean": 1,
+            "p50": 1,
+            "p95": 1
+          },
+          "latency_ms": {
+            "n": 5,
+            "mean": 9267.647058400325,
+            "p50": 10120.016875007423,
+            "p95": 16963.842875004048
+          },
+          "false_filtered_cases": [],
+          "usage": {
+            "input_tokens": 6414,
+            "output_tokens": 10137,
+            "api_cost": null
+          }
+        },
+        "B1": {
+          "status": "observed",
+          "source": [
+            "deepseek_live_shared_prefix"
+          ],
+          "coverage": {
+            "observed": 5,
+            "total": 5
+          },
+          "recall@5": 1.0,
+          "mrr": 1.0,
+          "critical_retention": null,
+          "irrelevant_filter_rate": null,
+          "sufficiency_accuracy": null,
+          "sufficiency_observed": 0,
+          "answer_accuracy": null,
+          "answers_adjudicated": 0,
+          "unsupported_promises": null,
+          "rounds": {
+            "n": 5,
+            "mean": 1,
+            "p50": 1,
+            "p95": 1
+          },
+          "deepseek_calls": {
+            "n": 5,
+            "mean": 1,
+            "p50": 1,
+            "p95": 1
+          },
+          "latency_ms": {
+            "n": 5,
+            "mean": 15337.303924793378,
+            "p50": 16173.833332999493,
+            "p95": 19863.388666984974
+          },
+          "false_filtered_cases": [],
+          "usage": {
+            "input_tokens": 10412,
+            "output_tokens": 18224,
+            "api_cost": null
+          }
+        },
+        "B2": {
+          "status": "observed",
+          "source": [
+            "deepseek_live_shared_prefix"
+          ],
+          "coverage": {
+            "observed": 5,
+            "total": 5
+          },
+          "recall@5": 0.0,
+          "mrr": 0,
+          "critical_retention": null,
+          "irrelevant_filter_rate": null,
+          "sufficiency_accuracy": null,
+          "sufficiency_observed": 0,
+          "answer_accuracy": null,
+          "answers_adjudicated": 0,
+          "unsupported_promises": null,
+          "rounds": {
+            "n": 5,
+            "mean": 1,
+            "p50": 1,
+            "p95": 1
+          },
+          "deepseek_calls": {
+            "n": 5,
+            "mean": 2,
+            "p50": 2,
+            "p95": 2
+          },
+          "latency_ms": {
+            "n": 5,
+            "mean": 33963.74219979625,
+            "p50": 29254.620998966857,
+            "p95": 51804.23183401581
+          },
+          "false_filtered_cases": [],
+          "usage": {
+            "input_tokens": 13819,
+            "output_tokens": 37530,
+            "api_cost": null
+          }
+        },
+        "B3": {
+          "status": "observed",
+          "source": [
+            "deepseek_live_shared_prefix"
+          ],
+          "coverage": {
+            "observed": 5,
+            "total": 5
+          },
+          "recall@5": 0.0,
+          "mrr": 0,
+          "critical_retention": null,
+          "irrelevant_filter_rate": null,
+          "sufficiency_accuracy": null,
+          "sufficiency_observed": 0,
+          "answer_accuracy": null,
+          "answers_adjudicated": 0,
+          "unsupported_promises": null,
+          "rounds": {
+            "n": 5,
+            "mean": 1,
+            "p50": 1,
+            "p95": 1
+          },
+          "deepseek_calls": {
+            "n": 5,
+            "mean": 2,
+            "p50": 2,
+            "p95": 2
+          },
+          "latency_ms": {
+            "n": 5,
+            "mean": 33963.742225198075,
+            "p50": 29254.62083298771,
+            "p95": 51804.23225101549
+          },
+          "false_filtered_cases": [],
+          "usage": {
+            "input_tokens": 13819,
+            "output_tokens": 37530,
+            "api_cost": null
+          }
+        },
+        "B4": {
+          "status": "not_run",
+          "source": [],
+          "coverage": {
+            "observed": 0,
+            "total": 5
+          },
+          "recall@5": null,
+          "mrr": null,
+          "critical_retention": null,
+          "irrelevant_filter_rate": null,
+          "sufficiency_accuracy": null,
+          "sufficiency_observed": 0,
+          "answer_accuracy": null,
+          "answers_adjudicated": 0,
+          "unsupported_promises": null,
+          "rounds": {
+            "n": 0,
+            "mean": null,
+            "p50": null,
+            "p95": null
+          },
+          "deepseek_calls": {
+            "n": 0,
+            "mean": null,
+            "p50": null,
+            "p95": null
+          },
+          "latency_ms": {
+            "n": 0,
+            "mean": null,
+            "p50": null,
+            "p95": null
+          },
+          "false_filtered_cases": [],
+          "usage": {
+            "input_tokens": null,
+            "output_tokens": null,
+            "api_cost": null
+          }
+        }
+      },
+      "complex": {
+        "B0": {
+          "status": "not_run",
+          "source": [],
+          "coverage": {
+            "observed": 0,
+            "total": 7
+          },
+          "recall@5": null,
+          "mrr": null,
+          "critical_retention": null,
+          "irrelevant_filter_rate": null,
+          "sufficiency_accuracy": null,
+          "sufficiency_observed": 0,
+          "answer_accuracy": null,
+          "answers_adjudicated": 0,
+          "unsupported_promises": null,
+          "rounds": {
+            "n": 0,
+            "mean": null,
+            "p50": null,
+            "p95": null
+          },
+          "deepseek_calls": {
+            "n": 0,
+            "mean": null,
+            "p50": null,
+            "p95": null
+          },
+          "latency_ms": {
+            "n": 0,
+            "mean": null,
+            "p50": null,
+            "p95": null
+          },
+          "false_filtered_cases": [],
+          "usage": {
+            "input_tokens": null,
+            "output_tokens": null,
+            "api_cost": null
+          }
+        },
+        "B1": {
+          "status": "not_run",
+          "source": [],
+          "coverage": {
+            "observed": 0,
+            "total": 7
+          },
+          "recall@5": null,
+          "mrr": null,
+          "critical_retention": null,
+          "irrelevant_filter_rate": null,
+          "sufficiency_accuracy": null,
+          "sufficiency_observed": 0,
+          "answer_accuracy": null,
+          "answers_adjudicated": 0,
+          "unsupported_promises": null,
+          "rounds": {
+            "n": 0,
+            "mean": null,
+            "p50": null,
+            "p95": null
+          },
+          "deepseek_calls": {
+            "n": 0,
+            "mean": null,
+            "p50": null,
+            "p95": null
+          },
+          "latency_ms": {
+            "n": 0,
+            "mean": null,
+            "p50": null,
+            "p95": null
+          },
+          "false_filtered_cases": [],
+          "usage": {
+            "input_tokens": null,
+            "output_tokens": null,
+            "api_cost": null
+          }
+        },
+        "B2": {
+          "status": "not_run",
+          "source": [],
+          "coverage": {
+            "observed": 0,
+            "total": 7
+          },
+          "recall@5": null,
+          "mrr": null,
+          "critical_retention": null,
+          "irrelevant_filter_rate": null,
+          "sufficiency_accuracy": null,
+          "sufficiency_observed": 0,
+          "answer_accuracy": null,
+          "answers_adjudicated": 0,
+          "unsupported_promises": null,
+          "rounds": {
+            "n": 0,
+            "mean": null,
+            "p50": null,
+            "p95": null
+          },
+          "deepseek_calls": {
+            "n": 0,
+            "mean": null,
+            "p50": null,
+            "p95": null
+          },
+          "latency_ms": {
+            "n": 0,
+            "mean": null,
+            "p50": null,
+            "p95": null
+          },
+          "false_filtered_cases": [],
+          "usage": {
+            "input_tokens": null,
+            "output_tokens": null,
+            "api_cost": null
+          }
+        },
+        "B3": {
+          "status": "not_run",
+          "source": [],
+          "coverage": {
+            "observed": 0,
+            "total": 7
+          },
+          "recall@5": null,
+          "mrr": null,
+          "critical_retention": null,
+          "irrelevant_filter_rate": null,
+          "sufficiency_accuracy": null,
+          "sufficiency_observed": 0,
+          "answer_accuracy": null,
+          "answers_adjudicated": 0,
+          "unsupported_promises": null,
+          "rounds": {
+            "n": 0,
+            "mean": null,
+            "p50": null,
+            "p95": null
+          },
+          "deepseek_calls": {
+            "n": 0,
+            "mean": null,
+            "p50": null,
+            "p95": null
+          },
+          "latency_ms": {
+            "n": 0,
+            "mean": null,
+            "p50": null,
+            "p95": null
+          },
+          "false_filtered_cases": [],
+          "usage": {
+            "input_tokens": null,
+            "output_tokens": null,
+            "api_cost": null
+          }
+        },
+        "B4": {
+          "status": "not_run",
+          "source": [],
+          "coverage": {
+            "observed": 0,
+            "total": 7
+          },
+          "recall@5": null,
+          "mrr": null,
+          "critical_retention": null,
+          "irrelevant_filter_rate": null,
+          "sufficiency_accuracy": null,
+          "sufficiency_observed": 0,
+          "answer_accuracy": null,
+          "answers_adjudicated": 0,
+          "unsupported_promises": null,
+          "rounds": {
+            "n": 0,
+            "mean": null,
+            "p50": null,
+            "p95": null
+          },
+          "deepseek_calls": {
+            "n": 0,
+            "mean": null,
+            "p50": null,
+            "p95": null
+          },
+          "latency_ms": {
+            "n": 0,
+            "mean": null,
+            "p50": null,
+            "p95": null
+          },
+          "false_filtered_cases": [],
+          "usage": {
+            "input_tokens": null,
+            "output_tokens": null,
+            "api_cost": null
+          }
+        }
+      }
+    },
+    {
+      "artifact_index": 2,
+      "config": {
+        "max_output_tokens": 8192,
+        "timeout_seconds": 65.0,
+        "prompt_version": "evidence-v2-policy-answer"
+      },
+      "common_frozen_case_ids": [
+        "multi_02",
+        "multi_03",
+        "multi_04",
+        "multi_05",
+        "multi_06",
+        "negative_01",
+        "negative_02",
+        "negative_03",
+        "negative_04",
+        "negative_05",
+        "negative_06",
+        "noise_01",
+        "noise_02",
+        "noise_03",
+        "noise_04",
+        "noise_05",
+        "noise_06"
+      ],
+      "common_frozen": {
+        "B0": {
+          "status": "observed",
+          "source": [
+            "live_deepseek"
+          ],
+          "coverage": {
+            "observed": 17,
+            "total": 17
+          },
+          "recall@5": 1.0,
+          "mrr": 0.9705882352941176,
+          "critical_retention": null,
+          "irrelevant_filter_rate": null,
+          "sufficiency_accuracy": null,
+          "sufficiency_observed": 0,
+          "answer_accuracy": null,
+          "answers_adjudicated": 0,
+          "unsupported_promises": null,
+          "rounds": {
+            "n": 17,
+            "mean": 1,
+            "p50": 1,
+            "p95": 1
+          },
+          "deepseek_calls": {
+            "n": 17,
+            "mean": 1,
+            "p50": 1,
+            "p95": 1
+          },
+          "latency_ms": {
+            "n": 17,
+            "mean": 12308.545666588436,
+            "p50": 11222.89862499747,
+            "p95": 42737.404625004274
+          },
+          "false_filtered_cases": [],
+          "usage": {
+            "input_tokens": 20515,
+            "output_tokens": 44683,
+            "api_cost": null
+          }
+        },
+        "B1": {
+          "status": "observed",
+          "source": [
+            "deepseek_live_shared_prefix"
+          ],
+          "coverage": {
+            "observed": 17,
+            "total": 17
+          },
+          "recall@5": 1.0,
+          "mrr": 0.9705882352941176,
+          "critical_retention": null,
+          "irrelevant_filter_rate": null,
+          "sufficiency_accuracy": null,
+          "sufficiency_observed": 0,
+          "answer_accuracy": null,
+          "answers_adjudicated": 0,
+          "unsupported_promises": null,
+          "rounds": {
+            "n": 17,
+            "mean": 1,
+            "p50": 1,
+            "p95": 1
+          },
+          "deepseek_calls": {
+            "n": 17,
+            "mean": 1,
+            "p50": 1,
+            "p95": 1
+          },
+          "latency_ms": {
+            "n": 17,
+            "mean": 12009.912450816688,
+            "p50": 10281.492958951276,
+            "p95": 20994.326000014553
+          },
+          "false_filtered_cases": [],
+          "usage": {
+            "input_tokens": 35269,
+            "output_tokens": 47903,
+            "api_cost": null
+          }
+        },
+        "B2": {
+          "status": "observed",
+          "source": [
+            "deepseek_live_shared_prefix"
+          ],
+          "coverage": {
+            "observed": 17,
+            "total": 17
+          },
+          "recall@5": 1.0,
+          "mrr": 1.0,
+          "critical_retention": null,
+          "irrelevant_filter_rate": null,
+          "sufficiency_accuracy": null,
+          "sufficiency_observed": 0,
+          "answer_accuracy": null,
+          "answers_adjudicated": 0,
+          "unsupported_promises": null,
+          "rounds": {
+            "n": 17,
+            "mean": 1,
+            "p50": 1,
+            "p95": 1
+          },
+          "deepseek_calls": {
+            "n": 17,
+            "mean": 2,
+            "p50": 2,
+            "p95": 2
+          },
+          "latency_ms": {
+            "n": 17,
+            "mean": 18299.895948345213,
+            "p50": 15012.332167010754,
+            "p95": 33162.15020802338
+          },
+          "false_filtered_cases": [],
+          "usage": {
+            "input_tokens": 50969,
+            "output_tokens": 68814,
+            "api_cost": null
+          }
+        },
+        "B3": {
+          "status": "observed",
+          "source": [
+            "deepseek_live_shared_prefix"
+          ],
+          "coverage": {
+            "observed": 17,
+            "total": 17
+          },
+          "recall@5": 1.0,
+          "mrr": 1.0,
+          "critical_retention": null,
+          "irrelevant_filter_rate": null,
+          "sufficiency_accuracy": null,
+          "sufficiency_observed": 0,
+          "answer_accuracy": null,
+          "answers_adjudicated": 0,
+          "unsupported_promises": null,
+          "rounds": {
+            "n": 17,
+            "mean": 1,
+            "p50": 1,
+            "p95": 1
+          },
+          "deepseek_calls": {
+            "n": 17,
+            "mean": 2,
+            "p50": 2,
+            "p95": 2
+          },
+          "latency_ms": {
+            "n": 17,
+            "mean": 18299.89588452736,
+            "p50": 15012.332125013927,
+            "p95": 33162.15045802528
+          },
+          "false_filtered_cases": [],
+          "usage": {
+            "input_tokens": 50969,
+            "output_tokens": 68814,
+            "api_cost": null
+          }
+        },
+        "B4": {
+          "status": "not_run",
+          "source": [],
+          "coverage": {
+            "observed": 0,
+            "total": 17
+          },
+          "recall@5": null,
+          "mrr": null,
+          "critical_retention": null,
+          "irrelevant_filter_rate": null,
+          "sufficiency_accuracy": null,
+          "sufficiency_observed": 0,
+          "answer_accuracy": null,
+          "answers_adjudicated": 0,
+          "unsupported_promises": null,
+          "rounds": {
+            "n": 0,
+            "mean": null,
+            "p50": null,
+            "p95": null
+          },
+          "deepseek_calls": {
+            "n": 0,
+            "mean": null,
+            "p50": null,
+            "p95": null
+          },
+          "latency_ms": {
+            "n": 0,
+            "mean": null,
+            "p50": null,
+            "p95": null
+          },
+          "false_filtered_cases": [],
+          "usage": {
+            "input_tokens": null,
+            "output_tokens": null,
+            "api_cost": null
+          }
+        }
+      },
+      "complex": {
+        "B0": {
+          "status": "not_run",
+          "source": [],
+          "coverage": {
+            "observed": 0,
+            "total": 7
+          },
+          "recall@5": null,
+          "mrr": null,
+          "critical_retention": null,
+          "irrelevant_filter_rate": null,
+          "sufficiency_accuracy": null,
+          "sufficiency_observed": 0,
+          "answer_accuracy": null,
+          "answers_adjudicated": 0,
+          "unsupported_promises": null,
+          "rounds": {
+            "n": 0,
+            "mean": null,
+            "p50": null,
+            "p95": null
+          },
+          "deepseek_calls": {
+            "n": 0,
+            "mean": null,
+            "p50": null,
+            "p95": null
+          },
+          "latency_ms": {
+            "n": 0,
+            "mean": null,
+            "p50": null,
+            "p95": null
+          },
+          "false_filtered_cases": [],
+          "usage": {
+            "input_tokens": null,
+            "output_tokens": null,
+            "api_cost": null
+          }
+        },
+        "B1": {
+          "status": "observed",
+          "source": [
+            "deepseek_live_shared_prefix"
+          ],
+          "coverage": {
+            "observed": 2,
+            "total": 7
+          },
+          "recall@5": 1.0,
+          "mrr": 1.0,
+          "critical_retention": 1.0,
+          "irrelevant_filter_rate": null,
+          "sufficiency_accuracy": null,
+          "sufficiency_observed": 0,
+          "answer_accuracy": null,
+          "answers_adjudicated": 0,
+          "unsupported_promises": null,
+          "rounds": {
+            "n": 2,
+            "mean": 1,
+            "p50": 1.0,
+            "p95": 1
+          },
+          "deepseek_calls": {
+            "n": 2,
+            "mean": 1,
+            "p50": 1.0,
+            "p95": 1
+          },
+          "latency_ms": {
+            "n": 2,
+            "mean": 16011.74829248339,
+            "p50": 16011.74829248339,
+            "p95": 18776.95487596793
+          },
+          "false_filtered_cases": [],
+          "usage": {
+            "input_tokens": 3866,
+            "output_tokens": 7577,
+            "api_cost": null
+          }
+        },
+        "B2": {
+          "status": "observed",
+          "source": [
+            "deepseek_live_shared_prefix"
+          ],
+          "coverage": {
+            "observed": 1,
+            "total": 7
+          },
+          "recall@5": 1.0,
+          "mrr": 1.0,
+          "critical_retention": 1.0,
+          "irrelevant_filter_rate": null,
+          "sufficiency_accuracy": 1,
+          "sufficiency_observed": 1,
+          "answer_accuracy": null,
+          "answers_adjudicated": 0,
+          "unsupported_promises": null,
+          "rounds": {
+            "n": 1,
+            "mean": 1,
+            "p50": 1,
+            "p95": 1
+          },
+          "deepseek_calls": {
+            "n": 1,
+            "mean": 2,
+            "p50": 2,
+            "p95": 2
+          },
+          "latency_ms": {
+            "n": 1,
+            "mean": 19035.982250003144,
+            "p50": 19035.982250003144,
+            "p95": 19035.982250003144
+          },
+          "false_filtered_cases": [],
+          "usage": {
+            "input_tokens": 2883,
+            "output_tokens": 4147,
+            "api_cost": null
+          }
+        },
+        "B3": {
+          "status": "observed",
+          "source": [
+            "deepseek_live_shared_prefix"
+          ],
+          "coverage": {
+            "observed": 1,
+            "total": 7
+          },
+          "recall@5": 1.0,
+          "mrr": 1.0,
+          "critical_retention": 1.0,
+          "irrelevant_filter_rate": null,
+          "sufficiency_accuracy": 1,
+          "sufficiency_observed": 1,
+          "answer_accuracy": null,
+          "answers_adjudicated": 0,
+          "unsupported_promises": null,
+          "rounds": {
+            "n": 1,
+            "mean": 1,
+            "p50": 1,
+            "p95": 1
+          },
+          "deepseek_calls": {
+            "n": 1,
+            "mean": 2,
+            "p50": 2,
+            "p95": 2
+          },
+          "latency_ms": {
+            "n": 1,
+            "mean": 19035.9823339968,
+            "p50": 19035.9823339968,
+            "p95": 19035.9823339968
+          },
+          "false_filtered_cases": [],
+          "usage": {
+            "input_tokens": 2883,
+            "output_tokens": 4147,
+            "api_cost": null
+          }
+        },
+        "B4": {
+          "status": "not_run",
+          "source": [],
+          "coverage": {
+            "observed": 0,
+            "total": 7
+          },
+          "recall@5": null,
+          "mrr": null,
+          "critical_retention": null,
+          "irrelevant_filter_rate": null,
+          "sufficiency_accuracy": null,
+          "sufficiency_observed": 0,
+          "answer_accuracy": null,
+          "answers_adjudicated": 0,
+          "unsupported_promises": null,
+          "rounds": {
+            "n": 0,
+            "mean": null,
+            "p50": null,
+            "p95": null
+          },
+          "deepseek_calls": {
+            "n": 0,
+            "mean": null,
+            "p50": null,
+            "p95": null
+          },
+          "latency_ms": {
+            "n": 0,
+            "mean": null,
+            "p50": null,
+            "p95": null
+          },
+          "false_filtered_cases": [],
+          "usage": {
+            "input_tokens": null,
+            "output_tokens": null,
+            "api_cost": null
+          }
+        }
+      }
+    },
+    {
+      "artifact_index": 3,
+      "config": {
+        "max_output_tokens": 8192,
+        "timeout_seconds": 65.0,
+        "prompt_version": "evidence-v2-policy-answer"
+      },
+      "common_frozen_case_ids": [],
+      "common_frozen": {
+        "B0": {
+          "status": "not_run",
+          "source": [],
+          "coverage": {
+            "observed": 0,
+            "total": 0
+          },
+          "recall@5": null,
+          "mrr": null,
+          "critical_retention": null,
+          "irrelevant_filter_rate": null,
+          "sufficiency_accuracy": null,
+          "sufficiency_observed": 0,
+          "answer_accuracy": null,
+          "answers_adjudicated": 0,
+          "unsupported_promises": null,
+          "rounds": {
+            "n": 0,
+            "mean": null,
+            "p50": null,
+            "p95": null
+          },
+          "deepseek_calls": {
+            "n": 0,
+            "mean": null,
+            "p50": null,
+            "p95": null
+          },
+          "latency_ms": {
+            "n": 0,
+            "mean": null,
+            "p50": null,
+            "p95": null
+          },
+          "false_filtered_cases": [],
+          "usage": {
+            "input_tokens": null,
+            "output_tokens": null,
+            "api_cost": null
+          }
+        },
+        "B1": {
+          "status": "not_run",
+          "source": [],
+          "coverage": {
+            "observed": 0,
+            "total": 0
+          },
+          "recall@5": null,
+          "mrr": null,
+          "critical_retention": null,
+          "irrelevant_filter_rate": null,
+          "sufficiency_accuracy": null,
+          "sufficiency_observed": 0,
+          "answer_accuracy": null,
+          "answers_adjudicated": 0,
+          "unsupported_promises": null,
+          "rounds": {
+            "n": 0,
+            "mean": null,
+            "p50": null,
+            "p95": null
+          },
+          "deepseek_calls": {
+            "n": 0,
+            "mean": null,
+            "p50": null,
+            "p95": null
+          },
+          "latency_ms": {
+            "n": 0,
+            "mean": null,
+            "p50": null,
+            "p95": null
+          },
+          "false_filtered_cases": [],
+          "usage": {
+            "input_tokens": null,
+            "output_tokens": null,
+            "api_cost": null
+          }
+        },
+        "B2": {
+          "status": "not_run",
+          "source": [],
+          "coverage": {
+            "observed": 0,
+            "total": 0
+          },
+          "recall@5": null,
+          "mrr": null,
+          "critical_retention": null,
+          "irrelevant_filter_rate": null,
+          "sufficiency_accuracy": null,
+          "sufficiency_observed": 0,
+          "answer_accuracy": null,
+          "answers_adjudicated": 0,
+          "unsupported_promises": null,
+          "rounds": {
+            "n": 0,
+            "mean": null,
+            "p50": null,
+            "p95": null
+          },
+          "deepseek_calls": {
+            "n": 0,
+            "mean": null,
+            "p50": null,
+            "p95": null
+          },
+          "latency_ms": {
+            "n": 0,
+            "mean": null,
+            "p50": null,
+            "p95": null
+          },
+          "false_filtered_cases": [],
+          "usage": {
+            "input_tokens": null,
+            "output_tokens": null,
+            "api_cost": null
+          }
+        },
+        "B3": {
+          "status": "not_run",
+          "source": [],
+          "coverage": {
+            "observed": 0,
+            "total": 0
+          },
+          "recall@5": null,
+          "mrr": null,
+          "critical_retention": null,
+          "irrelevant_filter_rate": null,
+          "sufficiency_accuracy": null,
+          "sufficiency_observed": 0,
+          "answer_accuracy": null,
+          "answers_adjudicated": 0,
+          "unsupported_promises": null,
+          "rounds": {
+            "n": 0,
+            "mean": null,
+            "p50": null,
+            "p95": null
+          },
+          "deepseek_calls": {
+            "n": 0,
+            "mean": null,
+            "p50": null,
+            "p95": null
+          },
+          "latency_ms": {
+            "n": 0,
+            "mean": null,
+            "p50": null,
+            "p95": null
+          },
+          "false_filtered_cases": [],
+          "usage": {
+            "input_tokens": null,
+            "output_tokens": null,
+            "api_cost": null
+          }
+        },
+        "B4": {
+          "status": "not_run",
+          "source": [],
+          "coverage": {
+            "observed": 0,
+            "total": 0
+          },
+          "recall@5": null,
+          "mrr": null,
+          "critical_retention": null,
+          "irrelevant_filter_rate": null,
+          "sufficiency_accuracy": null,
+          "sufficiency_observed": 0,
+          "answer_accuracy": null,
+          "answers_adjudicated": 0,
+          "unsupported_promises": null,
+          "rounds": {
+            "n": 0,
+            "mean": null,
+            "p50": null,
+            "p95": null
+          },
+          "deepseek_calls": {
+            "n": 0,
+            "mean": null,
+            "p50": null,
+            "p95": null
+          },
+          "latency_ms": {
+            "n": 0,
+            "mean": null,
+            "p50": null,
+            "p95": null
+          },
+          "false_filtered_cases": [],
+          "usage": {
+            "input_tokens": null,
+            "output_tokens": null,
+            "api_cost": null
+          }
+        }
+      },
+      "complex": {
+        "B0": {
+          "status": "not_run",
+          "source": [],
+          "coverage": {
+            "observed": 0,
+            "total": 7
+          },
+          "recall@5": null,
+          "mrr": null,
+          "critical_retention": null,
+          "irrelevant_filter_rate": null,
+          "sufficiency_accuracy": null,
+          "sufficiency_observed": 0,
+          "answer_accuracy": null,
+          "answers_adjudicated": 0,
+          "unsupported_promises": null,
+          "rounds": {
+            "n": 0,
+            "mean": null,
+            "p50": null,
+            "p95": null
+          },
+          "deepseek_calls": {
+            "n": 0,
+            "mean": null,
+            "p50": null,
+            "p95": null
+          },
+          "latency_ms": {
+            "n": 0,
+            "mean": null,
+            "p50": null,
+            "p95": null
+          },
+          "false_filtered_cases": [],
+          "usage": {
+            "input_tokens": null,
+            "output_tokens": null,
+            "api_cost": null
+          }
+        },
+        "B1": {
+          "status": "observed",
+          "source": [
+            "deepseek_live_shared_prefix"
+          ],
+          "coverage": {
+            "observed": 3,
+            "total": 7
+          },
+          "recall@5": 1.0,
+          "mrr": 1.0,
+          "critical_retention": 1.0,
+          "irrelevant_filter_rate": 0.0,
+          "sufficiency_accuracy": null,
+          "sufficiency_observed": 0,
+          "answer_accuracy": null,
+          "answers_adjudicated": 0,
+          "unsupported_promises": null,
+          "rounds": {
+            "n": 3,
+            "mean": 1,
+            "p50": 1,
+            "p95": 1
+          },
+          "deepseek_calls": {
+            "n": 3,
+            "mean": 1,
+            "p50": 1,
+            "p95": 1
+          },
+          "latency_ms": {
+            "n": 3,
+            "mean": 20166.875055341126,
+            "p50": 18021.3956249936,
+            "p95": 26503.380249021575
+          },
+          "false_filtered_cases": [],
+          "usage": {
+            "input_tokens": 6112,
+            "output_tokens": 13639,
+            "api_cost": null
+          }
+        },
+        "B2": {
+          "status": "observed",
+          "source": [
+            "deepseek_live_shared_prefix"
+          ],
+          "coverage": {
+            "observed": 5,
+            "total": 7
+          },
+          "recall@5": 1.0,
+          "mrr": 1.0,
+          "critical_retention": 1.0,
+          "irrelevant_filter_rate": 0.0,
+          "sufficiency_accuracy": 1,
+          "sufficiency_observed": 5,
+          "answer_accuracy": null,
+          "answers_adjudicated": 0,
+          "unsupported_promises": null,
+          "rounds": {
+            "n": 5,
+            "mean": 1,
+            "p50": 1,
+            "p95": 1
+          },
+          "deepseek_calls": {
+            "n": 5,
+            "mean": 1.2,
+            "p50": 2,
+            "p95": 2
+          },
+          "latency_ms": {
+            "n": 5,
+            "mean": 14888.327733409824,
+            "p50": 8796.019875007914,
+            "p95": 44487.217290035915
+          },
+          "false_filtered_cases": [],
+          "usage": {
+            "input_tokens": 9379,
+            "output_tokens": 16087,
+            "api_cost": null
+          }
+        },
+        "B3": {
+          "status": "observed",
+          "source": [
+            "deepseek_live_shared_prefix"
+          ],
+          "coverage": {
+            "observed": 5,
+            "total": 7
+          },
+          "recall@5": 1.0,
+          "mrr": 1.0,
+          "critical_retention": 1.0,
+          "irrelevant_filter_rate": 0.0,
+          "sufficiency_accuracy": 1,
+          "sufficiency_observed": 5,
+          "answer_accuracy": null,
+          "answers_adjudicated": 0,
+          "unsupported_promises": null,
+          "rounds": {
+            "n": 5,
+            "mean": 1.6,
+            "p50": 1,
+            "p95": 3
+          },
+          "deepseek_calls": {
+            "n": 5,
+            "mean": 2,
+            "p50": 2,
+            "p95": 6
+          },
+          "latency_ms": {
+            "n": 5,
+            "mean": 25904.74677500897,
+            "p50": 8796.019250003155,
+            "p95": 99569.31203804561
+          },
+          "false_filtered_cases": [],
+          "usage": {
+            "input_tokens": 17043,
+            "output_tokens": 28730,
+            "api_cost": null
+          }
+        },
+        "B4": {
+          "status": "not_run",
+          "source": [],
+          "coverage": {
+            "observed": 0,
+            "total": 7
+          },
+          "recall@5": null,
+          "mrr": null,
+          "critical_retention": null,
+          "irrelevant_filter_rate": null,
+          "sufficiency_accuracy": null,
+          "sufficiency_observed": 0,
+          "answer_accuracy": null,
+          "answers_adjudicated": 0,
+          "unsupported_promises": null,
+          "rounds": {
+            "n": 0,
+            "mean": null,
+            "p50": null,
+            "p95": null
+          },
+          "deepseek_calls": {
+            "n": 0,
+            "mean": null,
+            "p50": null,
+            "p95": null
+          },
+          "latency_ms": {
+            "n": 0,
+            "mean": null,
+            "p50": null,
+            "p95": null
+          },
+          "false_filtered_cases": [],
+          "usage": {
+            "input_tokens": null,
+            "output_tokens": null,
+            "api_cost": null
+          }
+        }
+      }
+    }
+  ],
+  "provider_versions": [
+    {
+      "config": {
+        "max_output_tokens": 4096
+      },
+      "common_frozen_case_ids": [],
+      "common_frozen": {
+        "B0": {
+          "status": "not_run",
+          "source": [],
+          "coverage": {
+            "observed": 0,
+            "total": 0
+          },
+          "recall@5": null,
+          "mrr": null,
+          "critical_retention": null,
+          "irrelevant_filter_rate": null,
+          "sufficiency_accuracy": null,
+          "sufficiency_observed": 0,
+          "answer_accuracy": null,
+          "answers_adjudicated": 0,
+          "unsupported_promises": null,
+          "rounds": {
+            "n": 0,
+            "mean": null,
+            "p50": null,
+            "p95": null
+          },
+          "deepseek_calls": {
+            "n": 0,
+            "mean": null,
+            "p50": null,
+            "p95": null
+          },
+          "latency_ms": {
+            "n": 0,
+            "mean": null,
+            "p50": null,
+            "p95": null
+          },
+          "false_filtered_cases": [],
+          "usage": {
+            "input_tokens": null,
+            "output_tokens": null,
+            "api_cost": null
+          }
+        },
+        "B1": {
+          "status": "not_run",
+          "source": [],
+          "coverage": {
+            "observed": 0,
+            "total": 0
+          },
+          "recall@5": null,
+          "mrr": null,
+          "critical_retention": null,
+          "irrelevant_filter_rate": null,
+          "sufficiency_accuracy": null,
+          "sufficiency_observed": 0,
+          "answer_accuracy": null,
+          "answers_adjudicated": 0,
+          "unsupported_promises": null,
+          "rounds": {
+            "n": 0,
+            "mean": null,
+            "p50": null,
+            "p95": null
+          },
+          "deepseek_calls": {
+            "n": 0,
+            "mean": null,
+            "p50": null,
+            "p95": null
+          },
+          "latency_ms": {
+            "n": 0,
+            "mean": null,
+            "p50": null,
+            "p95": null
+          },
+          "false_filtered_cases": [],
+          "usage": {
+            "input_tokens": null,
+            "output_tokens": null,
+            "api_cost": null
+          }
+        },
+        "B2": {
+          "status": "not_run",
+          "source": [],
+          "coverage": {
+            "observed": 0,
+            "total": 0
+          },
+          "recall@5": null,
+          "mrr": null,
+          "critical_retention": null,
+          "irrelevant_filter_rate": null,
+          "sufficiency_accuracy": null,
+          "sufficiency_observed": 0,
+          "answer_accuracy": null,
+          "answers_adjudicated": 0,
+          "unsupported_promises": null,
+          "rounds": {
+            "n": 0,
+            "mean": null,
+            "p50": null,
+            "p95": null
+          },
+          "deepseek_calls": {
+            "n": 0,
+            "mean": null,
+            "p50": null,
+            "p95": null
+          },
+          "latency_ms": {
+            "n": 0,
+            "mean": null,
+            "p50": null,
+            "p95": null
+          },
+          "false_filtered_cases": [],
+          "usage": {
+            "input_tokens": null,
+            "output_tokens": null,
+            "api_cost": null
+          }
+        },
+        "B3": {
+          "status": "not_run",
+          "source": [],
+          "coverage": {
+            "observed": 0,
+            "total": 0
+          },
+          "recall@5": null,
+          "mrr": null,
+          "critical_retention": null,
+          "irrelevant_filter_rate": null,
+          "sufficiency_accuracy": null,
+          "sufficiency_observed": 0,
+          "answer_accuracy": null,
+          "answers_adjudicated": 0,
+          "unsupported_promises": null,
+          "rounds": {
+            "n": 0,
+            "mean": null,
+            "p50": null,
+            "p95": null
+          },
+          "deepseek_calls": {
+            "n": 0,
+            "mean": null,
+            "p50": null,
+            "p95": null
+          },
+          "latency_ms": {
+            "n": 0,
+            "mean": null,
+            "p50": null,
+            "p95": null
+          },
+          "false_filtered_cases": [],
+          "usage": {
+            "input_tokens": null,
+            "output_tokens": null,
+            "api_cost": null
+          }
+        },
+        "B4": {
+          "status": "not_run",
+          "source": [],
+          "coverage": {
+            "observed": 0,
+            "total": 0
+          },
+          "recall@5": null,
+          "mrr": null,
+          "critical_retention": null,
+          "irrelevant_filter_rate": null,
+          "sufficiency_accuracy": null,
+          "sufficiency_observed": 0,
+          "answer_accuracy": null,
+          "answers_adjudicated": 0,
+          "unsupported_promises": null,
+          "rounds": {
+            "n": 0,
+            "mean": null,
+            "p50": null,
+            "p95": null
+          },
+          "deepseek_calls": {
+            "n": 0,
+            "mean": null,
+            "p50": null,
+            "p95": null
+          },
+          "latency_ms": {
+            "n": 0,
+            "mean": null,
+            "p50": null,
+            "p95": null
+          },
+          "false_filtered_cases": [],
+          "usage": {
+            "input_tokens": null,
+            "output_tokens": null,
+            "api_cost": null
+          }
+        }
+      },
+      "complex": {
+        "B0": {
+          "status": "not_run",
+          "source": [],
+          "coverage": {
+            "observed": 0,
+            "total": 7
+          },
+          "recall@5": null,
+          "mrr": null,
+          "critical_retention": null,
+          "irrelevant_filter_rate": null,
+          "sufficiency_accuracy": null,
+          "sufficiency_observed": 0,
+          "answer_accuracy": null,
+          "answers_adjudicated": 0,
+          "unsupported_promises": null,
+          "rounds": {
+            "n": 0,
+            "mean": null,
+            "p50": null,
+            "p95": null
+          },
+          "deepseek_calls": {
+            "n": 0,
+            "mean": null,
+            "p50": null,
+            "p95": null
+          },
+          "latency_ms": {
+            "n": 0,
+            "mean": null,
+            "p50": null,
+            "p95": null
+          },
+          "false_filtered_cases": [],
+          "usage": {
+            "input_tokens": null,
+            "output_tokens": null,
+            "api_cost": null
+          },
+          "labelled_case_completion_accuracy": null
+        },
+        "B1": {
+          "status": "not_run",
+          "source": [],
+          "coverage": {
+            "observed": 0,
+            "total": 7
+          },
+          "recall@5": null,
+          "mrr": null,
+          "critical_retention": null,
+          "irrelevant_filter_rate": null,
+          "sufficiency_accuracy": null,
+          "sufficiency_observed": 0,
+          "answer_accuracy": null,
+          "answers_adjudicated": 0,
+          "unsupported_promises": null,
+          "rounds": {
+            "n": 0,
+            "mean": null,
+            "p50": null,
+            "p95": null
+          },
+          "deepseek_calls": {
+            "n": 0,
+            "mean": null,
+            "p50": null,
+            "p95": null
+          },
+          "latency_ms": {
+            "n": 0,
+            "mean": null,
+            "p50": null,
+            "p95": null
+          },
+          "false_filtered_cases": [],
+          "usage": {
+            "input_tokens": null,
+            "output_tokens": null,
+            "api_cost": null
+          },
+          "labelled_case_completion_accuracy": null
+        },
+        "B2": {
+          "status": "not_run",
+          "source": [],
+          "coverage": {
+            "observed": 0,
+            "total": 7
+          },
+          "recall@5": null,
+          "mrr": null,
+          "critical_retention": null,
+          "irrelevant_filter_rate": null,
+          "sufficiency_accuracy": null,
+          "sufficiency_observed": 0,
+          "answer_accuracy": null,
+          "answers_adjudicated": 0,
+          "unsupported_promises": null,
+          "rounds": {
+            "n": 0,
+            "mean": null,
+            "p50": null,
+            "p95": null
+          },
+          "deepseek_calls": {
+            "n": 0,
+            "mean": null,
+            "p50": null,
+            "p95": null
+          },
+          "latency_ms": {
+            "n": 0,
+            "mean": null,
+            "p50": null,
+            "p95": null
+          },
+          "false_filtered_cases": [],
+          "usage": {
+            "input_tokens": null,
+            "output_tokens": null,
+            "api_cost": null
+          },
+          "labelled_case_completion_accuracy": null
+        },
+        "B3": {
+          "status": "not_run",
+          "source": [],
+          "coverage": {
+            "observed": 0,
+            "total": 7
+          },
+          "recall@5": null,
+          "mrr": null,
+          "critical_retention": null,
+          "irrelevant_filter_rate": null,
+          "sufficiency_accuracy": null,
+          "sufficiency_observed": 0,
+          "answer_accuracy": null,
+          "answers_adjudicated": 0,
+          "unsupported_promises": null,
+          "rounds": {
+            "n": 0,
+            "mean": null,
+            "p50": null,
+            "p95": null
+          },
+          "deepseek_calls": {
+            "n": 0,
+            "mean": null,
+            "p50": null,
+            "p95": null
+          },
+          "latency_ms": {
+            "n": 0,
+            "mean": null,
+            "p50": null,
+            "p95": null
+          },
+          "false_filtered_cases": [],
+          "usage": {
+            "input_tokens": null,
+            "output_tokens": null,
+            "api_cost": null
+          },
+          "labelled_case_completion_accuracy": null
+        },
+        "B4": {
+          "status": "not_run",
+          "source": [],
+          "coverage": {
+            "observed": 0,
+            "total": 7
+          },
+          "recall@5": null,
+          "mrr": null,
+          "critical_retention": null,
+          "irrelevant_filter_rate": null,
+          "sufficiency_accuracy": null,
+          "sufficiency_observed": 0,
+          "answer_accuracy": null,
+          "answers_adjudicated": 0,
+          "unsupported_promises": null,
+          "rounds": {
+            "n": 0,
+            "mean": null,
+            "p50": null,
+            "p95": null
+          },
+          "deepseek_calls": {
+            "n": 0,
+            "mean": null,
+            "p50": null,
+            "p95": null
+          },
+          "latency_ms": {
+            "n": 0,
+            "mean": null,
+            "p50": null,
+            "p95": null
+          },
+          "false_filtered_cases": [],
+          "usage": {
+            "input_tokens": null,
+            "output_tokens": null,
+            "api_cost": null
+          },
+          "labelled_case_completion_accuracy": null
+        }
+      }
+    },
+    {
+      "config": {
+        "max_output_tokens": 8192,
+        "timeout_seconds": 65.0
+      },
+      "common_frozen_case_ids": [
+        "para_02",
+        "para_03",
+        "para_04",
+        "para_05",
+        "para_06"
+      ],
+      "common_frozen": {
+        "B0": {
+          "status": "observed",
+          "source": [
+            "live_deepseek"
+          ],
+          "coverage": {
+            "observed": 5,
+            "total": 5
+          },
+          "recall@5": 1.0,
+          "mrr": 0.9,
+          "critical_retention": null,
+          "irrelevant_filter_rate": null,
+          "sufficiency_accuracy": null,
+          "sufficiency_observed": 0,
+          "answer_accuracy": null,
+          "answers_adjudicated": 0,
+          "unsupported_promises": null,
+          "rounds": {
+            "n": 5,
+            "mean": 1,
+            "p50": 1,
+            "p95": 1
+          },
+          "deepseek_calls": {
+            "n": 5,
+            "mean": 1,
+            "p50": 1,
+            "p95": 1
+          },
+          "latency_ms": {
+            "n": 5,
+            "mean": 9267.647058400325,
+            "p50": 10120.016875007423,
+            "p95": 16963.842875004048
+          },
+          "false_filtered_cases": [],
+          "usage": {
+            "input_tokens": 6414,
+            "output_tokens": 10137,
+            "api_cost": null
+          }
+        },
+        "B1": {
+          "status": "observed",
+          "source": [
+            "deepseek_live_shared_prefix"
+          ],
+          "coverage": {
+            "observed": 5,
+            "total": 5
+          },
+          "recall@5": 1.0,
+          "mrr": 1.0,
+          "critical_retention": null,
+          "irrelevant_filter_rate": null,
+          "sufficiency_accuracy": null,
+          "sufficiency_observed": 0,
+          "answer_accuracy": null,
+          "answers_adjudicated": 0,
+          "unsupported_promises": null,
+          "rounds": {
+            "n": 5,
+            "mean": 1,
+            "p50": 1,
+            "p95": 1
+          },
+          "deepseek_calls": {
+            "n": 5,
+            "mean": 1,
+            "p50": 1,
+            "p95": 1
+          },
+          "latency_ms": {
+            "n": 5,
+            "mean": 15337.303924793378,
+            "p50": 16173.833332999493,
+            "p95": 19863.388666984974
+          },
+          "false_filtered_cases": [],
+          "usage": {
+            "input_tokens": 10412,
+            "output_tokens": 18224,
+            "api_cost": null
+          }
+        },
+        "B2": {
+          "status": "observed",
+          "source": [
+            "deepseek_live_shared_prefix"
+          ],
+          "coverage": {
+            "observed": 5,
+            "total": 5
+          },
+          "recall@5": 0.0,
+          "mrr": 0,
+          "critical_retention": null,
+          "irrelevant_filter_rate": null,
+          "sufficiency_accuracy": null,
+          "sufficiency_observed": 0,
+          "answer_accuracy": null,
+          "answers_adjudicated": 0,
+          "unsupported_promises": null,
+          "rounds": {
+            "n": 5,
+            "mean": 1,
+            "p50": 1,
+            "p95": 1
+          },
+          "deepseek_calls": {
+            "n": 5,
+            "mean": 2,
+            "p50": 2,
+            "p95": 2
+          },
+          "latency_ms": {
+            "n": 5,
+            "mean": 33963.74219979625,
+            "p50": 29254.620998966857,
+            "p95": 51804.23183401581
+          },
+          "false_filtered_cases": [],
+          "usage": {
+            "input_tokens": 13819,
+            "output_tokens": 37530,
+            "api_cost": null
+          }
+        },
+        "B3": {
+          "status": "observed",
+          "source": [
+            "deepseek_live_shared_prefix"
+          ],
+          "coverage": {
+            "observed": 5,
+            "total": 5
+          },
+          "recall@5": 0.0,
+          "mrr": 0,
+          "critical_retention": null,
+          "irrelevant_filter_rate": null,
+          "sufficiency_accuracy": null,
+          "sufficiency_observed": 0,
+          "answer_accuracy": null,
+          "answers_adjudicated": 0,
+          "unsupported_promises": null,
+          "rounds": {
+            "n": 5,
+            "mean": 1,
+            "p50": 1,
+            "p95": 1
+          },
+          "deepseek_calls": {
+            "n": 5,
+            "mean": 2,
+            "p50": 2,
+            "p95": 2
+          },
+          "latency_ms": {
+            "n": 5,
+            "mean": 33963.742225198075,
+            "p50": 29254.62083298771,
+            "p95": 51804.23225101549
+          },
+          "false_filtered_cases": [],
+          "usage": {
+            "input_tokens": 13819,
+            "output_tokens": 37530,
+            "api_cost": null
+          }
+        },
+        "B4": {
+          "status": "not_run",
+          "source": [],
+          "coverage": {
+            "observed": 0,
+            "total": 5
+          },
+          "recall@5": null,
+          "mrr": null,
+          "critical_retention": null,
+          "irrelevant_filter_rate": null,
+          "sufficiency_accuracy": null,
+          "sufficiency_observed": 0,
+          "answer_accuracy": null,
+          "answers_adjudicated": 0,
+          "unsupported_promises": null,
+          "rounds": {
+            "n": 0,
+            "mean": null,
+            "p50": null,
+            "p95": null
+          },
+          "deepseek_calls": {
+            "n": 0,
+            "mean": null,
+            "p50": null,
+            "p95": null
+          },
+          "latency_ms": {
+            "n": 0,
+            "mean": null,
+            "p50": null,
+            "p95": null
+          },
+          "false_filtered_cases": [],
+          "usage": {
+            "input_tokens": null,
+            "output_tokens": null,
+            "api_cost": null
+          }
+        }
+      },
+      "complex": {
+        "B0": {
+          "status": "not_run",
+          "source": [],
+          "coverage": {
+            "observed": 0,
+            "total": 7
+          },
+          "recall@5": null,
+          "mrr": null,
+          "critical_retention": null,
+          "irrelevant_filter_rate": null,
+          "sufficiency_accuracy": null,
+          "sufficiency_observed": 0,
+          "answer_accuracy": null,
+          "answers_adjudicated": 0,
+          "unsupported_promises": null,
+          "rounds": {
+            "n": 0,
+            "mean": null,
+            "p50": null,
+            "p95": null
+          },
+          "deepseek_calls": {
+            "n": 0,
+            "mean": null,
+            "p50": null,
+            "p95": null
+          },
+          "latency_ms": {
+            "n": 0,
+            "mean": null,
+            "p50": null,
+            "p95": null
+          },
+          "false_filtered_cases": [],
+          "usage": {
+            "input_tokens": null,
+            "output_tokens": null,
+            "api_cost": null
+          },
+          "labelled_case_completion_accuracy": null
+        },
+        "B1": {
+          "status": "not_run",
+          "source": [],
+          "coverage": {
+            "observed": 0,
+            "total": 7
+          },
+          "recall@5": null,
+          "mrr": null,
+          "critical_retention": null,
+          "irrelevant_filter_rate": null,
+          "sufficiency_accuracy": null,
+          "sufficiency_observed": 0,
+          "answer_accuracy": null,
+          "answers_adjudicated": 0,
+          "unsupported_promises": null,
+          "rounds": {
+            "n": 0,
+            "mean": null,
+            "p50": null,
+            "p95": null
+          },
+          "deepseek_calls": {
+            "n": 0,
+            "mean": null,
+            "p50": null,
+            "p95": null
+          },
+          "latency_ms": {
+            "n": 0,
+            "mean": null,
+            "p50": null,
+            "p95": null
+          },
+          "false_filtered_cases": [],
+          "usage": {
+            "input_tokens": null,
+            "output_tokens": null,
+            "api_cost": null
+          },
+          "labelled_case_completion_accuracy": null
+        },
+        "B2": {
+          "status": "not_run",
+          "source": [],
+          "coverage": {
+            "observed": 0,
+            "total": 7
+          },
+          "recall@5": null,
+          "mrr": null,
+          "critical_retention": null,
+          "irrelevant_filter_rate": null,
+          "sufficiency_accuracy": null,
+          "sufficiency_observed": 0,
+          "answer_accuracy": null,
+          "answers_adjudicated": 0,
+          "unsupported_promises": null,
+          "rounds": {
+            "n": 0,
+            "mean": null,
+            "p50": null,
+            "p95": null
+          },
+          "deepseek_calls": {
+            "n": 0,
+            "mean": null,
+            "p50": null,
+            "p95": null
+          },
+          "latency_ms": {
+            "n": 0,
+            "mean": null,
+            "p50": null,
+            "p95": null
+          },
+          "false_filtered_cases": [],
+          "usage": {
+            "input_tokens": null,
+            "output_tokens": null,
+            "api_cost": null
+          },
+          "labelled_case_completion_accuracy": null
+        },
+        "B3": {
+          "status": "not_run",
+          "source": [],
+          "coverage": {
+            "observed": 0,
+            "total": 7
+          },
+          "recall@5": null,
+          "mrr": null,
+          "critical_retention": null,
+          "irrelevant_filter_rate": null,
+          "sufficiency_accuracy": null,
+          "sufficiency_observed": 0,
+          "answer_accuracy": null,
+          "answers_adjudicated": 0,
+          "unsupported_promises": null,
+          "rounds": {
+            "n": 0,
+            "mean": null,
+            "p50": null,
+            "p95": null
+          },
+          "deepseek_calls": {
+            "n": 0,
+            "mean": null,
+            "p50": null,
+            "p95": null
+          },
+          "latency_ms": {
+            "n": 0,
+            "mean": null,
+            "p50": null,
+            "p95": null
+          },
+          "false_filtered_cases": [],
+          "usage": {
+            "input_tokens": null,
+            "output_tokens": null,
+            "api_cost": null
+          },
+          "labelled_case_completion_accuracy": null
+        },
+        "B4": {
+          "status": "not_run",
+          "source": [],
+          "coverage": {
+            "observed": 0,
+            "total": 7
+          },
+          "recall@5": null,
+          "mrr": null,
+          "critical_retention": null,
+          "irrelevant_filter_rate": null,
+          "sufficiency_accuracy": null,
+          "sufficiency_observed": 0,
+          "answer_accuracy": null,
+          "answers_adjudicated": 0,
+          "unsupported_promises": null,
+          "rounds": {
+            "n": 0,
+            "mean": null,
+            "p50": null,
+            "p95": null
+          },
+          "deepseek_calls": {
+            "n": 0,
+            "mean": null,
+            "p50": null,
+            "p95": null
+          },
+          "latency_ms": {
+            "n": 0,
+            "mean": null,
+            "p50": null,
+            "p95": null
+          },
+          "false_filtered_cases": [],
+          "usage": {
+            "input_tokens": null,
+            "output_tokens": null,
+            "api_cost": null
+          },
+          "labelled_case_completion_accuracy": null
+        }
+      }
+    },
+    {
+      "config": {
+        "max_output_tokens": 8192,
+        "timeout_seconds": 65.0,
+        "prompt_version": "evidence-v2-policy-answer"
+      },
+      "common_frozen_case_ids": [
+        "multi_02",
+        "multi_03",
+        "multi_04",
+        "multi_05",
+        "multi_06",
+        "negative_01",
+        "negative_02",
+        "negative_03",
+        "negative_04",
+        "negative_05",
+        "negative_06",
+        "noise_01",
+        "noise_02",
+        "noise_03",
+        "noise_04",
+        "noise_05",
+        "noise_06"
+      ],
+      "common_frozen": {
+        "B0": {
+          "status": "observed",
+          "source": [
+            "live_deepseek"
+          ],
+          "coverage": {
+            "observed": 17,
+            "total": 17
+          },
+          "recall@5": 1.0,
+          "mrr": 0.9705882352941176,
+          "critical_retention": null,
+          "irrelevant_filter_rate": null,
+          "sufficiency_accuracy": null,
+          "sufficiency_observed": 0,
+          "answer_accuracy": null,
+          "answers_adjudicated": 0,
+          "unsupported_promises": null,
+          "rounds": {
+            "n": 17,
+            "mean": 1,
+            "p50": 1,
+            "p95": 1
+          },
+          "deepseek_calls": {
+            "n": 17,
+            "mean": 1,
+            "p50": 1,
+            "p95": 1
+          },
+          "latency_ms": {
+            "n": 17,
+            "mean": 12308.545666588436,
+            "p50": 11222.89862499747,
+            "p95": 42737.404625004274
+          },
+          "false_filtered_cases": [],
+          "usage": {
+            "input_tokens": 20515,
+            "output_tokens": 44683,
+            "api_cost": null
+          }
+        },
+        "B1": {
+          "status": "observed",
+          "source": [
+            "deepseek_live_shared_prefix"
+          ],
+          "coverage": {
+            "observed": 17,
+            "total": 17
+          },
+          "recall@5": 1.0,
+          "mrr": 0.9705882352941176,
+          "critical_retention": null,
+          "irrelevant_filter_rate": null,
+          "sufficiency_accuracy": null,
+          "sufficiency_observed": 0,
+          "answer_accuracy": null,
+          "answers_adjudicated": 0,
+          "unsupported_promises": null,
+          "rounds": {
+            "n": 17,
+            "mean": 1,
+            "p50": 1,
+            "p95": 1
+          },
+          "deepseek_calls": {
+            "n": 17,
+            "mean": 1,
+            "p50": 1,
+            "p95": 1
+          },
+          "latency_ms": {
+            "n": 17,
+            "mean": 12009.912450816688,
+            "p50": 10281.492958951276,
+            "p95": 20994.326000014553
+          },
+          "false_filtered_cases": [],
+          "usage": {
+            "input_tokens": 35269,
+            "output_tokens": 47903,
+            "api_cost": null
+          }
+        },
+        "B2": {
+          "status": "observed",
+          "source": [
+            "deepseek_live_shared_prefix"
+          ],
+          "coverage": {
+            "observed": 17,
+            "total": 17
+          },
+          "recall@5": 1.0,
+          "mrr": 1.0,
+          "critical_retention": null,
+          "irrelevant_filter_rate": null,
+          "sufficiency_accuracy": null,
+          "sufficiency_observed": 0,
+          "answer_accuracy": null,
+          "answers_adjudicated": 0,
+          "unsupported_promises": null,
+          "rounds": {
+            "n": 17,
+            "mean": 1,
+            "p50": 1,
+            "p95": 1
+          },
+          "deepseek_calls": {
+            "n": 17,
+            "mean": 2,
+            "p50": 2,
+            "p95": 2
+          },
+          "latency_ms": {
+            "n": 17,
+            "mean": 18299.895948345213,
+            "p50": 15012.332167010754,
+            "p95": 33162.15020802338
+          },
+          "false_filtered_cases": [],
+          "usage": {
+            "input_tokens": 50969,
+            "output_tokens": 68814,
+            "api_cost": null
+          }
+        },
+        "B3": {
+          "status": "observed",
+          "source": [
+            "deepseek_live_shared_prefix"
+          ],
+          "coverage": {
+            "observed": 17,
+            "total": 17
+          },
+          "recall@5": 1.0,
+          "mrr": 1.0,
+          "critical_retention": null,
+          "irrelevant_filter_rate": null,
+          "sufficiency_accuracy": null,
+          "sufficiency_observed": 0,
+          "answer_accuracy": null,
+          "answers_adjudicated": 0,
+          "unsupported_promises": null,
+          "rounds": {
+            "n": 17,
+            "mean": 1,
+            "p50": 1,
+            "p95": 1
+          },
+          "deepseek_calls": {
+            "n": 17,
+            "mean": 2,
+            "p50": 2,
+            "p95": 2
+          },
+          "latency_ms": {
+            "n": 17,
+            "mean": 18299.89588452736,
+            "p50": 15012.332125013927,
+            "p95": 33162.15045802528
+          },
+          "false_filtered_cases": [],
+          "usage": {
+            "input_tokens": 50969,
+            "output_tokens": 68814,
+            "api_cost": null
+          }
+        },
+        "B4": {
+          "status": "not_run",
+          "source": [],
+          "coverage": {
+            "observed": 0,
+            "total": 17
+          },
+          "recall@5": null,
+          "mrr": null,
+          "critical_retention": null,
+          "irrelevant_filter_rate": null,
+          "sufficiency_accuracy": null,
+          "sufficiency_observed": 0,
+          "answer_accuracy": null,
+          "answers_adjudicated": 0,
+          "unsupported_promises": null,
+          "rounds": {
+            "n": 0,
+            "mean": null,
+            "p50": null,
+            "p95": null
+          },
+          "deepseek_calls": {
+            "n": 0,
+            "mean": null,
+            "p50": null,
+            "p95": null
+          },
+          "latency_ms": {
+            "n": 0,
+            "mean": null,
+            "p50": null,
+            "p95": null
+          },
+          "false_filtered_cases": [],
+          "usage": {
+            "input_tokens": null,
+            "output_tokens": null,
+            "api_cost": null
+          }
+        }
+      },
+      "complex": {
+        "B0": {
+          "status": "not_run",
+          "source": [],
+          "coverage": {
+            "observed": 0,
+            "total": 7
+          },
+          "recall@5": null,
+          "mrr": null,
+          "critical_retention": null,
+          "irrelevant_filter_rate": null,
+          "sufficiency_accuracy": null,
+          "sufficiency_observed": 0,
+          "answer_accuracy": null,
+          "answers_adjudicated": 0,
+          "unsupported_promises": null,
+          "rounds": {
+            "n": 0,
+            "mean": null,
+            "p50": null,
+            "p95": null
+          },
+          "deepseek_calls": {
+            "n": 0,
+            "mean": null,
+            "p50": null,
+            "p95": null
+          },
+          "latency_ms": {
+            "n": 0,
+            "mean": null,
+            "p50": null,
+            "p95": null
+          },
+          "false_filtered_cases": [],
+          "usage": {
+            "input_tokens": null,
+            "output_tokens": null,
+            "api_cost": null
+          },
+          "labelled_case_completion_accuracy": null
+        },
+        "B1": {
+          "status": "observed",
+          "source": [
+            "deepseek_live_shared_prefix"
+          ],
+          "coverage": {
+            "observed": 5,
+            "total": 7
+          },
+          "recall@5": 1.0,
+          "mrr": 1.0,
+          "critical_retention": 1.0,
+          "irrelevant_filter_rate": 0.0,
+          "sufficiency_accuracy": null,
+          "sufficiency_observed": 0,
+          "answer_accuracy": null,
+          "answers_adjudicated": 0,
+          "unsupported_promises": null,
+          "rounds": {
+            "n": 5,
+            "mean": 1,
+            "p50": 1,
+            "p95": 1
+          },
+          "deepseek_calls": {
+            "n": 5,
+            "mean": 1,
+            "p50": 1,
+            "p95": 1
+          },
+          "latency_ms": {
+            "n": 5,
+            "mean": 18504.824350198032,
+            "p50": 18021.3956249936,
+            "p95": 26503.380249021575
+          },
+          "false_filtered_cases": [],
+          "usage": {
+            "input_tokens": 9978,
+            "output_tokens": 21216,
+            "api_cost": null
+          },
+          "labelled_case_completion_accuracy": null
+        },
+        "B2": {
+          "status": "observed",
+          "source": [
+            "deepseek_live_shared_prefix"
+          ],
+          "coverage": {
+            "observed": 6,
+            "total": 7
+          },
+          "recall@5": 1.0,
+          "mrr": 1.0,
+          "critical_retention": 1.0,
+          "irrelevant_filter_rate": 0.0,
+          "sufficiency_accuracy": 1,
+          "sufficiency_observed": 6,
+          "answer_accuracy": null,
+          "answers_adjudicated": 0,
+          "unsupported_promises": null,
+          "rounds": {
+            "n": 6,
+            "mean": 1,
+            "p50": 1.0,
+            "p95": 1
+          },
+          "deepseek_calls": {
+            "n": 6,
+            "mean": 1.3333333333333333,
+            "p50": 2.0,
+            "p95": 2
+          },
+          "latency_ms": {
+            "n": 6,
+            "mean": 15579.603486175378,
+            "p50": 13916.00106250553,
+            "p95": 44487.217290035915
+          },
+          "false_filtered_cases": [],
+          "usage": {
+            "input_tokens": 12262,
+            "output_tokens": 20234,
+            "api_cost": null
+          },
+          "labelled_case_completion_accuracy": 0.8571428571428571
+        },
+        "B3": {
+          "status": "observed",
+          "source": [
+            "deepseek_live_shared_prefix"
+          ],
+          "coverage": {
+            "observed": 6,
+            "total": 7
+          },
+          "recall@5": 1.0,
+          "mrr": 1.0,
+          "critical_retention": 1.0,
+          "irrelevant_filter_rate": 0.0,
+          "sufficiency_accuracy": 1,
+          "sufficiency_observed": 6,
+          "answer_accuracy": null,
+          "answers_adjudicated": 0,
+          "unsupported_promises": null,
+          "rounds": {
+            "n": 6,
+            "mean": 1.5,
+            "p50": 1.0,
+            "p95": 3
+          },
+          "deepseek_calls": {
+            "n": 6,
+            "mean": 2,
+            "p50": 2.0,
+            "p95": 6
+          },
+          "latency_ms": {
+            "n": 6,
+            "mean": 24759.952701506943,
+            "p50": 13916.000791999977,
+            "p95": 99569.31203804561
+          },
+          "false_filtered_cases": [],
+          "usage": {
+            "input_tokens": 19926,
+            "output_tokens": 32877,
+            "api_cost": null
+          },
+          "labelled_case_completion_accuracy": 0.8571428571428571
+        },
+        "B4": {
+          "status": "not_run",
+          "source": [],
+          "coverage": {
+            "observed": 0,
+            "total": 7
+          },
+          "recall@5": null,
+          "mrr": null,
+          "critical_retention": null,
+          "irrelevant_filter_rate": null,
+          "sufficiency_accuracy": null,
+          "sufficiency_observed": 0,
+          "answer_accuracy": null,
+          "answers_adjudicated": 0,
+          "unsupported_promises": null,
+          "rounds": {
+            "n": 0,
+            "mean": null,
+            "p50": null,
+            "p95": null
+          },
+          "deepseek_calls": {
+            "n": 0,
+            "mean": null,
+            "p50": null,
+            "p95": null
+          },
+          "latency_ms": {
+            "n": 0,
+            "mean": null,
+            "p50": null,
+            "p95": null
+          },
+          "false_filtered_cases": [],
+          "usage": {
+            "input_tokens": null,
+            "output_tokens": null,
+            "api_cost": null
+          },
+          "labelled_case_completion_accuracy": null
+        }
+      }
+    }
+  ],
+  "artifact_statuses": [
+    "failed",
+    "failed",
+    "failed",
+    "completed"
+  ],
+  "failures": [
+    {
+      "case_id": "para_01",
+      "group": "B2",
+      "error_type": "ValidationError"
+    },
+    {
+      "case_id": "multi_01",
+      "group": "B2",
+      "error_type": "ProviderError",
+      "validation_details": null
+    },
+    {
+      "case_id": "crag_quality_exception",
+      "group": "B2",
+      "error_type": "IncompleteDecisionError",
+      "validation_details": {
+        "reason": "Evidence response did not complete"
+      }
+    }
+  ],
+  "frozen": {
+    "B0": {
+      "status": "observed",
+      "source": [
+        "live_deepseek"
+      ],
+      "coverage": {
+        "observed": 24,
+        "total": 24
+      },
+      "recall@5": 1.0,
+      "mrr": 0.9583333333333334,
+      "critical_retention": null,
+      "irrelevant_filter_rate": null,
+      "sufficiency_accuracy": null,
+      "sufficiency_observed": 0,
+      "answer_accuracy": null,
+      "answers_adjudicated": 0,
+      "unsupported_promises": null,
+      "rounds": {
+        "n": 24,
+        "mean": 1,
+        "p50": 1.0,
+        "p95": 1
+      },
+      "deepseek_calls": {
+        "n": 24,
+        "mean": 1,
+        "p50": 1.0,
+        "p95": 1
+      },
+      "latency_ms": {
+        "n": 24,
+        "mean": 10796.700256876042,
+        "p50": 10118.919479005854,
+        "p95": 24533.04708300857
+      },
+      "false_filtered_cases": [],
+      "usage": {
+        "input_tokens": 29209,
+        "output_tokens": 55250,
+        "api_cost": null
+      }
+    },
+    "B1": {
+      "status": "observed",
+      "source": [
+        "deepseek_live_shared_prefix"
+      ],
+      "coverage": {
+        "observed": 24,
+        "total": 24
+      },
+      "recall@5": 1.0,
+      "mrr": 0.9791666666666666,
+      "critical_retention": null,
+      "irrelevant_filter_rate": null,
+      "sufficiency_accuracy": null,
+      "sufficiency_observed": 0,
+      "answer_accuracy": null,
+      "answers_adjudicated": 0,
+      "unsupported_promises": null,
+      "rounds": {
+        "n": 24,
+        "mean": 1,
+        "p50": 1.0,
+        "p95": 1
+      },
+      "deepseek_calls": {
+        "n": 24,
+        "mean": 1,
+        "p50": 1.0,
+        "p95": 1
+      },
+      "latency_ms": {
+        "n": 24,
+        "mean": 13275.448322743614,
+        "p50": 12214.646083004482,
+        "p95": 20994.326000014553
+      },
+      "false_filtered_cases": [],
+      "usage": {
+        "input_tokens": 49403,
+        "output_tokens": 74953,
+        "api_cost": null
+      }
+    },
+    "B2": {
+      "status": "observed",
+      "source": [
+        "deepseek_live_shared_prefix"
+      ],
+      "coverage": {
+        "observed": 22,
+        "total": 24
+      },
+      "recall@5": 0.7727272727272727,
+      "mrr": 0.7727272727272727,
+      "critical_retention": null,
+      "irrelevant_filter_rate": null,
+      "sufficiency_accuracy": null,
+      "sufficiency_observed": 0,
+      "answer_accuracy": null,
+      "answers_adjudicated": 0,
+      "unsupported_promises": null,
+      "rounds": {
+        "n": 22,
+        "mean": 1,
+        "p50": 1.0,
+        "p95": 1
+      },
+      "deepseek_calls": {
+        "n": 22,
+        "mean": 2,
+        "p50": 2.0,
+        "p95": 2
+      },
+      "latency_ms": {
+        "n": 22,
+        "mean": 21859.861005493174,
+        "p50": 18605.984437468578,
+        "p95": 40326.19833298668
+      },
+      "false_filtered_cases": [],
+      "usage": {
+        "input_tokens": 64788,
+        "output_tokens": 106344,
+        "api_cost": null
+      }
+    },
+    "B3": {
+      "status": "observed",
+      "source": [
+        "deepseek_live_shared_prefix"
+      ],
+      "coverage": {
+        "observed": 22,
+        "total": 24
+      },
+      "recall@5": 0.7727272727272727,
+      "mrr": 0.7727272727272727,
+      "critical_retention": null,
+      "irrelevant_filter_rate": null,
+      "sufficiency_accuracy": null,
+      "sufficiency_observed": 0,
+      "answer_accuracy": null,
+      "answers_adjudicated": 0,
+      "unsupported_promises": null,
+      "rounds": {
+        "n": 22,
+        "mean": 1,
+        "p50": 1.0,
+        "p95": 1
+      },
+      "deepseek_calls": {
+        "n": 22,
+        "mean": 2,
+        "p50": 2.0,
+        "p95": 2
+      },
+      "latency_ms": {
+        "n": 22,
+        "mean": 21859.860961952523,
+        "p50": 18605.98404148186,
+        "p95": 40326.19799998065
+      },
+      "false_filtered_cases": [],
+      "usage": {
+        "input_tokens": 64788,
+        "output_tokens": 106344,
+        "api_cost": null
+      }
+    },
+    "B4": {
+      "status": "not_run",
+      "source": [],
+      "coverage": {
+        "observed": 0,
+        "total": 24
+      },
+      "recall@5": null,
+      "mrr": null,
+      "critical_retention": null,
+      "irrelevant_filter_rate": null,
+      "sufficiency_accuracy": null,
+      "sufficiency_observed": 0,
+      "answer_accuracy": null,
+      "answers_adjudicated": 0,
+      "unsupported_promises": null,
+      "rounds": {
+        "n": 0,
+        "mean": null,
+        "p50": null,
+        "p95": null
+      },
+      "deepseek_calls": {
+        "n": 0,
+        "mean": null,
+        "p50": null,
+        "p95": null
+      },
+      "latency_ms": {
+        "n": 0,
+        "mean": null,
+        "p50": null,
+        "p95": null
+      },
+      "false_filtered_cases": [],
+      "usage": {
+        "input_tokens": null,
+        "output_tokens": null,
+        "api_cost": null
+      }
+    }
+  },
+  "common_frozen_case_ids": [
+    "multi_02",
+    "multi_03",
+    "multi_04",
+    "multi_05",
+    "multi_06",
+    "negative_01",
+    "negative_02",
+    "negative_03",
+    "negative_04",
+    "negative_05",
+    "negative_06",
+    "noise_01",
+    "noise_02",
+    "noise_03",
+    "noise_04",
+    "noise_05",
+    "noise_06",
+    "para_02",
+    "para_03",
+    "para_04",
+    "para_05",
+    "para_06"
+  ],
+  "common_frozen": {
+    "B0": {
+      "status": "observed",
+      "source": [
+        "live_deepseek"
+      ],
+      "coverage": {
+        "observed": 22,
+        "total": 22
+      },
+      "recall@5": 1.0,
+      "mrr": 0.9545454545454546,
+      "critical_retention": null,
+      "irrelevant_filter_rate": null,
+      "sufficiency_accuracy": null,
+      "sufficiency_observed": 0,
+      "answer_accuracy": null,
+      "answers_adjudicated": 0,
+      "unsupported_promises": null,
+      "rounds": {
+        "n": 22,
+        "mean": 1,
+        "p50": 1.0,
+        "p95": 1
+      },
+      "deepseek_calls": {
+        "n": 22,
+        "mean": 1,
+        "p50": 1.0,
+        "p95": 1
+      },
+      "latency_ms": {
+        "n": 22,
+        "mean": 11617.432346545684,
+        "p50": 10573.851792003552,
+        "p95": 24533.04708300857
+      },
+      "false_filtered_cases": [],
+      "usage": {
+        "input_tokens": 26929,
+        "output_tokens": 54820,
+        "api_cost": null
+      }
+    },
+    "B1": {
+      "status": "observed",
+      "source": [
+        "deepseek_live_shared_prefix"
+      ],
+      "coverage": {
+        "observed": 22,
+        "total": 22
+      },
+      "recall@5": 1.0,
+      "mrr": 0.9772727272727273,
+      "critical_retention": null,
+      "irrelevant_filter_rate": null,
+      "sufficiency_accuracy": null,
+      "sufficiency_observed": 0,
+      "answer_accuracy": null,
+      "answers_adjudicated": 0,
+      "unsupported_promises": null,
+      "rounds": {
+        "n": 22,
+        "mean": 1,
+        "p50": 1.0,
+        "p95": 1
+      },
+      "deepseek_calls": {
+        "n": 22,
+        "mean": 1,
+        "p50": 1.0,
+        "p95": 1
+      },
+      "latency_ms": {
+        "n": 22,
+        "mean": 12766.13778581139,
+        "p50": 11616.457644988259,
+        "p95": 19863.388666984974
+      },
+      "false_filtered_cases": [],
+      "usage": {
+        "input_tokens": 45681,
+        "output_tokens": 66127,
+        "api_cost": null
+      }
+    },
+    "B2": {
+      "status": "observed",
+      "source": [
+        "deepseek_live_shared_prefix"
+      ],
+      "coverage": {
+        "observed": 22,
+        "total": 22
+      },
+      "recall@5": 0.7727272727272727,
+      "mrr": 0.7727272727272727,
+      "critical_retention": null,
+      "irrelevant_filter_rate": null,
+      "sufficiency_accuracy": null,
+      "sufficiency_observed": 0,
+      "answer_accuracy": null,
+      "answers_adjudicated": 0,
+      "unsupported_promises": null,
+      "rounds": {
+        "n": 22,
+        "mean": 1,
+        "p50": 1.0,
+        "p95": 1
+      },
+      "deepseek_calls": {
+        "n": 22,
+        "mean": 2,
+        "p50": 2.0,
+        "p95": 2
+      },
+      "latency_ms": {
+        "n": 22,
+        "mean": 21859.861005493174,
+        "p50": 18605.984437468578,
+        "p95": 40326.19833298668
+      },
+      "false_filtered_cases": [],
+      "usage": {
+        "input_tokens": 64788,
+        "output_tokens": 106344,
+        "api_cost": null
+      }
+    },
+    "B3": {
+      "status": "observed",
+      "source": [
+        "deepseek_live_shared_prefix"
+      ],
+      "coverage": {
+        "observed": 22,
+        "total": 22
+      },
+      "recall@5": 0.7727272727272727,
+      "mrr": 0.7727272727272727,
+      "critical_retention": null,
+      "irrelevant_filter_rate": null,
+      "sufficiency_accuracy": null,
+      "sufficiency_observed": 0,
+      "answer_accuracy": null,
+      "answers_adjudicated": 0,
+      "unsupported_promises": null,
+      "rounds": {
+        "n": 22,
+        "mean": 1,
+        "p50": 1.0,
+        "p95": 1
+      },
+      "deepseek_calls": {
+        "n": 22,
+        "mean": 2,
+        "p50": 2.0,
+        "p95": 2
+      },
+      "latency_ms": {
+        "n": 22,
+        "mean": 21859.860961952523,
+        "p50": 18605.98404148186,
+        "p95": 40326.19799998065
+      },
+      "false_filtered_cases": [],
+      "usage": {
+        "input_tokens": 64788,
+        "output_tokens": 106344,
+        "api_cost": null
+      }
+    },
+    "B4": {
+      "status": "not_run",
+      "source": [],
+      "coverage": {
+        "observed": 0,
+        "total": 22
+      },
+      "recall@5": null,
+      "mrr": null,
+      "critical_retention": null,
+      "irrelevant_filter_rate": null,
+      "sufficiency_accuracy": null,
+      "sufficiency_observed": 0,
+      "answer_accuracy": null,
+      "answers_adjudicated": 0,
+      "unsupported_promises": null,
+      "rounds": {
+        "n": 0,
+        "mean": null,
+        "p50": null,
+        "p95": null
+      },
+      "deepseek_calls": {
+        "n": 0,
+        "mean": null,
+        "p50": null,
+        "p95": null
+      },
+      "latency_ms": {
+        "n": 0,
+        "mean": null,
+        "p50": null,
+        "p95": null
+      },
+      "false_filtered_cases": [],
+      "usage": {
+        "input_tokens": null,
+        "output_tokens": null,
+        "api_cost": null
+      }
+    }
+  },
+  "complex": {
+    "B0": {
+      "status": "not_run",
+      "source": [],
+      "coverage": {
+        "observed": 0,
+        "total": 7
+      },
+      "recall@5": null,
+      "mrr": null,
+      "critical_retention": null,
+      "irrelevant_filter_rate": null,
+      "sufficiency_accuracy": null,
+      "sufficiency_observed": 0,
+      "answer_accuracy": null,
+      "answers_adjudicated": 0,
+      "unsupported_promises": null,
+      "rounds": {
+        "n": 0,
+        "mean": null,
+        "p50": null,
+        "p95": null
+      },
+      "deepseek_calls": {
+        "n": 0,
+        "mean": null,
+        "p50": null,
+        "p95": null
+      },
+      "latency_ms": {
+        "n": 0,
+        "mean": null,
+        "p50": null,
+        "p95": null
+      },
+      "false_filtered_cases": [],
+      "usage": {
+        "input_tokens": null,
+        "output_tokens": null,
+        "api_cost": null
+      }
+    },
+    "B1": {
+      "status": "observed",
+      "source": [
+        "deepseek_live_shared_prefix"
+      ],
+      "coverage": {
+        "observed": 5,
+        "total": 7
+      },
+      "recall@5": 1.0,
+      "mrr": 1.0,
+      "critical_retention": 1.0,
+      "irrelevant_filter_rate": 0.0,
+      "sufficiency_accuracy": null,
+      "sufficiency_observed": 0,
+      "answer_accuracy": null,
+      "answers_adjudicated": 0,
+      "unsupported_promises": null,
+      "rounds": {
+        "n": 5,
+        "mean": 1,
+        "p50": 1,
+        "p95": 1
+      },
+      "deepseek_calls": {
+        "n": 5,
+        "mean": 1,
+        "p50": 1,
+        "p95": 1
+      },
+      "latency_ms": {
+        "n": 5,
+        "mean": 18504.824350198032,
+        "p50": 18021.3956249936,
+        "p95": 26503.380249021575
+      },
+      "false_filtered_cases": [],
+      "usage": {
+        "input_tokens": 9978,
+        "output_tokens": 21216,
+        "api_cost": null
+      }
+    },
+    "B2": {
+      "status": "observed",
+      "source": [
+        "deepseek_live_shared_prefix"
+      ],
+      "coverage": {
+        "observed": 6,
+        "total": 7
+      },
+      "recall@5": 1.0,
+      "mrr": 1.0,
+      "critical_retention": 1.0,
+      "irrelevant_filter_rate": 0.0,
+      "sufficiency_accuracy": 1,
+      "sufficiency_observed": 6,
+      "answer_accuracy": null,
+      "answers_adjudicated": 0,
+      "unsupported_promises": null,
+      "rounds": {
+        "n": 6,
+        "mean": 1,
+        "p50": 1.0,
+        "p95": 1
+      },
+      "deepseek_calls": {
+        "n": 6,
+        "mean": 1.3333333333333333,
+        "p50": 2.0,
+        "p95": 2
+      },
+      "latency_ms": {
+        "n": 6,
+        "mean": 15579.603486175378,
+        "p50": 13916.00106250553,
+        "p95": 44487.217290035915
+      },
+      "false_filtered_cases": [],
+      "usage": {
+        "input_tokens": 12262,
+        "output_tokens": 20234,
+        "api_cost": null
+      }
+    },
+    "B3": {
+      "status": "observed",
+      "source": [
+        "deepseek_live_shared_prefix"
+      ],
+      "coverage": {
+        "observed": 6,
+        "total": 7
+      },
+      "recall@5": 1.0,
+      "mrr": 1.0,
+      "critical_retention": 1.0,
+      "irrelevant_filter_rate": 0.0,
+      "sufficiency_accuracy": 1,
+      "sufficiency_observed": 6,
+      "answer_accuracy": null,
+      "answers_adjudicated": 0,
+      "unsupported_promises": null,
+      "rounds": {
+        "n": 6,
+        "mean": 1.5,
+        "p50": 1.0,
+        "p95": 3
+      },
+      "deepseek_calls": {
+        "n": 6,
+        "mean": 2,
+        "p50": 2.0,
+        "p95": 6
+      },
+      "latency_ms": {
+        "n": 6,
+        "mean": 24759.952701506943,
+        "p50": 13916.000791999977,
+        "p95": 99569.31203804561
+      },
+      "false_filtered_cases": [],
+      "usage": {
+        "input_tokens": 19926,
+        "output_tokens": 32877,
+        "api_cost": null
+      }
+    },
+    "B4": {
+      "status": "not_run",
+      "source": [],
+      "coverage": {
+        "observed": 0,
+        "total": 7
+      },
+      "recall@5": null,
+      "mrr": null,
+      "critical_retention": null,
+      "irrelevant_filter_rate": null,
+      "sufficiency_accuracy": null,
+      "sufficiency_observed": 0,
+      "answer_accuracy": null,
+      "answers_adjudicated": 0,
+      "unsupported_promises": null,
+      "rounds": {
+        "n": 0,
+        "mean": null,
+        "p50": null,
+        "p95": null
+      },
+      "deepseek_calls": {
+        "n": 0,
+        "mean": null,
+        "p50": null,
+        "p95": null
+      },
+      "latency_ms": {
+        "n": 0,
+        "mean": null,
+        "p50": null,
+        "p95": null
+      },
+      "false_filtered_cases": [],
+      "usage": {
+        "input_tokens": null,
+        "output_tokens": null,
+        "api_cost": null
+      }
+    }
+  },
+  "physical": {
+    "attempts": 81,
+    "responses": 81,
+    "usage": {
+      "input_tokens": 133883,
+      "output_tokens": 225842,
+      "cost": null
+    },
+    "reported_usage_subtotal": {
+      "input_tokens": 133883,
+      "output_tokens": 225842,
+      "cost": null
+    },
+    "response_latency_ms": {
+      "n": 81,
+      "mean": 12353.305489198883,
+      "p50": 10726.355375023559,
+      "p95": 24239.615083002718
+    }
+  },
+  "method": "Shared prefixes are charged once physically, counted per logical path in groups. Group latency is reconstructed RAG latency, not end-to-end chat latency. Use cohort common_frozen for equal-coverage comparison within one prompt/config. Pooled frozen metrics mix pilot and revised configurations. Unobserved answer accuracy, promises and API cost stay null."
+}

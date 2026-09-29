@@ -1,0 +1,3243 @@
+{
+  "status": "failed",
+  "attempts": 18,
+  "max_calls": 93,
+  "method": "Shared recorded initial scoring and judgments; logical path latency/usage reuses actual call measurements. Not independently timed chat requests.",
+  "cases_sha256": "91e69c341c447972aa41640d9a56c46cf733b21d347cead8cd0be263e5db76ce",
+  "policies_sha256": "aa50d3fc2c49d7637ece82d240d410b42b73a434abdebd1d05fa1ca82ccff437",
+  "excluded_cases": [
+    "para_01"
+  ],
+  "evaluator_config": {
+    "max_output_tokens": 8192,
+    "timeout_seconds": 65.0
+  },
+  "physical_calls": [
+    {
+      "model": "deepseek-flash",
+      "response_status": "completed",
+      "incomplete_details": null,
+      "task_schema": "ScoreDecision",
+      "max_output_tokens": 8192,
+      "usage": {
+        "input_tokens": 2191,
+        "input_tokens_details": {
+          "cached_tokens": 128
+        },
+        "output_tokens": 2777,
+        "output_tokens_details": {
+          "reasoning_tokens": 2215
+        },
+        "total_tokens": 4968
+      },
+      "elapsed_ms": 12094.824625004549
+    },
+    {
+      "model": "deepseek-flash",
+      "response_status": "completed",
+      "incomplete_details": null,
+      "task_schema": "ScoreDecision",
+      "max_output_tokens": 8192,
+      "usage": {
+        "input_tokens": 1998,
+        "input_tokens_details": {
+          "cached_tokens": 512
+        },
+        "output_tokens": 4900,
+        "output_tokens_details": {
+          "reasoning_tokens": 4395
+        },
+        "total_tokens": 6898
+      },
+      "elapsed_ms": 21683.81316700834
+    },
+    {
+      "model": "deepseek-flash",
+      "response_status": "completed",
+      "incomplete_details": null,
+      "task_schema": "SufficiencyDecision",
+      "max_output_tokens": 8192,
+      "usage": {
+        "input_tokens": 945,
+        "input_tokens_details": {
+          "cached_tokens": 0
+        },
+        "output_tokens": 4049,
+        "output_tokens_details": {
+          "reasoning_tokens": 3693
+        },
+        "total_tokens": 4994
+      },
+      "elapsed_ms": 18635.988541005645
+    },
+    {
+      "model": "deepseek-flash",
+      "response_status": "completed",
+      "incomplete_details": null,
+      "task_schema": "ScoreDecision",
+      "max_output_tokens": 8192,
+      "usage": {
+        "input_tokens": 2186,
+        "input_tokens_details": {
+          "cached_tokens": 128
+        },
+        "output_tokens": 2297,
+        "output_tokens_details": {
+          "reasoning_tokens": 1747
+        },
+        "total_tokens": 4483
+      },
+      "elapsed_ms": 9260.862708004424
+    },
+    {
+      "model": "deepseek-flash",
+      "response_status": "completed",
+      "incomplete_details": null,
+      "task_schema": "ScoreDecision",
+      "max_output_tokens": 8192,
+      "usage": {
+        "input_tokens": 1801,
+        "input_tokens_details": {
+          "cached_tokens": 256
+        },
+        "output_tokens": 2462,
+        "output_tokens_details": {
+          "reasoning_tokens": 2027
+        },
+        "total_tokens": 4263
+      },
+      "elapsed_ms": 10840.107041993178
+    },
+    {
+      "model": "deepseek-flash",
+      "response_status": "completed",
+      "incomplete_details": null,
+      "task_schema": "SufficiencyDecision",
+      "max_output_tokens": 8192,
+      "usage": {
+        "input_tokens": 956,
+        "input_tokens_details": {
+          "cached_tokens": 256
+        },
+        "output_tokens": 1715,
+        "output_tokens_details": {
+          "reasoning_tokens": 1497
+        },
+        "total_tokens": 2671
+      },
+      "elapsed_ms": 8704.973458006862
+    },
+    {
+      "model": "deepseek-flash",
+      "response_status": "completed",
+      "incomplete_details": null,
+      "task_schema": "ScoreDecision",
+      "max_output_tokens": 8192,
+      "usage": {
+        "input_tokens": 1981,
+        "input_tokens_details": {
+          "cached_tokens": 128
+        },
+        "output_tokens": 3855,
+        "output_tokens_details": {
+          "reasoning_tokens": 3359
+        },
+        "total_tokens": 5836
+      },
+      "elapsed_ms": 16168.247292007436
+    },
+    {
+      "model": "deepseek-flash",
+      "response_status": "completed",
+      "incomplete_details": null,
+      "task_schema": "ScoreDecision",
+      "max_output_tokens": 8192,
+      "usage": {
+        "input_tokens": 1602,
+        "input_tokens_details": {
+          "cached_tokens": 256
+        },
+        "output_tokens": 4327,
+        "output_tokens_details": {
+          "reasoning_tokens": 3949
+        },
+        "total_tokens": 5929
+      },
+      "elapsed_ms": 19468.803042007494
+    },
+    {
+      "model": "deepseek-flash",
+      "response_status": "completed",
+      "incomplete_details": null,
+      "task_schema": "SufficiencyDecision",
+      "max_output_tokens": 8192,
+      "usage": {
+        "input_tokens": 944,
+        "input_tokens_details": {
+          "cached_tokens": 256
+        },
+        "output_tokens": 1887,
+        "output_tokens_details": {
+          "reasoning_tokens": 1708
+        },
+        "total_tokens": 2831
+      },
+      "elapsed_ms": 9399.148625001544
+    },
+    {
+      "model": "deepseek-flash",
+      "response_status": "completed",
+      "incomplete_details": null,
+      "task_schema": "ScoreDecision",
+      "max_output_tokens": 8192,
+      "usage": {
+        "input_tokens": 1967,
+        "input_tokens_details": {
+          "cached_tokens": 128
+        },
+        "output_tokens": 4541,
+        "output_tokens_details": {
+          "reasoning_tokens": 4043
+        },
+        "total_tokens": 6508
+      },
+      "elapsed_ms": 19855.420583000523
+    },
+    {
+      "model": "deepseek-flash",
+      "response_status": "completed",
+      "incomplete_details": null,
+      "task_schema": "ScoreDecision",
+      "max_output_tokens": 8192,
+      "usage": {
+        "input_tokens": 1873,
+        "input_tokens_details": {
+          "cached_tokens": 1024
+        },
+        "output_tokens": 4482,
+        "output_tokens_details": {
+          "reasoning_tokens": 3982
+        },
+        "total_tokens": 6355
+      },
+      "elapsed_ms": 19026.804041990545
+    },
+    {
+      "model": "deepseek-flash",
+      "response_status": "completed",
+      "incomplete_details": null,
+      "task_schema": "SufficiencyDecision",
+      "max_output_tokens": 8192,
+      "usage": {
+        "input_tokens": 941,
+        "input_tokens_details": {
+          "cached_tokens": 256
+        },
+        "output_tokens": 2048,
+        "output_tokens_details": {
+          "reasoning_tokens": 1825
+        },
+        "total_tokens": 2989
+      },
+      "elapsed_ms": 10211.138208018383
+    },
+    {
+      "model": "deepseek-flash",
+      "response_status": "completed",
+      "incomplete_details": null,
+      "task_schema": "ScoreDecision",
+      "max_output_tokens": 8192,
+      "usage": {
+        "input_tokens": 2087,
+        "input_tokens_details": {
+          "cached_tokens": 128
+        },
+        "output_tokens": 4754,
+        "output_tokens_details": {
+          "reasoning_tokens": 4193
+        },
+        "total_tokens": 6841
+      },
+      "elapsed_ms": 19281.806958984816
+    },
+    {
+      "model": "deepseek-flash",
+      "response_status": "completed",
+      "incomplete_details": null,
+      "task_schema": "ScoreDecision",
+      "max_output_tokens": 8192,
+      "usage": {
+        "input_tokens": 1808,
+        "input_tokens_details": {
+          "cached_tokens": 512
+        },
+        "output_tokens": 5211,
+        "output_tokens_details": {
+          "reasoning_tokens": 4763
+        },
+        "total_tokens": 7019
+      },
+      "elapsed_ms": 23595.591499994043
+    },
+    {
+      "model": "deepseek-flash",
+      "response_status": "completed",
+      "incomplete_details": null,
+      "task_schema": "SufficiencyDecision",
+      "max_output_tokens": 8192,
+      "usage": {
+        "input_tokens": 951,
+        "input_tokens_details": {
+          "cached_tokens": 256
+        },
+        "output_tokens": 6449,
+        "output_tokens_details": {
+          "reasoning_tokens": 6077
+        },
+        "total_tokens": 7400
+      },
+      "elapsed_ms": 28189.80483300402
+    },
+    {
+      "model": "deepseek-flash",
+      "response_status": "completed",
+      "incomplete_details": null,
+      "task_schema": "ScoreDecision",
+      "max_output_tokens": 8192,
+      "usage": {
+        "input_tokens": 1808,
+        "input_tokens_details": {
+          "cached_tokens": 128
+        },
+        "output_tokens": 5838,
+        "output_tokens_details": {
+          "reasoning_tokens": 5398
+        },
+        "total_tokens": 7646
+      },
+      "elapsed_ms": 24456.597917014733
+    },
+    {
+      "model": "deepseek-flash",
+      "response_status": "completed",
+      "incomplete_details": null,
+      "task_schema": "ScoreDecision",
+      "max_output_tokens": 8192,
+      "usage": {
+        "input_tokens": 1714,
+        "input_tokens_details": {
+          "cached_tokens": 1408
+        },
+        "output_tokens": 2784,
+        "output_tokens_details": {
+          "reasoning_tokens": 2376
+        },
+        "total_tokens": 4498
+      },
+      "elapsed_ms": 11694.266209000489
+    },
+    {
+      "model": "deepseek-flash",
+      "response_status": "completed",
+      "incomplete_details": null,
+      "task_schema": "SufficiencyDecision",
+      "max_output_tokens": 8192,
+      "usage": {
+        "input_tokens": 945,
+        "input_tokens_details": {
+          "cached_tokens": 256
+        },
+        "output_tokens": 2236,
+        "output_tokens_details": {
+          "reasoning_tokens": 2083
+        },
+        "total_tokens": 3181
+      },
+      "elapsed_ms": 10937.073209002847
+    }
+  ],
+  "runs": [
+    {
+      "group": "B1",
+      "case_id": "para_02",
+      "source": "deepseek_live_shared_prefix",
+      "retrieved_ids": [
+        "POLICY-LOGISTICS-DELAY",
+        "POLICY-LOGISTICS-TRACKING",
+        "POLICY-LOGISTICS-SIGNED-MISSING",
+        "POLICY-LOGISTICS-LOST",
+        "POLICY-DAMAGE-EVIDENCE"
+      ],
+      "candidate_ids": [
+        "POLICY-DAMAGE-EVIDENCE",
+        "POLICY-ADDRESS-AFTER-SHIP",
+        "POLICY-LOGISTICS-SIGNED-MISSING",
+        "POLICY-SPORTSWEAR",
+        "POLICY-RETURN-EXCLUDED",
+        "POLICY-PRICE-WINDOW",
+        "POLICY-RETURN-7D",
+        "POLICY-DAMAGE-30D",
+        "POLICY-LOGISTICS-DELAY",
+        "POLICY-LOGISTICS-TRACKING",
+        "POLICY-MISSING-EVIDENCE",
+        "POLICY-ADDRESS-BEFORE-SHIP",
+        "POLICY-PAYMENT-FRAUD",
+        "POLICY-LOGISTICS-LOST",
+        "POLICY-REFUND-REJECTED",
+        "POLICY-EXCHANGE-TIMELINE",
+        "POLICY-DAMAGE-WARRANTY",
+        "POLICY-PAYMENT-DUPLICATE",
+        "POLICY-MISSING-RESOLUTION"
+      ],
+      "filtered_ids": [],
+      "sufficiency": null,
+      "rounds": 1,
+      "deepseek_calls": 1,
+      "latency_ms": 12096.598666001228,
+      "input_tokens": 2191,
+      "output_tokens": 2777,
+      "api_cost": null,
+      "stop_reason": null,
+      "answer_correct": null,
+      "unsupported_promises": null
+    },
+    {
+      "group": "B2",
+      "case_id": "para_02",
+      "source": "deepseek_live_shared_prefix",
+      "retrieved_ids": [],
+      "candidate_ids": [
+        "POLICY-DAMAGE-EVIDENCE",
+        "POLICY-ADDRESS-AFTER-SHIP",
+        "POLICY-LOGISTICS-SIGNED-MISSING",
+        "POLICY-RETURN-EXCLUDED",
+        "POLICY-PRICE-WINDOW",
+        "POLICY-RETURN-7D",
+        "POLICY-DAMAGE-30D",
+        "POLICY-LOGISTICS-DELAY",
+        "POLICY-LOGISTICS-TRACKING",
+        "POLICY-MISSING-EVIDENCE",
+        "POLICY-ADDRESS-BEFORE-SHIP",
+        "POLICY-PAYMENT-FRAUD",
+        "POLICY-LOGISTICS-LOST",
+        "POLICY-REFUND-REJECTED",
+        "POLICY-EXCHANGE-TIMELINE",
+        "POLICY-PAYMENT-DUPLICATE",
+        "POLICY-MISSING-RESOLUTION"
+      ],
+      "filtered_ids": [
+        "POLICY-DAMAGE-WARRANTY",
+        "POLICY-SPORTSWEAR"
+      ],
+      "sufficiency": "UNCERTAIN",
+      "rounds": 1,
+      "deepseek_calls": 2,
+      "latency_ms": 40326.19833298668,
+      "input_tokens": 2943,
+      "output_tokens": 8949,
+      "api_cost": null,
+      "stop_reason": "物流停滞与轨迹政策可支持核查和催查，但政策限定国内件且需超过四十八小时无轨迹更新。当前缺少订单类别、最后更新时间及承运商丢失确认，无法确认完全适用，故为 UNCERTAIN。",
+      "answer_correct": null,
+      "unsupported_promises": null
+    },
+    {
+      "group": "B3",
+      "case_id": "para_02",
+      "source": "deepseek_live_shared_prefix",
+      "retrieved_ids": [],
+      "candidate_ids": [
+        "POLICY-DAMAGE-EVIDENCE",
+        "POLICY-ADDRESS-AFTER-SHIP",
+        "POLICY-LOGISTICS-SIGNED-MISSING",
+        "POLICY-RETURN-EXCLUDED",
+        "POLICY-PRICE-WINDOW",
+        "POLICY-RETURN-7D",
+        "POLICY-DAMAGE-30D",
+        "POLICY-LOGISTICS-DELAY",
+        "POLICY-LOGISTICS-TRACKING",
+        "POLICY-MISSING-EVIDENCE",
+        "POLICY-ADDRESS-BEFORE-SHIP",
+        "POLICY-PAYMENT-FRAUD",
+        "POLICY-LOGISTICS-LOST",
+        "POLICY-REFUND-REJECTED",
+        "POLICY-EXCHANGE-TIMELINE",
+        "POLICY-PAYMENT-DUPLICATE",
+        "POLICY-MISSING-RESOLUTION"
+      ],
+      "filtered_ids": [
+        "POLICY-DAMAGE-WARRANTY",
+        "POLICY-SPORTSWEAR"
+      ],
+      "sufficiency": "UNCERTAIN",
+      "rounds": 1,
+      "deepseek_calls": 2,
+      "latency_ms": 40326.19799998065,
+      "input_tokens": 2943,
+      "output_tokens": 8949,
+      "api_cost": null,
+      "stop_reason": "物流停滞与轨迹政策可支持核查和催查，但政策限定国内件且需超过四十八小时无轨迹更新。当前缺少订单类别、最后更新时间及承运商丢失确认，无法确认完全适用，故为 UNCERTAIN。",
+      "answer_correct": null,
+      "unsupported_promises": null
+    },
+    {
+      "group": "B1",
+      "case_id": "para_03",
+      "source": "deepseek_live_shared_prefix",
+      "retrieved_ids": [
+        "POLICY-ADDRESS-AFTER-SHIP",
+        "POLICY-ADDRESS-BEFORE-SHIP",
+        "POLICY-DAMAGE-WARRANTY",
+        "POLICY-INVOICE-TITLE",
+        "POLICY-EXCHANGE-DEVICE"
+      ],
+      "candidate_ids": [
+        "POLICY-DAMAGE-WARRANTY",
+        "POLICY-INVOICE-TITLE",
+        "POLICY-EXCHANGE-DEVICE",
+        "POLICY-ADDRESS-AFTER-SHIP",
+        "POLICY-EXCHANGE-TIMELINE",
+        "POLICY-PRICE-REFUND",
+        "POLICY-MISSING-EVIDENCE",
+        "POLICY-INVOICE-ELECTRONIC",
+        "POLICY-ADDRESS-BEFORE-SHIP",
+        "POLICY-RETURN-CONDITION",
+        "POLICY-EXCHANGE-SIZE",
+        "POLICY-LOGISTICS-LOST",
+        "POLICY-PAYMENT-FAILED",
+        "POLICY-PRICE-EXCLUDED",
+        "POLICY-DAMAGE-30D",
+        "POLICY-SPORTSWEAR",
+        "POLICY-REFUND-ORIGINAL",
+        "POLICY-RETURN-FREIGHT",
+        "POLICY-DAMAGE-EVIDENCE"
+      ],
+      "filtered_ids": [],
+      "sufficiency": null,
+      "rounds": 1,
+      "deepseek_calls": 1,
+      "latency_ms": 9265.766874988913,
+      "input_tokens": 2186,
+      "output_tokens": 2297,
+      "api_cost": null,
+      "stop_reason": null,
+      "answer_correct": null,
+      "unsupported_promises": null
+    },
+    {
+      "group": "B2",
+      "case_id": "para_03",
+      "source": "deepseek_live_shared_prefix",
+      "retrieved_ids": [],
+      "candidate_ids": [
+        "POLICY-INVOICE-TITLE",
+        "POLICY-ADDRESS-AFTER-SHIP",
+        "POLICY-EXCHANGE-TIMELINE",
+        "POLICY-PRICE-REFUND",
+        "POLICY-MISSING-EVIDENCE",
+        "POLICY-INVOICE-ELECTRONIC",
+        "POLICY-ADDRESS-BEFORE-SHIP",
+        "POLICY-RETURN-CONDITION",
+        "POLICY-LOGISTICS-LOST",
+        "POLICY-PAYMENT-FAILED",
+        "POLICY-PRICE-EXCLUDED",
+        "POLICY-DAMAGE-30D",
+        "POLICY-REFUND-ORIGINAL",
+        "POLICY-RETURN-FREIGHT",
+        "POLICY-DAMAGE-EVIDENCE"
+      ],
+      "filtered_ids": [
+        "POLICY-DAMAGE-WARRANTY",
+        "POLICY-EXCHANGE-DEVICE",
+        "POLICY-EXCHANGE-SIZE",
+        "POLICY-SPORTSWEAR"
+      ],
+      "sufficiency": "UNCERTAIN",
+      "rounds": 1,
+      "deepseek_calls": 2,
+      "latency_ms": 19556.2517910148,
+      "input_tokens": 2757,
+      "output_tokens": 4177,
+      "api_cost": null,
+      "stop_reason": "仅命中发货后更改地址政策：平台不保证改址成功，承运商可评估转寄，费用和延误由用户确认。但缺少订单号、当前物流节点、承运商能否转寄及用户是否接受费用延误等订单条件，无法判断该笔订单具体能否处理，故为UNCERTAIN。",
+      "answer_correct": null,
+      "unsupported_promises": null
+    },
+    {
+      "group": "B3",
+      "case_id": "para_03",
+      "source": "deepseek_live_shared_prefix",
+      "retrieved_ids": [],
+      "candidate_ids": [
+        "POLICY-INVOICE-TITLE",
+        "POLICY-ADDRESS-AFTER-SHIP",
+        "POLICY-EXCHANGE-TIMELINE",
+        "POLICY-PRICE-REFUND",
+        "POLICY-MISSING-EVIDENCE",
+        "POLICY-INVOICE-ELECTRONIC",
+        "POLICY-ADDRESS-BEFORE-SHIP",
+        "POLICY-RETURN-CONDITION",
+        "POLICY-LOGISTICS-LOST",
+        "POLICY-PAYMENT-FAILED",
+        "POLICY-PRICE-EXCLUDED",
+        "POLICY-DAMAGE-30D",
+        "POLICY-REFUND-ORIGINAL",
+        "POLICY-RETURN-FREIGHT",
+        "POLICY-DAMAGE-EVIDENCE"
+      ],
+      "filtered_ids": [
+        "POLICY-DAMAGE-WARRANTY",
+        "POLICY-EXCHANGE-DEVICE",
+        "POLICY-EXCHANGE-SIZE",
+        "POLICY-SPORTSWEAR"
+      ],
+      "sufficiency": "UNCERTAIN",
+      "rounds": 1,
+      "deepseek_calls": 2,
+      "latency_ms": 19556.25195801258,
+      "input_tokens": 2757,
+      "output_tokens": 4177,
+      "api_cost": null,
+      "stop_reason": "仅命中发货后更改地址政策：平台不保证改址成功，承运商可评估转寄，费用和延误由用户确认。但缺少订单号、当前物流节点、承运商能否转寄及用户是否接受费用延误等订单条件，无法判断该笔订单具体能否处理，故为UNCERTAIN。",
+      "answer_correct": null,
+      "unsupported_promises": null
+    },
+    {
+      "group": "B1",
+      "case_id": "para_04",
+      "source": "deepseek_live_shared_prefix",
+      "retrieved_ids": [
+        "POLICY-EXCHANGE-STOCK",
+        "POLICY-EXCHANGE-SIZE",
+        "POLICY-RETURN-CONDITION",
+        "POLICY-EXCHANGE-TIMELINE",
+        "POLICY-EXCHANGE-DEVICE"
+      ],
+      "candidate_ids": [
+        "POLICY-EXCHANGE-DEVICE",
+        "POLICY-EXCHANGE-SIZE",
+        "POLICY-DIGITAL",
+        "POLICY-DAMAGE-WARRANTY",
+        "POLICY-EXCHANGE-TIMELINE",
+        "POLICY-DAMAGE-EVIDENCE",
+        "POLICY-EXCHANGE-STOCK",
+        "POLICY-INVOICE-REFUND",
+        "POLICY-INVOICE-TITLE",
+        "POLICY-ADDRESS-BEFORE-SHIP",
+        "POLICY-RETURN-EXCLUDED",
+        "POLICY-REFUND-COUPON",
+        "POLICY-RETURN-CONDITION",
+        "POLICY-PRICE-WINDOW",
+        "POLICY-PRICE-REFUND",
+        "POLICY-REFUND-REJECTED",
+        "POLICY-PAYMENT-DUPLICATE"
+      ],
+      "filtered_ids": [],
+      "sufficiency": null,
+      "rounds": 1,
+      "deepseek_calls": 1,
+      "latency_ms": 16173.833332999493,
+      "input_tokens": 1981,
+      "output_tokens": 3855,
+      "api_cost": null,
+      "stop_reason": null,
+      "answer_correct": null,
+      "unsupported_promises": null
+    },
+    {
+      "group": "B2",
+      "case_id": "para_04",
+      "source": "deepseek_live_shared_prefix",
+      "retrieved_ids": [],
+      "candidate_ids": [
+        "POLICY-EXCHANGE-TIMELINE",
+        "POLICY-DAMAGE-EVIDENCE",
+        "POLICY-EXCHANGE-STOCK",
+        "POLICY-INVOICE-REFUND",
+        "POLICY-INVOICE-TITLE",
+        "POLICY-ADDRESS-BEFORE-SHIP",
+        "POLICY-RETURN-EXCLUDED",
+        "POLICY-REFUND-COUPON",
+        "POLICY-RETURN-CONDITION",
+        "POLICY-PRICE-WINDOW",
+        "POLICY-PRICE-REFUND",
+        "POLICY-REFUND-REJECTED",
+        "POLICY-PAYMENT-DUPLICATE"
+      ],
+      "filtered_ids": [
+        "POLICY-DAMAGE-WARRANTY",
+        "POLICY-DIGITAL",
+        "POLICY-EXCHANGE-DEVICE",
+        "POLICY-EXCHANGE-SIZE"
+      ],
+      "sufficiency": "UNCERTAIN",
+      "rounds": 1,
+      "deepseek_calls": 2,
+      "latency_ms": 28877.408041997114,
+      "input_tokens": 2546,
+      "output_tokens": 6214,
+      "api_cost": null,
+      "stop_reason": "POLICY-EXCHANGE-STOCK 直接覆盖目标规格缺货时的处理选项，但订单的收货天数与商品品类均为空，无法确认换货是否适用及是否受特殊商品/时效限制，因此结论为 UNCERTAIN。",
+      "answer_correct": null,
+      "unsupported_promises": null
+    },
+    {
+      "group": "B3",
+      "case_id": "para_04",
+      "source": "deepseek_live_shared_prefix",
+      "retrieved_ids": [],
+      "candidate_ids": [
+        "POLICY-EXCHANGE-TIMELINE",
+        "POLICY-DAMAGE-EVIDENCE",
+        "POLICY-EXCHANGE-STOCK",
+        "POLICY-INVOICE-REFUND",
+        "POLICY-INVOICE-TITLE",
+        "POLICY-ADDRESS-BEFORE-SHIP",
+        "POLICY-RETURN-EXCLUDED",
+        "POLICY-REFUND-COUPON",
+        "POLICY-RETURN-CONDITION",
+        "POLICY-PRICE-WINDOW",
+        "POLICY-PRICE-REFUND",
+        "POLICY-REFUND-REJECTED",
+        "POLICY-PAYMENT-DUPLICATE"
+      ],
+      "filtered_ids": [
+        "POLICY-DAMAGE-WARRANTY",
+        "POLICY-DIGITAL",
+        "POLICY-EXCHANGE-DEVICE",
+        "POLICY-EXCHANGE-SIZE"
+      ],
+      "sufficiency": "UNCERTAIN",
+      "rounds": 1,
+      "deepseek_calls": 2,
+      "latency_ms": 28877.40808399394,
+      "input_tokens": 2546,
+      "output_tokens": 6214,
+      "api_cost": null,
+      "stop_reason": "POLICY-EXCHANGE-STOCK 直接覆盖目标规格缺货时的处理选项，但订单的收货天数与商品品类均为空，无法确认换货是否适用及是否受特殊商品/时效限制，因此结论为 UNCERTAIN。",
+      "answer_correct": null,
+      "unsupported_promises": null
+    },
+    {
+      "group": "B1",
+      "case_id": "para_05",
+      "source": "deepseek_live_shared_prefix",
+      "retrieved_ids": [
+        "POLICY-PAYMENT-DUPLICATE",
+        "POLICY-REFUND-ORIGINAL",
+        "POLICY-REFUND-TIMELINE",
+        "POLICY-PRIVACY-IDENTITY",
+        "POLICY-ADDRESS-BEFORE-SHIP"
+      ],
+      "candidate_ids": [
+        "POLICY-PAYMENT-DUPLICATE",
+        "POLICY-REFUND-TIMELINE",
+        "POLICY-PRIVACY-IDENTITY",
+        "POLICY-ADDRESS-BEFORE-SHIP",
+        "POLICY-PAYMENT-FRAUD",
+        "POLICY-REFUND-ORIGINAL",
+        "POLICY-REFUND-REJECTED",
+        "POLICY-REFUND-COUPON",
+        "POLICY-INVOICE-ELECTRONIC",
+        "POLICY-DIGITAL",
+        "POLICY-INVOICE-REFUND",
+        "POLICY-LOGISTICS-TRACKING",
+        "POLICY-DAMAGE-EVIDENCE",
+        "POLICY-EXCHANGE-TIMELINE",
+        "POLICY-MISSING-RESOLUTION",
+        "POLICY-PRICE-EXCLUDED",
+        "POLICY-PRICE-REFUND"
+      ],
+      "filtered_ids": [],
+      "sufficiency": null,
+      "rounds": 1,
+      "deepseek_calls": 1,
+      "latency_ms": 19863.388666984974,
+      "input_tokens": 1967,
+      "output_tokens": 4541,
+      "api_cost": null,
+      "stop_reason": null,
+      "answer_correct": null,
+      "unsupported_promises": null
+    },
+    {
+      "group": "B2",
+      "case_id": "para_05",
+      "source": "deepseek_live_shared_prefix",
+      "retrieved_ids": [],
+      "candidate_ids": [
+        "POLICY-PAYMENT-DUPLICATE",
+        "POLICY-REFUND-TIMELINE",
+        "POLICY-PRIVACY-IDENTITY",
+        "POLICY-ADDRESS-BEFORE-SHIP",
+        "POLICY-PAYMENT-FRAUD",
+        "POLICY-REFUND-ORIGINAL",
+        "POLICY-REFUND-REJECTED",
+        "POLICY-REFUND-COUPON",
+        "POLICY-INVOICE-ELECTRONIC",
+        "POLICY-INVOICE-REFUND",
+        "POLICY-LOGISTICS-TRACKING",
+        "POLICY-DAMAGE-EVIDENCE",
+        "POLICY-EXCHANGE-TIMELINE",
+        "POLICY-MISSING-RESOLUTION",
+        "POLICY-PRICE-EXCLUDED",
+        "POLICY-PRICE-REFUND"
+      ],
+      "filtered_ids": [
+        "POLICY-DIGITAL"
+      ],
+      "sufficiency": "UNCERTAIN",
+      "rounds": 1,
+      "deepseek_calls": 2,
+      "latency_ms": 29254.620998966857,
+      "input_tokens": 2814,
+      "output_tokens": 6530,
+      "api_cost": null,
+      "stop_reason": "已有重复扣款处理、原路退款、退款时效及身份校验政策，可覆盖处理原则；但缺少具体订单、支付流水和扣款记录，无法确认是否重复扣款及退款适用。按缺订单条件判为 UNCERTAIN。",
+      "answer_correct": null,
+      "unsupported_promises": null
+    },
+    {
+      "group": "B3",
+      "case_id": "para_05",
+      "source": "deepseek_live_shared_prefix",
+      "retrieved_ids": [],
+      "candidate_ids": [
+        "POLICY-PAYMENT-DUPLICATE",
+        "POLICY-REFUND-TIMELINE",
+        "POLICY-PRIVACY-IDENTITY",
+        "POLICY-ADDRESS-BEFORE-SHIP",
+        "POLICY-PAYMENT-FRAUD",
+        "POLICY-REFUND-ORIGINAL",
+        "POLICY-REFUND-REJECTED",
+        "POLICY-REFUND-COUPON",
+        "POLICY-INVOICE-ELECTRONIC",
+        "POLICY-INVOICE-REFUND",
+        "POLICY-LOGISTICS-TRACKING",
+        "POLICY-DAMAGE-EVIDENCE",
+        "POLICY-EXCHANGE-TIMELINE",
+        "POLICY-MISSING-RESOLUTION",
+        "POLICY-PRICE-EXCLUDED",
+        "POLICY-PRICE-REFUND"
+      ],
+      "filtered_ids": [
+        "POLICY-DIGITAL"
+      ],
+      "sufficiency": "UNCERTAIN",
+      "rounds": 1,
+      "deepseek_calls": 2,
+      "latency_ms": 29254.62083298771,
+      "input_tokens": 2814,
+      "output_tokens": 6530,
+      "api_cost": null,
+      "stop_reason": "已有重复扣款处理、原路退款、退款时效及身份校验政策，可覆盖处理原则；但缺少具体订单、支付流水和扣款记录，无法确认是否重复扣款及退款适用。按缺订单条件判为 UNCERTAIN。",
+      "answer_correct": null,
+      "unsupported_promises": null
+    },
+    {
+      "group": "B1",
+      "case_id": "para_06",
+      "source": "deepseek_live_shared_prefix",
+      "retrieved_ids": [
+        "POLICY-LOGISTICS-SIGNED-MISSING",
+        "POLICY-LOGISTICS-LOST",
+        "POLICY-LOGISTICS-TRACKING",
+        "POLICY-MISSING-RESOLUTION",
+        "POLICY-DAMAGE-EVIDENCE"
+      ],
+      "candidate_ids": [
+        "POLICY-DAMAGE-EVIDENCE",
+        "POLICY-LOGISTICS-TRACKING",
+        "POLICY-LOGISTICS-DELAY",
+        "POLICY-FOOD",
+        "POLICY-RETURN-FREIGHT",
+        "POLICY-LOGISTICS-LOST",
+        "POLICY-DIGITAL",
+        "POLICY-DAMAGE-30D",
+        "POLICY-REFUND-REJECTED",
+        "POLICY-LOGISTICS-SIGNED-MISSING",
+        "POLICY-REFUND-TIMELINE",
+        "POLICY-ADDRESS-AFTER-SHIP",
+        "POLICY-ADDRESS-BEFORE-SHIP",
+        "POLICY-EXCHANGE-TIMELINE",
+        "POLICY-PAYMENT-DUPLICATE",
+        "POLICY-RETURN-CONDITION",
+        "POLICY-EXCHANGE-DEVICE",
+        "POLICY-MISSING-RESOLUTION"
+      ],
+      "filtered_ids": [],
+      "sufficiency": null,
+      "rounds": 1,
+      "deepseek_calls": 1,
+      "latency_ms": 19286.93208299228,
+      "input_tokens": 2087,
+      "output_tokens": 4754,
+      "api_cost": null,
+      "stop_reason": null,
+      "answer_correct": null,
+      "unsupported_promises": null
+    },
+    {
+      "group": "B2",
+      "case_id": "para_06",
+      "source": "deepseek_live_shared_prefix",
+      "retrieved_ids": [],
+      "candidate_ids": [
+        "POLICY-DAMAGE-EVIDENCE",
+        "POLICY-LOGISTICS-TRACKING",
+        "POLICY-LOGISTICS-DELAY",
+        "POLICY-RETURN-FREIGHT",
+        "POLICY-LOGISTICS-LOST",
+        "POLICY-DAMAGE-30D",
+        "POLICY-REFUND-REJECTED",
+        "POLICY-LOGISTICS-SIGNED-MISSING",
+        "POLICY-REFUND-TIMELINE",
+        "POLICY-ADDRESS-AFTER-SHIP",
+        "POLICY-ADDRESS-BEFORE-SHIP",
+        "POLICY-EXCHANGE-TIMELINE",
+        "POLICY-PAYMENT-DUPLICATE",
+        "POLICY-RETURN-CONDITION",
+        "POLICY-MISSING-RESOLUTION"
+      ],
+      "filtered_ids": [
+        "POLICY-DIGITAL",
+        "POLICY-EXCHANGE-DEVICE",
+        "POLICY-FOOD"
+      ],
+      "sufficiency": "UNCERTAIN",
+      "rounds": 1,
+      "deepseek_calls": 2,
+      "latency_ms": 51804.23183401581,
+      "input_tokens": 2759,
+      "output_tokens": 11660,
+      "api_cost": null,
+      "stop_reason": "逐ID直接性：POLICY-LOGISTICS-SIGNED-MISSING 直接相关，覆盖签收未收到核查；POLICY-LOGISTICS-LOST 条件相关，须承运商确认丢失后才可补发/退款；POLICY-LOGISTICS-TRACKING 辅助相关，用于轨迹查询/催查；POLICY-DAMAGE-EVIDENCE 不相关（破损凭证）；POLICY-LOGISTICS-DELAY 不相关（停滞延迟）。缺订单条件：签收状态、days_since_delivery、承运商确认等，无法判定应走签收未收到还是丢失链路。",
+      "answer_correct": null,
+      "unsupported_promises": null
+    },
+    {
+      "group": "B3",
+      "case_id": "para_06",
+      "source": "deepseek_live_shared_prefix",
+      "retrieved_ids": [],
+      "candidate_ids": [
+        "POLICY-DAMAGE-EVIDENCE",
+        "POLICY-LOGISTICS-TRACKING",
+        "POLICY-LOGISTICS-DELAY",
+        "POLICY-RETURN-FREIGHT",
+        "POLICY-LOGISTICS-LOST",
+        "POLICY-DAMAGE-30D",
+        "POLICY-REFUND-REJECTED",
+        "POLICY-LOGISTICS-SIGNED-MISSING",
+        "POLICY-REFUND-TIMELINE",
+        "POLICY-ADDRESS-AFTER-SHIP",
+        "POLICY-ADDRESS-BEFORE-SHIP",
+        "POLICY-EXCHANGE-TIMELINE",
+        "POLICY-PAYMENT-DUPLICATE",
+        "POLICY-RETURN-CONDITION",
+        "POLICY-MISSING-RESOLUTION"
+      ],
+      "filtered_ids": [
+        "POLICY-DIGITAL",
+        "POLICY-EXCHANGE-DEVICE",
+        "POLICY-FOOD"
+      ],
+      "sufficiency": "UNCERTAIN",
+      "rounds": 1,
+      "deepseek_calls": 2,
+      "latency_ms": 51804.23225101549,
+      "input_tokens": 2759,
+      "output_tokens": 11660,
+      "api_cost": null,
+      "stop_reason": "逐ID直接性：POLICY-LOGISTICS-SIGNED-MISSING 直接相关，覆盖签收未收到核查；POLICY-LOGISTICS-LOST 条件相关，须承运商确认丢失后才可补发/退款；POLICY-LOGISTICS-TRACKING 辅助相关，用于轨迹查询/催查；POLICY-DAMAGE-EVIDENCE 不相关（破损凭证）；POLICY-LOGISTICS-DELAY 不相关（停滞延迟）。缺订单条件：签收状态、days_since_delivery、承运商确认等，无法判定应走签收未收到还是丢失链路。",
+      "answer_correct": null,
+      "unsupported_promises": null
+    },
+    {
+      "group": "B1",
+      "case_id": "multi_01",
+      "source": "deepseek_live_shared_prefix",
+      "retrieved_ids": [
+        "POLICY-REFUND-TIMELINE",
+        "POLICY-REFUND-ORIGINAL",
+        "POLICY-PRICE-REFUND",
+        "POLICY-PAYMENT-DUPLICATE",
+        "POLICY-REFUND-COUPON"
+      ],
+      "candidate_ids": [
+        "POLICY-REFUND-TIMELINE",
+        "POLICY-REFUND-ORIGINAL",
+        "POLICY-PRICE-REFUND",
+        "POLICY-INVOICE-ELECTRONIC",
+        "POLICY-PAYMENT-DUPLICATE",
+        "POLICY-INVOICE-REFUND",
+        "POLICY-REFUND-REJECTED",
+        "POLICY-EXCHANGE-TIMELINE",
+        "POLICY-MISSING-RESOLUTION",
+        "POLICY-DAMAGE-30D",
+        "POLICY-RETURN-7D",
+        "POLICY-PAYMENT-FAILED",
+        "POLICY-DIGITAL",
+        "POLICY-REFUND-COUPON",
+        "POLICY-LOGISTICS-LOST"
+      ],
+      "filtered_ids": [],
+      "sufficiency": null,
+      "rounds": 1,
+      "deepseek_calls": 1,
+      "latency_ms": 24462.611333001405,
+      "input_tokens": 1808,
+      "output_tokens": 5838,
+      "api_cost": null,
+      "stop_reason": null,
+      "answer_correct": null,
+      "unsupported_promises": null
+    }
+  ],
+  "decisions": [
+    {
+      "case_id": "para_02",
+      "group": "B1",
+      "results": [
+        {
+          "decision": {
+            "documents": [
+              {
+                "policy_id": "POLICY-DAMAGE-EVIDENCE",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              },
+              {
+                "policy_id": "POLICY-ADDRESS-AFTER-SHIP",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              },
+              {
+                "policy_id": "POLICY-LOGISTICS-SIGNED-MISSING",
+                "score": 0.1,
+                "direct_evidence": false,
+                "reason": "inapplicable"
+              },
+              {
+                "policy_id": "POLICY-SPORTSWEAR",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              },
+              {
+                "policy_id": "POLICY-RETURN-EXCLUDED",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              },
+              {
+                "policy_id": "POLICY-PRICE-WINDOW",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              },
+              {
+                "policy_id": "POLICY-RETURN-7D",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              },
+              {
+                "policy_id": "POLICY-DAMAGE-30D",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              },
+              {
+                "policy_id": "POLICY-LOGISTICS-DELAY",
+                "score": 1.0,
+                "direct_evidence": true,
+                "reason": "direct"
+              },
+              {
+                "policy_id": "POLICY-LOGISTICS-TRACKING",
+                "score": 0.95,
+                "direct_evidence": true,
+                "reason": "direct"
+              },
+              {
+                "policy_id": "POLICY-MISSING-EVIDENCE",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              },
+              {
+                "policy_id": "POLICY-ADDRESS-BEFORE-SHIP",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              },
+              {
+                "policy_id": "POLICY-PAYMENT-FRAUD",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              },
+              {
+                "policy_id": "POLICY-LOGISTICS-LOST",
+                "score": 0.1,
+                "direct_evidence": false,
+                "reason": "inapplicable"
+              },
+              {
+                "policy_id": "POLICY-REFUND-REJECTED",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              },
+              {
+                "policy_id": "POLICY-EXCHANGE-TIMELINE",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              },
+              {
+                "policy_id": "POLICY-DAMAGE-WARRANTY",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              },
+              {
+                "policy_id": "POLICY-PAYMENT-DUPLICATE",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              },
+              {
+                "policy_id": "POLICY-MISSING-RESOLUTION",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              }
+            ]
+          },
+          "stats": {
+            "provider": "deepseek",
+            "model": "deepseek-flash",
+            "elapsed_ms": 12096.584166007233,
+            "input_tokens": 2191,
+            "output_tokens": 2777,
+            "api_cost": null,
+            "attempts": 1
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "para_02",
+      "group": "B2",
+      "results": [
+        {
+          "decision": {
+            "documents": [
+              {
+                "policy_id": "POLICY-DAMAGE-EVIDENCE",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              },
+              {
+                "policy_id": "POLICY-ADDRESS-AFTER-SHIP",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              },
+              {
+                "policy_id": "POLICY-LOGISTICS-SIGNED-MISSING",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "inapplicable"
+              },
+              {
+                "policy_id": "POLICY-RETURN-EXCLUDED",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              },
+              {
+                "policy_id": "POLICY-PRICE-WINDOW",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              },
+              {
+                "policy_id": "POLICY-RETURN-7D",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              },
+              {
+                "policy_id": "POLICY-DAMAGE-30D",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              },
+              {
+                "policy_id": "POLICY-LOGISTICS-DELAY",
+                "score": 1.0,
+                "direct_evidence": true,
+                "reason": "direct"
+              },
+              {
+                "policy_id": "POLICY-LOGISTICS-TRACKING",
+                "score": 0.7,
+                "direct_evidence": false,
+                "reason": "supporting"
+              },
+              {
+                "policy_id": "POLICY-MISSING-EVIDENCE",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              },
+              {
+                "policy_id": "POLICY-ADDRESS-BEFORE-SHIP",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              },
+              {
+                "policy_id": "POLICY-PAYMENT-FRAUD",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              },
+              {
+                "policy_id": "POLICY-LOGISTICS-LOST",
+                "score": 0.1,
+                "direct_evidence": false,
+                "reason": "inapplicable"
+              },
+              {
+                "policy_id": "POLICY-REFUND-REJECTED",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              },
+              {
+                "policy_id": "POLICY-EXCHANGE-TIMELINE",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              },
+              {
+                "policy_id": "POLICY-PAYMENT-DUPLICATE",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              },
+              {
+                "policy_id": "POLICY-MISSING-RESOLUTION",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              }
+            ]
+          },
+          "stats": {
+            "provider": "deepseek",
+            "model": "deepseek-flash",
+            "elapsed_ms": 21686.818832997233,
+            "input_tokens": 1998,
+            "output_tokens": 4900,
+            "api_cost": null,
+            "attempts": 1
+          }
+        },
+        {
+          "decision": {
+            "status": "UNCERTAIN",
+            "covered_questions": [
+              "POLICY-LOGISTICS-DELAY 直接：国内件超过四十八小时无轨迹更新视为可能停滞，可联系承运商并创建催查工单。",
+              "POLICY-LOGISTICS-TRACKING 直接：订单发货后可查承运商和运单轨迹，长时间未更新可发起物流核查。",
+              "POLICY-LOGISTICS-LOST 条件：需承运商确认丢失后，才可安排补发或退款并追踪赔付。",
+              "POLICY-DAMAGE-EVIDENCE 无关：针对破损售后凭证，本问题未涉及破损。",
+              "POLICY-ADDRESS-AFTER-SHIP 无关：针对发货后更改地址，本问题未涉及改址。"
+            ],
+            "missing_information": [
+              "订单是否属于国内件，POLICY-LOGISTICS-DELAY 明确限定国内件。",
+              "最后轨迹更新的具体时间，是否严格超过四十八小时；“两天没挪窝”可能等于四十八小时。",
+              "运单号、承运商及订单状态，用于发起物流核查或催查工单。",
+              "承运商是否已确认包裹丢失，以判断是否适用 POLICY-LOGISTICS-LOST 的补发或退款。"
+            ],
+            "supporting_ids": [
+              "POLICY-LOGISTICS-DELAY",
+              "POLICY-LOGISTICS-TRACKING"
+            ],
+            "retrieval_targets": [
+              "applicability"
+            ],
+            "diagnostic": "物流停滞与轨迹政策可支持核查和催查，但政策限定国内件且需超过四十八小时无轨迹更新。当前缺少订单类别、最后更新时间及承运商丢失确认，无法确认完全适用，故为 UNCERTAIN。"
+          },
+          "stats": {
+            "provider": "deepseek",
+            "model": "deepseek-flash",
+            "elapsed_ms": 18639.363750000484,
+            "input_tokens": 945,
+            "output_tokens": 4049,
+            "api_cost": null,
+            "attempts": 1
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "para_02",
+      "group": "B3",
+      "results": [
+        {
+          "decision": {
+            "documents": [
+              {
+                "policy_id": "POLICY-DAMAGE-EVIDENCE",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              },
+              {
+                "policy_id": "POLICY-ADDRESS-AFTER-SHIP",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              },
+              {
+                "policy_id": "POLICY-LOGISTICS-SIGNED-MISSING",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "inapplicable"
+              },
+              {
+                "policy_id": "POLICY-RETURN-EXCLUDED",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              },
+              {
+                "policy_id": "POLICY-PRICE-WINDOW",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              },
+              {
+                "policy_id": "POLICY-RETURN-7D",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              },
+              {
+                "policy_id": "POLICY-DAMAGE-30D",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              },
+              {
+                "policy_id": "POLICY-LOGISTICS-DELAY",
+                "score": 1.0,
+                "direct_evidence": true,
+                "reason": "direct"
+              },
+              {
+                "policy_id": "POLICY-LOGISTICS-TRACKING",
+                "score": 0.7,
+                "direct_evidence": false,
+                "reason": "supporting"
+              },
+              {
+                "policy_id": "POLICY-MISSING-EVIDENCE",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              },
+              {
+                "policy_id": "POLICY-ADDRESS-BEFORE-SHIP",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              },
+              {
+                "policy_id": "POLICY-PAYMENT-FRAUD",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              },
+              {
+                "policy_id": "POLICY-LOGISTICS-LOST",
+                "score": 0.1,
+                "direct_evidence": false,
+                "reason": "inapplicable"
+              },
+              {
+                "policy_id": "POLICY-REFUND-REJECTED",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              },
+              {
+                "policy_id": "POLICY-EXCHANGE-TIMELINE",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              },
+              {
+                "policy_id": "POLICY-PAYMENT-DUPLICATE",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              },
+              {
+                "policy_id": "POLICY-MISSING-RESOLUTION",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              }
+            ]
+          },
+          "stats": {
+            "provider": "deepseek",
+            "model": "deepseek-flash",
+            "elapsed_ms": 21686.818832997233,
+            "input_tokens": 1998,
+            "output_tokens": 4900,
+            "api_cost": null,
+            "attempts": 1
+          }
+        },
+        {
+          "decision": {
+            "status": "UNCERTAIN",
+            "covered_questions": [
+              "POLICY-LOGISTICS-DELAY 直接：国内件超过四十八小时无轨迹更新视为可能停滞，可联系承运商并创建催查工单。",
+              "POLICY-LOGISTICS-TRACKING 直接：订单发货后可查承运商和运单轨迹，长时间未更新可发起物流核查。",
+              "POLICY-LOGISTICS-LOST 条件：需承运商确认丢失后，才可安排补发或退款并追踪赔付。",
+              "POLICY-DAMAGE-EVIDENCE 无关：针对破损售后凭证，本问题未涉及破损。",
+              "POLICY-ADDRESS-AFTER-SHIP 无关：针对发货后更改地址，本问题未涉及改址。"
+            ],
+            "missing_information": [
+              "订单是否属于国内件，POLICY-LOGISTICS-DELAY 明确限定国内件。",
+              "最后轨迹更新的具体时间，是否严格超过四十八小时；“两天没挪窝”可能等于四十八小时。",
+              "运单号、承运商及订单状态，用于发起物流核查或催查工单。",
+              "承运商是否已确认包裹丢失，以判断是否适用 POLICY-LOGISTICS-LOST 的补发或退款。"
+            ],
+            "supporting_ids": [
+              "POLICY-LOGISTICS-DELAY",
+              "POLICY-LOGISTICS-TRACKING"
+            ],
+            "retrieval_targets": [
+              "applicability"
+            ],
+            "diagnostic": "物流停滞与轨迹政策可支持核查和催查，但政策限定国内件且需超过四十八小时无轨迹更新。当前缺少订单类别、最后更新时间及承运商丢失确认，无法确认完全适用，故为 UNCERTAIN。"
+          },
+          "stats": {
+            "provider": "deepseek",
+            "model": "deepseek-flash",
+            "elapsed_ms": 18639.363750000484,
+            "input_tokens": 945,
+            "output_tokens": 4049,
+            "api_cost": null,
+            "attempts": 1
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "para_03",
+      "group": "B1",
+      "results": [
+        {
+          "decision": {
+            "documents": [
+              {
+                "policy_id": "POLICY-DAMAGE-WARRANTY",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              },
+              {
+                "policy_id": "POLICY-INVOICE-TITLE",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              },
+              {
+                "policy_id": "POLICY-EXCHANGE-DEVICE",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              },
+              {
+                "policy_id": "POLICY-ADDRESS-AFTER-SHIP",
+                "score": 1.0,
+                "direct_evidence": true,
+                "reason": "direct"
+              },
+              {
+                "policy_id": "POLICY-EXCHANGE-TIMELINE",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              },
+              {
+                "policy_id": "POLICY-PRICE-REFUND",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              },
+              {
+                "policy_id": "POLICY-MISSING-EVIDENCE",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              },
+              {
+                "policy_id": "POLICY-INVOICE-ELECTRONIC",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              },
+              {
+                "policy_id": "POLICY-ADDRESS-BEFORE-SHIP",
+                "score": 0.1,
+                "direct_evidence": false,
+                "reason": "inapplicable"
+              },
+              {
+                "policy_id": "POLICY-RETURN-CONDITION",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              },
+              {
+                "policy_id": "POLICY-EXCHANGE-SIZE",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              },
+              {
+                "policy_id": "POLICY-LOGISTICS-LOST",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              },
+              {
+                "policy_id": "POLICY-PAYMENT-FAILED",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              },
+              {
+                "policy_id": "POLICY-PRICE-EXCLUDED",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              },
+              {
+                "policy_id": "POLICY-DAMAGE-30D",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              },
+              {
+                "policy_id": "POLICY-SPORTSWEAR",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              },
+              {
+                "policy_id": "POLICY-REFUND-ORIGINAL",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              },
+              {
+                "policy_id": "POLICY-RETURN-FREIGHT",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              },
+              {
+                "policy_id": "POLICY-DAMAGE-EVIDENCE",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              }
+            ]
+          },
+          "stats": {
+            "provider": "deepseek",
+            "model": "deepseek-flash",
+            "elapsed_ms": 9265.742207993753,
+            "input_tokens": 2186,
+            "output_tokens": 2297,
+            "api_cost": null,
+            "attempts": 1
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "para_03",
+      "group": "B2",
+      "results": [
+        {
+          "decision": {
+            "documents": [
+              {
+                "policy_id": "POLICY-INVOICE-TITLE",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              },
+              {
+                "policy_id": "POLICY-ADDRESS-AFTER-SHIP",
+                "score": 1.0,
+                "direct_evidence": true,
+                "reason": "direct"
+              },
+              {
+                "policy_id": "POLICY-EXCHANGE-TIMELINE",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              },
+              {
+                "policy_id": "POLICY-PRICE-REFUND",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              },
+              {
+                "policy_id": "POLICY-MISSING-EVIDENCE",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              },
+              {
+                "policy_id": "POLICY-INVOICE-ELECTRONIC",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              },
+              {
+                "policy_id": "POLICY-ADDRESS-BEFORE-SHIP",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "inapplicable"
+              },
+              {
+                "policy_id": "POLICY-RETURN-CONDITION",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              },
+              {
+                "policy_id": "POLICY-LOGISTICS-LOST",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              },
+              {
+                "policy_id": "POLICY-PAYMENT-FAILED",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              },
+              {
+                "policy_id": "POLICY-PRICE-EXCLUDED",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              },
+              {
+                "policy_id": "POLICY-DAMAGE-30D",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              },
+              {
+                "policy_id": "POLICY-REFUND-ORIGINAL",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              },
+              {
+                "policy_id": "POLICY-RETURN-FREIGHT",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              },
+              {
+                "policy_id": "POLICY-DAMAGE-EVIDENCE",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              }
+            ]
+          },
+          "stats": {
+            "provider": "deepseek",
+            "model": "deepseek-flash",
+            "elapsed_ms": 10846.022083002026,
+            "input_tokens": 1801,
+            "output_tokens": 2462,
+            "api_cost": null,
+            "attempts": 1
+          }
+        },
+        {
+          "decision": {
+            "status": "UNCERTAIN",
+            "covered_questions": [
+              "发货后还能否更改收货地址",
+              "发货后改址是否保证成功",
+              "承运商能否转寄及由此产生的费用和延误由谁承担"
+            ],
+            "missing_information": [
+              "订单号或物流单号",
+              "当前物流状态（已揽收、运输中、派送中或已签收）",
+              "承运商是否支持转寄/改址",
+              "用户是否接受可能的转寄费用和延误",
+              "旧地址与新地址的具体信息",
+              "订单商品是否属于限制改址/转寄的特殊品类"
+            ],
+            "supporting_ids": [
+              "POLICY-ADDRESS-AFTER-SHIP"
+            ],
+            "retrieval_targets": [
+              "applicability"
+            ],
+            "diagnostic": "仅命中发货后更改地址政策：平台不保证改址成功，承运商可评估转寄，费用和延误由用户确认。但缺少订单号、当前物流节点、承运商能否转寄及用户是否接受费用延误等订单条件，无法判断该笔订单具体能否处理，故为UNCERTAIN。"
+          },
+          "stats": {
+            "provider": "deepseek",
+            "model": "deepseek-flash",
+            "elapsed_ms": 8710.203375012497,
+            "input_tokens": 956,
+            "output_tokens": 1715,
+            "api_cost": null,
+            "attempts": 1
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "para_03",
+      "group": "B3",
+      "results": [
+        {
+          "decision": {
+            "documents": [
+              {
+                "policy_id": "POLICY-INVOICE-TITLE",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              },
+              {
+                "policy_id": "POLICY-ADDRESS-AFTER-SHIP",
+                "score": 1.0,
+                "direct_evidence": true,
+                "reason": "direct"
+              },
+              {
+                "policy_id": "POLICY-EXCHANGE-TIMELINE",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              },
+              {
+                "policy_id": "POLICY-PRICE-REFUND",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              },
+              {
+                "policy_id": "POLICY-MISSING-EVIDENCE",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              },
+              {
+                "policy_id": "POLICY-INVOICE-ELECTRONIC",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              },
+              {
+                "policy_id": "POLICY-ADDRESS-BEFORE-SHIP",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "inapplicable"
+              },
+              {
+                "policy_id": "POLICY-RETURN-CONDITION",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              },
+              {
+                "policy_id": "POLICY-LOGISTICS-LOST",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              },
+              {
+                "policy_id": "POLICY-PAYMENT-FAILED",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              },
+              {
+                "policy_id": "POLICY-PRICE-EXCLUDED",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              },
+              {
+                "policy_id": "POLICY-DAMAGE-30D",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              },
+              {
+                "policy_id": "POLICY-REFUND-ORIGINAL",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              },
+              {
+                "policy_id": "POLICY-RETURN-FREIGHT",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              },
+              {
+                "policy_id": "POLICY-DAMAGE-EVIDENCE",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              }
+            ]
+          },
+          "stats": {
+            "provider": "deepseek",
+            "model": "deepseek-flash",
+            "elapsed_ms": 10846.022083002026,
+            "input_tokens": 1801,
+            "output_tokens": 2462,
+            "api_cost": null,
+            "attempts": 1
+          }
+        },
+        {
+          "decision": {
+            "status": "UNCERTAIN",
+            "covered_questions": [
+              "发货后还能否更改收货地址",
+              "发货后改址是否保证成功",
+              "承运商能否转寄及由此产生的费用和延误由谁承担"
+            ],
+            "missing_information": [
+              "订单号或物流单号",
+              "当前物流状态（已揽收、运输中、派送中或已签收）",
+              "承运商是否支持转寄/改址",
+              "用户是否接受可能的转寄费用和延误",
+              "旧地址与新地址的具体信息",
+              "订单商品是否属于限制改址/转寄的特殊品类"
+            ],
+            "supporting_ids": [
+              "POLICY-ADDRESS-AFTER-SHIP"
+            ],
+            "retrieval_targets": [
+              "applicability"
+            ],
+            "diagnostic": "仅命中发货后更改地址政策：平台不保证改址成功，承运商可评估转寄，费用和延误由用户确认。但缺少订单号、当前物流节点、承运商能否转寄及用户是否接受费用延误等订单条件，无法判断该笔订单具体能否处理，故为UNCERTAIN。"
+          },
+          "stats": {
+            "provider": "deepseek",
+            "model": "deepseek-flash",
+            "elapsed_ms": 8710.203375012497,
+            "input_tokens": 956,
+            "output_tokens": 1715,
+            "api_cost": null,
+            "attempts": 1
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "para_04",
+      "group": "B1",
+      "results": [
+        {
+          "decision": {
+            "documents": [
+              {
+                "policy_id": "POLICY-EXCHANGE-DEVICE",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "inapplicable"
+              },
+              {
+                "policy_id": "POLICY-EXCHANGE-SIZE",
+                "score": 0.8,
+                "direct_evidence": false,
+                "reason": "supporting"
+              },
+              {
+                "policy_id": "POLICY-DIGITAL",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "inapplicable"
+              },
+              {
+                "policy_id": "POLICY-DAMAGE-WARRANTY",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "inapplicable"
+              },
+              {
+                "policy_id": "POLICY-EXCHANGE-TIMELINE",
+                "score": 0.3,
+                "direct_evidence": false,
+                "reason": "supporting"
+              },
+              {
+                "policy_id": "POLICY-DAMAGE-EVIDENCE",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              },
+              {
+                "policy_id": "POLICY-EXCHANGE-STOCK",
+                "score": 1.0,
+                "direct_evidence": true,
+                "reason": "direct"
+              },
+              {
+                "policy_id": "POLICY-INVOICE-REFUND",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              },
+              {
+                "policy_id": "POLICY-INVOICE-TITLE",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              },
+              {
+                "policy_id": "POLICY-ADDRESS-BEFORE-SHIP",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              },
+              {
+                "policy_id": "POLICY-RETURN-EXCLUDED",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              },
+              {
+                "policy_id": "POLICY-REFUND-COUPON",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              },
+              {
+                "policy_id": "POLICY-RETURN-CONDITION",
+                "score": 0.4,
+                "direct_evidence": false,
+                "reason": "supporting"
+              },
+              {
+                "policy_id": "POLICY-PRICE-WINDOW",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              },
+              {
+                "policy_id": "POLICY-PRICE-REFUND",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              },
+              {
+                "policy_id": "POLICY-REFUND-REJECTED",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              },
+              {
+                "policy_id": "POLICY-PAYMENT-DUPLICATE",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              }
+            ]
+          },
+          "stats": {
+            "provider": "deepseek",
+            "model": "deepseek-flash",
+            "elapsed_ms": 16173.81504100922,
+            "input_tokens": 1981,
+            "output_tokens": 3855,
+            "api_cost": null,
+            "attempts": 1
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "para_04",
+      "group": "B2",
+      "results": [
+        {
+          "decision": {
+            "documents": [
+              {
+                "policy_id": "POLICY-EXCHANGE-TIMELINE",
+                "score": 0.3,
+                "direct_evidence": false,
+                "reason": "supporting"
+              },
+              {
+                "policy_id": "POLICY-DAMAGE-EVIDENCE",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              },
+              {
+                "policy_id": "POLICY-EXCHANGE-STOCK",
+                "score": 1.0,
+                "direct_evidence": true,
+                "reason": "direct"
+              },
+              {
+                "policy_id": "POLICY-INVOICE-REFUND",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              },
+              {
+                "policy_id": "POLICY-INVOICE-TITLE",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              },
+              {
+                "policy_id": "POLICY-ADDRESS-BEFORE-SHIP",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              },
+              {
+                "policy_id": "POLICY-RETURN-EXCLUDED",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              },
+              {
+                "policy_id": "POLICY-REFUND-COUPON",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              },
+              {
+                "policy_id": "POLICY-RETURN-CONDITION",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              },
+              {
+                "policy_id": "POLICY-PRICE-WINDOW",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              },
+              {
+                "policy_id": "POLICY-PRICE-REFUND",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              },
+              {
+                "policy_id": "POLICY-REFUND-REJECTED",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              },
+              {
+                "policy_id": "POLICY-PAYMENT-DUPLICATE",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              }
+            ]
+          },
+          "stats": {
+            "provider": "deepseek",
+            "model": "deepseek-flash",
+            "elapsed_ms": 19472.288083998137,
+            "input_tokens": 1602,
+            "output_tokens": 4327,
+            "api_cost": null,
+            "attempts": 1
+          }
+        },
+        {
+          "decision": {
+            "status": "UNCERTAIN",
+            "covered_questions": [
+              "目标换货规格缺货时可选择的处理方式：等待补货、改换其他规格或申请退款"
+            ],
+            "missing_information": [
+              "订单是否在换货有效期内（days_since_delivery 为空）",
+              "商品品类及是否属于不支持换货的特殊商品（category 为空）",
+              "原商品及包装是否满足换货条件"
+            ],
+            "supporting_ids": [
+              "POLICY-EXCHANGE-STOCK"
+            ],
+            "retrieval_targets": [
+              "return_conditions",
+              "applicability"
+            ],
+            "diagnostic": "POLICY-EXCHANGE-STOCK 直接覆盖目标规格缺货时的处理选项，但订单的收货天数与商品品类均为空，无法确认换货是否适用及是否受特殊商品/时效限制，因此结论为 UNCERTAIN。"
+          },
+          "stats": {
+            "provider": "deepseek",
+            "model": "deepseek-flash",
+            "elapsed_ms": 9405.100625008345,
+            "input_tokens": 944,
+            "output_tokens": 1887,
+            "api_cost": null,
+            "attempts": 1
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "para_04",
+      "group": "B3",
+      "results": [
+        {
+          "decision": {
+            "documents": [
+              {
+                "policy_id": "POLICY-EXCHANGE-TIMELINE",
+                "score": 0.3,
+                "direct_evidence": false,
+                "reason": "supporting"
+              },
+              {
+                "policy_id": "POLICY-DAMAGE-EVIDENCE",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              },
+              {
+                "policy_id": "POLICY-EXCHANGE-STOCK",
+                "score": 1.0,
+                "direct_evidence": true,
+                "reason": "direct"
+              },
+              {
+                "policy_id": "POLICY-INVOICE-REFUND",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              },
+              {
+                "policy_id": "POLICY-INVOICE-TITLE",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              },
+              {
+                "policy_id": "POLICY-ADDRESS-BEFORE-SHIP",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              },
+              {
+                "policy_id": "POLICY-RETURN-EXCLUDED",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              },
+              {
+                "policy_id": "POLICY-REFUND-COUPON",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              },
+              {
+                "policy_id": "POLICY-RETURN-CONDITION",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              },
+              {
+                "policy_id": "POLICY-PRICE-WINDOW",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              },
+              {
+                "policy_id": "POLICY-PRICE-REFUND",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              },
+              {
+                "policy_id": "POLICY-REFUND-REJECTED",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              },
+              {
+                "policy_id": "POLICY-PAYMENT-DUPLICATE",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              }
+            ]
+          },
+          "stats": {
+            "provider": "deepseek",
+            "model": "deepseek-flash",
+            "elapsed_ms": 19472.288083998137,
+            "input_tokens": 1602,
+            "output_tokens": 4327,
+            "api_cost": null,
+            "attempts": 1
+          }
+        },
+        {
+          "decision": {
+            "status": "UNCERTAIN",
+            "covered_questions": [
+              "目标换货规格缺货时可选择的处理方式：等待补货、改换其他规格或申请退款"
+            ],
+            "missing_information": [
+              "订单是否在换货有效期内（days_since_delivery 为空）",
+              "商品品类及是否属于不支持换货的特殊商品（category 为空）",
+              "原商品及包装是否满足换货条件"
+            ],
+            "supporting_ids": [
+              "POLICY-EXCHANGE-STOCK"
+            ],
+            "retrieval_targets": [
+              "return_conditions",
+              "applicability"
+            ],
+            "diagnostic": "POLICY-EXCHANGE-STOCK 直接覆盖目标规格缺货时的处理选项，但订单的收货天数与商品品类均为空，无法确认换货是否适用及是否受特殊商品/时效限制，因此结论为 UNCERTAIN。"
+          },
+          "stats": {
+            "provider": "deepseek",
+            "model": "deepseek-flash",
+            "elapsed_ms": 9405.100625008345,
+            "input_tokens": 944,
+            "output_tokens": 1887,
+            "api_cost": null,
+            "attempts": 1
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "para_05",
+      "group": "B1",
+      "results": [
+        {
+          "decision": {
+            "documents": [
+              {
+                "policy_id": "POLICY-PAYMENT-DUPLICATE",
+                "score": 1.0,
+                "direct_evidence": true,
+                "reason": "direct"
+              },
+              {
+                "policy_id": "POLICY-REFUND-TIMELINE",
+                "score": 0.4,
+                "direct_evidence": false,
+                "reason": "supporting"
+              },
+              {
+                "policy_id": "POLICY-PRIVACY-IDENTITY",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              },
+              {
+                "policy_id": "POLICY-ADDRESS-BEFORE-SHIP",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              },
+              {
+                "policy_id": "POLICY-PAYMENT-FRAUD",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              },
+              {
+                "policy_id": "POLICY-REFUND-ORIGINAL",
+                "score": 0.6,
+                "direct_evidence": false,
+                "reason": "supporting"
+              },
+              {
+                "policy_id": "POLICY-REFUND-REJECTED",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              },
+              {
+                "policy_id": "POLICY-REFUND-COUPON",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              },
+              {
+                "policy_id": "POLICY-INVOICE-ELECTRONIC",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              },
+              {
+                "policy_id": "POLICY-DIGITAL",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "inapplicable"
+              },
+              {
+                "policy_id": "POLICY-INVOICE-REFUND",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              },
+              {
+                "policy_id": "POLICY-LOGISTICS-TRACKING",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              },
+              {
+                "policy_id": "POLICY-DAMAGE-EVIDENCE",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              },
+              {
+                "policy_id": "POLICY-EXCHANGE-TIMELINE",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              },
+              {
+                "policy_id": "POLICY-MISSING-RESOLUTION",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              },
+              {
+                "policy_id": "POLICY-PRICE-EXCLUDED",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              },
+              {
+                "policy_id": "POLICY-PRICE-REFUND",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              }
+            ]
+          },
+          "stats": {
+            "provider": "deepseek",
+            "model": "deepseek-flash",
+            "elapsed_ms": 19863.3704999811,
+            "input_tokens": 1967,
+            "output_tokens": 4541,
+            "api_cost": null,
+            "attempts": 1
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "para_05",
+      "group": "B2",
+      "results": [
+        {
+          "decision": {
+            "documents": [
+              {
+                "policy_id": "POLICY-PAYMENT-DUPLICATE",
+                "score": 1.0,
+                "direct_evidence": true,
+                "reason": "direct"
+              },
+              {
+                "policy_id": "POLICY-REFUND-TIMELINE",
+                "score": 0.5,
+                "direct_evidence": false,
+                "reason": "supporting"
+              },
+              {
+                "policy_id": "POLICY-PRIVACY-IDENTITY",
+                "score": 0.4,
+                "direct_evidence": false,
+                "reason": "supporting"
+              },
+              {
+                "policy_id": "POLICY-ADDRESS-BEFORE-SHIP",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              },
+              {
+                "policy_id": "POLICY-PAYMENT-FRAUD",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              },
+              {
+                "policy_id": "POLICY-REFUND-ORIGINAL",
+                "score": 0.7,
+                "direct_evidence": false,
+                "reason": "supporting"
+              },
+              {
+                "policy_id": "POLICY-REFUND-REJECTED",
+                "score": 0.3,
+                "direct_evidence": false,
+                "reason": "supporting"
+              },
+              {
+                "policy_id": "POLICY-REFUND-COUPON",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              },
+              {
+                "policy_id": "POLICY-INVOICE-ELECTRONIC",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              },
+              {
+                "policy_id": "POLICY-INVOICE-REFUND",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              },
+              {
+                "policy_id": "POLICY-LOGISTICS-TRACKING",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              },
+              {
+                "policy_id": "POLICY-DAMAGE-EVIDENCE",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              },
+              {
+                "policy_id": "POLICY-EXCHANGE-TIMELINE",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              },
+              {
+                "policy_id": "POLICY-MISSING-RESOLUTION",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              },
+              {
+                "policy_id": "POLICY-PRICE-EXCLUDED",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              },
+              {
+                "policy_id": "POLICY-PRICE-REFUND",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              }
+            ]
+          },
+          "stats": {
+            "provider": "deepseek",
+            "model": "deepseek-flash",
+            "elapsed_ms": 19034.28312498727,
+            "input_tokens": 1873,
+            "output_tokens": 4482,
+            "api_cost": null,
+            "attempts": 1
+          }
+        },
+        {
+          "decision": {
+            "status": "UNCERTAIN",
+            "covered_questions": [
+              "同一订单重复扣款的处理原则",
+              "确认多扣后原路退回重复款项",
+              "退款原路返回及原账户注销时的处理",
+              "退款到账时效",
+              "查询或变更订单前的身份校验要求"
+            ],
+            "missing_information": [
+              "订单号或订单归属信息",
+              "支付流水或扣款记录",
+              "重复扣款的具体金额与时间",
+              "原支付账户状态",
+              "支付渠道信息",
+              "当前用户与订单归属校验结果"
+            ],
+            "supporting_ids": [
+              "POLICY-PAYMENT-DUPLICATE",
+              "POLICY-REFUND-ORIGINAL",
+              "POLICY-REFUND-TIMELINE",
+              "POLICY-PRIVACY-IDENTITY"
+            ],
+            "retrieval_targets": [
+              "refund_timing",
+              "applicability"
+            ],
+            "diagnostic": "已有重复扣款处理、原路退款、退款时效及身份校验政策，可覆盖处理原则；但缺少具体订单、支付流水和扣款记录，无法确认是否重复扣款及退款适用。按缺订单条件判为 UNCERTAIN。"
+          },
+          "stats": {
+            "provider": "deepseek",
+            "model": "deepseek-flash",
+            "elapsed_ms": 10220.318290987052,
+            "input_tokens": 941,
+            "output_tokens": 2048,
+            "api_cost": null,
+            "attempts": 1
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "para_05",
+      "group": "B3",
+      "results": [
+        {
+          "decision": {
+            "documents": [
+              {
+                "policy_id": "POLICY-PAYMENT-DUPLICATE",
+                "score": 1.0,
+                "direct_evidence": true,
+                "reason": "direct"
+              },
+              {
+                "policy_id": "POLICY-REFUND-TIMELINE",
+                "score": 0.5,
+                "direct_evidence": false,
+                "reason": "supporting"
+              },
+              {
+                "policy_id": "POLICY-PRIVACY-IDENTITY",
+                "score": 0.4,
+                "direct_evidence": false,
+                "reason": "supporting"
+              },
+              {
+                "policy_id": "POLICY-ADDRESS-BEFORE-SHIP",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              },
+              {
+                "policy_id": "POLICY-PAYMENT-FRAUD",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              },
+              {
+                "policy_id": "POLICY-REFUND-ORIGINAL",
+                "score": 0.7,
+                "direct_evidence": false,
+                "reason": "supporting"
+              },
+              {
+                "policy_id": "POLICY-REFUND-REJECTED",
+                "score": 0.3,
+                "direct_evidence": false,
+                "reason": "supporting"
+              },
+              {
+                "policy_id": "POLICY-REFUND-COUPON",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              },
+              {
+                "policy_id": "POLICY-INVOICE-ELECTRONIC",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              },
+              {
+                "policy_id": "POLICY-INVOICE-REFUND",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              },
+              {
+                "policy_id": "POLICY-LOGISTICS-TRACKING",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              },
+              {
+                "policy_id": "POLICY-DAMAGE-EVIDENCE",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              },
+              {
+                "policy_id": "POLICY-EXCHANGE-TIMELINE",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              },
+              {
+                "policy_id": "POLICY-MISSING-RESOLUTION",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              },
+              {
+                "policy_id": "POLICY-PRICE-EXCLUDED",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              },
+              {
+                "policy_id": "POLICY-PRICE-REFUND",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              }
+            ]
+          },
+          "stats": {
+            "provider": "deepseek",
+            "model": "deepseek-flash",
+            "elapsed_ms": 19034.28312498727,
+            "input_tokens": 1873,
+            "output_tokens": 4482,
+            "api_cost": null,
+            "attempts": 1
+          }
+        },
+        {
+          "decision": {
+            "status": "UNCERTAIN",
+            "covered_questions": [
+              "同一订单重复扣款的处理原则",
+              "确认多扣后原路退回重复款项",
+              "退款原路返回及原账户注销时的处理",
+              "退款到账时效",
+              "查询或变更订单前的身份校验要求"
+            ],
+            "missing_information": [
+              "订单号或订单归属信息",
+              "支付流水或扣款记录",
+              "重复扣款的具体金额与时间",
+              "原支付账户状态",
+              "支付渠道信息",
+              "当前用户与订单归属校验结果"
+            ],
+            "supporting_ids": [
+              "POLICY-PAYMENT-DUPLICATE",
+              "POLICY-REFUND-ORIGINAL",
+              "POLICY-REFUND-TIMELINE",
+              "POLICY-PRIVACY-IDENTITY"
+            ],
+            "retrieval_targets": [
+              "refund_timing",
+              "applicability"
+            ],
+            "diagnostic": "已有重复扣款处理、原路退款、退款时效及身份校验政策，可覆盖处理原则；但缺少具体订单、支付流水和扣款记录，无法确认是否重复扣款及退款适用。按缺订单条件判为 UNCERTAIN。"
+          },
+          "stats": {
+            "provider": "deepseek",
+            "model": "deepseek-flash",
+            "elapsed_ms": 10220.318290987052,
+            "input_tokens": 941,
+            "output_tokens": 2048,
+            "api_cost": null,
+            "attempts": 1
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "para_06",
+      "group": "B1",
+      "results": [
+        {
+          "decision": {
+            "documents": [
+              {
+                "policy_id": "POLICY-DAMAGE-EVIDENCE",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              },
+              {
+                "policy_id": "POLICY-LOGISTICS-TRACKING",
+                "score": 0.3,
+                "direct_evidence": false,
+                "reason": "supporting"
+              },
+              {
+                "policy_id": "POLICY-LOGISTICS-DELAY",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              },
+              {
+                "policy_id": "POLICY-FOOD",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "inapplicable"
+              },
+              {
+                "policy_id": "POLICY-RETURN-FREIGHT",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              },
+              {
+                "policy_id": "POLICY-LOGISTICS-LOST",
+                "score": 0.7,
+                "direct_evidence": false,
+                "reason": "supporting"
+              },
+              {
+                "policy_id": "POLICY-DIGITAL",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "inapplicable"
+              },
+              {
+                "policy_id": "POLICY-DAMAGE-30D",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              },
+              {
+                "policy_id": "POLICY-REFUND-REJECTED",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              },
+              {
+                "policy_id": "POLICY-LOGISTICS-SIGNED-MISSING",
+                "score": 1.0,
+                "direct_evidence": true,
+                "reason": "direct"
+              },
+              {
+                "policy_id": "POLICY-REFUND-TIMELINE",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              },
+              {
+                "policy_id": "POLICY-ADDRESS-AFTER-SHIP",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              },
+              {
+                "policy_id": "POLICY-ADDRESS-BEFORE-SHIP",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              },
+              {
+                "policy_id": "POLICY-EXCHANGE-TIMELINE",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              },
+              {
+                "policy_id": "POLICY-PAYMENT-DUPLICATE",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              },
+              {
+                "policy_id": "POLICY-RETURN-CONDITION",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              },
+              {
+                "policy_id": "POLICY-EXCHANGE-DEVICE",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "inapplicable"
+              },
+              {
+                "policy_id": "POLICY-MISSING-RESOLUTION",
+                "score": 0.1,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              }
+            ]
+          },
+          "stats": {
+            "provider": "deepseek",
+            "model": "deepseek-flash",
+            "elapsed_ms": 19286.916707991622,
+            "input_tokens": 2087,
+            "output_tokens": 4754,
+            "api_cost": null,
+            "attempts": 1
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "para_06",
+      "group": "B2",
+      "results": [
+        {
+          "decision": {
+            "documents": [
+              {
+                "policy_id": "POLICY-DAMAGE-EVIDENCE",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              },
+              {
+                "policy_id": "POLICY-LOGISTICS-TRACKING",
+                "score": 0.4,
+                "direct_evidence": false,
+                "reason": "supporting"
+              },
+              {
+                "policy_id": "POLICY-LOGISTICS-DELAY",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              },
+              {
+                "policy_id": "POLICY-RETURN-FREIGHT",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              },
+              {
+                "policy_id": "POLICY-LOGISTICS-LOST",
+                "score": 0.5,
+                "direct_evidence": false,
+                "reason": "supporting"
+              },
+              {
+                "policy_id": "POLICY-DAMAGE-30D",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              },
+              {
+                "policy_id": "POLICY-REFUND-REJECTED",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              },
+              {
+                "policy_id": "POLICY-LOGISTICS-SIGNED-MISSING",
+                "score": 1.0,
+                "direct_evidence": true,
+                "reason": "direct"
+              },
+              {
+                "policy_id": "POLICY-REFUND-TIMELINE",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              },
+              {
+                "policy_id": "POLICY-ADDRESS-AFTER-SHIP",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              },
+              {
+                "policy_id": "POLICY-ADDRESS-BEFORE-SHIP",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              },
+              {
+                "policy_id": "POLICY-EXCHANGE-TIMELINE",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              },
+              {
+                "policy_id": "POLICY-PAYMENT-DUPLICATE",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              },
+              {
+                "policy_id": "POLICY-RETURN-CONDITION",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              },
+              {
+                "policy_id": "POLICY-MISSING-RESOLUTION",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "inapplicable"
+              }
+            ]
+          },
+          "stats": {
+            "provider": "deepseek",
+            "model": "deepseek-flash",
+            "elapsed_ms": 23603.086500021163,
+            "input_tokens": 1808,
+            "output_tokens": 5211,
+            "api_cost": null,
+            "attempts": 1
+          }
+        },
+        {
+          "decision": {
+            "status": "UNCERTAIN",
+            "covered_questions": [
+              "物流显示签收但用户未收到时，应核对代收点和签收证明",
+              "应在二十四小时内发起核查",
+              "承运商确认丢失后，可依用户选择安排补发或退款并追踪赔付",
+              "发货后可查询承运商和运单轨迹，长时间未更新可发起物流核查"
+            ],
+            "missing_information": [
+              "订单物流是否显示已签收及签收人/代收点信息",
+              "days_since_delivery（用于判断是否在签收后24小时内）",
+              "是否已核对代收点、驿站或快递柜及签收证明",
+              "快递员称交给邻居的签收证明或交付记录",
+              "承运商是否已确认包裹丢失",
+              "用户是否已选择补发或退款（若进入丢失流程）",
+              "是否涉及特殊商品或质量例外（当前未提及）"
+            ],
+            "supporting_ids": [
+              "POLICY-LOGISTICS-SIGNED-MISSING",
+              "POLICY-LOGISTICS-LOST",
+              "POLICY-LOGISTICS-TRACKING"
+            ],
+            "retrieval_targets": [
+              "applicability"
+            ],
+            "diagnostic": "逐ID直接性：POLICY-LOGISTICS-SIGNED-MISSING 直接相关，覆盖签收未收到核查；POLICY-LOGISTICS-LOST 条件相关，须承运商确认丢失后才可补发/退款；POLICY-LOGISTICS-TRACKING 辅助相关，用于轨迹查询/催查；POLICY-DAMAGE-EVIDENCE 不相关（破损凭证）；POLICY-LOGISTICS-DELAY 不相关（停滞延迟）。缺订单条件：签收状态、days_since_delivery、承运商确认等，无法判定应走签收未收到还是丢失链路。"
+          },
+          "stats": {
+            "provider": "deepseek",
+            "model": "deepseek-flash",
+            "elapsed_ms": 28201.129416993354,
+            "input_tokens": 951,
+            "output_tokens": 6449,
+            "api_cost": null,
+            "attempts": 1
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "para_06",
+      "group": "B3",
+      "results": [
+        {
+          "decision": {
+            "documents": [
+              {
+                "policy_id": "POLICY-DAMAGE-EVIDENCE",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              },
+              {
+                "policy_id": "POLICY-LOGISTICS-TRACKING",
+                "score": 0.4,
+                "direct_evidence": false,
+                "reason": "supporting"
+              },
+              {
+                "policy_id": "POLICY-LOGISTICS-DELAY",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              },
+              {
+                "policy_id": "POLICY-RETURN-FREIGHT",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              },
+              {
+                "policy_id": "POLICY-LOGISTICS-LOST",
+                "score": 0.5,
+                "direct_evidence": false,
+                "reason": "supporting"
+              },
+              {
+                "policy_id": "POLICY-DAMAGE-30D",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              },
+              {
+                "policy_id": "POLICY-REFUND-REJECTED",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              },
+              {
+                "policy_id": "POLICY-LOGISTICS-SIGNED-MISSING",
+                "score": 1.0,
+                "direct_evidence": true,
+                "reason": "direct"
+              },
+              {
+                "policy_id": "POLICY-REFUND-TIMELINE",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              },
+              {
+                "policy_id": "POLICY-ADDRESS-AFTER-SHIP",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              },
+              {
+                "policy_id": "POLICY-ADDRESS-BEFORE-SHIP",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              },
+              {
+                "policy_id": "POLICY-EXCHANGE-TIMELINE",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              },
+              {
+                "policy_id": "POLICY-PAYMENT-DUPLICATE",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              },
+              {
+                "policy_id": "POLICY-RETURN-CONDITION",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              },
+              {
+                "policy_id": "POLICY-MISSING-RESOLUTION",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "inapplicable"
+              }
+            ]
+          },
+          "stats": {
+            "provider": "deepseek",
+            "model": "deepseek-flash",
+            "elapsed_ms": 23603.086500021163,
+            "input_tokens": 1808,
+            "output_tokens": 5211,
+            "api_cost": null,
+            "attempts": 1
+          }
+        },
+        {
+          "decision": {
+            "status": "UNCERTAIN",
+            "covered_questions": [
+              "物流显示签收但用户未收到时，应核对代收点和签收证明",
+              "应在二十四小时内发起核查",
+              "承运商确认丢失后，可依用户选择安排补发或退款并追踪赔付",
+              "发货后可查询承运商和运单轨迹，长时间未更新可发起物流核查"
+            ],
+            "missing_information": [
+              "订单物流是否显示已签收及签收人/代收点信息",
+              "days_since_delivery（用于判断是否在签收后24小时内）",
+              "是否已核对代收点、驿站或快递柜及签收证明",
+              "快递员称交给邻居的签收证明或交付记录",
+              "承运商是否已确认包裹丢失",
+              "用户是否已选择补发或退款（若进入丢失流程）",
+              "是否涉及特殊商品或质量例外（当前未提及）"
+            ],
+            "supporting_ids": [
+              "POLICY-LOGISTICS-SIGNED-MISSING",
+              "POLICY-LOGISTICS-LOST",
+              "POLICY-LOGISTICS-TRACKING"
+            ],
+            "retrieval_targets": [
+              "applicability"
+            ],
+            "diagnostic": "逐ID直接性：POLICY-LOGISTICS-SIGNED-MISSING 直接相关，覆盖签收未收到核查；POLICY-LOGISTICS-LOST 条件相关，须承运商确认丢失后才可补发/退款；POLICY-LOGISTICS-TRACKING 辅助相关，用于轨迹查询/催查；POLICY-DAMAGE-EVIDENCE 不相关（破损凭证）；POLICY-LOGISTICS-DELAY 不相关（停滞延迟）。缺订单条件：签收状态、days_since_delivery、承运商确认等，无法判定应走签收未收到还是丢失链路。"
+          },
+          "stats": {
+            "provider": "deepseek",
+            "model": "deepseek-flash",
+            "elapsed_ms": 28201.129416993354,
+            "input_tokens": 951,
+            "output_tokens": 6449,
+            "api_cost": null,
+            "attempts": 1
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "multi_01",
+      "group": "B1",
+      "results": [
+        {
+          "decision": {
+            "documents": [
+              {
+                "policy_id": "POLICY-REFUND-TIMELINE",
+                "score": 1.0,
+                "direct_evidence": true,
+                "reason": "direct"
+              },
+              {
+                "policy_id": "POLICY-REFUND-ORIGINAL",
+                "score": 1.0,
+                "direct_evidence": true,
+                "reason": "direct"
+              },
+              {
+                "policy_id": "POLICY-PRICE-REFUND",
+                "score": 0.3,
+                "direct_evidence": false,
+                "reason": "supporting"
+              },
+              {
+                "policy_id": "POLICY-INVOICE-ELECTRONIC",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              },
+              {
+                "policy_id": "POLICY-PAYMENT-DUPLICATE",
+                "score": 0.1,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              },
+              {
+                "policy_id": "POLICY-INVOICE-REFUND",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              },
+              {
+                "policy_id": "POLICY-REFUND-REJECTED",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              },
+              {
+                "policy_id": "POLICY-EXCHANGE-TIMELINE",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              },
+              {
+                "policy_id": "POLICY-MISSING-RESOLUTION",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              },
+              {
+                "policy_id": "POLICY-DAMAGE-30D",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "inapplicable"
+              },
+              {
+                "policy_id": "POLICY-RETURN-7D",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              },
+              {
+                "policy_id": "POLICY-PAYMENT-FAILED",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              },
+              {
+                "policy_id": "POLICY-DIGITAL",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "inapplicable"
+              },
+              {
+                "policy_id": "POLICY-REFUND-COUPON",
+                "score": 0.1,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              },
+              {
+                "policy_id": "POLICY-LOGISTICS-LOST",
+                "score": 0.0,
+                "direct_evidence": false,
+                "reason": "irrelevant"
+              }
+            ]
+          },
+          "stats": {
+            "provider": "deepseek",
+            "model": "deepseek-flash",
+            "elapsed_ms": 24462.541125016287,
+            "input_tokens": 1808,
+            "output_tokens": 5838,
+            "api_cost": null,
+            "attempts": 1
+          }
+        }
+      ]
+    }
+  ],
+  "source_sha256": {
+    "src/servicepilot/evaluators.py": "75de49bb794114ba279107e8d0de25f730b686101da8cfe1fc6fe190595f9de5",
+    "src/servicepilot/corrective_rag.py": "d9b1156671b79f4413d286533b9f591bc86d96b454890dd74cf1c9898c096310",
+    "src/servicepilot/evidence.py": "70558afde007ba45e69a85b513d0a046dfc6126b1b5cf3da496dcf9eb5f9fed2",
+    "scripts/pluggable_rag_eval.py": "2d4bffd222d2ab1db95a2f0bde0541c2f4e81aa4a16552947cd0b0333ceda6a4",
+    "evaluations/corrective_rag_cases.json": "aed3ce1d0c49b94b324fee4f908dec51e3901f09042463fcda6982917acf189c"
+  },
+  "failure": {
+    "case_id": "multi_01",
+    "group": "B2",
+    "error_type": "ProviderError",
+    "validation_details": null
+  }
+}

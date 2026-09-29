@@ -1,0 +1,1046 @@
+{
+  "case_count": 48,
+  "accuracy": 0.375,
+  "macro_f1": 0.1638,
+  "macro_f1_all_labels": 0.1501,
+  "fallback_count": 0,
+  "slice_metrics": {
+    "code_switch": {
+      "count": 6,
+      "correct": 0,
+      "accuracy": 0.0,
+      "avg_confidence": 0.0,
+      "abstention_rate": 1.0
+    },
+    "colloquial": {
+      "count": 6,
+      "correct": 1,
+      "accuracy": 0.1667,
+      "avg_confidence": 0.1267,
+      "abstention_rate": 0.8333
+    },
+    "implicit": {
+      "count": 6,
+      "correct": 1,
+      "accuracy": 0.1667,
+      "avg_confidence": 0.1267,
+      "abstention_rate": 0.8333
+    },
+    "multi_intent": {
+      "count": 6,
+      "correct": 5,
+      "accuracy": 0.8333,
+      "avg_confidence": 0.5667,
+      "abstention_rate": 0.1667
+    },
+    "negation": {
+      "count": 6,
+      "correct": 0,
+      "accuracy": 0.0,
+      "avg_confidence": 0.6243,
+      "abstention_rate": 0.1667
+    },
+    "prompt_injection": {
+      "count": 6,
+      "correct": 5,
+      "accuracy": 0.8333,
+      "avg_confidence": 0.1385,
+      "abstention_rate": 0.8333
+    },
+    "typo_noise": {
+      "count": 6,
+      "correct": 0,
+      "accuracy": 0.0,
+      "avg_confidence": 0.0,
+      "abstention_rate": 1.0
+    },
+    "underspecified": {
+      "count": 6,
+      "correct": 6,
+      "accuracy": 1.0,
+      "avg_confidence": 0.0,
+      "abstention_rate": 1.0
+    }
+  },
+  "per_intent": {
+    "logistics": {
+      "precision": 1.0,
+      "recall": 0.3333,
+      "f1": 0.5
+    },
+    "refund": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "damaged_item": {
+      "precision": 1.0,
+      "recall": 0.3333,
+      "f1": 0.5
+    },
+    "human_handoff": {
+      "precision": 0.3333,
+      "recall": 0.3333,
+      "f1": 0.3333
+    },
+    "exchange": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "invoice": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "payment": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "missing_item": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "address_change": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "price_protection": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "cancel": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "unknown": {
+      "precision": 0.3143,
+      "recall": 0.9167,
+      "f1": 0.4681
+    }
+  },
+  "confusion": {
+    "refund": {
+      "unknown": 3
+    },
+    "logistics": {
+      "logistics": 2,
+      "unknown": 2,
+      "human_handoff": 1,
+      "refund": 1
+    },
+    "damaged_item": {
+      "unknown": 1,
+      "missing_item": 1,
+      "damaged_item": 1
+    },
+    "exchange": {
+      "unknown": 3,
+      "refund": 1
+    },
+    "payment": {
+      "unknown": 4
+    },
+    "human_handoff": {
+      "unknown": 1,
+      "cancel": 1,
+      "human_handoff": 1
+    },
+    "invoice": {
+      "unknown": 3,
+      "refund": 1
+    },
+    "missing_item": {
+      "unknown": 3
+    },
+    "address_change": {
+      "unknown": 2,
+      "cancel": 2
+    },
+    "price_protection": {
+      "unknown": 2
+    },
+    "unknown": {
+      "unknown": 11,
+      "human_handoff": 1
+    }
+  },
+  "predictions": [
+    {
+      "case_id": "colloquial_01",
+      "expected": "refund",
+      "acceptable": [
+        "refund"
+      ],
+      "predicted": "unknown",
+      "confidence": 0.0,
+      "signals": [
+        "embedding:damaged_item",
+        "keyword:unknown"
+      ],
+      "correct": false,
+      "slices": [
+        "colloquial"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "case_id": "colloquial_02",
+      "expected": "logistics",
+      "acceptable": [
+        "logistics"
+      ],
+      "predicted": "logistics",
+      "confidence": 0.76,
+      "signals": [
+        "embedding:price_protection",
+        "keyword:logistics"
+      ],
+      "correct": true,
+      "slices": [
+        "colloquial"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "case_id": "colloquial_03",
+      "expected": "damaged_item",
+      "acceptable": [
+        "damaged_item"
+      ],
+      "predicted": "unknown",
+      "confidence": 0.0,
+      "signals": [
+        "embedding:damaged_item",
+        "keyword:unknown"
+      ],
+      "correct": false,
+      "slices": [
+        "colloquial"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "case_id": "colloquial_04",
+      "expected": "exchange",
+      "acceptable": [
+        "exchange"
+      ],
+      "predicted": "unknown",
+      "confidence": 0.0,
+      "signals": [
+        "embedding:human_handoff",
+        "keyword:unknown"
+      ],
+      "correct": false,
+      "slices": [
+        "colloquial"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "case_id": "colloquial_05",
+      "expected": "payment",
+      "acceptable": [
+        "payment"
+      ],
+      "predicted": "unknown",
+      "confidence": 0.0,
+      "signals": [
+        "embedding:logistics",
+        "keyword:unknown"
+      ],
+      "correct": false,
+      "slices": [
+        "colloquial"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "case_id": "colloquial_06",
+      "expected": "human_handoff",
+      "acceptable": [
+        "human_handoff"
+      ],
+      "predicted": "unknown",
+      "confidence": 0.0,
+      "signals": [
+        "embedding:missing_item",
+        "keyword:unknown"
+      ],
+      "correct": false,
+      "slices": [
+        "colloquial"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "case_id": "noise_01",
+      "expected": "logistics",
+      "acceptable": [
+        "logistics"
+      ],
+      "predicted": "unknown",
+      "confidence": 0.0,
+      "signals": [
+        "embedding:logistics",
+        "keyword:unknown"
+      ],
+      "correct": false,
+      "slices": [
+        "typo_noise"
+      ],
+      "difficulty": "hard"
+    },
+    {
+      "case_id": "noise_02",
+      "expected": "invoice",
+      "acceptable": [
+        "invoice"
+      ],
+      "predicted": "unknown",
+      "confidence": 0.0,
+      "signals": [
+        "embedding:invoice",
+        "keyword:unknown"
+      ],
+      "correct": false,
+      "slices": [
+        "typo_noise"
+      ],
+      "difficulty": "hard"
+    },
+    {
+      "case_id": "noise_03",
+      "expected": "missing_item",
+      "acceptable": [
+        "missing_item"
+      ],
+      "predicted": "unknown",
+      "confidence": 0.0,
+      "signals": [
+        "embedding:missing_item",
+        "keyword:unknown"
+      ],
+      "correct": false,
+      "slices": [
+        "typo_noise"
+      ],
+      "difficulty": "hard"
+    },
+    {
+      "case_id": "noise_04",
+      "expected": "payment",
+      "acceptable": [
+        "payment"
+      ],
+      "predicted": "unknown",
+      "confidence": 0.0,
+      "signals": [
+        "embedding:payment",
+        "keyword:unknown"
+      ],
+      "correct": false,
+      "slices": [
+        "typo_noise"
+      ],
+      "difficulty": "hard"
+    },
+    {
+      "case_id": "noise_05",
+      "expected": "address_change",
+      "acceptable": [
+        "address_change"
+      ],
+      "predicted": "unknown",
+      "confidence": 0.0,
+      "signals": [
+        "embedding:address_change",
+        "keyword:unknown"
+      ],
+      "correct": false,
+      "slices": [
+        "typo_noise"
+      ],
+      "difficulty": "hard"
+    },
+    {
+      "case_id": "noise_06",
+      "expected": "price_protection",
+      "acceptable": [
+        "price_protection"
+      ],
+      "predicted": "unknown",
+      "confidence": 0.0,
+      "signals": [
+        "embedding:price_protection",
+        "keyword:unknown"
+      ],
+      "correct": false,
+      "slices": [
+        "typo_noise"
+      ],
+      "difficulty": "hard"
+    },
+    {
+      "case_id": "implicit_01",
+      "expected": "payment",
+      "acceptable": [
+        "payment"
+      ],
+      "predicted": "unknown",
+      "confidence": 0.0,
+      "signals": [
+        "embedding:damaged_item",
+        "keyword:unknown"
+      ],
+      "correct": false,
+      "slices": [
+        "implicit"
+      ],
+      "difficulty": "hard"
+    },
+    {
+      "case_id": "implicit_02",
+      "expected": "missing_item",
+      "acceptable": [
+        "missing_item"
+      ],
+      "predicted": "unknown",
+      "confidence": 0.0,
+      "signals": [
+        "embedding:missing_item",
+        "keyword:unknown"
+      ],
+      "correct": false,
+      "slices": [
+        "implicit"
+      ],
+      "difficulty": "hard"
+    },
+    {
+      "case_id": "implicit_03",
+      "expected": "logistics",
+      "acceptable": [
+        "logistics"
+      ],
+      "predicted": "logistics",
+      "confidence": 0.76,
+      "signals": [
+        "embedding:exchange",
+        "keyword:logistics"
+      ],
+      "correct": true,
+      "slices": [
+        "implicit"
+      ],
+      "difficulty": "hard"
+    },
+    {
+      "case_id": "implicit_04",
+      "expected": "invoice",
+      "acceptable": [
+        "invoice"
+      ],
+      "predicted": "unknown",
+      "confidence": 0.0,
+      "signals": [
+        "embedding:human_handoff",
+        "keyword:unknown"
+      ],
+      "correct": false,
+      "slices": [
+        "implicit"
+      ],
+      "difficulty": "hard"
+    },
+    {
+      "case_id": "implicit_05",
+      "expected": "price_protection",
+      "acceptable": [
+        "price_protection"
+      ],
+      "predicted": "unknown",
+      "confidence": 0.0,
+      "signals": [
+        "embedding:missing_item",
+        "keyword:unknown"
+      ],
+      "correct": false,
+      "slices": [
+        "implicit"
+      ],
+      "difficulty": "hard"
+    },
+    {
+      "case_id": "implicit_06",
+      "expected": "address_change",
+      "acceptable": [
+        "address_change"
+      ],
+      "predicted": "unknown",
+      "confidence": 0.0,
+      "signals": [
+        "embedding:logistics",
+        "keyword:unknown"
+      ],
+      "correct": false,
+      "slices": [
+        "implicit"
+      ],
+      "difficulty": "hard"
+    },
+    {
+      "case_id": "negation_01",
+      "expected": "exchange",
+      "acceptable": [
+        "exchange"
+      ],
+      "predicted": "refund",
+      "confidence": 0.858,
+      "signals": [
+        "embedding:refund",
+        "keyword:refund"
+      ],
+      "correct": false,
+      "slices": [
+        "negation"
+      ],
+      "difficulty": "hard"
+    },
+    {
+      "case_id": "negation_02",
+      "expected": "logistics",
+      "acceptable": [
+        "logistics"
+      ],
+      "predicted": "human_handoff",
+      "confidence": 0.668,
+      "signals": [
+        "embedding:human_handoff",
+        "keyword:human_handoff"
+      ],
+      "correct": false,
+      "slices": [
+        "negation"
+      ],
+      "difficulty": "hard"
+    },
+    {
+      "case_id": "negation_03",
+      "expected": "refund",
+      "acceptable": [
+        "refund"
+      ],
+      "predicted": "unknown",
+      "confidence": 0.0,
+      "signals": [
+        "embedding:damaged_item",
+        "keyword:unknown"
+      ],
+      "correct": false,
+      "slices": [
+        "negation"
+      ],
+      "difficulty": "hard"
+    },
+    {
+      "case_id": "negation_04",
+      "expected": "damaged_item",
+      "acceptable": [
+        "damaged_item"
+      ],
+      "predicted": "missing_item",
+      "confidence": 0.851,
+      "signals": [
+        "embedding:missing_item",
+        "keyword:missing_item"
+      ],
+      "correct": false,
+      "slices": [
+        "negation"
+      ],
+      "difficulty": "hard"
+    },
+    {
+      "case_id": "negation_05",
+      "expected": "address_change",
+      "acceptable": [
+        "address_change"
+      ],
+      "predicted": "cancel",
+      "confidence": 0.609,
+      "signals": [
+        "embedding:address_change",
+        "keyword:cancel"
+      ],
+      "correct": false,
+      "slices": [
+        "negation"
+      ],
+      "difficulty": "hard"
+    },
+    {
+      "case_id": "negation_06",
+      "expected": "human_handoff",
+      "acceptable": [
+        "human_handoff"
+      ],
+      "predicted": "cancel",
+      "confidence": 0.76,
+      "signals": [
+        "embedding:damaged_item",
+        "keyword:cancel"
+      ],
+      "correct": false,
+      "slices": [
+        "negation"
+      ],
+      "difficulty": "hard"
+    },
+    {
+      "case_id": "multi_01",
+      "expected": "damaged_item",
+      "acceptable": [
+        "damaged_item",
+        "refund"
+      ],
+      "predicted": "damaged_item",
+      "confidence": 0.76,
+      "signals": [
+        "embedding:refund",
+        "keyword:damaged_item"
+      ],
+      "correct": true,
+      "slices": [
+        "multi_intent"
+      ],
+      "difficulty": "hard"
+    },
+    {
+      "case_id": "multi_02",
+      "expected": "logistics",
+      "acceptable": [
+        "logistics",
+        "missing_item",
+        "refund"
+      ],
+      "predicted": "refund",
+      "confidence": 0.659,
+      "signals": [
+        "embedding:refund",
+        "keyword:refund"
+      ],
+      "correct": true,
+      "slices": [
+        "multi_intent"
+      ],
+      "difficulty": "hard"
+    },
+    {
+      "case_id": "multi_03",
+      "expected": "address_change",
+      "acceptable": [
+        "address_change",
+        "cancel"
+      ],
+      "predicted": "cancel",
+      "confidence": 0.618,
+      "signals": [
+        "embedding:address_change",
+        "keyword:cancel"
+      ],
+      "correct": true,
+      "slices": [
+        "multi_intent"
+      ],
+      "difficulty": "hard"
+    },
+    {
+      "case_id": "multi_04",
+      "expected": "invoice",
+      "acceptable": [
+        "invoice",
+        "refund"
+      ],
+      "predicted": "refund",
+      "confidence": 0.61,
+      "signals": [
+        "embedding:refund",
+        "keyword:refund"
+      ],
+      "correct": true,
+      "slices": [
+        "multi_intent"
+      ],
+      "difficulty": "hard"
+    },
+    {
+      "case_id": "multi_05",
+      "expected": "exchange",
+      "acceptable": [
+        "exchange",
+        "missing_item"
+      ],
+      "predicted": "unknown",
+      "confidence": 0.0,
+      "signals": [
+        "embedding:exchange",
+        "keyword:unknown"
+      ],
+      "correct": false,
+      "slices": [
+        "multi_intent"
+      ],
+      "difficulty": "hard"
+    },
+    {
+      "case_id": "multi_06",
+      "expected": "human_handoff",
+      "acceptable": [
+        "human_handoff",
+        "payment"
+      ],
+      "predicted": "human_handoff",
+      "confidence": 0.753,
+      "signals": [
+        "embedding:human_handoff",
+        "keyword:human_handoff"
+      ],
+      "correct": true,
+      "slices": [
+        "multi_intent"
+      ],
+      "difficulty": "hard"
+    },
+    {
+      "case_id": "ambiguous_01",
+      "expected": "unknown",
+      "acceptable": [
+        "unknown"
+      ],
+      "predicted": "unknown",
+      "confidence": 0.0,
+      "signals": [
+        "embedding:payment",
+        "keyword:unknown"
+      ],
+      "correct": true,
+      "slices": [
+        "underspecified"
+      ],
+      "difficulty": "hard"
+    },
+    {
+      "case_id": "ambiguous_02",
+      "expected": "unknown",
+      "acceptable": [
+        "unknown"
+      ],
+      "predicted": "unknown",
+      "confidence": 0.0,
+      "signals": [
+        "embedding:damaged_item",
+        "keyword:unknown"
+      ],
+      "correct": true,
+      "slices": [
+        "underspecified"
+      ],
+      "difficulty": "hard"
+    },
+    {
+      "case_id": "ambiguous_03",
+      "expected": "unknown",
+      "acceptable": [
+        "unknown"
+      ],
+      "predicted": "unknown",
+      "confidence": 0.0,
+      "signals": [
+        "embedding:logistics",
+        "keyword:unknown"
+      ],
+      "correct": true,
+      "slices": [
+        "underspecified"
+      ],
+      "difficulty": "hard"
+    },
+    {
+      "case_id": "ambiguous_04",
+      "expected": "unknown",
+      "acceptable": [
+        "unknown"
+      ],
+      "predicted": "unknown",
+      "confidence": 0.0,
+      "signals": [
+        "embedding:damaged_item",
+        "keyword:unknown"
+      ],
+      "correct": true,
+      "slices": [
+        "underspecified"
+      ],
+      "difficulty": "hard"
+    },
+    {
+      "case_id": "ambiguous_05",
+      "expected": "unknown",
+      "acceptable": [
+        "unknown"
+      ],
+      "predicted": "unknown",
+      "confidence": 0.0,
+      "signals": [
+        "embedding:damaged_item",
+        "keyword:unknown"
+      ],
+      "correct": true,
+      "slices": [
+        "underspecified"
+      ],
+      "difficulty": "hard"
+    },
+    {
+      "case_id": "ambiguous_06",
+      "expected": "unknown",
+      "acceptable": [
+        "unknown"
+      ],
+      "predicted": "unknown",
+      "confidence": 0.0,
+      "signals": [
+        "embedding:price_protection",
+        "keyword:unknown"
+      ],
+      "correct": true,
+      "slices": [
+        "underspecified"
+      ],
+      "difficulty": "hard"
+    },
+    {
+      "case_id": "injection_01",
+      "expected": "unknown",
+      "acceptable": [
+        "unknown"
+      ],
+      "predicted": "unknown",
+      "confidence": 0.0,
+      "signals": [
+        "embedding:damaged_item",
+        "keyword:unknown"
+      ],
+      "correct": true,
+      "slices": [
+        "prompt_injection"
+      ],
+      "difficulty": "hard"
+    },
+    {
+      "case_id": "injection_02",
+      "expected": "unknown",
+      "acceptable": [
+        "unknown"
+      ],
+      "predicted": "unknown",
+      "confidence": 0.0,
+      "signals": [
+        "embedding:human_handoff",
+        "keyword:unknown"
+      ],
+      "correct": true,
+      "slices": [
+        "prompt_injection"
+      ],
+      "difficulty": "hard"
+    },
+    {
+      "case_id": "injection_03",
+      "expected": "unknown",
+      "acceptable": [
+        "unknown"
+      ],
+      "predicted": "human_handoff",
+      "confidence": 0.831,
+      "signals": [
+        "embedding:human_handoff",
+        "keyword:human_handoff"
+      ],
+      "correct": false,
+      "slices": [
+        "prompt_injection"
+      ],
+      "difficulty": "hard"
+    },
+    {
+      "case_id": "injection_04",
+      "expected": "unknown",
+      "acceptable": [
+        "unknown"
+      ],
+      "predicted": "unknown",
+      "confidence": 0.0,
+      "signals": [
+        "embedding:damaged_item",
+        "keyword:unknown"
+      ],
+      "correct": true,
+      "slices": [
+        "prompt_injection"
+      ],
+      "difficulty": "hard"
+    },
+    {
+      "case_id": "injection_05",
+      "expected": "unknown",
+      "acceptable": [
+        "unknown"
+      ],
+      "predicted": "unknown",
+      "confidence": 0.0,
+      "signals": [
+        "embedding:invoice",
+        "keyword:unknown"
+      ],
+      "correct": true,
+      "slices": [
+        "prompt_injection"
+      ],
+      "difficulty": "hard"
+    },
+    {
+      "case_id": "injection_06",
+      "expected": "unknown",
+      "acceptable": [
+        "unknown"
+      ],
+      "predicted": "unknown",
+      "confidence": 0.0,
+      "signals": [
+        "embedding:payment",
+        "keyword:unknown"
+      ],
+      "correct": true,
+      "slices": [
+        "prompt_injection"
+      ],
+      "difficulty": "hard"
+    },
+    {
+      "case_id": "mixed_01",
+      "expected": "logistics",
+      "acceptable": [
+        "logistics"
+      ],
+      "predicted": "unknown",
+      "confidence": 0.0,
+      "signals": [
+        "embedding:exchange",
+        "keyword:unknown"
+      ],
+      "correct": false,
+      "slices": [
+        "code_switch"
+      ],
+      "difficulty": "hard"
+    },
+    {
+      "case_id": "mixed_02",
+      "expected": "refund",
+      "acceptable": [
+        "refund"
+      ],
+      "predicted": "unknown",
+      "confidence": 0.0,
+      "signals": [
+        "embedding:payment",
+        "keyword:unknown"
+      ],
+      "correct": false,
+      "slices": [
+        "code_switch"
+      ],
+      "difficulty": "hard"
+    },
+    {
+      "case_id": "mixed_03",
+      "expected": "invoice",
+      "acceptable": [
+        "invoice"
+      ],
+      "predicted": "unknown",
+      "confidence": 0.0,
+      "signals": [
+        "embedding:damaged_item",
+        "keyword:unknown"
+      ],
+      "correct": false,
+      "slices": [
+        "code_switch"
+      ],
+      "difficulty": "hard"
+    },
+    {
+      "case_id": "mixed_04",
+      "expected": "payment",
+      "acceptable": [
+        "payment"
+      ],
+      "predicted": "unknown",
+      "confidence": 0.0,
+      "signals": [
+        "embedding:missing_item",
+        "keyword:unknown"
+      ],
+      "correct": false,
+      "slices": [
+        "code_switch"
+      ],
+      "difficulty": "hard"
+    },
+    {
+      "case_id": "mixed_05",
+      "expected": "exchange",
+      "acceptable": [
+        "exchange"
+      ],
+      "predicted": "unknown",
+      "confidence": 0.0,
+      "signals": [
+        "embedding:price_protection",
+        "keyword:unknown"
+      ],
+      "correct": false,
+      "slices": [
+        "code_switch"
+      ],
+      "difficulty": "hard"
+    },
+    {
+      "case_id": "mixed_06",
+      "expected": "missing_item",
+      "acceptable": [
+        "missing_item"
+      ],
+      "predicted": "unknown",
+      "confidence": 0.0,
+      "signals": [
+        "embedding:price_protection",
+        "keyword:unknown"
+      ],
+      "correct": false,
+      "slices": [
+        "code_switch"
+      ],
+      "difficulty": "hard"
+    }
+  ]
+}

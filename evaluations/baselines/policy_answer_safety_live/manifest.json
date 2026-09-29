@@ -1,0 +1,14 @@
+{
+  "config": {
+    "max_output_tokens": 8192,
+    "timeout_seconds": 65.0,
+    "prompt_version": "evidence-v2-policy-answer"
+  },
+  "source_sha256": {
+    "src/servicepilot/evaluators.py": "49d05afbfe6c9b8f463d82a36ffb6db7d2234765f249cf11001a0ae627fde016",
+    "src/servicepilot/corrective_rag.py": "3fed9fa11c8258cd98c51ba4f5c12ab1ded9dd0839ffa99a85a9dcd2b5f31fb9",
+    "src/servicepilot/evidence.py": "70558afde007ba45e69a85b513d0a046dfc6126b1b5cf3da496dcf9eb5f9fed2",
+    "scripts/pluggable_rag_eval.py": "0f952c46db830728ca81ecc31d4075485610e71d3f6c752e3ad98d315020bee0",
+    "evaluations/corrective_rag_cases.json": "aed3ce1d0c49b94b324fee4f908dec51e3901f09042463fcda6982917acf189c"
+  }
+}

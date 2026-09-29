@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="zh-CN">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>ServicePilot · 执行轨迹</title><link rel="stylesheet" href="/traces.css"></head>
+<body>
+<header><a href="/" class="brand"><b>S</b> ServicePilot</a><span>执行轨迹 <small>Agent Trace</small></span><a href="/">返回客服</a></header>
+<main>
+<section class="intro"><div><p class="eyebrow">可观察的每一步</p><h1>从请求到结果，沿着证据查看。</h1><p>检查执行树、调用耗时与计划变化。这里仅展示已脱敏的数据。</p></div><span class="privacy">◈ 默认隐私保护</span></section>
+<form id="filters" class="filters">
+<label>访问凭证<input id="token" type="password" autocomplete="off" placeholder="Bearer token · 仅保存在本页内存"></label>
+<label>状态<select id="status"><option value="">全部</option><option>ok</option><option>error</option><option>timeout</option><option>interrupted</option><option>running</option></select></label>
+<label>从<input id="start" type="datetime-local"></label><label>到<input id="end" type="datetime-local"></label>
+<label>会话<input id="thread" placeholder="SESSION-…"></label><label>任务<input id="task" placeholder="任务 ID"></label>
+<label>节点<input id="node" placeholder="dynamic.plan"></label><label>异常类型<input id="error-type" placeholder="TimeoutError"></label>
+<button type="submit">查询轨迹</button>
+</form>
+<p id="notice" role="status">填写已配置的访问凭证后查询。未配置认证时，轨迹 API 不开放数据。</p>
+<div class="layout">
+<aside class="list-panel"><div class="section-head"><h2>请求列表</h2><span id="total">—</span></div><div id="trace-list"><p class="empty">暂无已加载的请求</p></div><nav class="pages"><button id="previous" disabled>上一页</button><button id="next" disabled>下一页</button></nav></aside>
+<section class="inspection"><div class="section-head"><div><h2 id="selected-title">选择一条请求</h2><small id="correlation">每次请求独立记录，多轮任务可以关联查看</small></div><button id="export" disabled>导出 JSON</button></div>
+<div id="metrics" class="metrics"></div>
+<div class="split"><section><h3>执行树</h3><div id="tree" class="tree"><p class="empty">节点的父子关系将在这里展示</p></div></section><section><h3>节点详情</h3><div id="span-meta"></div><pre id="span-detail">点击执行树或时间线中的节点</pre></section></div>
+<section class="timeline-section"><h3>执行时间线 <small>相同起点的条形代表重叠执行</small></h3><div id="timeline"></div></section>
+<section><h3>计划、证据与恢复</h3><div id="plans"><p class="empty">没有已加载的计划事件</p></div></section>
+</section></div>
+</main><script src="/traces.js" defer></script>
+</body></html>

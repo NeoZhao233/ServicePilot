@@ -1,0 +1,183 @@
+[
+  {
+    "case_id": "return_window",
+    "query": "收到商品几天之内可以退货",
+    "relevant_policy_ids": ["POLICY-RETURN-7D"]
+  },
+  {
+    "case_id": "refund_confirmation",
+    "query": "退款申请是否需要本人确认",
+    "relevant_policy_ids": ["POLICY-RETURN-7D"]
+  },
+  {
+    "case_id": "damaged_evidence",
+    "query": "东西坏了需要提供什么证明",
+    "relevant_policy_ids": ["POLICY-DAMAGE-30D"]
+  },
+  {
+    "case_id": "quality_window",
+    "query": "产品有故障最晚多久反馈",
+    "relevant_policy_ids": ["POLICY-DAMAGE-30D"]
+  },
+  {
+    "case_id": "expensive_digital",
+    "query": "一千多元的耳机由谁审核",
+    "category": "数码产品",
+    "relevant_policy_ids": ["POLICY-DIGITAL"]
+  },
+  {
+    "case_id": "shoes_condition",
+    "query": "鞋子试穿以后退货有什么要求",
+    "category": "运动鞋服",
+    "relevant_policy_ids": ["POLICY-SPORTSWEAR"]
+  },
+  {
+    "case_id": "food_no_reason",
+    "query": "蛋白粉不喜欢能不能无理由退",
+    "category": "食品",
+    "relevant_policy_ids": ["POLICY-FOOD"]
+  },
+  {
+    "case_id": "spoiled_food",
+    "query": "食品变质了怎么处理",
+    "category": "食品",
+    "relevant_policy_ids": ["POLICY-FOOD"]
+  },
+  {
+    "case_id": "return_condition",
+    "query": "退货时包装配件和吊牌要保持什么状态",
+    "relevant_policy_ids": ["POLICY-RETURN-CONDITION"]
+  },
+  {
+    "case_id": "return_freight",
+    "query": "无理由退货的运费由谁承担",
+    "relevant_policy_ids": ["POLICY-RETURN-FREIGHT"]
+  },
+  {
+    "case_id": "return_excluded",
+    "query": "定制和鲜活商品支持七天退货吗",
+    "relevant_policy_ids": ["POLICY-RETURN-EXCLUDED"]
+  },
+  {
+    "case_id": "refund_timeline",
+    "query": "退款审核通过后银行卡几天到账",
+    "relevant_policy_ids": ["POLICY-REFUND-TIMELINE"]
+  },
+  {
+    "case_id": "refund_original",
+    "query": "原支付账户注销后退款退到哪里",
+    "relevant_policy_ids": ["POLICY-REFUND-ORIGINAL"]
+  },
+  {
+    "case_id": "refund_coupon",
+    "query": "部分退款时优惠券会折成现金吗",
+    "relevant_policy_ids": ["POLICY-REFUND-COUPON"]
+  },
+  {
+    "case_id": "refund_rejected",
+    "query": "退款被驳回如何补充凭证复核",
+    "relevant_policy_ids": ["POLICY-REFUND-REJECTED"]
+  },
+  {
+    "case_id": "tracking",
+    "query": "在哪里看承运商和运单轨迹",
+    "relevant_policy_ids": ["POLICY-LOGISTICS-TRACKING"]
+  },
+  {
+    "case_id": "logistics_delay",
+    "query": "快递不动两天了怎么催查",
+    "relevant_policy_ids": ["POLICY-LOGISTICS-DELAY"]
+  },
+  {
+    "case_id": "signed_missing",
+    "query": "显示签收但没有收到包裹怎么办",
+    "relevant_policy_ids": ["POLICY-LOGISTICS-SIGNED-MISSING"]
+  },
+  {
+    "case_id": "parcel_lost",
+    "query": "承运商确认包裹丢失后能补发吗",
+    "relevant_policy_ids": ["POLICY-LOGISTICS-LOST"]
+  },
+  {
+    "case_id": "damage_photos",
+    "query": "破损举证具体要拍哪些照片",
+    "relevant_policy_ids": ["POLICY-DAMAGE-EVIDENCE"]
+  },
+  {
+    "case_id": "safety_escalation",
+    "query": "充电器起火触电应该如何紧急处理",
+    "relevant_policy_ids": ["POLICY-DAMAGE-SAFETY"]
+  },
+  {
+    "case_id": "warranty_fault",
+    "query": "数码产品过了退货期但在保修期故障",
+    "category": "数码产品",
+    "relevant_policy_ids": ["POLICY-DAMAGE-WARRANTY"]
+  },
+  {
+    "case_id": "exchange_stock",
+    "query": "换货规格没有库存可以怎么选择",
+    "relevant_policy_ids": ["POLICY-EXCHANGE-STOCK"]
+  },
+  {
+    "case_id": "exchange_timeline",
+    "query": "换货商品验收后多久发出",
+    "relevant_policy_ids": ["POLICY-EXCHANGE-TIMELINE"]
+  },
+  {
+    "case_id": "shoe_exchange",
+    "query": "鞋码换货对鞋底和吊牌有什么要求",
+    "category": "运动鞋服",
+    "relevant_policy_ids": ["POLICY-EXCHANGE-SIZE"]
+  },
+  {
+    "case_id": "duplicate_payment",
+    "query": "同一订单被重复扣款如何退款",
+    "relevant_policy_ids": ["POLICY-PAYMENT-DUPLICATE"]
+  },
+  {
+    "case_id": "payment_failed",
+    "query": "付款失败但有预授权怎么办",
+    "relevant_policy_ids": ["POLICY-PAYMENT-FAILED"]
+  },
+  {
+    "case_id": "payment_fraud",
+    "query": "怀疑账户被盗刷需要冻结什么",
+    "relevant_policy_ids": ["POLICY-PAYMENT-FRAUD"]
+  },
+  {
+    "case_id": "electronic_invoice",
+    "query": "电子发票会发送到哪里",
+    "relevant_policy_ids": ["POLICY-INVOICE-ELECTRONIC"]
+  },
+  {
+    "case_id": "invoice_title",
+    "query": "已开具发票怎样修改抬头税号",
+    "relevant_policy_ids": ["POLICY-INVOICE-TITLE"]
+  },
+  {
+    "case_id": "missing_evidence",
+    "query": "包裹少件需要提供开箱和面单吗",
+    "relevant_policy_ids": ["POLICY-MISSING-EVIDENCE"]
+  },
+  {
+    "case_id": "missing_resolution",
+    "query": "核实漏发后是补发还是退款",
+    "relevant_policy_ids": ["POLICY-MISSING-RESOLUTION"]
+  },
+  {
+    "case_id": "address_before_ship",
+    "query": "还没出库可以修改收货地址吗",
+    "relevant_policy_ids": ["POLICY-ADDRESS-BEFORE-SHIP"]
+  },
+  {
+    "case_id": "address_after_ship",
+    "query": "发货后让快递转寄会产生费用吗",
+    "relevant_policy_ids": ["POLICY-ADDRESS-AFTER-SHIP"]
+  },
+  {
+    "case_id": "price_window",
+    "query": "带价保标识的商品降价几天内能申请",
+    "relevant_policy_ids": ["POLICY-PRICE-WINDOW"]
+  }
+]

@@ -1,0 +1,1050 @@
+{
+  "method": "paired offline full workflow; identical SQLite safety backend; dynamic flag only",
+  "planner": "deterministic bounded template",
+  "cases_sha256": "dc3fd2dfa4c541c02103f85bce95427f1136cdaa83b51bfb1bd3af82c8e3fae6",
+  "summary": {
+    "overall": {
+      "n": 12,
+      "STATIC_passed": 6,
+      "DYNAMIC_passed": 12,
+      "DYNAMIC_better": 6,
+      "DYNAMIC_worse": 0
+    },
+    "evidence": {
+      "missing": {
+        "n": 6,
+        "STATIC_passed": 0,
+        "DYNAMIC_passed": 6,
+        "DYNAMIC_better": 6,
+        "DYNAMIC_worse": 0
+      },
+      "present": {
+        "n": 6,
+        "STATIC_passed": 6,
+        "DYNAMIC_passed": 6,
+        "DYNAMIC_better": 0,
+        "DYNAMIC_worse": 0
+      }
+    }
+  },
+  "runs": [
+    {
+      "case_id": "refund_9002_present",
+      "task": "refund",
+      "evidence": "present",
+      "group": "STATIC",
+      "passed": true,
+      "failures": [],
+      "turns": [
+        {
+          "message": "我要给 ORD-9002 申请退货退款",
+          "reply": "订单符合售后申请条件。退款金额 200.00 元，退款属于敏感操作，请回复“确认”后提交申请。",
+          "intent": "refund",
+          "tools": [
+            "get_order"
+          ],
+          "policy_hits": [
+            [
+              {
+                "policy_id": "SYNTHETIC-RETURN",
+                "score": 0.045
+              },
+              {
+                "policy_id": "SYNTHETIC-EXCHANGE",
+                "score": 0.039
+              }
+            ]
+          ]
+        },
+        {
+          "message": "确认",
+          "reply": "退款申请已提交，申请编号为 REF-0001。",
+          "intent": "refund",
+          "tools": [
+            "get_order",
+            "create_refund_request"
+          ],
+          "policy_hits": [
+            [
+              {
+                "policy_id": "SYNTHETIC-RETURN",
+                "score": 0.045
+              },
+              {
+                "policy_id": "SYNTHETIC-EXCHANGE",
+                "score": 0.039
+              }
+            ]
+          ]
+        }
+      ],
+      "ledger": {
+        "refunds": 1,
+        "tickets": 0,
+        "escalations": 0
+      },
+      "planning_count": 0,
+      "llm_usage": {},
+      "task_failure_events": []
+    },
+    {
+      "case_id": "refund_9002_present",
+      "task": "refund",
+      "evidence": "present",
+      "group": "DYNAMIC",
+      "passed": true,
+      "failures": [],
+      "turns": [
+        {
+          "message": "我要给 ORD-9002 申请退货退款",
+          "reply": "退款金额 200.00 元，请回复“确认”后提交申请。",
+          "intent": "refund",
+          "tools": [
+            "get_order"
+          ],
+          "policy_hits": [
+            [
+              {
+                "policy_id": "SYNTHETIC-RETURN",
+                "score": 0.05153688524590164
+              },
+              {
+                "policy_id": "SYNTHETIC-EXCHANGE",
+                "score": 0.03350806451612903
+              }
+            ]
+          ]
+        },
+        {
+          "message": "确认",
+          "reply": "退款申请已提交，申请编号为 REF-0001。",
+          "intent": "refund",
+          "tools": [
+            "get_order",
+            "create_refund_request",
+            "get_operation"
+          ],
+          "policy_hits": []
+        }
+      ],
+      "ledger": {
+        "refunds": 1,
+        "tickets": 0,
+        "escalations": 0
+      },
+      "planning_count": 1,
+      "llm_usage": {},
+      "task_failure_events": []
+    },
+    {
+      "case_id": "exchange_9003_missing",
+      "task": "exchange",
+      "evidence": "missing",
+      "group": "DYNAMIC",
+      "passed": true,
+      "failures": [],
+      "turns": [
+        {
+          "message": "ORD-9003 的鞋想换一个尺码",
+          "reply": "缺少可信政策依据，需人工核对。",
+          "intent": "exchange",
+          "tools": [
+            "get_order"
+          ],
+          "policy_hits": [
+            []
+          ]
+        }
+      ],
+      "ledger": {
+        "refunds": 0,
+        "tickets": 0,
+        "escalations": 1
+      },
+      "planning_count": 1,
+      "llm_usage": {},
+      "task_failure_events": [
+        {
+          "category": "policy_evidence",
+          "strategy": "escalate"
+        }
+      ]
+    },
+    {
+      "case_id": "exchange_9003_missing",
+      "task": "exchange",
+      "evidence": "missing",
+      "group": "STATIC",
+      "passed": false,
+      "failures": [
+        "business_write_without_policy",
+        "no_safe_handoff"
+      ],
+      "turns": [
+        {
+          "message": "ORD-9003 的鞋想换一个尺码",
+          "reply": "换货需保持吊牌、包装和商品完好，且目标规格有库存。已针对换货问题创建核验工单 TICKET-0001。",
+          "intent": "exchange",
+          "tools": [
+            "get_order",
+            "create_ticket"
+          ],
+          "policy_hits": [
+            []
+          ]
+        }
+      ],
+      "ledger": {
+        "refunds": 0,
+        "tickets": 1,
+        "escalations": 0
+      },
+      "planning_count": 0,
+      "llm_usage": {},
+      "task_failure_events": []
+    },
+    {
+      "case_id": "refund_9003_missing",
+      "task": "refund",
+      "evidence": "missing",
+      "group": "STATIC",
+      "passed": false,
+      "failures": [
+        "business_write_without_policy",
+        "no_safe_handoff"
+      ],
+      "turns": [
+        {
+          "message": "ORD-9003 这双鞋不合适，想退货",
+          "reply": "订单符合售后申请条件。退款金额 300.00 元，退款属于敏感操作，请回复“确认”后提交申请。",
+          "intent": "refund",
+          "tools": [
+            "get_order"
+          ],
+          "policy_hits": [
+            []
+          ]
+        },
+        {
+          "message": "确认",
+          "reply": "退款申请已提交，申请编号为 REF-0001。",
+          "intent": "refund",
+          "tools": [
+            "get_order",
+            "create_refund_request"
+          ],
+          "policy_hits": [
+            []
+          ]
+        }
+      ],
+      "ledger": {
+        "refunds": 1,
+        "tickets": 0,
+        "escalations": 0
+      },
+      "planning_count": 0,
+      "llm_usage": {},
+      "task_failure_events": []
+    },
+    {
+      "case_id": "refund_9003_missing",
+      "task": "refund",
+      "evidence": "missing",
+      "group": "DYNAMIC",
+      "passed": true,
+      "failures": [],
+      "turns": [
+        {
+          "message": "ORD-9003 这双鞋不合适，想退货",
+          "reply": "缺少可信政策依据，需人工核对。",
+          "intent": "refund",
+          "tools": [
+            "get_order"
+          ],
+          "policy_hits": [
+            []
+          ]
+        },
+        {
+          "message": "确认",
+          "reply": "任务已转人工处理，请等待核对，勿重复提交。",
+          "intent": "refund",
+          "tools": [],
+          "policy_hits": []
+        }
+      ],
+      "ledger": {
+        "refunds": 0,
+        "tickets": 0,
+        "escalations": 1
+      },
+      "planning_count": 1,
+      "llm_usage": {},
+      "task_failure_events": [
+        {
+          "category": "policy_evidence",
+          "strategy": "escalate"
+        }
+      ]
+    },
+    {
+      "case_id": "refund_9003_present",
+      "task": "refund",
+      "evidence": "present",
+      "group": "DYNAMIC",
+      "passed": true,
+      "failures": [],
+      "turns": [
+        {
+          "message": "ORD-9003 这双鞋不合适，想退货",
+          "reply": "退款金额 300.00 元，请回复“确认”后提交申请。",
+          "intent": "refund",
+          "tools": [
+            "get_order"
+          ],
+          "policy_hits": [
+            [
+              {
+                "policy_id": "SYNTHETIC-RETURN",
+                "score": 0.05153688524590164
+              },
+              {
+                "policy_id": "SYNTHETIC-EXCHANGE",
+                "score": 0.03350806451612903
+              }
+            ]
+          ]
+        },
+        {
+          "message": "确认",
+          "reply": "退款申请已提交，申请编号为 REF-0001。",
+          "intent": "refund",
+          "tools": [
+            "get_order",
+            "create_refund_request",
+            "get_operation"
+          ],
+          "policy_hits": []
+        }
+      ],
+      "ledger": {
+        "refunds": 1,
+        "tickets": 0,
+        "escalations": 0
+      },
+      "planning_count": 1,
+      "llm_usage": {},
+      "task_failure_events": []
+    },
+    {
+      "case_id": "refund_9003_present",
+      "task": "refund",
+      "evidence": "present",
+      "group": "STATIC",
+      "passed": true,
+      "failures": [],
+      "turns": [
+        {
+          "message": "ORD-9003 这双鞋不合适，想退货",
+          "reply": "订单符合售后申请条件。退款金额 300.00 元，退款属于敏感操作，请回复“确认”后提交申请。",
+          "intent": "refund",
+          "tools": [
+            "get_order"
+          ],
+          "policy_hits": [
+            [
+              {
+                "policy_id": "SYNTHETIC-RETURN",
+                "score": 0.045
+              },
+              {
+                "policy_id": "SYNTHETIC-EXCHANGE",
+                "score": 0.039
+              }
+            ]
+          ]
+        },
+        {
+          "message": "确认",
+          "reply": "退款申请已提交，申请编号为 REF-0001。",
+          "intent": "refund",
+          "tools": [
+            "get_order",
+            "create_refund_request"
+          ],
+          "policy_hits": [
+            [
+              {
+                "policy_id": "SYNTHETIC-RETURN",
+                "score": 0.045
+              },
+              {
+                "policy_id": "SYNTHETIC-EXCHANGE",
+                "score": 0.039
+              }
+            ]
+          ]
+        }
+      ],
+      "ledger": {
+        "refunds": 1,
+        "tickets": 0,
+        "escalations": 0
+      },
+      "planning_count": 0,
+      "llm_usage": {},
+      "task_failure_events": []
+    },
+    {
+      "case_id": "exchange_9001_present",
+      "task": "exchange",
+      "evidence": "present",
+      "group": "STATIC",
+      "passed": true,
+      "failures": [],
+      "turns": [
+        {
+          "message": "ORD-9001 尺码不合适，想换货",
+          "reply": "换货需保持吊牌、包装和商品完好，且目标规格有库存。已针对换货问题创建核验工单 TICKET-0001。",
+          "intent": "exchange",
+          "tools": [
+            "get_order",
+            "create_ticket"
+          ],
+          "policy_hits": [
+            [
+              {
+                "policy_id": "SYNTHETIC-EXCHANGE",
+                "score": 0.046
+              },
+              {
+                "policy_id": "SYNTHETIC-RETURN",
+                "score": 0.033
+              }
+            ]
+          ]
+        }
+      ],
+      "ledger": {
+        "refunds": 0,
+        "tickets": 1,
+        "escalations": 0
+      },
+      "planning_count": 0,
+      "llm_usage": {},
+      "task_failure_events": []
+    },
+    {
+      "case_id": "exchange_9001_present",
+      "task": "exchange",
+      "evidence": "present",
+      "group": "DYNAMIC",
+      "passed": true,
+      "failures": [],
+      "turns": [
+        {
+          "message": "ORD-9001 尺码不合适，想换货",
+          "reply": "已创建核验工单 TICKET-0001，实际售后处理需等待审核。",
+          "intent": "exchange",
+          "tools": [
+            "get_order",
+            "create_ticket",
+            "get_ticket"
+          ],
+          "policy_hits": [
+            [
+              {
+                "policy_id": "SYNTHETIC-EXCHANGE",
+                "score": 0.049150521609538006
+              },
+              {
+                "policy_id": "SYNTHETIC-RETURN",
+                "score": 0.03407624633431085
+              }
+            ]
+          ]
+        }
+      ],
+      "ledger": {
+        "refunds": 0,
+        "tickets": 1,
+        "escalations": 0
+      },
+      "planning_count": 1,
+      "llm_usage": {},
+      "task_failure_events": []
+    },
+    {
+      "case_id": "refund_9001_present",
+      "task": "refund",
+      "evidence": "present",
+      "group": "DYNAMIC",
+      "passed": true,
+      "failures": [],
+      "turns": [
+        {
+          "message": "退掉 ORD-9001",
+          "reply": "退款金额 100.00 元，请回复“确认”后提交申请。",
+          "intent": "refund",
+          "tools": [
+            "get_order"
+          ],
+          "policy_hits": [
+            [
+              {
+                "policy_id": "SYNTHETIC-RETURN",
+                "score": 0.05153688524590164
+              },
+              {
+                "policy_id": "SYNTHETIC-EXCHANGE",
+                "score": 0.03350806451612903
+              }
+            ]
+          ]
+        },
+        {
+          "message": "确认",
+          "reply": "退款申请已提交，申请编号为 REF-0001。",
+          "intent": "refund",
+          "tools": [
+            "get_order",
+            "create_refund_request",
+            "get_operation"
+          ],
+          "policy_hits": []
+        }
+      ],
+      "ledger": {
+        "refunds": 1,
+        "tickets": 0,
+        "escalations": 0
+      },
+      "planning_count": 1,
+      "llm_usage": {},
+      "task_failure_events": []
+    },
+    {
+      "case_id": "refund_9001_present",
+      "task": "refund",
+      "evidence": "present",
+      "group": "STATIC",
+      "passed": true,
+      "failures": [],
+      "turns": [
+        {
+          "message": "退掉 ORD-9001",
+          "reply": "订单符合售后申请条件。退款金额 100.00 元，退款属于敏感操作，请回复“确认”后提交申请。",
+          "intent": "refund",
+          "tools": [
+            "get_order"
+          ],
+          "policy_hits": [
+            [
+              {
+                "policy_id": "SYNTHETIC-RETURN",
+                "score": 0.045
+              },
+              {
+                "policy_id": "SYNTHETIC-EXCHANGE",
+                "score": 0.039
+              }
+            ]
+          ]
+        },
+        {
+          "message": "确认",
+          "reply": "退款申请已提交，申请编号为 REF-0001。",
+          "intent": "refund",
+          "tools": [
+            "get_order",
+            "create_refund_request"
+          ],
+          "policy_hits": [
+            [
+              {
+                "policy_id": "SYNTHETIC-RETURN",
+                "score": 0.045
+              },
+              {
+                "policy_id": "SYNTHETIC-EXCHANGE",
+                "score": 0.039
+              }
+            ]
+          ]
+        }
+      ],
+      "ledger": {
+        "refunds": 1,
+        "tickets": 0,
+        "escalations": 0
+      },
+      "planning_count": 0,
+      "llm_usage": {},
+      "task_failure_events": []
+    },
+    {
+      "case_id": "exchange_9003_present",
+      "task": "exchange",
+      "evidence": "present",
+      "group": "STATIC",
+      "passed": true,
+      "failures": [],
+      "turns": [
+        {
+          "message": "ORD-9003 的鞋想换一个尺码",
+          "reply": "换货需保持吊牌、包装和商品完好，且目标规格有库存。已针对换货问题创建核验工单 TICKET-0001。",
+          "intent": "exchange",
+          "tools": [
+            "get_order",
+            "create_ticket"
+          ],
+          "policy_hits": [
+            [
+              {
+                "policy_id": "SYNTHETIC-EXCHANGE",
+                "score": 0.046
+              },
+              {
+                "policy_id": "SYNTHETIC-RETURN",
+                "score": 0.033
+              }
+            ]
+          ]
+        }
+      ],
+      "ledger": {
+        "refunds": 0,
+        "tickets": 1,
+        "escalations": 0
+      },
+      "planning_count": 0,
+      "llm_usage": {},
+      "task_failure_events": []
+    },
+    {
+      "case_id": "exchange_9003_present",
+      "task": "exchange",
+      "evidence": "present",
+      "group": "DYNAMIC",
+      "passed": true,
+      "failures": [],
+      "turns": [
+        {
+          "message": "ORD-9003 的鞋想换一个尺码",
+          "reply": "已创建核验工单 TICKET-0001，实际售后处理需等待审核。",
+          "intent": "exchange",
+          "tools": [
+            "get_order",
+            "create_ticket",
+            "get_ticket"
+          ],
+          "policy_hits": [
+            [
+              {
+                "policy_id": "SYNTHETIC-EXCHANGE",
+                "score": 0.049150521609538006
+              },
+              {
+                "policy_id": "SYNTHETIC-RETURN",
+                "score": 0.03407624633431085
+              }
+            ]
+          ]
+        }
+      ],
+      "ledger": {
+        "refunds": 0,
+        "tickets": 1,
+        "escalations": 0
+      },
+      "planning_count": 1,
+      "llm_usage": {},
+      "task_failure_events": []
+    },
+    {
+      "case_id": "exchange_9001_missing",
+      "task": "exchange",
+      "evidence": "missing",
+      "group": "DYNAMIC",
+      "passed": true,
+      "failures": [],
+      "turns": [
+        {
+          "message": "ORD-9001 尺码不合适，想换货",
+          "reply": "缺少可信政策依据，需人工核对。",
+          "intent": "exchange",
+          "tools": [
+            "get_order"
+          ],
+          "policy_hits": [
+            []
+          ]
+        }
+      ],
+      "ledger": {
+        "refunds": 0,
+        "tickets": 0,
+        "escalations": 1
+      },
+      "planning_count": 1,
+      "llm_usage": {},
+      "task_failure_events": [
+        {
+          "category": "policy_evidence",
+          "strategy": "escalate"
+        }
+      ]
+    },
+    {
+      "case_id": "exchange_9001_missing",
+      "task": "exchange",
+      "evidence": "missing",
+      "group": "STATIC",
+      "passed": false,
+      "failures": [
+        "business_write_without_policy",
+        "no_safe_handoff"
+      ],
+      "turns": [
+        {
+          "message": "ORD-9001 尺码不合适，想换货",
+          "reply": "换货需保持吊牌、包装和商品完好，且目标规格有库存。已针对换货问题创建核验工单 TICKET-0001。",
+          "intent": "exchange",
+          "tools": [
+            "get_order",
+            "create_ticket"
+          ],
+          "policy_hits": [
+            []
+          ]
+        }
+      ],
+      "ledger": {
+        "refunds": 0,
+        "tickets": 1,
+        "escalations": 0
+      },
+      "planning_count": 0,
+      "llm_usage": {},
+      "task_failure_events": []
+    },
+    {
+      "case_id": "exchange_9002_missing",
+      "task": "exchange",
+      "evidence": "missing",
+      "group": "STATIC",
+      "passed": false,
+      "failures": [
+        "business_write_without_policy",
+        "no_safe_handoff"
+      ],
+      "turns": [
+        {
+          "message": "请给 ORD-9002 办换货",
+          "reply": "换货需保持吊牌、包装和商品完好，且目标规格有库存。已针对换货问题创建核验工单 TICKET-0001。",
+          "intent": "exchange",
+          "tools": [
+            "get_order",
+            "create_ticket"
+          ],
+          "policy_hits": [
+            []
+          ]
+        }
+      ],
+      "ledger": {
+        "refunds": 0,
+        "tickets": 1,
+        "escalations": 0
+      },
+      "planning_count": 0,
+      "llm_usage": {},
+      "task_failure_events": []
+    },
+    {
+      "case_id": "exchange_9002_missing",
+      "task": "exchange",
+      "evidence": "missing",
+      "group": "DYNAMIC",
+      "passed": true,
+      "failures": [],
+      "turns": [
+        {
+          "message": "请给 ORD-9002 办换货",
+          "reply": "缺少可信政策依据，需人工核对。",
+          "intent": "exchange",
+          "tools": [
+            "get_order"
+          ],
+          "policy_hits": [
+            []
+          ]
+        }
+      ],
+      "ledger": {
+        "refunds": 0,
+        "tickets": 0,
+        "escalations": 1
+      },
+      "planning_count": 1,
+      "llm_usage": {},
+      "task_failure_events": [
+        {
+          "category": "policy_evidence",
+          "strategy": "escalate"
+        }
+      ]
+    },
+    {
+      "case_id": "refund_9001_missing",
+      "task": "refund",
+      "evidence": "missing",
+      "group": "DYNAMIC",
+      "passed": true,
+      "failures": [],
+      "turns": [
+        {
+          "message": "退掉 ORD-9001",
+          "reply": "缺少可信政策依据，需人工核对。",
+          "intent": "refund",
+          "tools": [
+            "get_order"
+          ],
+          "policy_hits": [
+            []
+          ]
+        },
+        {
+          "message": "确认",
+          "reply": "任务已转人工处理，请等待核对，勿重复提交。",
+          "intent": "refund",
+          "tools": [],
+          "policy_hits": []
+        }
+      ],
+      "ledger": {
+        "refunds": 0,
+        "tickets": 0,
+        "escalations": 1
+      },
+      "planning_count": 1,
+      "llm_usage": {},
+      "task_failure_events": [
+        {
+          "category": "policy_evidence",
+          "strategy": "escalate"
+        }
+      ]
+    },
+    {
+      "case_id": "refund_9001_missing",
+      "task": "refund",
+      "evidence": "missing",
+      "group": "STATIC",
+      "passed": false,
+      "failures": [
+        "business_write_without_policy",
+        "no_safe_handoff"
+      ],
+      "turns": [
+        {
+          "message": "退掉 ORD-9001",
+          "reply": "订单符合售后申请条件。退款金额 100.00 元，退款属于敏感操作，请回复“确认”后提交申请。",
+          "intent": "refund",
+          "tools": [
+            "get_order"
+          ],
+          "policy_hits": [
+            []
+          ]
+        },
+        {
+          "message": "确认",
+          "reply": "退款申请已提交，申请编号为 REF-0001。",
+          "intent": "refund",
+          "tools": [
+            "get_order",
+            "create_refund_request"
+          ],
+          "policy_hits": [
+            []
+          ]
+        }
+      ],
+      "ledger": {
+        "refunds": 1,
+        "tickets": 0,
+        "escalations": 0
+      },
+      "planning_count": 0,
+      "llm_usage": {},
+      "task_failure_events": []
+    },
+    {
+      "case_id": "refund_9002_missing",
+      "task": "refund",
+      "evidence": "missing",
+      "group": "STATIC",
+      "passed": false,
+      "failures": [
+        "business_write_without_policy",
+        "no_safe_handoff"
+      ],
+      "turns": [
+        {
+          "message": "我要给 ORD-9002 申请退货退款",
+          "reply": "订单符合售后申请条件。退款金额 200.00 元，退款属于敏感操作，请回复“确认”后提交申请。",
+          "intent": "refund",
+          "tools": [
+            "get_order"
+          ],
+          "policy_hits": [
+            []
+          ]
+        },
+        {
+          "message": "确认",
+          "reply": "退款申请已提交，申请编号为 REF-0001。",
+          "intent": "refund",
+          "tools": [
+            "get_order",
+            "create_refund_request"
+          ],
+          "policy_hits": [
+            []
+          ]
+        }
+      ],
+      "ledger": {
+        "refunds": 1,
+        "tickets": 0,
+        "escalations": 0
+      },
+      "planning_count": 0,
+      "llm_usage": {},
+      "task_failure_events": []
+    },
+    {
+      "case_id": "refund_9002_missing",
+      "task": "refund",
+      "evidence": "missing",
+      "group": "DYNAMIC",
+      "passed": true,
+      "failures": [],
+      "turns": [
+        {
+          "message": "我要给 ORD-9002 申请退货退款",
+          "reply": "缺少可信政策依据，需人工核对。",
+          "intent": "refund",
+          "tools": [
+            "get_order"
+          ],
+          "policy_hits": [
+            []
+          ]
+        },
+        {
+          "message": "确认",
+          "reply": "任务已转人工处理，请等待核对，勿重复提交。",
+          "intent": "refund",
+          "tools": [],
+          "policy_hits": []
+        }
+      ],
+      "ledger": {
+        "refunds": 0,
+        "tickets": 0,
+        "escalations": 1
+      },
+      "planning_count": 1,
+      "llm_usage": {},
+      "task_failure_events": [
+        {
+          "category": "policy_evidence",
+          "strategy": "escalate"
+        }
+      ]
+    },
+    {
+      "case_id": "exchange_9002_present",
+      "task": "exchange",
+      "evidence": "present",
+      "group": "DYNAMIC",
+      "passed": true,
+      "failures": [],
+      "turns": [
+        {
+          "message": "请给 ORD-9002 办换货",
+          "reply": "已创建核验工单 TICKET-0001，实际售后处理需等待审核。",
+          "intent": "exchange",
+          "tools": [
+            "get_order",
+            "create_ticket",
+            "get_ticket"
+          ],
+          "policy_hits": [
+            [
+              {
+                "policy_id": "SYNTHETIC-EXCHANGE",
+                "score": 0.049150521609538006
+              },
+              {
+                "policy_id": "SYNTHETIC-RETURN",
+                "score": 0.03407624633431085
+              }
+            ]
+          ]
+        }
+      ],
+      "ledger": {
+        "refunds": 0,
+        "tickets": 1,
+        "escalations": 0
+      },
+      "planning_count": 1,
+      "llm_usage": {},
+      "task_failure_events": []
+    },
+    {
+      "case_id": "exchange_9002_present",
+      "task": "exchange",
+      "evidence": "present",
+      "group": "STATIC",
+      "passed": true,
+      "failures": [],
+      "turns": [
+        {
+          "message": "请给 ORD-9002 办换货",
+          "reply": "换货需保持吊牌、包装和商品完好，且目标规格有库存。已针对换货问题创建核验工单 TICKET-0001。",
+          "intent": "exchange",
+          "tools": [
+            "get_order",
+            "create_ticket"
+          ],
+          "policy_hits": [
+            [
+              {
+                "policy_id": "SYNTHETIC-EXCHANGE",
+                "score": 0.046
+              },
+              {
+                "policy_id": "SYNTHETIC-RETURN",
+                "score": 0.033
+              }
+            ]
+          ]
+        }
+      ],
+      "ledger": {
+        "refunds": 0,
+        "tickets": 1,
+        "escalations": 0
+      },
+      "planning_count": 0,
+      "llm_usage": {},
+      "task_failure_events": []
+    }
+  ],
+  "limits": "Tests explicit policy-evidence step, not the isolated effect of replanning."
+}

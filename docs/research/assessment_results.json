@@ -1,0 +1,893 @@
+[
+  {
+    "case": "switch_plain",
+    "response": "换货需保持吊牌、包装和商品完好，且目标规格有库存。已针对换货问题创建核验工单 TICKET-0001。",
+    "intent": "exchange",
+    "pending": null,
+    "refund_calls": [],
+    "refund_records": {},
+    "order": {
+      "order_id": "ORD-1001",
+      "user_id": "USER-001",
+      "product_name": "AirFlex 跑步鞋",
+      "category": "运动鞋服",
+      "amount": 499.0,
+      "status": "delivered",
+      "days_since_delivery": 3,
+      "logistics_status": "已于 9 月 12 日签收"
+    },
+    "events": [
+      {
+        "event_type": "workflow",
+        "name": "validate_request",
+        "detail": {
+          "ok": true,
+          "message_length": 4
+        }
+      },
+      {
+        "event_type": "workflow",
+        "name": "route_intent",
+        "detail": {
+          "intent": "exchange",
+          "confidence": 0.95,
+          "urgency": "low",
+          "allowed_tools": [
+            "create_ticket",
+            "get_order"
+          ],
+          "prompt_profile": "exchange_inventory_check"
+        }
+      },
+      {
+        "event_type": "workflow",
+        "name": "execute_business",
+        "detail": {
+          "controlled_tool_access": true
+        }
+      },
+      {
+        "event_type": "memory",
+        "name": "assemble_context",
+        "detail": {
+          "history_turns": 3,
+          "episodic_memories": 1,
+          "estimated_tokens": 38,
+          "dropped_turns": 0,
+          "profile_fields": {
+            "locale": "zh-CN",
+            "preferred_contact": null,
+            "shoe_size": null
+          }
+        }
+      },
+      {
+        "event_type": "decision",
+        "name": "intent_routing",
+        "detail": {
+          "intent": "exchange",
+          "detected_intent": "exchange",
+          "confidence": 0.95,
+          "urgency": "low",
+          "matched_signals": [
+            "换货"
+          ],
+          "alternatives": [],
+          "order_id": "ORD-1001"
+        }
+      },
+      {
+        "event_type": "tool",
+        "name": "get_order",
+        "detail": {
+          "order_id": "ORD-1001",
+          "ok": true,
+          "error": null,
+          "attempts": 1,
+          "circuit_open": false,
+          "product_name": "AirFlex 跑步鞋",
+          "category": "运动鞋服",
+          "amount": 499.0,
+          "status": "delivered",
+          "days_since_delivery": 3,
+          "logistics_status": "已于 9 月 12 日签收"
+        }
+      },
+      {
+        "event_type": "tool",
+        "name": "create_ticket",
+        "detail": {
+          "ok": true,
+          "error": null,
+          "attempts": 1,
+          "circuit_open": false,
+          "ticket_id": "TICKET-0001",
+          "order_id": "ORD-1001",
+          "description": "换货：改成换货"
+        }
+      },
+      {
+        "event_type": "retrieval",
+        "name": "search_policy",
+        "detail": {
+          "query": "鞋服尺码换货 吊牌 鞋底 库存",
+          "hits": [
+            {
+              "policy_id": "POLICY-EXCHANGE-SIZE",
+              "score": 68.775
+            },
+            {
+              "policy_id": "POLICY-SPORTSWEAR",
+              "score": 29.007
+            }
+          ]
+        }
+      },
+      {
+        "event_type": "workflow",
+        "name": "validate_result",
+        "detail": {
+          "ok": true,
+          "error": null
+        }
+      }
+    ]
+  },
+  {
+    "case": "switch_with_confirm",
+    "response": "退款申请已提交，申请编号为 REF-0001。",
+    "intent": "refund",
+    "pending": null,
+    "refund_calls": [
+      {
+        "order_id": "ORD-1001",
+        "user_id": "USER-001",
+        "reason": "我要退掉 ORD-1001"
+      }
+    ],
+    "refund_records": {
+      "ORD-1001": {
+        "request_id": "REF-0001",
+        "order_id": "ORD-1001",
+        "reason": "我要退掉 ORD-1001"
+      }
+    },
+    "order": {
+      "order_id": "ORD-1001",
+      "user_id": "USER-001",
+      "product_name": "AirFlex 跑步鞋",
+      "category": "运动鞋服",
+      "amount": 499.0,
+      "status": "refunding",
+      "days_since_delivery": 3,
+      "logistics_status": "已于 9 月 12 日签收"
+    },
+    "events": [
+      {
+        "event_type": "workflow",
+        "name": "validate_request",
+        "detail": {
+          "ok": true,
+          "message_length": 6
+        }
+      },
+      {
+        "event_type": "workflow",
+        "name": "route_intent",
+        "detail": {
+          "intent": "refund",
+          "confidence": 1.0,
+          "urgency": "low",
+          "allowed_tools": [
+            "create_refund_request",
+            "create_ticket",
+            "get_order"
+          ],
+          "prompt_profile": "refund_confirmation_first"
+        }
+      },
+      {
+        "event_type": "workflow",
+        "name": "execute_business",
+        "detail": {
+          "controlled_tool_access": true
+        }
+      },
+      {
+        "event_type": "memory",
+        "name": "assemble_context",
+        "detail": {
+          "history_turns": 3,
+          "episodic_memories": 1,
+          "estimated_tokens": 38,
+          "dropped_turns": 0,
+          "profile_fields": {
+            "locale": "zh-CN",
+            "preferred_contact": null,
+            "shoe_size": null
+          }
+        }
+      },
+      {
+        "event_type": "decision",
+        "name": "intent_routing",
+        "detail": {
+          "intent": "refund",
+          "detected_intent": "refund",
+          "confidence": 1.0,
+          "urgency": "low",
+          "matched_signals": [
+            "pending_action_context"
+          ],
+          "alternatives": [],
+          "order_id": "ORD-1001"
+        }
+      },
+      {
+        "event_type": "tool",
+        "name": "get_order",
+        "detail": {
+          "order_id": "ORD-1001",
+          "ok": true,
+          "error": null,
+          "attempts": 1,
+          "circuit_open": false,
+          "product_name": "AirFlex 跑步鞋",
+          "category": "运动鞋服",
+          "amount": 499.0,
+          "status": "delivered",
+          "days_since_delivery": 3,
+          "logistics_status": "已于 9 月 12 日签收"
+        }
+      },
+      {
+        "event_type": "retrieval",
+        "name": "search_policy",
+        "detail": {
+          "query": "运动鞋服 七天无理由 退货退款",
+          "hits": [
+            {
+              "policy_id": "POLICY-SPORTSWEAR",
+              "score": 49.597
+            },
+            {
+              "policy_id": "POLICY-RETURN-7D",
+              "score": 37.372
+            }
+          ]
+        }
+      },
+      {
+        "event_type": "rule",
+        "name": "evaluate_refund",
+        "detail": {
+          "eligible": true,
+          "reason": "订单符合售后申请条件",
+          "requires_human": false
+        }
+      },
+      {
+        "event_type": "tool",
+        "name": "create_refund_request",
+        "detail": {
+          "ok": true,
+          "error": null,
+          "attempts": 1,
+          "circuit_open": false,
+          "request_id": "REF-0001",
+          "order_id": "ORD-1001",
+          "reason": "我要退掉 ORD-1001"
+        }
+      },
+      {
+        "event_type": "workflow",
+        "name": "validate_result",
+        "detail": {
+          "ok": true,
+          "error": null
+        }
+      }
+    ]
+  },
+  {
+    "case": "response_lost",
+    "response": "退款申请提交失败：TimeoutError: injected response loss after commit。",
+    "intent": "refund",
+    "pending": "refund",
+    "refund_calls": [
+      {
+        "order_id": "ORD-1001",
+        "user_id": "USER-001",
+        "reason": "我要退掉 ORD-1001"
+      },
+      {
+        "order_id": "ORD-1001",
+        "user_id": "USER-001",
+        "reason": "我要退掉 ORD-1001"
+      }
+    ],
+    "refund_records": {
+      "ORD-1001": {
+        "request_id": "REF-0001",
+        "order_id": "ORD-1001",
+        "reason": "我要退掉 ORD-1001"
+      }
+    },
+    "order": {
+      "order_id": "ORD-1001",
+      "user_id": "USER-001",
+      "product_name": "AirFlex 跑步鞋",
+      "category": "运动鞋服",
+      "amount": 499.0,
+      "status": "refunding",
+      "days_since_delivery": 3,
+      "logistics_status": "已于 9 月 12 日签收"
+    },
+    "events": [
+      {
+        "event_type": "workflow",
+        "name": "validate_request",
+        "detail": {
+          "ok": true,
+          "message_length": 2
+        }
+      },
+      {
+        "event_type": "workflow",
+        "name": "route_intent",
+        "detail": {
+          "intent": "refund",
+          "confidence": 1.0,
+          "urgency": "low",
+          "allowed_tools": [
+            "create_refund_request",
+            "create_ticket",
+            "get_order"
+          ],
+          "prompt_profile": "refund_confirmation_first"
+        }
+      },
+      {
+        "event_type": "workflow",
+        "name": "execute_business",
+        "detail": {
+          "controlled_tool_access": true
+        }
+      },
+      {
+        "event_type": "memory",
+        "name": "assemble_context",
+        "detail": {
+          "history_turns": 3,
+          "episodic_memories": 1,
+          "estimated_tokens": 37,
+          "dropped_turns": 0,
+          "profile_fields": {
+            "locale": "zh-CN",
+            "preferred_contact": null,
+            "shoe_size": null
+          }
+        }
+      },
+      {
+        "event_type": "decision",
+        "name": "intent_routing",
+        "detail": {
+          "intent": "refund",
+          "detected_intent": "refund",
+          "confidence": 1.0,
+          "urgency": "low",
+          "matched_signals": [
+            "pending_action_context"
+          ],
+          "alternatives": [],
+          "order_id": "ORD-1001"
+        }
+      },
+      {
+        "event_type": "tool",
+        "name": "get_order",
+        "detail": {
+          "order_id": "ORD-1001",
+          "ok": true,
+          "error": null,
+          "attempts": 1,
+          "circuit_open": false,
+          "product_name": "AirFlex 跑步鞋",
+          "category": "运动鞋服",
+          "amount": 499.0,
+          "status": "delivered",
+          "days_since_delivery": 3,
+          "logistics_status": "已于 9 月 12 日签收"
+        }
+      },
+      {
+        "event_type": "retrieval",
+        "name": "search_policy",
+        "detail": {
+          "query": "运动鞋服 七天无理由 退货退款",
+          "hits": [
+            {
+              "policy_id": "POLICY-SPORTSWEAR",
+              "score": 49.597
+            },
+            {
+              "policy_id": "POLICY-RETURN-7D",
+              "score": 37.372
+            }
+          ]
+        }
+      },
+      {
+        "event_type": "rule",
+        "name": "evaluate_refund",
+        "detail": {
+          "eligible": true,
+          "reason": "订单符合售后申请条件",
+          "requires_human": false
+        }
+      },
+      {
+        "event_type": "tool",
+        "name": "create_refund_request",
+        "detail": {
+          "ok": false,
+          "error": "TimeoutError: injected response loss after commit",
+          "attempts": 2,
+          "circuit_open": false
+        }
+      },
+      {
+        "event_type": "workflow",
+        "name": "validate_result",
+        "detail": {
+          "ok": true,
+          "error": null
+        }
+      }
+    ]
+  },
+  {
+    "case": "status_between_turns",
+    "response": "暂不能直接申请退款：订单尚未签收，暂不能发起退货退款。",
+    "intent": "refund",
+    "pending": "refund",
+    "refund_calls": [],
+    "refund_records": {},
+    "order": {
+      "order_id": "ORD-1001",
+      "user_id": "USER-001",
+      "product_name": "AirFlex 跑步鞋",
+      "category": "运动鞋服",
+      "amount": 499.0,
+      "status": "shipped",
+      "days_since_delivery": 3,
+      "logistics_status": "已于 9 月 12 日签收"
+    },
+    "events": [
+      {
+        "event_type": "workflow",
+        "name": "validate_request",
+        "detail": {
+          "ok": true,
+          "message_length": 2
+        }
+      },
+      {
+        "event_type": "workflow",
+        "name": "route_intent",
+        "detail": {
+          "intent": "refund",
+          "confidence": 1.0,
+          "urgency": "low",
+          "allowed_tools": [
+            "create_refund_request",
+            "create_ticket",
+            "get_order"
+          ],
+          "prompt_profile": "refund_confirmation_first"
+        }
+      },
+      {
+        "event_type": "workflow",
+        "name": "execute_business",
+        "detail": {
+          "controlled_tool_access": true
+        }
+      },
+      {
+        "event_type": "memory",
+        "name": "assemble_context",
+        "detail": {
+          "history_turns": 3,
+          "episodic_memories": 1,
+          "estimated_tokens": 37,
+          "dropped_turns": 0,
+          "profile_fields": {
+            "locale": "zh-CN",
+            "preferred_contact": null,
+            "shoe_size": null
+          }
+        }
+      },
+      {
+        "event_type": "decision",
+        "name": "intent_routing",
+        "detail": {
+          "intent": "refund",
+          "detected_intent": "refund",
+          "confidence": 1.0,
+          "urgency": "low",
+          "matched_signals": [
+            "pending_action_context"
+          ],
+          "alternatives": [],
+          "order_id": "ORD-1001"
+        }
+      },
+      {
+        "event_type": "tool",
+        "name": "get_order",
+        "detail": {
+          "order_id": "ORD-1001",
+          "ok": true,
+          "error": null,
+          "attempts": 1,
+          "circuit_open": false,
+          "product_name": "AirFlex 跑步鞋",
+          "category": "运动鞋服",
+          "amount": 499.0,
+          "status": "shipped",
+          "days_since_delivery": 3,
+          "logistics_status": "已于 9 月 12 日签收"
+        }
+      },
+      {
+        "event_type": "retrieval",
+        "name": "search_policy",
+        "detail": {
+          "query": "运动鞋服 七天无理由 退货退款",
+          "hits": [
+            {
+              "policy_id": "POLICY-SPORTSWEAR",
+              "score": 49.597
+            },
+            {
+              "policy_id": "POLICY-RETURN-7D",
+              "score": 37.372
+            }
+          ]
+        }
+      },
+      {
+        "event_type": "rule",
+        "name": "evaluate_refund",
+        "detail": {
+          "eligible": false,
+          "reason": "订单尚未签收，暂不能发起退货退款",
+          "requires_human": false
+        }
+      },
+      {
+        "event_type": "workflow",
+        "name": "validate_result",
+        "detail": {
+          "ok": true,
+          "error": null
+        }
+      }
+    ]
+  },
+  {
+    "case": "status_at_write",
+    "response": "退款申请已提交，申请编号为 REF-0001。",
+    "intent": "refund",
+    "pending": null,
+    "refund_calls": [
+      {
+        "order_id": "ORD-1001",
+        "user_id": "USER-001",
+        "reason": "我要退掉 ORD-1001"
+      }
+    ],
+    "refund_records": {
+      "ORD-1001": {
+        "request_id": "REF-0001",
+        "order_id": "ORD-1001",
+        "reason": "我要退掉 ORD-1001"
+      }
+    },
+    "order": {
+      "order_id": "ORD-1001",
+      "user_id": "USER-001",
+      "product_name": "AirFlex 跑步鞋",
+      "category": "运动鞋服",
+      "amount": 499.0,
+      "status": "refunding",
+      "days_since_delivery": 3,
+      "logistics_status": "已于 9 月 12 日签收"
+    },
+    "events": [
+      {
+        "event_type": "workflow",
+        "name": "validate_request",
+        "detail": {
+          "ok": true,
+          "message_length": 2
+        }
+      },
+      {
+        "event_type": "workflow",
+        "name": "route_intent",
+        "detail": {
+          "intent": "refund",
+          "confidence": 1.0,
+          "urgency": "low",
+          "allowed_tools": [
+            "create_refund_request",
+            "create_ticket",
+            "get_order"
+          ],
+          "prompt_profile": "refund_confirmation_first"
+        }
+      },
+      {
+        "event_type": "workflow",
+        "name": "execute_business",
+        "detail": {
+          "controlled_tool_access": true
+        }
+      },
+      {
+        "event_type": "memory",
+        "name": "assemble_context",
+        "detail": {
+          "history_turns": 3,
+          "episodic_memories": 1,
+          "estimated_tokens": 37,
+          "dropped_turns": 0,
+          "profile_fields": {
+            "locale": "zh-CN",
+            "preferred_contact": null,
+            "shoe_size": null
+          }
+        }
+      },
+      {
+        "event_type": "decision",
+        "name": "intent_routing",
+        "detail": {
+          "intent": "refund",
+          "detected_intent": "refund",
+          "confidence": 1.0,
+          "urgency": "low",
+          "matched_signals": [
+            "pending_action_context"
+          ],
+          "alternatives": [],
+          "order_id": "ORD-1001"
+        }
+      },
+      {
+        "event_type": "tool",
+        "name": "get_order",
+        "detail": {
+          "order_id": "ORD-1001",
+          "ok": true,
+          "error": null,
+          "attempts": 1,
+          "circuit_open": false,
+          "product_name": "AirFlex 跑步鞋",
+          "category": "运动鞋服",
+          "amount": 499.0,
+          "status": "delivered",
+          "days_since_delivery": 3,
+          "logistics_status": "已于 9 月 12 日签收"
+        }
+      },
+      {
+        "event_type": "retrieval",
+        "name": "search_policy",
+        "detail": {
+          "query": "运动鞋服 七天无理由 退货退款",
+          "hits": [
+            {
+              "policy_id": "POLICY-SPORTSWEAR",
+              "score": 49.597
+            },
+            {
+              "policy_id": "POLICY-RETURN-7D",
+              "score": 37.372
+            }
+          ]
+        }
+      },
+      {
+        "event_type": "rule",
+        "name": "evaluate_refund",
+        "detail": {
+          "eligible": true,
+          "reason": "订单符合售后申请条件",
+          "requires_human": false
+        }
+      },
+      {
+        "event_type": "tool",
+        "name": "create_refund_request",
+        "detail": {
+          "ok": true,
+          "error": null,
+          "attempts": 1,
+          "circuit_open": false,
+          "request_id": "REF-0001",
+          "order_id": "ORD-1001",
+          "reason": "我要退掉 ORD-1001"
+        }
+      },
+      {
+        "event_type": "workflow",
+        "name": "validate_result",
+        "detail": {
+          "ok": true,
+          "error": null
+        }
+      }
+    ]
+  },
+  {
+    "case": "amount_changed",
+    "response": "退款申请已提交，申请编号为 REF-0001。",
+    "intent": "refund",
+    "pending": null,
+    "refund_calls": [
+      {
+        "order_id": "ORD-1001",
+        "user_id": "USER-001",
+        "reason": "我要退掉 ORD-1001"
+      }
+    ],
+    "refund_records": {
+      "ORD-1001": {
+        "request_id": "REF-0001",
+        "order_id": "ORD-1001",
+        "reason": "我要退掉 ORD-1001"
+      }
+    },
+    "order": {
+      "order_id": "ORD-1001",
+      "user_id": "USER-001",
+      "product_name": "AirFlex 跑步鞋",
+      "category": "运动鞋服",
+      "amount": 599.0,
+      "status": "refunding",
+      "days_since_delivery": 3,
+      "logistics_status": "已于 9 月 12 日签收"
+    },
+    "events": [
+      {
+        "event_type": "workflow",
+        "name": "validate_request",
+        "detail": {
+          "ok": true,
+          "message_length": 2
+        }
+      },
+      {
+        "event_type": "workflow",
+        "name": "route_intent",
+        "detail": {
+          "intent": "refund",
+          "confidence": 1.0,
+          "urgency": "low",
+          "allowed_tools": [
+            "create_refund_request",
+            "create_ticket",
+            "get_order"
+          ],
+          "prompt_profile": "refund_confirmation_first"
+        }
+      },
+      {
+        "event_type": "workflow",
+        "name": "execute_business",
+        "detail": {
+          "controlled_tool_access": true
+        }
+      },
+      {
+        "event_type": "memory",
+        "name": "assemble_context",
+        "detail": {
+          "history_turns": 3,
+          "episodic_memories": 1,
+          "estimated_tokens": 37,
+          "dropped_turns": 0,
+          "profile_fields": {
+            "locale": "zh-CN",
+            "preferred_contact": null,
+            "shoe_size": null
+          }
+        }
+      },
+      {
+        "event_type": "decision",
+        "name": "intent_routing",
+        "detail": {
+          "intent": "refund",
+          "detected_intent": "refund",
+          "confidence": 1.0,
+          "urgency": "low",
+          "matched_signals": [
+            "pending_action_context"
+          ],
+          "alternatives": [],
+          "order_id": "ORD-1001"
+        }
+      },
+      {
+        "event_type": "tool",
+        "name": "get_order",
+        "detail": {
+          "order_id": "ORD-1001",
+          "ok": true,
+          "error": null,
+          "attempts": 1,
+          "circuit_open": false,
+          "product_name": "AirFlex 跑步鞋",
+          "category": "运动鞋服",
+          "amount": 599.0,
+          "status": "delivered",
+          "days_since_delivery": 3,
+          "logistics_status": "已于 9 月 12 日签收"
+        }
+      },
+      {
+        "event_type": "retrieval",
+        "name": "search_policy",
+        "detail": {
+          "query": "运动鞋服 七天无理由 退货退款",
+          "hits": [
+            {
+              "policy_id": "POLICY-SPORTSWEAR",
+              "score": 49.597
+            },
+            {
+              "policy_id": "POLICY-RETURN-7D",
+              "score": 37.372
+            }
+          ]
+        }
+      },
+      {
+        "event_type": "rule",
+        "name": "evaluate_refund",
+        "detail": {
+          "eligible": true,
+          "reason": "订单符合售后申请条件",
+          "requires_human": false
+        }
+      },
+      {
+        "event_type": "tool",
+        "name": "create_refund_request",
+        "detail": {
+          "ok": true,
+          "error": null,
+          "attempts": 1,
+          "circuit_open": false,
+          "request_id": "REF-0001",
+          "order_id": "ORD-1001",
+          "reason": "我要退掉 ORD-1001"
+        }
+      },
+      {
+        "event_type": "workflow",
+        "name": "validate_result",
+        "detail": {
+          "ok": true,
+          "error": null
+        }
+      }
+    ]
+  }
+]

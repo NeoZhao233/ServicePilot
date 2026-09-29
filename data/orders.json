@@ -1,0 +1,52 @@
+[
+  {
+    "order_id": "ORD-1001",
+    "user_id": "USER-001",
+    "product_name": "AirFlex 跑步鞋",
+    "category": "运动鞋服",
+    "amount": 499,
+    "status": "delivered",
+    "days_since_delivery": 3,
+    "logistics_status": "已于 9 月 12 日签收"
+  },
+  {
+    "order_id": "ORD-1002",
+    "user_id": "USER-001",
+    "product_name": "降噪蓝牙耳机",
+    "category": "数码产品",
+    "amount": 1299,
+    "status": "delivered",
+    "days_since_delivery": 2,
+    "logistics_status": "已签收"
+  },
+  {
+    "order_id": "ORD-1003",
+    "user_id": "USER-001",
+    "product_name": "乳清蛋白粉",
+    "category": "食品",
+    "amount": 329,
+    "status": "shipped",
+    "days_since_delivery": null,
+    "logistics_status": "运输中，预计明天送达"
+  },
+  {
+    "order_id": "ORD-1004",
+    "user_id": "USER-001",
+    "product_name": "即食鸡胸肉",
+    "category": "食品",
+    "amount": 89,
+    "status": "delivered",
+    "days_since_delivery": 1,
+    "logistics_status": "已签收"
+  },
+  {
+    "order_id": "ORD-2001",
+    "user_id": "USER-002",
+    "product_name": "机械键盘",
+    "category": "数码产品",
+    "amount": 399,
+    "status": "delivered",
+    "days_since_delivery": 10,
+    "logistics_status": "已签收"
+  }
+]

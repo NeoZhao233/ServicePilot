@@ -1,0 +1,14 @@
+[
+  {"case_id":"refund_9001_missing","task":"refund","evidence":"missing","messages":["退掉 ORD-9001","确认"]},
+  {"case_id":"refund_9002_missing","task":"refund","evidence":"missing","messages":["我要给 ORD-9002 申请退货退款","确认"]},
+  {"case_id":"refund_9003_missing","task":"refund","evidence":"missing","messages":["ORD-9003 这双鞋不合适，想退货","确认"]},
+  {"case_id":"exchange_9001_missing","task":"exchange","evidence":"missing","messages":["ORD-9001 尺码不合适，想换货"]},
+  {"case_id":"exchange_9002_missing","task":"exchange","evidence":"missing","messages":["请给 ORD-9002 办换货"]},
+  {"case_id":"exchange_9003_missing","task":"exchange","evidence":"missing","messages":["ORD-9003 的鞋想换一个尺码"]},
+  {"case_id":"refund_9001_present","task":"refund","evidence":"present","messages":["退掉 ORD-9001","确认"]},
+  {"case_id":"refund_9002_present","task":"refund","evidence":"present","messages":["我要给 ORD-9002 申请退货退款","确认"]},
+  {"case_id":"refund_9003_present","task":"refund","evidence":"present","messages":["ORD-9003 这双鞋不合适，想退货","确认"]},
+  {"case_id":"exchange_9001_present","task":"exchange","evidence":"present","messages":["ORD-9001 尺码不合适，想换货"]},
+  {"case_id":"exchange_9002_present","task":"exchange","evidence":"present","messages":["请给 ORD-9002 办换货"]},
+  {"case_id":"exchange_9003_present","task":"exchange","evidence":"present","messages":["ORD-9003 的鞋想换一个尺码"]}
+]

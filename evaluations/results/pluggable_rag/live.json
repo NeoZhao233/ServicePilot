@@ -1,0 +1,17 @@
+{
+  "status": "failed",
+  "attempts": 1,
+  "max_calls": 96,
+  "method": "Shared recorded initial scoring and judgments; logical path latency/usage reuses actual call measurements. Not independently timed chat requests.",
+  "cases_sha256": "91e69c341c447972aa41640d9a56c46cf733b21d347cead8cd0be263e5db76ce",
+  "policies_sha256": "aa50d3fc2c49d7637ece82d240d410b42b73a434abdebd1d05fa1ca82ccff437",
+  "physical_calls": [],
+  "runs": [],
+  "decisions": [],
+  "failed_request": "ProviderError",
+  "failure": {
+    "case_id": "para_01",
+    "group": "B1",
+    "error_type": "ProviderError"
+  }
+}

@@ -1,0 +1,571 @@
+{
+  "case_count": 42,
+  "accuracy": 0.9762,
+  "macro_f1": 0.9788,
+  "fallback_count": 0,
+  "per_intent": {
+    "logistics": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "refund": {
+      "precision": 1.0,
+      "recall": 0.75,
+      "f1": 0.8571
+    },
+    "damaged_item": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "human_handoff": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "exchange": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "invoice": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "payment": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "missing_item": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "address_change": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "price_protection": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "cancel": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "unknown": {
+      "precision": 0.8,
+      "recall": 1.0,
+      "f1": 0.8889
+    }
+  },
+  "confusion": {
+    "logistics": {
+      "logistics": 4
+    },
+    "refund": {
+      "unknown": 1,
+      "refund": 3
+    },
+    "damaged_item": {
+      "damaged_item": 4
+    },
+    "human_handoff": {
+      "human_handoff": 4
+    },
+    "cancel": {
+      "cancel": 4
+    },
+    "unknown": {
+      "unknown": 4
+    },
+    "exchange": {
+      "exchange": 3
+    },
+    "invoice": {
+      "invoice": 3
+    },
+    "payment": {
+      "payment": 3
+    },
+    "missing_item": {
+      "missing_item": 3
+    },
+    "address_change": {
+      "address_change": 3
+    },
+    "price_protection": {
+      "price_protection": 3
+    }
+  },
+  "predictions": [
+    {
+      "case_id": "logistics_01",
+      "expected": "logistics",
+      "predicted": "logistics",
+      "confidence": 0.863,
+      "signals": [
+        "embedding:logistics",
+        "keyword:logistics"
+      ],
+      "correct": true
+    },
+    {
+      "case_id": "logistics_02",
+      "expected": "logistics",
+      "predicted": "logistics",
+      "confidence": 0.803,
+      "signals": [
+        "embedding:logistics",
+        "keyword:logistics"
+      ],
+      "correct": true
+    },
+    {
+      "case_id": "logistics_03",
+      "expected": "logistics",
+      "predicted": "logistics",
+      "confidence": 0.807,
+      "signals": [
+        "embedding:logistics",
+        "keyword:logistics"
+      ],
+      "correct": true
+    },
+    {
+      "case_id": "logistics_04",
+      "expected": "logistics",
+      "predicted": "logistics",
+      "confidence": 0.816,
+      "signals": [
+        "embedding:logistics",
+        "keyword:logistics"
+      ],
+      "correct": true
+    },
+    {
+      "case_id": "refund_01",
+      "expected": "refund",
+      "predicted": "unknown",
+      "confidence": 0.0,
+      "signals": [
+        "embedding:refund",
+        "keyword:unknown"
+      ],
+      "correct": false
+    },
+    {
+      "case_id": "refund_02",
+      "expected": "refund",
+      "predicted": "refund",
+      "confidence": 0.873,
+      "signals": [
+        "embedding:refund",
+        "keyword:refund"
+      ],
+      "correct": true
+    },
+    {
+      "case_id": "refund_03",
+      "expected": "refund",
+      "predicted": "refund",
+      "confidence": 0.85,
+      "signals": [
+        "embedding:refund",
+        "keyword:refund"
+      ],
+      "correct": true
+    },
+    {
+      "case_id": "refund_04",
+      "expected": "refund",
+      "predicted": "refund",
+      "confidence": 0.816,
+      "signals": [
+        "embedding:refund",
+        "keyword:refund"
+      ],
+      "correct": true
+    },
+    {
+      "case_id": "damage_01",
+      "expected": "damaged_item",
+      "predicted": "damaged_item",
+      "confidence": 0.816,
+      "signals": [
+        "embedding:damaged_item",
+        "keyword:damaged_item"
+      ],
+      "correct": true
+    },
+    {
+      "case_id": "damage_02",
+      "expected": "damaged_item",
+      "predicted": "damaged_item",
+      "confidence": 0.811,
+      "signals": [
+        "embedding:damaged_item",
+        "keyword:damaged_item"
+      ],
+      "correct": true
+    },
+    {
+      "case_id": "damage_03",
+      "expected": "damaged_item",
+      "predicted": "damaged_item",
+      "confidence": 0.76,
+      "signals": [
+        "embedding:payment",
+        "keyword:damaged_item"
+      ],
+      "correct": true
+    },
+    {
+      "case_id": "damage_04",
+      "expected": "damaged_item",
+      "predicted": "damaged_item",
+      "confidence": 0.842,
+      "signals": [
+        "embedding:damaged_item",
+        "keyword:damaged_item"
+      ],
+      "correct": true
+    },
+    {
+      "case_id": "human_01",
+      "expected": "human_handoff",
+      "predicted": "human_handoff",
+      "confidence": 0.857,
+      "signals": [
+        "embedding:human_handoff",
+        "keyword:human_handoff"
+      ],
+      "correct": true
+    },
+    {
+      "case_id": "human_02",
+      "expected": "human_handoff",
+      "predicted": "human_handoff",
+      "confidence": 0.927,
+      "signals": [
+        "embedding:human_handoff",
+        "keyword:human_handoff"
+      ],
+      "correct": true
+    },
+    {
+      "case_id": "human_03",
+      "expected": "human_handoff",
+      "predicted": "human_handoff",
+      "confidence": 0.812,
+      "signals": [
+        "embedding:human_handoff",
+        "keyword:human_handoff"
+      ],
+      "correct": true
+    },
+    {
+      "case_id": "human_04",
+      "expected": "human_handoff",
+      "predicted": "human_handoff",
+      "confidence": 0.796,
+      "signals": [
+        "embedding:human_handoff",
+        "keyword:human_handoff"
+      ],
+      "correct": true
+    },
+    {
+      "case_id": "cancel_01",
+      "expected": "cancel",
+      "predicted": "cancel",
+      "confidence": 0.76,
+      "signals": [
+        "embedding:damaged_item",
+        "keyword:cancel"
+      ],
+      "correct": true
+    },
+    {
+      "case_id": "cancel_02",
+      "expected": "cancel",
+      "predicted": "cancel",
+      "confidence": 0.76,
+      "signals": [
+        "embedding:address_change",
+        "keyword:cancel"
+      ],
+      "correct": true
+    },
+    {
+      "case_id": "cancel_03",
+      "expected": "cancel",
+      "predicted": "cancel",
+      "confidence": 0.76,
+      "signals": [
+        "embedding:damaged_item",
+        "keyword:cancel"
+      ],
+      "correct": true
+    },
+    {
+      "case_id": "cancel_04",
+      "expected": "cancel",
+      "predicted": "cancel",
+      "confidence": 0.76,
+      "signals": [
+        "embedding:refund",
+        "keyword:cancel"
+      ],
+      "correct": true
+    },
+    {
+      "case_id": "unknown_01",
+      "expected": "unknown",
+      "predicted": "unknown",
+      "confidence": 0.0,
+      "signals": [
+        "embedding:invoice",
+        "keyword:unknown"
+      ],
+      "correct": true
+    },
+    {
+      "case_id": "unknown_02",
+      "expected": "unknown",
+      "predicted": "unknown",
+      "confidence": 0.0,
+      "signals": [
+        "embedding:refund",
+        "keyword:unknown"
+      ],
+      "correct": true
+    },
+    {
+      "case_id": "unknown_03",
+      "expected": "unknown",
+      "predicted": "unknown",
+      "confidence": 0.0,
+      "signals": [
+        "embedding:damaged_item",
+        "keyword:unknown"
+      ],
+      "correct": true
+    },
+    {
+      "case_id": "unknown_04",
+      "expected": "unknown",
+      "predicted": "unknown",
+      "confidence": 0.0,
+      "signals": [
+        "embedding:refund",
+        "keyword:unknown"
+      ],
+      "correct": true
+    },
+    {
+      "case_id": "exchange_01",
+      "expected": "exchange",
+      "predicted": "exchange",
+      "confidence": 0.837,
+      "signals": [
+        "embedding:exchange",
+        "keyword:exchange"
+      ],
+      "correct": true
+    },
+    {
+      "case_id": "exchange_02",
+      "expected": "exchange",
+      "predicted": "exchange",
+      "confidence": 0.851,
+      "signals": [
+        "embedding:exchange",
+        "keyword:exchange"
+      ],
+      "correct": true
+    },
+    {
+      "case_id": "exchange_03",
+      "expected": "exchange",
+      "predicted": "exchange",
+      "confidence": 0.827,
+      "signals": [
+        "embedding:exchange",
+        "keyword:exchange"
+      ],
+      "correct": true
+    },
+    {
+      "case_id": "invoice_01",
+      "expected": "invoice",
+      "predicted": "invoice",
+      "confidence": 0.836,
+      "signals": [
+        "embedding:invoice",
+        "keyword:invoice"
+      ],
+      "correct": true
+    },
+    {
+      "case_id": "invoice_02",
+      "expected": "invoice",
+      "predicted": "invoice",
+      "confidence": 0.907,
+      "signals": [
+        "embedding:invoice",
+        "keyword:invoice"
+      ],
+      "correct": true
+    },
+    {
+      "case_id": "invoice_03",
+      "expected": "invoice",
+      "predicted": "invoice",
+      "confidence": 0.841,
+      "signals": [
+        "embedding:invoice",
+        "keyword:invoice"
+      ],
+      "correct": true
+    },
+    {
+      "case_id": "payment_01",
+      "expected": "payment",
+      "predicted": "payment",
+      "confidence": 0.814,
+      "signals": [
+        "embedding:payment",
+        "keyword:payment"
+      ],
+      "correct": true
+    },
+    {
+      "case_id": "payment_02",
+      "expected": "payment",
+      "predicted": "payment",
+      "confidence": 0.76,
+      "signals": [
+        "embedding:refund",
+        "keyword:payment"
+      ],
+      "correct": true
+    },
+    {
+      "case_id": "payment_03",
+      "expected": "payment",
+      "predicted": "payment",
+      "confidence": 0.823,
+      "signals": [
+        "embedding:payment",
+        "keyword:payment"
+      ],
+      "correct": true
+    },
+    {
+      "case_id": "missing_01",
+      "expected": "missing_item",
+      "predicted": "missing_item",
+      "confidence": 0.849,
+      "signals": [
+        "embedding:missing_item",
+        "keyword:missing_item"
+      ],
+      "correct": true
+    },
+    {
+      "case_id": "missing_02",
+      "expected": "missing_item",
+      "predicted": "missing_item",
+      "confidence": 0.827,
+      "signals": [
+        "embedding:missing_item",
+        "keyword:missing_item"
+      ],
+      "correct": true
+    },
+    {
+      "case_id": "missing_03",
+      "expected": "missing_item",
+      "predicted": "missing_item",
+      "confidence": 0.862,
+      "signals": [
+        "embedding:missing_item",
+        "keyword:missing_item"
+      ],
+      "correct": true
+    },
+    {
+      "case_id": "address_01",
+      "expected": "address_change",
+      "predicted": "address_change",
+      "confidence": 0.715,
+      "signals": [
+        "embedding:address_change",
+        "keyword:address_change"
+      ],
+      "correct": true
+    },
+    {
+      "case_id": "address_02",
+      "expected": "address_change",
+      "predicted": "address_change",
+      "confidence": 0.893,
+      "signals": [
+        "embedding:address_change",
+        "keyword:address_change"
+      ],
+      "correct": true
+    },
+    {
+      "case_id": "address_03",
+      "expected": "address_change",
+      "predicted": "address_change",
+      "confidence": 0.865,
+      "signals": [
+        "embedding:address_change",
+        "keyword:address_change"
+      ],
+      "correct": true
+    },
+    {
+      "case_id": "price_01",
+      "expected": "price_protection",
+      "predicted": "price_protection",
+      "confidence": 0.911,
+      "signals": [
+        "embedding:price_protection",
+        "keyword:price_protection"
+      ],
+      "correct": true
+    },
+    {
+      "case_id": "price_02",
+      "expected": "price_protection",
+      "predicted": "price_protection",
+      "confidence": 0.912,
+      "signals": [
+        "embedding:price_protection",
+        "keyword:price_protection"
+      ],
+      "correct": true
+    },
+    {
+      "case_id": "price_03",
+      "expected": "price_protection",
+      "predicted": "price_protection",
+      "confidence": 0.849,
+      "signals": [
+        "embedding:price_protection",
+        "keyword:price_protection"
+      ],
+      "correct": true
+    }
+  ]
+}

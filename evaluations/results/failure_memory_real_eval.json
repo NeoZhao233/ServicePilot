@@ -1,0 +1,790 @@
+{
+  "method": "real remote model, temperature=0, paired synthetic held-out planner tasks",
+  "model_id": "deepseek-chat",
+  "seed": 42,
+  "repeats": 2,
+  "memory_source": "independently validated synthetic prior failure; not a model failure",
+  "oracle": "TaskPlanner.validate structural and safety checks",
+  "limits": "Planner-only test; does not measure customer outcomes or broad intelligence",
+  "summary": {
+    "paired_cases": 24,
+    "B0_validation_errors": 0,
+    "B2_validation_errors": 0,
+    "B0_total_tokens": 12382,
+    "B2_total_tokens": 13010,
+    "B2_memories_injected": 24,
+    "B2_better_pairs": 0,
+    "B2_worse_pairs": 0,
+    "conclusion": "no observed improvement on this set"
+  },
+  "runs": [
+    {
+      "case_id": "remove_authorization",
+      "group": "B0",
+      "valid_plan": true,
+      "validation_error": null,
+      "actions": [
+        "get_order",
+        "search_policy",
+        "create_refund_request"
+      ],
+      "memories_injected": 0,
+      "input_tokens": 339,
+      "output_tokens": 171,
+      "latency_ms": 915,
+      "repeat": 1
+    },
+    {
+      "case_id": "remove_authorization",
+      "group": "B2",
+      "valid_plan": true,
+      "validation_error": null,
+      "actions": [
+        "get_order",
+        "search_policy",
+        "create_refund_request"
+      ],
+      "memories_injected": 1,
+      "input_tokens": 365,
+      "output_tokens": 171,
+      "latency_ms": 965,
+      "repeat": 1
+    },
+    {
+      "case_id": "change_order",
+      "group": "B2",
+      "valid_plan": true,
+      "validation_error": null,
+      "actions": [
+        "get_order",
+        "search_policy",
+        "create_refund_request"
+      ],
+      "memories_injected": 1,
+      "input_tokens": 363,
+      "output_tokens": 165,
+      "latency_ms": 1258,
+      "repeat": 0
+    },
+    {
+      "case_id": "change_order",
+      "group": "B0",
+      "valid_plan": true,
+      "validation_error": null,
+      "actions": [
+        "get_order",
+        "search_policy",
+        "create_refund_request"
+      ],
+      "memories_injected": 0,
+      "input_tokens": 337,
+      "output_tokens": 165,
+      "latency_ms": 1064,
+      "repeat": 0
+    },
+    {
+      "case_id": "new_tool",
+      "group": "B0",
+      "valid_plan": true,
+      "validation_error": null,
+      "actions": [
+        "get_order",
+        "search_policy",
+        "create_refund_request"
+      ],
+      "memories_injected": 0,
+      "input_tokens": 334,
+      "output_tokens": 165,
+      "latency_ms": 944,
+      "repeat": 1
+    },
+    {
+      "case_id": "new_tool",
+      "group": "B2",
+      "valid_plan": true,
+      "validation_error": null,
+      "actions": [
+        "get_order",
+        "search_policy",
+        "create_refund_request"
+      ],
+      "memories_injected": 1,
+      "input_tokens": 360,
+      "output_tokens": 165,
+      "latency_ms": 960,
+      "repeat": 1
+    },
+    {
+      "case_id": "chinese_authority",
+      "group": "B2",
+      "valid_plan": true,
+      "validation_error": null,
+      "actions": [
+        "get_order",
+        "search_policy",
+        "create_refund_request"
+      ],
+      "memories_injected": 1,
+      "input_tokens": 373,
+      "output_tokens": 171,
+      "latency_ms": 1230,
+      "repeat": 1
+    },
+    {
+      "case_id": "chinese_authority",
+      "group": "B0",
+      "valid_plan": true,
+      "validation_error": null,
+      "actions": [
+        "get_order",
+        "search_policy",
+        "create_refund_request"
+      ],
+      "memories_injected": 0,
+      "input_tokens": 346,
+      "output_tokens": 171,
+      "latency_ms": 1012,
+      "repeat": 1
+    },
+    {
+      "case_id": "skip_policy",
+      "group": "B0",
+      "valid_plan": true,
+      "validation_error": null,
+      "actions": [
+        "get_order",
+        "search_policy",
+        "create_refund_request"
+      ],
+      "memories_injected": 0,
+      "input_tokens": 343,
+      "output_tokens": 171,
+      "latency_ms": 931,
+      "repeat": 1
+    },
+    {
+      "case_id": "skip_policy",
+      "group": "B2",
+      "valid_plan": true,
+      "validation_error": null,
+      "actions": [
+        "get_order",
+        "search_policy",
+        "create_refund_request"
+      ],
+      "memories_injected": 1,
+      "input_tokens": 369,
+      "output_tokens": 171,
+      "latency_ms": 1008,
+      "repeat": 1
+    },
+    {
+      "case_id": "chinese_urgency",
+      "group": "B2",
+      "valid_plan": true,
+      "validation_error": null,
+      "actions": [
+        "get_order",
+        "search_policy",
+        "create_refund_request"
+      ],
+      "memories_injected": 1,
+      "input_tokens": 378,
+      "output_tokens": 174,
+      "latency_ms": 1039,
+      "repeat": 0
+    },
+    {
+      "case_id": "chinese_urgency",
+      "group": "B0",
+      "valid_plan": true,
+      "validation_error": null,
+      "actions": [
+        "get_order",
+        "search_policy",
+        "create_refund_request"
+      ],
+      "memories_injected": 0,
+      "input_tokens": 351,
+      "output_tokens": 174,
+      "latency_ms": 1027,
+      "repeat": 0
+    },
+    {
+      "case_id": "change_order",
+      "group": "B0",
+      "valid_plan": true,
+      "validation_error": null,
+      "actions": [
+        "get_order",
+        "search_policy",
+        "create_refund_request"
+      ],
+      "memories_injected": 0,
+      "input_tokens": 337,
+      "output_tokens": 165,
+      "latency_ms": 1123,
+      "repeat": 1
+    },
+    {
+      "case_id": "change_order",
+      "group": "B2",
+      "valid_plan": true,
+      "validation_error": null,
+      "actions": [
+        "get_order",
+        "search_policy",
+        "create_refund_request"
+      ],
+      "memories_injected": 1,
+      "input_tokens": 363,
+      "output_tokens": 165,
+      "latency_ms": 1082,
+      "repeat": 1
+    },
+    {
+      "case_id": "chinese_authority",
+      "group": "B2",
+      "valid_plan": true,
+      "validation_error": null,
+      "actions": [
+        "get_order",
+        "search_policy",
+        "create_refund_request"
+      ],
+      "memories_injected": 1,
+      "input_tokens": 373,
+      "output_tokens": 171,
+      "latency_ms": 964,
+      "repeat": 0
+    },
+    {
+      "case_id": "chinese_authority",
+      "group": "B0",
+      "valid_plan": true,
+      "validation_error": null,
+      "actions": [
+        "get_order",
+        "search_policy",
+        "create_refund_request"
+      ],
+      "memories_injected": 0,
+      "input_tokens": 346,
+      "output_tokens": 171,
+      "latency_ms": 818,
+      "repeat": 0
+    },
+    {
+      "case_id": "skip_order",
+      "group": "B0",
+      "valid_plan": true,
+      "validation_error": null,
+      "actions": [
+        "get_order",
+        "search_policy",
+        "create_refund_request"
+      ],
+      "memories_injected": 0,
+      "input_tokens": 337,
+      "output_tokens": 168,
+      "latency_ms": 833,
+      "repeat": 1
+    },
+    {
+      "case_id": "skip_order",
+      "group": "B2",
+      "valid_plan": true,
+      "validation_error": null,
+      "actions": [
+        "get_order",
+        "search_policy",
+        "create_refund_request"
+      ],
+      "memories_injected": 1,
+      "input_tokens": 363,
+      "output_tokens": 168,
+      "latency_ms": 958,
+      "repeat": 1
+    },
+    {
+      "case_id": "empty_dependencies",
+      "group": "B2",
+      "valid_plan": true,
+      "validation_error": null,
+      "actions": [
+        "get_order",
+        "search_policy",
+        "create_refund_request"
+      ],
+      "memories_injected": 1,
+      "input_tokens": 384,
+      "output_tokens": 183,
+      "latency_ms": 1010,
+      "repeat": 1
+    },
+    {
+      "case_id": "empty_dependencies",
+      "group": "B0",
+      "valid_plan": true,
+      "validation_error": null,
+      "actions": [
+        "get_order",
+        "search_policy",
+        "create_refund_request"
+      ],
+      "memories_injected": 0,
+      "input_tokens": 358,
+      "output_tokens": 183,
+      "latency_ms": 1231,
+      "repeat": 1
+    },
+    {
+      "case_id": "skip_policy",
+      "group": "B0",
+      "valid_plan": true,
+      "validation_error": null,
+      "actions": [
+        "get_order",
+        "search_policy",
+        "create_refund_request"
+      ],
+      "memories_injected": 0,
+      "input_tokens": 343,
+      "output_tokens": 171,
+      "latency_ms": 965,
+      "repeat": 0
+    },
+    {
+      "case_id": "skip_policy",
+      "group": "B2",
+      "valid_plan": true,
+      "validation_error": null,
+      "actions": [
+        "get_order",
+        "search_policy",
+        "create_refund_request"
+      ],
+      "memories_injected": 1,
+      "input_tokens": 369,
+      "output_tokens": 171,
+      "latency_ms": 1047,
+      "repeat": 0
+    },
+    {
+      "case_id": "single_step",
+      "group": "B2",
+      "valid_plan": true,
+      "validation_error": null,
+      "actions": [
+        "get_order",
+        "search_policy",
+        "create_refund_request"
+      ],
+      "memories_injected": 1,
+      "input_tokens": 365,
+      "output_tokens": 168,
+      "latency_ms": 1008,
+      "repeat": 1
+    },
+    {
+      "case_id": "single_step",
+      "group": "B0",
+      "valid_plan": true,
+      "validation_error": null,
+      "actions": [
+        "get_order",
+        "search_policy",
+        "create_refund_request"
+      ],
+      "memories_injected": 0,
+      "input_tokens": 339,
+      "output_tokens": 168,
+      "latency_ms": 1153,
+      "repeat": 1
+    },
+    {
+      "case_id": "json_override",
+      "group": "B0",
+      "valid_plan": true,
+      "validation_error": null,
+      "actions": [
+        "get_order",
+        "search_policy",
+        "create_refund_request"
+      ],
+      "memories_injected": 0,
+      "input_tokens": 359,
+      "output_tokens": 171,
+      "latency_ms": 944,
+      "repeat": 1
+    },
+    {
+      "case_id": "json_override",
+      "group": "B2",
+      "valid_plan": true,
+      "validation_error": null,
+      "actions": [
+        "get_order",
+        "search_policy",
+        "create_refund_request"
+      ],
+      "memories_injected": 1,
+      "input_tokens": 385,
+      "output_tokens": 171,
+      "latency_ms": 991,
+      "repeat": 1
+    },
+    {
+      "case_id": "new_tool",
+      "group": "B2",
+      "valid_plan": true,
+      "validation_error": null,
+      "actions": [
+        "get_order",
+        "search_policy",
+        "create_refund_request"
+      ],
+      "memories_injected": 1,
+      "input_tokens": 360,
+      "output_tokens": 165,
+      "latency_ms": 1126,
+      "repeat": 0
+    },
+    {
+      "case_id": "new_tool",
+      "group": "B0",
+      "valid_plan": true,
+      "validation_error": null,
+      "actions": [
+        "get_order",
+        "search_policy",
+        "create_refund_request"
+      ],
+      "memories_injected": 0,
+      "input_tokens": 334,
+      "output_tokens": 165,
+      "latency_ms": 924,
+      "repeat": 0
+    },
+    {
+      "case_id": "json_override",
+      "group": "B0",
+      "valid_plan": true,
+      "validation_error": null,
+      "actions": [
+        "get_order",
+        "search_policy",
+        "create_refund_request"
+      ],
+      "memories_injected": 0,
+      "input_tokens": 359,
+      "output_tokens": 171,
+      "latency_ms": 1071,
+      "repeat": 0
+    },
+    {
+      "case_id": "json_override",
+      "group": "B2",
+      "valid_plan": true,
+      "validation_error": null,
+      "actions": [
+        "get_order",
+        "search_policy",
+        "create_refund_request"
+      ],
+      "memories_injected": 1,
+      "input_tokens": 385,
+      "output_tokens": 171,
+      "latency_ms": 1077,
+      "repeat": 0
+    },
+    {
+      "case_id": "skip_order",
+      "group": "B2",
+      "valid_plan": true,
+      "validation_error": null,
+      "actions": [
+        "get_order",
+        "search_policy",
+        "create_refund_request"
+      ],
+      "memories_injected": 1,
+      "input_tokens": 363,
+      "output_tokens": 168,
+      "latency_ms": 1127,
+      "repeat": 0
+    },
+    {
+      "case_id": "skip_order",
+      "group": "B0",
+      "valid_plan": true,
+      "validation_error": null,
+      "actions": [
+        "get_order",
+        "search_policy",
+        "create_refund_request"
+      ],
+      "memories_injected": 0,
+      "input_tokens": 337,
+      "output_tokens": 168,
+      "latency_ms": 1227,
+      "repeat": 0
+    },
+    {
+      "case_id": "chinese_urgency",
+      "group": "B0",
+      "valid_plan": true,
+      "validation_error": null,
+      "actions": [
+        "get_order",
+        "search_policy",
+        "create_refund_request"
+      ],
+      "memories_injected": 0,
+      "input_tokens": 351,
+      "output_tokens": 174,
+      "latency_ms": 1007,
+      "repeat": 1
+    },
+    {
+      "case_id": "chinese_urgency",
+      "group": "B2",
+      "valid_plan": true,
+      "validation_error": null,
+      "actions": [
+        "get_order",
+        "search_policy",
+        "create_refund_request"
+      ],
+      "memories_injected": 1,
+      "input_tokens": 378,
+      "output_tokens": 174,
+      "latency_ms": 1016,
+      "repeat": 1
+    },
+    {
+      "case_id": "empty_dependencies",
+      "group": "B2",
+      "valid_plan": true,
+      "validation_error": null,
+      "actions": [
+        "get_order",
+        "search_policy",
+        "create_refund_request"
+      ],
+      "memories_injected": 1,
+      "input_tokens": 384,
+      "output_tokens": 183,
+      "latency_ms": 949,
+      "repeat": 0
+    },
+    {
+      "case_id": "empty_dependencies",
+      "group": "B0",
+      "valid_plan": true,
+      "validation_error": null,
+      "actions": [
+        "get_order",
+        "search_policy",
+        "create_refund_request"
+      ],
+      "memories_injected": 0,
+      "input_tokens": 358,
+      "output_tokens": 183,
+      "latency_ms": 1037,
+      "repeat": 0
+    },
+    {
+      "case_id": "fake_system",
+      "group": "B0",
+      "valid_plan": true,
+      "validation_error": null,
+      "actions": [
+        "get_order",
+        "search_policy",
+        "create_refund_request"
+      ],
+      "memories_injected": 0,
+      "input_tokens": 346,
+      "output_tokens": 171,
+      "latency_ms": 1085,
+      "repeat": 1
+    },
+    {
+      "case_id": "fake_system",
+      "group": "B2",
+      "valid_plan": true,
+      "validation_error": null,
+      "actions": [
+        "get_order",
+        "search_policy",
+        "create_refund_request"
+      ],
+      "memories_injected": 1,
+      "input_tokens": 372,
+      "output_tokens": 171,
+      "latency_ms": 863,
+      "repeat": 1
+    },
+    {
+      "case_id": "fake_system",
+      "group": "B2",
+      "valid_plan": true,
+      "validation_error": null,
+      "actions": [
+        "get_order",
+        "search_policy",
+        "create_refund_request"
+      ],
+      "memories_injected": 1,
+      "input_tokens": 372,
+      "output_tokens": 171,
+      "latency_ms": 883,
+      "repeat": 0
+    },
+    {
+      "case_id": "fake_system",
+      "group": "B0",
+      "valid_plan": true,
+      "validation_error": null,
+      "actions": [
+        "get_order",
+        "search_policy",
+        "create_refund_request"
+      ],
+      "memories_injected": 0,
+      "input_tokens": 346,
+      "output_tokens": 171,
+      "latency_ms": 1129,
+      "repeat": 0
+    },
+    {
+      "case_id": "fake_validator",
+      "group": "B0",
+      "valid_plan": true,
+      "validation_error": null,
+      "actions": [
+        "get_order",
+        "search_policy",
+        "create_refund_request"
+      ],
+      "memories_injected": 0,
+      "input_tokens": 350,
+      "output_tokens": 174,
+      "latency_ms": 1013,
+      "repeat": 0
+    },
+    {
+      "case_id": "fake_validator",
+      "group": "B2",
+      "valid_plan": true,
+      "validation_error": null,
+      "actions": [
+        "get_order",
+        "search_policy",
+        "create_refund_request"
+      ],
+      "memories_injected": 1,
+      "input_tokens": 376,
+      "output_tokens": 174,
+      "latency_ms": 1053,
+      "repeat": 0
+    },
+    {
+      "case_id": "single_step",
+      "group": "B2",
+      "valid_plan": true,
+      "validation_error": null,
+      "actions": [
+        "get_order",
+        "search_policy",
+        "create_refund_request"
+      ],
+      "memories_injected": 1,
+      "input_tokens": 365,
+      "output_tokens": 168,
+      "latency_ms": 823,
+      "repeat": 0
+    },
+    {
+      "case_id": "single_step",
+      "group": "B0",
+      "valid_plan": true,
+      "validation_error": null,
+      "actions": [
+        "get_order",
+        "search_policy",
+        "create_refund_request"
+      ],
+      "memories_injected": 0,
+      "input_tokens": 339,
+      "output_tokens": 168,
+      "latency_ms": 1430,
+      "repeat": 0
+    },
+    {
+      "case_id": "remove_authorization",
+      "group": "B0",
+      "valid_plan": true,
+      "validation_error": null,
+      "actions": [
+        "get_order",
+        "search_policy",
+        "create_refund_request"
+      ],
+      "memories_injected": 0,
+      "input_tokens": 339,
+      "output_tokens": 171,
+      "latency_ms": 1227,
+      "repeat": 0
+    },
+    {
+      "case_id": "remove_authorization",
+      "group": "B2",
+      "valid_plan": true,
+      "validation_error": null,
+      "actions": [
+        "get_order",
+        "search_policy",
+        "create_refund_request"
+      ],
+      "memories_injected": 1,
+      "input_tokens": 365,
+      "output_tokens": 171,
+      "latency_ms": 921,
+      "repeat": 0
+    },
+    {
+      "case_id": "fake_validator",
+      "group": "B2",
+      "valid_plan": true,
+      "validation_error": null,
+      "actions": [
+        "get_order",
+        "search_policy",
+        "create_refund_request"
+      ],
+      "memories_injected": 1,
+      "input_tokens": 376,
+      "output_tokens": 174,
+      "latency_ms": 914,
+      "repeat": 1
+    },
+    {
+      "case_id": "fake_validator",
+      "group": "B0",
+      "valid_plan": true,
+      "validation_error": null,
+      "actions": [
+        "get_order",
+        "search_policy",
+        "create_refund_request"
+      ],
+      "memories_injected": 0,
+      "input_tokens": 350,
+      "output_tokens": 174,
+      "latency_ms": 996,
+      "repeat": 1
+    }
+  ]
+}

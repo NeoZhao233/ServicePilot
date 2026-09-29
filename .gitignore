@@ -1,0 +1,25 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.venv/
+.env
+*.sqlite3
+
+
+# Local runtime state and transient SQLite sidecars
+.servicepilot/
+:memory:*
+*.sqlite3-wal
+*.sqlite3-shm
+
+# Local environments, credentials, build artifacts, and editor state
+.env.*
+!.env.example
+!.env.*.example
+.DS_Store
+*.egg-info/
+build/
+dist/
+.mypy_cache/
+*.log

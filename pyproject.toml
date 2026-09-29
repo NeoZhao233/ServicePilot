@@ -1,0 +1,49 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "servicepilot"
+version = "0.1.0"
+description = "A policy-grounded e-commerce after-sales customer service agent"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = ["pydantic>=2.10,<3"]
+
+[project.optional-dependencies]
+api = ["fastapi>=0.115", "uvicorn>=0.30", "python-multipart>=0.0.9"]
+dev = ["pytest>=8.0", "ruff>=0.8", "reportlab>=4,<6"]
+semantic = ["fastembed>=0.7,<1"]
+pdf = ["docling>=2,<3"]
+jev = ["jev-reranker==0.1.2"]
+agent = [
+  "chromadb>=1.0,<2",
+  "langgraph>=1.0,<2",
+  "mcp>=1.0,<2",
+  "redis>=6.0,<7",
+]
+
+[project.scripts]
+servicepilot = "servicepilot.cli:main"
+servicepilot-eval = "servicepilot.evaluation:main"
+servicepilot-intent-eval = "servicepilot.intent_evaluation:main"
+servicepilot-retrieval-eval = "servicepilot.retrieval_evaluation:main"
+servicepilot-web = "servicepilot.webapp:main"
+servicepilot-mcp = "servicepilot.mcp_server:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/servicepilot"]
+
+[tool.hatch.build]
+include = ["src/servicepilot/web_assets/**"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]

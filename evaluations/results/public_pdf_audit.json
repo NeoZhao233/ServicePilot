@@ -1,0 +1,106 @@
+{
+  "parsing": {
+    "w9": {
+      "sha256": "2d420cbb4123dcf1fb82595b2359cfbb5d81f00b9df9d359fcc7af361d093f53",
+      "pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "counts": {
+        "text": 225,
+        "table": 4,
+        "image": 0
+      },
+      "parse_and_index_ms": 17813.91
+    },
+    "statement": {
+      "sha256": "755073d4d13732eb9bd9b340c6ff28325741835c369a6c8b58b3f4650ffed52d",
+      "pages": [
+        1
+      ],
+      "counts": {
+        "text": 12,
+        "table": 4,
+        "image": 0
+      },
+      "parse_and_index_ms": 2766.35
+    }
+  },
+  "cases": [
+    {
+      "pdf": "w9",
+      "question": "What is line 1 for?",
+      "expected": [
+        "Name of entity/individual"
+      ],
+      "page": 1,
+      "answer": "用户 PDF 第 1 页：1 Name of entity/individual. An entry is required. (For a sole proprietor or disregarded entity, enter the owner's name on line 1, and enter the business/disregarded entity's name on line 2.)",
+      "answer_contains_gold": true,
+      "cited_pages": [
+        1
+      ],
+      "query_elapsed_ms": 6.48
+    },
+    {
+      "pdf": "w9",
+      "question": "Which line asks for the business name?",
+      "expected": [
+        "Business name/disregarded entity"
+      ],
+      "page": 1,
+      "answer": "用户 PDF 第 1 页：2 Business name/disregarded entity name, if different from above.",
+      "answer_contains_gold": true,
+      "cited_pages": [
+        1
+      ],
+      "query_elapsed_ms": 5.01
+    },
+    {
+      "pdf": "statement",
+      "question": "What is the minimum payment due?",
+      "expected": [
+        "$25"
+      ],
+      "page": 1,
+      "answer": "用户 PDF 第 1 页：| Account Summary   | Account Summary   | Payment Information   | Payment Information   |\n|-------------------|-------------------|-----------------------|-----------------------|\n| Purchases         | $1,258.56         | Minimum Payment Due   | $25                   |",
+      "answer_contains_gold": true,
+      "cited_pages": [
+        1
+      ],
+      "query_elapsed_ms": 1.67
+    },
+    {
+      "pdf": "statement",
+      "question": "What is the APR for purchases?",
+      "expected": [
+        "19.80%"
+      ],
+      "page": 1,
+      "answer": "用户 PDF 第 1 页：| Finance Charge Summary       | Purchases   | Advances   |\n|------------------------------|-------------|------------|\n| Periodic Rate                | 1.65%       | 0.54%      |\n| Annual Percentage Rate (APR) | 19.80%      | 6.48%      |",
+      "answer_contains_gold": true,
+      "cited_pages": [
+        1
+      ],
+      "query_elapsed_ms": 1.57
+    },
+    {
+      "pdf": "statement",
+      "question": "What is the new balance?",
+      "expected": [
+        "$1,392.71",
+        "$1392.71"
+      ],
+      "page": 1,
+      "answer": "用户 PDF 第 1 页：New Balance: $1392.71\n| Account Summary   | Account Summary   | Payment Information   | Payment Information   |\n|-------------------|-------------------|-----------------------|-----------------------|\n| Previous Balance  | $482.42           | New Balance           | $1,392.71             |\n| Payment, Credits  | -$350.42          | Payment Due Date      | 1/23/XX               |\n| Purchases         | $1,258.56         | Minimum Payment Due   | $25                   |\n| Cash Advances     | $0                |                       |                       |\n| Balance Transfers | $0                |                       |                       |\n| Fees Charged      | $0                |                       |                       |\n| Interest Charged  | $2.15             |                       |                       |\n| New Balance       | $1,392.71         |                       |                       |",
+      "answer_contains_gold": true,
+      "cited_pages": [
+        1
+      ],
+      "query_elapsed_ms": 1.84
+    }
+  ]
+}

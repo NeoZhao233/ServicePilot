@@ -1,0 +1,2141 @@
+{
+  "note": "hashing-vector is an offline engineering baseline, not a semantic embedding model",
+  "bm25": {
+    "queries": 24,
+    "recall@3": 0.7708,
+    "mrr": 0.6875,
+    "ndcg@3": 0.6837,
+    "zero_hit_rate": 0.1667,
+    "slice_metrics": {
+      "colloquial_paraphrase": {
+        "queries": 6,
+        "recall@3": 0.3333,
+        "mrr": 0.3333,
+        "ndcg@3": 0.3333,
+        "zero_hit_rate": 0.6667
+      },
+      "hard_negative": {
+        "queries": 6,
+        "recall@3": 1.0,
+        "mrr": 0.6944,
+        "ndcg@3": 0.7718,
+        "zero_hit_rate": 0.0
+      },
+      "multi_policy": {
+        "queries": 6,
+        "recall@3": 0.75,
+        "mrr": 0.8056,
+        "ndcg@3": 0.691,
+        "zero_hit_rate": 0.0
+      },
+      "typo_noise": {
+        "queries": 6,
+        "recall@3": 1.0,
+        "mrr": 0.9167,
+        "ndcg@3": 0.9385,
+        "zero_hit_rate": 0.0
+      }
+    },
+    "difficulty_metrics": {
+      "hard": {
+        "queries": 24,
+        "recall@3": 0.7708,
+        "mrr": 0.6875,
+        "ndcg@3": 0.6837,
+        "zero_hit_rate": 0.1667
+      }
+    },
+    "predictions": [
+      {
+        "case_id": "para_01",
+        "query": "钱退了个寂寞，卡里几天了还没见着",
+        "relevant": [
+          "POLICY-REFUND-TIMELINE"
+        ],
+        "retrieved": [
+          "POLICY-REFUND-TIMELINE",
+          "POLICY-PRICE-REFUND",
+          "POLICY-RETURN-7D"
+        ],
+        "recall": 1.0,
+        "reciprocal_rank": 1.0,
+        "ndcg": 1.0,
+        "zero_hit": false,
+        "slices": [
+          "colloquial_paraphrase"
+        ],
+        "difficulty": "hard"
+      },
+      {
+        "case_id": "para_02",
+        "query": "快递像焊死在中转站，两天没挪窝",
+        "relevant": [
+          "POLICY-LOGISTICS-DELAY"
+        ],
+        "retrieved": [
+          "POLICY-DAMAGE-EVIDENCE",
+          "POLICY-PRICE-WINDOW",
+          "POLICY-RETURN-7D"
+        ],
+        "recall": 0.0,
+        "reciprocal_rank": 0.0,
+        "ndcg": 0.0,
+        "zero_hit": true,
+        "slices": [
+          "colloquial_paraphrase"
+        ],
+        "difficulty": "hard"
+      },
+      {
+        "case_id": "para_03",
+        "query": "门牌填成旧家的了，车已经开出去了还能救吗",
+        "relevant": [
+          "POLICY-ADDRESS-AFTER-SHIP"
+        ],
+        "retrieved": [
+          "POLICY-INVOICE-TITLE",
+          "POLICY-PRICE-REFUND",
+          "POLICY-MISSING-EVIDENCE"
+        ],
+        "recall": 0.0,
+        "reciprocal_rank": 0.0,
+        "ndcg": 0.0,
+        "zero_hit": true,
+        "slices": [
+          "colloquial_paraphrase"
+        ],
+        "difficulty": "hard"
+      },
+      {
+        "case_id": "para_04",
+        "query": "码数翻车，想换的那双又卖光了咋整",
+        "relevant": [
+          "POLICY-EXCHANGE-STOCK"
+        ],
+        "retrieved": [
+          "POLICY-EXCHANGE-DEVICE",
+          "POLICY-EXCHANGE-SIZE",
+          "POLICY-DIGITAL"
+        ],
+        "recall": 0.0,
+        "reciprocal_rank": 0.0,
+        "ndcg": 0.0,
+        "zero_hit": true,
+        "slices": [
+          "colloquial_paraphrase"
+        ],
+        "difficulty": "hard"
+      },
+      {
+        "case_id": "para_05",
+        "query": "账单上同一单薅了我两遍钱",
+        "relevant": [
+          "POLICY-PAYMENT-DUPLICATE"
+        ],
+        "retrieved": [
+          "POLICY-PAYMENT-DUPLICATE",
+          "POLICY-REFUND-TIMELINE",
+          "POLICY-PRIVACY-IDENTITY"
+        ],
+        "recall": 1.0,
+        "reciprocal_rank": 1.0,
+        "ndcg": 1.0,
+        "zero_hit": false,
+        "slices": [
+          "colloquial_paraphrase"
+        ],
+        "difficulty": "hard"
+      },
+      {
+        "case_id": "para_06",
+        "query": "快递说给邻居了，可一圈问下来谁都没拿",
+        "relevant": [
+          "POLICY-LOGISTICS-SIGNED-MISSING"
+        ],
+        "retrieved": [
+          "POLICY-DAMAGE-EVIDENCE",
+          "POLICY-DIGITAL",
+          "POLICY-DAMAGE-30D"
+        ],
+        "recall": 0.0,
+        "reciprocal_rank": 0.0,
+        "ndcg": 0.0,
+        "zero_hit": true,
+        "slices": [
+          "colloquial_paraphrase"
+        ],
+        "difficulty": "hard"
+      },
+      {
+        "case_id": "multi_01",
+        "query": "退款审核通过后多久到账，如果原银行卡注销了钱去哪",
+        "relevant": [
+          "POLICY-REFUND-ORIGINAL",
+          "POLICY-REFUND-TIMELINE"
+        ],
+        "retrieved": [
+          "POLICY-REFUND-TIMELINE",
+          "POLICY-REFUND-ORIGINAL",
+          "POLICY-PRICE-REFUND"
+        ],
+        "recall": 1.0,
+        "reciprocal_rank": 1.0,
+        "ndcg": 1.0,
+        "zero_hit": false,
+        "slices": [
+          "multi_policy"
+        ],
+        "difficulty": "hard"
+      },
+      {
+        "case_id": "multi_02",
+        "query": "充电器冒烟烫伤手，我现在该怎么做以及需要拍什么证据",
+        "relevant": [
+          "POLICY-DAMAGE-EVIDENCE",
+          "POLICY-DAMAGE-SAFETY"
+        ],
+        "retrieved": [
+          "POLICY-DIGITAL",
+          "POLICY-DAMAGE-30D",
+          "POLICY-DAMAGE-SAFETY"
+        ],
+        "recall": 0.5,
+        "reciprocal_rank": 0.3333333333333333,
+        "ndcg": 0.3065735963827292,
+        "zero_hit": false,
+        "slices": [
+          "multi_policy"
+        ],
+        "difficulty": "hard"
+      },
+      {
+        "case_id": "multi_03",
+        "query": "鞋码不合适，换的尺码没货，原鞋鞋底试穿过是否还能处理",
+        "relevant": [
+          "POLICY-EXCHANGE-SIZE",
+          "POLICY-EXCHANGE-STOCK"
+        ],
+        "retrieved": [
+          "POLICY-EXCHANGE-SIZE",
+          "POLICY-SPORTSWEAR",
+          "POLICY-PRICE-REFUND"
+        ],
+        "recall": 0.5,
+        "reciprocal_rank": 1.0,
+        "ndcg": 0.6131471927654584,
+        "zero_hit": false,
+        "slices": [
+          "multi_policy"
+        ],
+        "difficulty": "hard"
+      },
+      {
+        "case_id": "multi_04",
+        "query": "退货要不要自己付运费，包装盒和吊牌有什么要求",
+        "relevant": [
+          "POLICY-RETURN-CONDITION",
+          "POLICY-RETURN-FREIGHT"
+        ],
+        "retrieved": [
+          "POLICY-EXCHANGE-SIZE",
+          "POLICY-RETURN-FREIGHT",
+          "POLICY-SPORTSWEAR"
+        ],
+        "recall": 0.5,
+        "reciprocal_rank": 0.5,
+        "ndcg": 0.38685280723454163,
+        "zero_hit": false,
+        "slices": [
+          "multi_policy"
+        ],
+        "difficulty": "hard"
+      },
+      {
+        "case_id": "multi_05",
+        "query": "少发配件要交哪些材料，核实后是补发还是退款",
+        "relevant": [
+          "POLICY-MISSING-EVIDENCE",
+          "POLICY-MISSING-RESOLUTION"
+        ],
+        "retrieved": [
+          "POLICY-MISSING-RESOLUTION",
+          "POLICY-LOGISTICS-LOST",
+          "POLICY-MISSING-EVIDENCE"
+        ],
+        "recall": 1.0,
+        "reciprocal_rank": 1.0,
+        "ndcg": 0.9197207891481876,
+        "zero_hit": false,
+        "slices": [
+          "multi_policy"
+        ],
+        "difficulty": "hard"
+      },
+      {
+        "case_id": "multi_06",
+        "query": "刚买就降价，哪些情况不能保价，差价最后怎么退",
+        "relevant": [
+          "POLICY-PRICE-EXCLUDED",
+          "POLICY-PRICE-REFUND"
+        ],
+        "retrieved": [
+          "POLICY-PRICE-REFUND",
+          "POLICY-PRICE-WINDOW",
+          "POLICY-PRICE-EXCLUDED"
+        ],
+        "recall": 1.0,
+        "reciprocal_rank": 1.0,
+        "ndcg": 0.9197207891481876,
+        "zero_hit": false,
+        "slices": [
+          "multi_policy"
+        ],
+        "difficulty": "hard"
+      },
+      {
+        "case_id": "negative_01",
+        "query": "不是付款失败，是同一订单成功扣了两次",
+        "relevant": [
+          "POLICY-PAYMENT-DUPLICATE"
+        ],
+        "retrieved": [
+          "POLICY-PAYMENT-DUPLICATE",
+          "POLICY-PAYMENT-FAILED",
+          "POLICY-ADDRESS-AFTER-SHIP"
+        ],
+        "recall": 1.0,
+        "reciprocal_rank": 1.0,
+        "ndcg": 1.0,
+        "zero_hit": false,
+        "slices": [
+          "hard_negative"
+        ],
+        "difficulty": "hard"
+      },
+      {
+        "case_id": "negative_02",
+        "query": "并非普通延误，承运商已经确认整件丢失",
+        "relevant": [
+          "POLICY-LOGISTICS-LOST"
+        ],
+        "retrieved": [
+          "POLICY-LOGISTICS-LOST",
+          "POLICY-ADDRESS-AFTER-SHIP",
+          "POLICY-LOGISTICS-DELAY"
+        ],
+        "recall": 1.0,
+        "reciprocal_rank": 1.0,
+        "ndcg": 1.0,
+        "zero_hit": false,
+        "slices": [
+          "hard_negative"
+        ],
+        "difficulty": "hard"
+      },
+      {
+        "case_id": "negative_03",
+        "query": "不是七天无理由，耳机用了两个月后出现硬件故障",
+        "relevant": [
+          "POLICY-DAMAGE-WARRANTY"
+        ],
+        "retrieved": [
+          "POLICY-RETURN-7D",
+          "POLICY-RETURN-EXCLUDED",
+          "POLICY-DAMAGE-WARRANTY"
+        ],
+        "recall": 1.0,
+        "reciprocal_rank": 0.3333333333333333,
+        "ndcg": 0.5,
+        "zero_hit": false,
+        "slices": [
+          "hard_negative"
+        ],
+        "difficulty": "hard"
+      },
+      {
+        "case_id": "negative_04",
+        "query": "不是商品坏了，是箱内数量比清单少一个",
+        "relevant": [
+          "POLICY-MISSING-EVIDENCE"
+        ],
+        "retrieved": [
+          "POLICY-MISSING-EVIDENCE",
+          "POLICY-MISSING-RESOLUTION",
+          "POLICY-DIGITAL"
+        ],
+        "recall": 1.0,
+        "reciprocal_rank": 1.0,
+        "ndcg": 1.0,
+        "zero_hit": false,
+        "slices": [
+          "hard_negative"
+        ],
+        "difficulty": "hard"
+      },
+      {
+        "case_id": "negative_05",
+        "query": "不是改发票抬头，是订单退款后原发票如何处理",
+        "relevant": [
+          "POLICY-INVOICE-REFUND"
+        ],
+        "retrieved": [
+          "POLICY-INVOICE-TITLE",
+          "POLICY-INVOICE-REFUND",
+          "POLICY-PAYMENT-DUPLICATE"
+        ],
+        "recall": 1.0,
+        "reciprocal_rank": 0.5,
+        "ndcg": 0.6309297535714575,
+        "zero_hit": false,
+        "slices": [
+          "hard_negative"
+        ],
+        "difficulty": "hard"
+      },
+      {
+        "case_id": "negative_06",
+        "query": "没有签收，物流只是多日不更新，不是签收未收到",
+        "relevant": [
+          "POLICY-LOGISTICS-DELAY"
+        ],
+        "retrieved": [
+          "POLICY-LOGISTICS-SIGNED-MISSING",
+          "POLICY-LOGISTICS-TRACKING",
+          "POLICY-LOGISTICS-DELAY"
+        ],
+        "recall": 1.0,
+        "reciprocal_rank": 0.3333333333333333,
+        "ndcg": 0.5,
+        "zero_hit": false,
+        "slices": [
+          "hard_negative"
+        ],
+        "difficulty": "hard"
+      },
+      {
+        "case_id": "noise_01",
+        "query": "发漂抬投税嚎开错 已经开出来了",
+        "relevant": [
+          "POLICY-INVOICE-TITLE"
+        ],
+        "retrieved": [
+          "POLICY-INVOICE-TITLE",
+          "POLICY-MISSING-EVIDENCE",
+          "POLICY-INVOICE-ELECTRONIC"
+        ],
+        "recall": 1.0,
+        "reciprocal_rank": 1.0,
+        "ndcg": 1.0,
+        "zero_hit": false,
+        "slices": [
+          "typo_noise"
+        ],
+        "difficulty": "hard"
+      },
+      {
+        "case_id": "noise_02",
+        "query": "包果少建 需要面担和开箱录象吗",
+        "relevant": [
+          "POLICY-MISSING-EVIDENCE"
+        ],
+        "retrieved": [
+          "POLICY-MISSING-EVIDENCE",
+          "POLICY-DAMAGE-EVIDENCE",
+          "POLICY-INVOICE-ELECTRONIC"
+        ],
+        "recall": 1.0,
+        "reciprocal_rank": 1.0,
+        "ndcg": 1.0,
+        "zero_hit": false,
+        "slices": [
+          "typo_noise"
+        ],
+        "difficulty": "hard"
+      },
+      {
+        "case_id": "noise_03",
+        "query": "7天退huo 定zhi商品也阔以吗",
+        "relevant": [
+          "POLICY-RETURN-EXCLUDED"
+        ],
+        "retrieved": [
+          "POLICY-RETURN-EXCLUDED",
+          "POLICY-RETURN-CONDITION",
+          "POLICY-RETURN-7D"
+        ],
+        "recall": 1.0,
+        "reciprocal_rank": 1.0,
+        "ndcg": 1.0,
+        "zero_hit": false,
+        "slices": [
+          "typo_noise"
+        ],
+        "difficulty": "hard"
+      },
+      {
+        "case_id": "noise_04",
+        "query": "价保的钱退到哪儿 原支付方shi?",
+        "relevant": [
+          "POLICY-PRICE-REFUND"
+        ],
+        "retrieved": [
+          "POLICY-PRICE-REFUND",
+          "POLICY-REFUND-ORIGINAL",
+          "POLICY-PRICE-WINDOW"
+        ],
+        "recall": 1.0,
+        "reciprocal_rank": 1.0,
+        "ndcg": 1.0,
+        "zero_hit": false,
+        "slices": [
+          "typo_noise"
+        ],
+        "difficulty": "hard"
+      },
+      {
+        "case_id": "noise_05",
+        "query": "食品bian质 不是不喜欢 怎么售后",
+        "relevant": [
+          "POLICY-FOOD"
+        ],
+        "retrieved": [
+          "POLICY-FOOD",
+          "POLICY-RETURN-CONDITION",
+          "POLICY-DAMAGE-EVIDENCE"
+        ],
+        "recall": 1.0,
+        "reciprocal_rank": 1.0,
+        "ndcg": 1.0,
+        "zero_hit": false,
+        "slices": [
+          "typo_noise"
+        ],
+        "difficulty": "hard"
+      },
+      {
+        "case_id": "noise_06",
+        "query": "怀疑dao刷 要冻jie账号还是银行卡",
+        "relevant": [
+          "POLICY-PAYMENT-FRAUD"
+        ],
+        "retrieved": [
+          "POLICY-REFUND-TIMELINE",
+          "POLICY-PAYMENT-FRAUD",
+          "POLICY-PAYMENT-FAILED"
+        ],
+        "recall": 1.0,
+        "reciprocal_rank": 0.5,
+        "ndcg": 0.6309297535714575,
+        "zero_hit": false,
+        "slices": [
+          "typo_noise"
+        ],
+        "difficulty": "hard"
+      }
+    ]
+  },
+  "hashing_vector": {
+    "queries": 24,
+    "recall@3": 0.5208,
+    "mrr": 0.5139,
+    "ndcg@3": 0.474,
+    "zero_hit_rate": 0.375,
+    "slice_metrics": {
+      "colloquial_paraphrase": {
+        "queries": 6,
+        "recall@3": 0.1667,
+        "mrr": 0.0556,
+        "ndcg@3": 0.0833,
+        "zero_hit_rate": 0.8333
+      },
+      "hard_negative": {
+        "queries": 6,
+        "recall@3": 0.5,
+        "mrr": 0.4167,
+        "ndcg@3": 0.4385,
+        "zero_hit_rate": 0.5
+      },
+      "multi_policy": {
+        "queries": 6,
+        "recall@3": 0.5833,
+        "mrr": 0.8333,
+        "ndcg@3": 0.6022,
+        "zero_hit_rate": 0.0
+      },
+      "typo_noise": {
+        "queries": 6,
+        "recall@3": 0.8333,
+        "mrr": 0.75,
+        "ndcg@3": 0.7718,
+        "zero_hit_rate": 0.1667
+      }
+    },
+    "difficulty_metrics": {
+      "hard": {
+        "queries": 24,
+        "recall@3": 0.5208,
+        "mrr": 0.5139,
+        "ndcg@3": 0.474,
+        "zero_hit_rate": 0.375
+      }
+    },
+    "predictions": [
+      {
+        "case_id": "para_01",
+        "query": "钱退了个寂寞，卡里几天了还没见着",
+        "relevant": [
+          "POLICY-REFUND-TIMELINE"
+        ],
+        "retrieved": [
+          "POLICY-LOGISTICS-LOST",
+          "POLICY-RETURN-7D",
+          "POLICY-REFUND-TIMELINE"
+        ],
+        "recall": 1.0,
+        "reciprocal_rank": 0.3333333333333333,
+        "ndcg": 0.5,
+        "zero_hit": false,
+        "slices": [
+          "colloquial_paraphrase"
+        ],
+        "difficulty": "hard"
+      },
+      {
+        "case_id": "para_02",
+        "query": "快递像焊死在中转站，两天没挪窝",
+        "relevant": [
+          "POLICY-LOGISTICS-DELAY"
+        ],
+        "retrieved": [
+          "POLICY-PRICE-EXCLUDED",
+          "POLICY-DAMAGE-EVIDENCE",
+          "POLICY-PRICE-WINDOW"
+        ],
+        "recall": 0.0,
+        "reciprocal_rank": 0.0,
+        "ndcg": 0.0,
+        "zero_hit": true,
+        "slices": [
+          "colloquial_paraphrase"
+        ],
+        "difficulty": "hard"
+      },
+      {
+        "case_id": "para_03",
+        "query": "门牌填成旧家的了，车已经开出去了还能救吗",
+        "relevant": [
+          "POLICY-ADDRESS-AFTER-SHIP"
+        ],
+        "retrieved": [
+          "POLICY-LOGISTICS-LOST",
+          "POLICY-EXCHANGE-TIMELINE",
+          "POLICY-RETURN-7D"
+        ],
+        "recall": 0.0,
+        "reciprocal_rank": 0.0,
+        "ndcg": 0.0,
+        "zero_hit": true,
+        "slices": [
+          "colloquial_paraphrase"
+        ],
+        "difficulty": "hard"
+      },
+      {
+        "case_id": "para_04",
+        "query": "码数翻车，想换的那双又卖光了咋整",
+        "relevant": [
+          "POLICY-EXCHANGE-STOCK"
+        ],
+        "retrieved": [
+          "POLICY-INVOICE-REFUND",
+          "POLICY-REFUND-COUPON",
+          "POLICY-PAYMENT-DUPLICATE"
+        ],
+        "recall": 0.0,
+        "reciprocal_rank": 0.0,
+        "ndcg": 0.0,
+        "zero_hit": true,
+        "slices": [
+          "colloquial_paraphrase"
+        ],
+        "difficulty": "hard"
+      },
+      {
+        "case_id": "para_05",
+        "query": "账单上同一单薅了我两遍钱",
+        "relevant": [
+          "POLICY-PAYMENT-DUPLICATE"
+        ],
+        "retrieved": [
+          "POLICY-PRIVACY-IDENTITY",
+          "POLICY-REFUND-TIMELINE",
+          "POLICY-RETURN-FREIGHT"
+        ],
+        "recall": 0.0,
+        "reciprocal_rank": 0.0,
+        "ndcg": 0.0,
+        "zero_hit": true,
+        "slices": [
+          "colloquial_paraphrase"
+        ],
+        "difficulty": "hard"
+      },
+      {
+        "case_id": "para_06",
+        "query": "快递说给邻居了，可一圈问下来谁都没拿",
+        "relevant": [
+          "POLICY-LOGISTICS-SIGNED-MISSING"
+        ],
+        "retrieved": [
+          "POLICY-DAMAGE-30D",
+          "POLICY-DAMAGE-EVIDENCE",
+          "POLICY-PRICE-EXCLUDED"
+        ],
+        "recall": 0.0,
+        "reciprocal_rank": 0.0,
+        "ndcg": 0.0,
+        "zero_hit": true,
+        "slices": [
+          "colloquial_paraphrase"
+        ],
+        "difficulty": "hard"
+      },
+      {
+        "case_id": "multi_01",
+        "query": "退款审核通过后多久到账，如果原银行卡注销了钱去哪",
+        "relevant": [
+          "POLICY-REFUND-ORIGINAL",
+          "POLICY-REFUND-TIMELINE"
+        ],
+        "retrieved": [
+          "POLICY-REFUND-TIMELINE",
+          "POLICY-REFUND-ORIGINAL",
+          "POLICY-REFUND-REJECTED"
+        ],
+        "recall": 1.0,
+        "reciprocal_rank": 1.0,
+        "ndcg": 1.0,
+        "zero_hit": false,
+        "slices": [
+          "multi_policy"
+        ],
+        "difficulty": "hard"
+      },
+      {
+        "case_id": "multi_02",
+        "query": "充电器冒烟烫伤手，我现在该怎么做以及需要拍什么证据",
+        "relevant": [
+          "POLICY-DAMAGE-EVIDENCE",
+          "POLICY-DAMAGE-SAFETY"
+        ],
+        "retrieved": [
+          "POLICY-ADDRESS-AFTER-SHIP",
+          "POLICY-DAMAGE-EVIDENCE",
+          "POLICY-DIGITAL"
+        ],
+        "recall": 0.5,
+        "reciprocal_rank": 0.5,
+        "ndcg": 0.38685280723454163,
+        "zero_hit": false,
+        "slices": [
+          "multi_policy"
+        ],
+        "difficulty": "hard"
+      },
+      {
+        "case_id": "multi_03",
+        "query": "鞋码不合适，换的尺码没货，原鞋鞋底试穿过是否还能处理",
+        "relevant": [
+          "POLICY-EXCHANGE-SIZE",
+          "POLICY-EXCHANGE-STOCK"
+        ],
+        "retrieved": [
+          "POLICY-EXCHANGE-SIZE",
+          "POLICY-SPORTSWEAR",
+          "POLICY-EXCHANGE-TIMELINE"
+        ],
+        "recall": 0.5,
+        "reciprocal_rank": 1.0,
+        "ndcg": 0.6131471927654584,
+        "zero_hit": false,
+        "slices": [
+          "multi_policy"
+        ],
+        "difficulty": "hard"
+      },
+      {
+        "case_id": "multi_04",
+        "query": "退货要不要自己付运费，包装盒和吊牌有什么要求",
+        "relevant": [
+          "POLICY-RETURN-CONDITION",
+          "POLICY-RETURN-FREIGHT"
+        ],
+        "retrieved": [
+          "POLICY-RETURN-FREIGHT",
+          "POLICY-RETURN-EXCLUDED",
+          "POLICY-EXCHANGE-SIZE"
+        ],
+        "recall": 0.5,
+        "reciprocal_rank": 1.0,
+        "ndcg": 0.6131471927654584,
+        "zero_hit": false,
+        "slices": [
+          "multi_policy"
+        ],
+        "difficulty": "hard"
+      },
+      {
+        "case_id": "multi_05",
+        "query": "少发配件要交哪些材料，核实后是补发还是退款",
+        "relevant": [
+          "POLICY-MISSING-EVIDENCE",
+          "POLICY-MISSING-RESOLUTION"
+        ],
+        "retrieved": [
+          "POLICY-MISSING-RESOLUTION",
+          "POLICY-INVOICE-REFUND",
+          "POLICY-ADDRESS-BEFORE-SHIP"
+        ],
+        "recall": 0.5,
+        "reciprocal_rank": 1.0,
+        "ndcg": 0.6131471927654584,
+        "zero_hit": false,
+        "slices": [
+          "multi_policy"
+        ],
+        "difficulty": "hard"
+      },
+      {
+        "case_id": "multi_06",
+        "query": "刚买就降价，哪些情况不能保价，差价最后怎么退",
+        "relevant": [
+          "POLICY-PRICE-EXCLUDED",
+          "POLICY-PRICE-REFUND"
+        ],
+        "retrieved": [
+          "POLICY-PRICE-WINDOW",
+          "POLICY-PRICE-REFUND",
+          "POLICY-REFUND-TIMELINE"
+        ],
+        "recall": 0.5,
+        "reciprocal_rank": 0.5,
+        "ndcg": 0.38685280723454163,
+        "zero_hit": false,
+        "slices": [
+          "multi_policy"
+        ],
+        "difficulty": "hard"
+      },
+      {
+        "case_id": "negative_01",
+        "query": "不是付款失败，是同一订单成功扣了两次",
+        "relevant": [
+          "POLICY-PAYMENT-DUPLICATE"
+        ],
+        "retrieved": [
+          "POLICY-PAYMENT-FAILED",
+          "POLICY-PAYMENT-DUPLICATE",
+          "POLICY-ADDRESS-BEFORE-SHIP"
+        ],
+        "recall": 1.0,
+        "reciprocal_rank": 0.5,
+        "ndcg": 0.6309297535714575,
+        "zero_hit": false,
+        "slices": [
+          "hard_negative"
+        ],
+        "difficulty": "hard"
+      },
+      {
+        "case_id": "negative_02",
+        "query": "并非普通延误，承运商已经确认整件丢失",
+        "relevant": [
+          "POLICY-LOGISTICS-LOST"
+        ],
+        "retrieved": [
+          "POLICY-LOGISTICS-LOST",
+          "POLICY-EXCHANGE-TIMELINE",
+          "POLICY-ADDRESS-AFTER-SHIP"
+        ],
+        "recall": 1.0,
+        "reciprocal_rank": 1.0,
+        "ndcg": 1.0,
+        "zero_hit": false,
+        "slices": [
+          "hard_negative"
+        ],
+        "difficulty": "hard"
+      },
+      {
+        "case_id": "negative_03",
+        "query": "不是七天无理由，耳机用了两个月后出现硬件故障",
+        "relevant": [
+          "POLICY-DAMAGE-WARRANTY"
+        ],
+        "retrieved": [
+          "POLICY-RETURN-7D",
+          "POLICY-DIGITAL",
+          "POLICY-RETURN-EXCLUDED"
+        ],
+        "recall": 0.0,
+        "reciprocal_rank": 0.0,
+        "ndcg": 0.0,
+        "zero_hit": true,
+        "slices": [
+          "hard_negative"
+        ],
+        "difficulty": "hard"
+      },
+      {
+        "case_id": "negative_04",
+        "query": "不是商品坏了，是箱内数量比清单少一个",
+        "relevant": [
+          "POLICY-MISSING-EVIDENCE"
+        ],
+        "retrieved": [
+          "POLICY-DAMAGE-EVIDENCE",
+          "POLICY-ADDRESS-BEFORE-SHIP",
+          "POLICY-EXCHANGE-TIMELINE"
+        ],
+        "recall": 0.0,
+        "reciprocal_rank": 0.0,
+        "ndcg": 0.0,
+        "zero_hit": true,
+        "slices": [
+          "hard_negative"
+        ],
+        "difficulty": "hard"
+      },
+      {
+        "case_id": "negative_05",
+        "query": "不是改发票抬头，是订单退款后原发票如何处理",
+        "relevant": [
+          "POLICY-INVOICE-REFUND"
+        ],
+        "retrieved": [
+          "POLICY-INVOICE-REFUND",
+          "POLICY-INVOICE-TITLE",
+          "POLICY-INVOICE-ELECTRONIC"
+        ],
+        "recall": 1.0,
+        "reciprocal_rank": 1.0,
+        "ndcg": 1.0,
+        "zero_hit": false,
+        "slices": [
+          "hard_negative"
+        ],
+        "difficulty": "hard"
+      },
+      {
+        "case_id": "negative_06",
+        "query": "没有签收，物流只是多日不更新，不是签收未收到",
+        "relevant": [
+          "POLICY-LOGISTICS-DELAY"
+        ],
+        "retrieved": [
+          "POLICY-LOGISTICS-SIGNED-MISSING",
+          "POLICY-ADDRESS-BEFORE-SHIP",
+          "POLICY-EXCHANGE-TIMELINE"
+        ],
+        "recall": 0.0,
+        "reciprocal_rank": 0.0,
+        "ndcg": 0.0,
+        "zero_hit": true,
+        "slices": [
+          "hard_negative"
+        ],
+        "difficulty": "hard"
+      },
+      {
+        "case_id": "noise_01",
+        "query": "发漂抬投税嚎开错 已经开出来了",
+        "relevant": [
+          "POLICY-INVOICE-TITLE"
+        ],
+        "retrieved": [
+          "POLICY-INVOICE-TITLE",
+          "POLICY-MISSING-EVIDENCE",
+          "POLICY-MISSING-RESOLUTION"
+        ],
+        "recall": 1.0,
+        "reciprocal_rank": 1.0,
+        "ndcg": 1.0,
+        "zero_hit": false,
+        "slices": [
+          "typo_noise"
+        ],
+        "difficulty": "hard"
+      },
+      {
+        "case_id": "noise_02",
+        "query": "包果少建 需要面担和开箱录象吗",
+        "relevant": [
+          "POLICY-MISSING-EVIDENCE"
+        ],
+        "retrieved": [
+          "POLICY-MISSING-EVIDENCE",
+          "POLICY-DAMAGE-EVIDENCE",
+          "POLICY-REFUND-REJECTED"
+        ],
+        "recall": 1.0,
+        "reciprocal_rank": 1.0,
+        "ndcg": 1.0,
+        "zero_hit": false,
+        "slices": [
+          "typo_noise"
+        ],
+        "difficulty": "hard"
+      },
+      {
+        "case_id": "noise_03",
+        "query": "7天退huo 定zhi商品也阔以吗",
+        "relevant": [
+          "POLICY-RETURN-EXCLUDED"
+        ],
+        "retrieved": [
+          "POLICY-RETURN-CONDITION",
+          "POLICY-RETURN-7D",
+          "POLICY-PRICE-EXCLUDED"
+        ],
+        "recall": 0.0,
+        "reciprocal_rank": 0.0,
+        "ndcg": 0.0,
+        "zero_hit": true,
+        "slices": [
+          "typo_noise"
+        ],
+        "difficulty": "hard"
+      },
+      {
+        "case_id": "noise_04",
+        "query": "价保的钱退到哪儿 原支付方shi?",
+        "relevant": [
+          "POLICY-PRICE-REFUND"
+        ],
+        "retrieved": [
+          "POLICY-PRICE-REFUND",
+          "POLICY-PRICE-EXCLUDED",
+          "POLICY-REFUND-ORIGINAL"
+        ],
+        "recall": 1.0,
+        "reciprocal_rank": 1.0,
+        "ndcg": 1.0,
+        "zero_hit": false,
+        "slices": [
+          "typo_noise"
+        ],
+        "difficulty": "hard"
+      },
+      {
+        "case_id": "noise_05",
+        "query": "食品bian质 不是不喜欢 怎么售后",
+        "relevant": [
+          "POLICY-FOOD"
+        ],
+        "retrieved": [
+          "POLICY-FOOD",
+          "POLICY-RETURN-CONDITION",
+          "POLICY-DAMAGE-EVIDENCE"
+        ],
+        "recall": 1.0,
+        "reciprocal_rank": 1.0,
+        "ndcg": 1.0,
+        "zero_hit": false,
+        "slices": [
+          "typo_noise"
+        ],
+        "difficulty": "hard"
+      },
+      {
+        "case_id": "noise_06",
+        "query": "怀疑dao刷 要冻jie账号还是银行卡",
+        "relevant": [
+          "POLICY-PAYMENT-FRAUD"
+        ],
+        "retrieved": [
+          "POLICY-ADDRESS-BEFORE-SHIP",
+          "POLICY-PAYMENT-FRAUD",
+          "POLICY-REFUND-TIMELINE"
+        ],
+        "recall": 1.0,
+        "reciprocal_rank": 0.5,
+        "ndcg": 0.6309297535714575,
+        "zero_hit": false,
+        "slices": [
+          "typo_noise"
+        ],
+        "difficulty": "hard"
+      }
+    ]
+  },
+  "hybrid_rrf": {
+    "queries": 24,
+    "recall@3": 0.6875,
+    "mrr": 0.6111,
+    "ndcg@3": 0.5977,
+    "zero_hit_rate": 0.25,
+    "slice_metrics": {
+      "colloquial_paraphrase": {
+        "queries": 6,
+        "recall@3": 0.5,
+        "mrr": 0.2778,
+        "ndcg@3": 0.3333,
+        "zero_hit_rate": 0.5
+      },
+      "hard_negative": {
+        "queries": 6,
+        "recall@3": 0.6667,
+        "mrr": 0.5,
+        "ndcg@3": 0.5436,
+        "zero_hit_rate": 0.3333
+      },
+      "multi_policy": {
+        "queries": 6,
+        "recall@3": 0.75,
+        "mrr": 0.9167,
+        "ndcg@3": 0.7421,
+        "zero_hit_rate": 0.0
+      },
+      "typo_noise": {
+        "queries": 6,
+        "recall@3": 0.8333,
+        "mrr": 0.75,
+        "ndcg@3": 0.7718,
+        "zero_hit_rate": 0.1667
+      }
+    },
+    "difficulty_metrics": {
+      "hard": {
+        "queries": 24,
+        "recall@3": 0.6875,
+        "mrr": 0.6111,
+        "ndcg@3": 0.5977,
+        "zero_hit_rate": 0.25
+      }
+    },
+    "predictions": [
+      {
+        "case_id": "para_01",
+        "query": "钱退了个寂寞，卡里几天了还没见着",
+        "relevant": [
+          "POLICY-REFUND-TIMELINE"
+        ],
+        "retrieved": [
+          "POLICY-REFUND-TIMELINE",
+          "POLICY-RETURN-7D",
+          "POLICY-PRICE-REFUND"
+        ],
+        "recall": 1.0,
+        "reciprocal_rank": 1.0,
+        "ndcg": 1.0,
+        "zero_hit": false,
+        "slices": [
+          "colloquial_paraphrase"
+        ],
+        "difficulty": "hard"
+      },
+      {
+        "case_id": "para_02",
+        "query": "快递像焊死在中转站，两天没挪窝",
+        "relevant": [
+          "POLICY-LOGISTICS-DELAY"
+        ],
+        "retrieved": [
+          "POLICY-DAMAGE-EVIDENCE",
+          "POLICY-PRICE-WINDOW",
+          "POLICY-RETURN-7D"
+        ],
+        "recall": 0.0,
+        "reciprocal_rank": 0.0,
+        "ndcg": 0.0,
+        "zero_hit": true,
+        "slices": [
+          "colloquial_paraphrase"
+        ],
+        "difficulty": "hard"
+      },
+      {
+        "case_id": "para_03",
+        "query": "门牌填成旧家的了，车已经开出去了还能救吗",
+        "relevant": [
+          "POLICY-ADDRESS-AFTER-SHIP"
+        ],
+        "retrieved": [
+          "POLICY-EXCHANGE-TIMELINE",
+          "POLICY-PRICE-REFUND",
+          "POLICY-ADDRESS-AFTER-SHIP"
+        ],
+        "recall": 1.0,
+        "reciprocal_rank": 0.3333333333333333,
+        "ndcg": 0.5,
+        "zero_hit": false,
+        "slices": [
+          "colloquial_paraphrase"
+        ],
+        "difficulty": "hard"
+      },
+      {
+        "case_id": "para_04",
+        "query": "码数翻车，想换的那双又卖光了咋整",
+        "relevant": [
+          "POLICY-EXCHANGE-STOCK"
+        ],
+        "retrieved": [
+          "POLICY-INVOICE-REFUND",
+          "POLICY-EXCHANGE-DEVICE",
+          "POLICY-REFUND-COUPON"
+        ],
+        "recall": 0.0,
+        "reciprocal_rank": 0.0,
+        "ndcg": 0.0,
+        "zero_hit": true,
+        "slices": [
+          "colloquial_paraphrase"
+        ],
+        "difficulty": "hard"
+      },
+      {
+        "case_id": "para_05",
+        "query": "账单上同一单薅了我两遍钱",
+        "relevant": [
+          "POLICY-PAYMENT-DUPLICATE"
+        ],
+        "retrieved": [
+          "POLICY-PRIVACY-IDENTITY",
+          "POLICY-REFUND-TIMELINE",
+          "POLICY-PAYMENT-DUPLICATE"
+        ],
+        "recall": 1.0,
+        "reciprocal_rank": 0.3333333333333333,
+        "ndcg": 0.5,
+        "zero_hit": false,
+        "slices": [
+          "colloquial_paraphrase"
+        ],
+        "difficulty": "hard"
+      },
+      {
+        "case_id": "para_06",
+        "query": "快递说给邻居了，可一圈问下来谁都没拿",
+        "relevant": [
+          "POLICY-LOGISTICS-SIGNED-MISSING"
+        ],
+        "retrieved": [
+          "POLICY-DAMAGE-EVIDENCE",
+          "POLICY-DAMAGE-30D",
+          "POLICY-FOOD"
+        ],
+        "recall": 0.0,
+        "reciprocal_rank": 0.0,
+        "ndcg": 0.0,
+        "zero_hit": true,
+        "slices": [
+          "colloquial_paraphrase"
+        ],
+        "difficulty": "hard"
+      },
+      {
+        "case_id": "multi_01",
+        "query": "退款审核通过后多久到账，如果原银行卡注销了钱去哪",
+        "relevant": [
+          "POLICY-REFUND-ORIGINAL",
+          "POLICY-REFUND-TIMELINE"
+        ],
+        "retrieved": [
+          "POLICY-REFUND-TIMELINE",
+          "POLICY-REFUND-ORIGINAL",
+          "POLICY-PRICE-REFUND"
+        ],
+        "recall": 1.0,
+        "reciprocal_rank": 1.0,
+        "ndcg": 1.0,
+        "zero_hit": false,
+        "slices": [
+          "multi_policy"
+        ],
+        "difficulty": "hard"
+      },
+      {
+        "case_id": "multi_02",
+        "query": "充电器冒烟烫伤手，我现在该怎么做以及需要拍什么证据",
+        "relevant": [
+          "POLICY-DAMAGE-EVIDENCE",
+          "POLICY-DAMAGE-SAFETY"
+        ],
+        "retrieved": [
+          "POLICY-DIGITAL",
+          "POLICY-DAMAGE-EVIDENCE",
+          "POLICY-DAMAGE-SAFETY"
+        ],
+        "recall": 1.0,
+        "reciprocal_rank": 0.5,
+        "ndcg": 0.6934264036172708,
+        "zero_hit": false,
+        "slices": [
+          "multi_policy"
+        ],
+        "difficulty": "hard"
+      },
+      {
+        "case_id": "multi_03",
+        "query": "鞋码不合适，换的尺码没货，原鞋鞋底试穿过是否还能处理",
+        "relevant": [
+          "POLICY-EXCHANGE-SIZE",
+          "POLICY-EXCHANGE-STOCK"
+        ],
+        "retrieved": [
+          "POLICY-EXCHANGE-SIZE",
+          "POLICY-SPORTSWEAR",
+          "POLICY-EXCHANGE-TIMELINE"
+        ],
+        "recall": 0.5,
+        "reciprocal_rank": 1.0,
+        "ndcg": 0.6131471927654584,
+        "zero_hit": false,
+        "slices": [
+          "multi_policy"
+        ],
+        "difficulty": "hard"
+      },
+      {
+        "case_id": "multi_04",
+        "query": "退货要不要自己付运费，包装盒和吊牌有什么要求",
+        "relevant": [
+          "POLICY-RETURN-CONDITION",
+          "POLICY-RETURN-FREIGHT"
+        ],
+        "retrieved": [
+          "POLICY-RETURN-FREIGHT",
+          "POLICY-EXCHANGE-SIZE",
+          "POLICY-SPORTSWEAR"
+        ],
+        "recall": 0.5,
+        "reciprocal_rank": 1.0,
+        "ndcg": 0.6131471927654584,
+        "zero_hit": false,
+        "slices": [
+          "multi_policy"
+        ],
+        "difficulty": "hard"
+      },
+      {
+        "case_id": "multi_05",
+        "query": "少发配件要交哪些材料，核实后是补发还是退款",
+        "relevant": [
+          "POLICY-MISSING-EVIDENCE",
+          "POLICY-MISSING-RESOLUTION"
+        ],
+        "retrieved": [
+          "POLICY-MISSING-RESOLUTION",
+          "POLICY-INVOICE-REFUND",
+          "POLICY-LOGISTICS-LOST"
+        ],
+        "recall": 0.5,
+        "reciprocal_rank": 1.0,
+        "ndcg": 0.6131471927654584,
+        "zero_hit": false,
+        "slices": [
+          "multi_policy"
+        ],
+        "difficulty": "hard"
+      },
+      {
+        "case_id": "multi_06",
+        "query": "刚买就降价，哪些情况不能保价，差价最后怎么退",
+        "relevant": [
+          "POLICY-PRICE-EXCLUDED",
+          "POLICY-PRICE-REFUND"
+        ],
+        "retrieved": [
+          "POLICY-PRICE-REFUND",
+          "POLICY-PRICE-WINDOW",
+          "POLICY-PRICE-EXCLUDED"
+        ],
+        "recall": 1.0,
+        "reciprocal_rank": 1.0,
+        "ndcg": 0.9197207891481876,
+        "zero_hit": false,
+        "slices": [
+          "multi_policy"
+        ],
+        "difficulty": "hard"
+      },
+      {
+        "case_id": "negative_01",
+        "query": "不是付款失败，是同一订单成功扣了两次",
+        "relevant": [
+          "POLICY-PAYMENT-DUPLICATE"
+        ],
+        "retrieved": [
+          "POLICY-PAYMENT-DUPLICATE",
+          "POLICY-PAYMENT-FAILED",
+          "POLICY-PRIVACY-IDENTITY"
+        ],
+        "recall": 1.0,
+        "reciprocal_rank": 1.0,
+        "ndcg": 1.0,
+        "zero_hit": false,
+        "slices": [
+          "hard_negative"
+        ],
+        "difficulty": "hard"
+      },
+      {
+        "case_id": "negative_02",
+        "query": "并非普通延误，承运商已经确认整件丢失",
+        "relevant": [
+          "POLICY-LOGISTICS-LOST"
+        ],
+        "retrieved": [
+          "POLICY-LOGISTICS-LOST",
+          "POLICY-ADDRESS-AFTER-SHIP",
+          "POLICY-PAYMENT-FAILED"
+        ],
+        "recall": 1.0,
+        "reciprocal_rank": 1.0,
+        "ndcg": 1.0,
+        "zero_hit": false,
+        "slices": [
+          "hard_negative"
+        ],
+        "difficulty": "hard"
+      },
+      {
+        "case_id": "negative_03",
+        "query": "不是七天无理由，耳机用了两个月后出现硬件故障",
+        "relevant": [
+          "POLICY-DAMAGE-WARRANTY"
+        ],
+        "retrieved": [
+          "POLICY-RETURN-7D",
+          "POLICY-RETURN-EXCLUDED",
+          "POLICY-DAMAGE-30D"
+        ],
+        "recall": 0.0,
+        "reciprocal_rank": 0.0,
+        "ndcg": 0.0,
+        "zero_hit": true,
+        "slices": [
+          "hard_negative"
+        ],
+        "difficulty": "hard"
+      },
+      {
+        "case_id": "negative_04",
+        "query": "不是商品坏了，是箱内数量比清单少一个",
+        "relevant": [
+          "POLICY-MISSING-EVIDENCE"
+        ],
+        "retrieved": [
+          "POLICY-DIGITAL",
+          "POLICY-MISSING-EVIDENCE",
+          "POLICY-EXCHANGE-TIMELINE"
+        ],
+        "recall": 1.0,
+        "reciprocal_rank": 0.5,
+        "ndcg": 0.6309297535714575,
+        "zero_hit": false,
+        "slices": [
+          "hard_negative"
+        ],
+        "difficulty": "hard"
+      },
+      {
+        "case_id": "negative_05",
+        "query": "不是改发票抬头，是订单退款后原发票如何处理",
+        "relevant": [
+          "POLICY-INVOICE-REFUND"
+        ],
+        "retrieved": [
+          "POLICY-INVOICE-TITLE",
+          "POLICY-INVOICE-REFUND",
+          "POLICY-INVOICE-ELECTRONIC"
+        ],
+        "recall": 1.0,
+        "reciprocal_rank": 0.5,
+        "ndcg": 0.6309297535714575,
+        "zero_hit": false,
+        "slices": [
+          "hard_negative"
+        ],
+        "difficulty": "hard"
+      },
+      {
+        "case_id": "negative_06",
+        "query": "没有签收，物流只是多日不更新，不是签收未收到",
+        "relevant": [
+          "POLICY-LOGISTICS-DELAY"
+        ],
+        "retrieved": [
+          "POLICY-LOGISTICS-SIGNED-MISSING",
+          "POLICY-LOGISTICS-TRACKING",
+          "POLICY-EXCHANGE-TIMELINE"
+        ],
+        "recall": 0.0,
+        "reciprocal_rank": 0.0,
+        "ndcg": 0.0,
+        "zero_hit": true,
+        "slices": [
+          "hard_negative"
+        ],
+        "difficulty": "hard"
+      },
+      {
+        "case_id": "noise_01",
+        "query": "发漂抬投税嚎开错 已经开出来了",
+        "relevant": [
+          "POLICY-INVOICE-TITLE"
+        ],
+        "retrieved": [
+          "POLICY-INVOICE-TITLE",
+          "POLICY-MISSING-EVIDENCE",
+          "POLICY-INVOICE-ELECTRONIC"
+        ],
+        "recall": 1.0,
+        "reciprocal_rank": 1.0,
+        "ndcg": 1.0,
+        "zero_hit": false,
+        "slices": [
+          "typo_noise"
+        ],
+        "difficulty": "hard"
+      },
+      {
+        "case_id": "noise_02",
+        "query": "包果少建 需要面担和开箱录象吗",
+        "relevant": [
+          "POLICY-MISSING-EVIDENCE"
+        ],
+        "retrieved": [
+          "POLICY-MISSING-EVIDENCE",
+          "POLICY-DAMAGE-EVIDENCE",
+          "POLICY-INVOICE-ELECTRONIC"
+        ],
+        "recall": 1.0,
+        "reciprocal_rank": 1.0,
+        "ndcg": 1.0,
+        "zero_hit": false,
+        "slices": [
+          "typo_noise"
+        ],
+        "difficulty": "hard"
+      },
+      {
+        "case_id": "noise_03",
+        "query": "7天退huo 定zhi商品也阔以吗",
+        "relevant": [
+          "POLICY-RETURN-EXCLUDED"
+        ],
+        "retrieved": [
+          "POLICY-RETURN-CONDITION",
+          "POLICY-RETURN-7D",
+          "POLICY-FOOD"
+        ],
+        "recall": 0.0,
+        "reciprocal_rank": 0.0,
+        "ndcg": 0.0,
+        "zero_hit": true,
+        "slices": [
+          "typo_noise"
+        ],
+        "difficulty": "hard"
+      },
+      {
+        "case_id": "noise_04",
+        "query": "价保的钱退到哪儿 原支付方shi?",
+        "relevant": [
+          "POLICY-PRICE-REFUND"
+        ],
+        "retrieved": [
+          "POLICY-PRICE-REFUND",
+          "POLICY-REFUND-ORIGINAL",
+          "POLICY-PRICE-EXCLUDED"
+        ],
+        "recall": 1.0,
+        "reciprocal_rank": 1.0,
+        "ndcg": 1.0,
+        "zero_hit": false,
+        "slices": [
+          "typo_noise"
+        ],
+        "difficulty": "hard"
+      },
+      {
+        "case_id": "noise_05",
+        "query": "食品bian质 不是不喜欢 怎么售后",
+        "relevant": [
+          "POLICY-FOOD"
+        ],
+        "retrieved": [
+          "POLICY-FOOD",
+          "POLICY-RETURN-CONDITION",
+          "POLICY-DAMAGE-EVIDENCE"
+        ],
+        "recall": 1.0,
+        "reciprocal_rank": 1.0,
+        "ndcg": 1.0,
+        "zero_hit": false,
+        "slices": [
+          "typo_noise"
+        ],
+        "difficulty": "hard"
+      },
+      {
+        "case_id": "noise_06",
+        "query": "怀疑dao刷 要冻jie账号还是银行卡",
+        "relevant": [
+          "POLICY-PAYMENT-FRAUD"
+        ],
+        "retrieved": [
+          "POLICY-REFUND-TIMELINE",
+          "POLICY-PAYMENT-FRAUD",
+          "POLICY-PAYMENT-FAILED"
+        ],
+        "recall": 1.0,
+        "reciprocal_rank": 0.5,
+        "ndcg": 0.6309297535714575,
+        "zero_hit": false,
+        "slices": [
+          "typo_noise"
+        ],
+        "difficulty": "hard"
+      }
+    ]
+  },
+  "hybrid_rewrite_rerank": {
+    "queries": 24,
+    "recall@3": 0.6875,
+    "mrr": 0.6111,
+    "ndcg@3": 0.6117,
+    "zero_hit_rate": 0.25,
+    "slice_metrics": {
+      "colloquial_paraphrase": {
+        "queries": 6,
+        "recall@3": 0.5,
+        "mrr": 0.3889,
+        "ndcg@3": 0.4167,
+        "zero_hit_rate": 0.5
+      },
+      "hard_negative": {
+        "queries": 6,
+        "recall@3": 0.6667,
+        "mrr": 0.5833,
+        "ndcg@3": 0.6052,
+        "zero_hit_rate": 0.3333
+      },
+      "multi_policy": {
+        "queries": 6,
+        "recall@3": 0.75,
+        "mrr": 0.7222,
+        "ndcg@3": 0.6533,
+        "zero_hit_rate": 0.0
+      },
+      "typo_noise": {
+        "queries": 6,
+        "recall@3": 0.8333,
+        "mrr": 0.75,
+        "ndcg@3": 0.7718,
+        "zero_hit_rate": 0.1667
+      }
+    },
+    "difficulty_metrics": {
+      "hard": {
+        "queries": 24,
+        "recall@3": 0.6875,
+        "mrr": 0.6111,
+        "ndcg@3": 0.6117,
+        "zero_hit_rate": 0.25
+      }
+    },
+    "predictions": [
+      {
+        "case_id": "para_01",
+        "query": "钱退了个寂寞，卡里几天了还没见着",
+        "relevant": [
+          "POLICY-REFUND-TIMELINE"
+        ],
+        "retrieved": [
+          "POLICY-REFUND-TIMELINE",
+          "POLICY-RETURN-7D",
+          "POLICY-PRICE-REFUND"
+        ],
+        "recall": 1.0,
+        "reciprocal_rank": 1.0,
+        "ndcg": 1.0,
+        "zero_hit": false,
+        "slices": [
+          "colloquial_paraphrase"
+        ],
+        "difficulty": "hard"
+      },
+      {
+        "case_id": "para_02",
+        "query": "快递像焊死在中转站，两天没挪窝",
+        "relevant": [
+          "POLICY-LOGISTICS-DELAY"
+        ],
+        "retrieved": [
+          "POLICY-DAMAGE-EVIDENCE",
+          "POLICY-PRICE-WINDOW",
+          "POLICY-RETURN-7D"
+        ],
+        "recall": 0.0,
+        "reciprocal_rank": 0.0,
+        "ndcg": 0.0,
+        "zero_hit": true,
+        "slices": [
+          "colloquial_paraphrase"
+        ],
+        "difficulty": "hard"
+      },
+      {
+        "case_id": "para_03",
+        "query": "门牌填成旧家的了，车已经开出去了还能救吗",
+        "relevant": [
+          "POLICY-ADDRESS-AFTER-SHIP"
+        ],
+        "retrieved": [
+          "POLICY-EXCHANGE-TIMELINE",
+          "POLICY-PRICE-REFUND",
+          "POLICY-ADDRESS-AFTER-SHIP"
+        ],
+        "recall": 1.0,
+        "reciprocal_rank": 0.3333333333333333,
+        "ndcg": 0.5,
+        "zero_hit": false,
+        "slices": [
+          "colloquial_paraphrase"
+        ],
+        "difficulty": "hard"
+      },
+      {
+        "case_id": "para_04",
+        "query": "码数翻车，想换的那双又卖光了咋整",
+        "relevant": [
+          "POLICY-EXCHANGE-STOCK"
+        ],
+        "retrieved": [
+          "POLICY-INVOICE-REFUND",
+          "POLICY-EXCHANGE-DEVICE",
+          "POLICY-REFUND-COUPON"
+        ],
+        "recall": 0.0,
+        "reciprocal_rank": 0.0,
+        "ndcg": 0.0,
+        "zero_hit": true,
+        "slices": [
+          "colloquial_paraphrase"
+        ],
+        "difficulty": "hard"
+      },
+      {
+        "case_id": "para_05",
+        "query": "账单上同一单薅了我两遍钱",
+        "relevant": [
+          "POLICY-PAYMENT-DUPLICATE"
+        ],
+        "retrieved": [
+          "POLICY-PAYMENT-DUPLICATE",
+          "POLICY-REFUND-TIMELINE",
+          "POLICY-PRIVACY-IDENTITY"
+        ],
+        "recall": 1.0,
+        "reciprocal_rank": 1.0,
+        "ndcg": 1.0,
+        "zero_hit": false,
+        "slices": [
+          "colloquial_paraphrase"
+        ],
+        "difficulty": "hard"
+      },
+      {
+        "case_id": "para_06",
+        "query": "快递说给邻居了，可一圈问下来谁都没拿",
+        "relevant": [
+          "POLICY-LOGISTICS-SIGNED-MISSING"
+        ],
+        "retrieved": [
+          "POLICY-DAMAGE-EVIDENCE",
+          "POLICY-DAMAGE-30D",
+          "POLICY-FOOD"
+        ],
+        "recall": 0.0,
+        "reciprocal_rank": 0.0,
+        "ndcg": 0.0,
+        "zero_hit": true,
+        "slices": [
+          "colloquial_paraphrase"
+        ],
+        "difficulty": "hard"
+      },
+      {
+        "case_id": "multi_01",
+        "query": "退款审核通过后多久到账，如果原银行卡注销了钱去哪",
+        "relevant": [
+          "POLICY-REFUND-ORIGINAL",
+          "POLICY-REFUND-TIMELINE"
+        ],
+        "retrieved": [
+          "POLICY-REFUND-TIMELINE",
+          "POLICY-REFUND-ORIGINAL",
+          "POLICY-PRICE-REFUND"
+        ],
+        "recall": 1.0,
+        "reciprocal_rank": 1.0,
+        "ndcg": 1.0,
+        "zero_hit": false,
+        "slices": [
+          "multi_policy"
+        ],
+        "difficulty": "hard"
+      },
+      {
+        "case_id": "multi_02",
+        "query": "充电器冒烟烫伤手，我现在该怎么做以及需要拍什么证据",
+        "relevant": [
+          "POLICY-DAMAGE-EVIDENCE",
+          "POLICY-DAMAGE-SAFETY"
+        ],
+        "retrieved": [
+          "POLICY-DIGITAL",
+          "POLICY-DAMAGE-EVIDENCE",
+          "POLICY-DAMAGE-SAFETY"
+        ],
+        "recall": 1.0,
+        "reciprocal_rank": 0.5,
+        "ndcg": 0.6934264036172708,
+        "zero_hit": false,
+        "slices": [
+          "multi_policy"
+        ],
+        "difficulty": "hard"
+      },
+      {
+        "case_id": "multi_03",
+        "query": "鞋码不合适，换的尺码没货，原鞋鞋底试穿过是否还能处理",
+        "relevant": [
+          "POLICY-EXCHANGE-SIZE",
+          "POLICY-EXCHANGE-STOCK"
+        ],
+        "retrieved": [
+          "POLICY-EXCHANGE-SIZE",
+          "POLICY-SPORTSWEAR",
+          "POLICY-EXCHANGE-TIMELINE"
+        ],
+        "recall": 0.5,
+        "reciprocal_rank": 1.0,
+        "ndcg": 0.6131471927654584,
+        "zero_hit": false,
+        "slices": [
+          "multi_policy"
+        ],
+        "difficulty": "hard"
+      },
+      {
+        "case_id": "multi_04",
+        "query": "退货要不要自己付运费，包装盒和吊牌有什么要求",
+        "relevant": [
+          "POLICY-RETURN-CONDITION",
+          "POLICY-RETURN-FREIGHT"
+        ],
+        "retrieved": [
+          "POLICY-EXCHANGE-SIZE",
+          "POLICY-SPORTSWEAR",
+          "POLICY-RETURN-FREIGHT"
+        ],
+        "recall": 0.5,
+        "reciprocal_rank": 0.3333333333333333,
+        "ndcg": 0.3065735963827292,
+        "zero_hit": false,
+        "slices": [
+          "multi_policy"
+        ],
+        "difficulty": "hard"
+      },
+      {
+        "case_id": "multi_05",
+        "query": "少发配件要交哪些材料，核实后是补发还是退款",
+        "relevant": [
+          "POLICY-MISSING-EVIDENCE",
+          "POLICY-MISSING-RESOLUTION"
+        ],
+        "retrieved": [
+          "POLICY-MISSING-RESOLUTION",
+          "POLICY-INVOICE-REFUND",
+          "POLICY-LOGISTICS-LOST"
+        ],
+        "recall": 0.5,
+        "reciprocal_rank": 1.0,
+        "ndcg": 0.6131471927654584,
+        "zero_hit": false,
+        "slices": [
+          "multi_policy"
+        ],
+        "difficulty": "hard"
+      },
+      {
+        "case_id": "multi_06",
+        "query": "刚买就降价，哪些情况不能保价，差价最后怎么退",
+        "relevant": [
+          "POLICY-PRICE-EXCLUDED",
+          "POLICY-PRICE-REFUND"
+        ],
+        "retrieved": [
+          "POLICY-PRICE-WINDOW",
+          "POLICY-PRICE-REFUND",
+          "POLICY-PRICE-EXCLUDED"
+        ],
+        "recall": 1.0,
+        "reciprocal_rank": 0.5,
+        "ndcg": 0.6934264036172708,
+        "zero_hit": false,
+        "slices": [
+          "multi_policy"
+        ],
+        "difficulty": "hard"
+      },
+      {
+        "case_id": "negative_01",
+        "query": "不是付款失败，是同一订单成功扣了两次",
+        "relevant": [
+          "POLICY-PAYMENT-DUPLICATE"
+        ],
+        "retrieved": [
+          "POLICY-PAYMENT-DUPLICATE",
+          "POLICY-PAYMENT-FAILED",
+          "POLICY-RETURN-7D"
+        ],
+        "recall": 1.0,
+        "reciprocal_rank": 1.0,
+        "ndcg": 1.0,
+        "zero_hit": false,
+        "slices": [
+          "hard_negative"
+        ],
+        "difficulty": "hard"
+      },
+      {
+        "case_id": "negative_02",
+        "query": "并非普通延误，承运商已经确认整件丢失",
+        "relevant": [
+          "POLICY-LOGISTICS-LOST"
+        ],
+        "retrieved": [
+          "POLICY-LOGISTICS-LOST",
+          "POLICY-ADDRESS-AFTER-SHIP",
+          "POLICY-LOGISTICS-TRACKING"
+        ],
+        "recall": 1.0,
+        "reciprocal_rank": 1.0,
+        "ndcg": 1.0,
+        "zero_hit": false,
+        "slices": [
+          "hard_negative"
+        ],
+        "difficulty": "hard"
+      },
+      {
+        "case_id": "negative_03",
+        "query": "不是七天无理由，耳机用了两个月后出现硬件故障",
+        "relevant": [
+          "POLICY-DAMAGE-WARRANTY"
+        ],
+        "retrieved": [
+          "POLICY-RETURN-7D",
+          "POLICY-RETURN-EXCLUDED",
+          "POLICY-DAMAGE-30D"
+        ],
+        "recall": 0.0,
+        "reciprocal_rank": 0.0,
+        "ndcg": 0.0,
+        "zero_hit": true,
+        "slices": [
+          "hard_negative"
+        ],
+        "difficulty": "hard"
+      },
+      {
+        "case_id": "negative_04",
+        "query": "不是商品坏了，是箱内数量比清单少一个",
+        "relevant": [
+          "POLICY-MISSING-EVIDENCE"
+        ],
+        "retrieved": [
+          "POLICY-DIGITAL",
+          "POLICY-MISSING-EVIDENCE",
+          "POLICY-EXCHANGE-TIMELINE"
+        ],
+        "recall": 1.0,
+        "reciprocal_rank": 0.5,
+        "ndcg": 0.6309297535714575,
+        "zero_hit": false,
+        "slices": [
+          "hard_negative"
+        ],
+        "difficulty": "hard"
+      },
+      {
+        "case_id": "negative_05",
+        "query": "不是改发票抬头，是订单退款后原发票如何处理",
+        "relevant": [
+          "POLICY-INVOICE-REFUND"
+        ],
+        "retrieved": [
+          "POLICY-INVOICE-REFUND",
+          "POLICY-INVOICE-TITLE",
+          "POLICY-PAYMENT-DUPLICATE"
+        ],
+        "recall": 1.0,
+        "reciprocal_rank": 1.0,
+        "ndcg": 1.0,
+        "zero_hit": false,
+        "slices": [
+          "hard_negative"
+        ],
+        "difficulty": "hard"
+      },
+      {
+        "case_id": "negative_06",
+        "query": "没有签收，物流只是多日不更新，不是签收未收到",
+        "relevant": [
+          "POLICY-LOGISTICS-DELAY"
+        ],
+        "retrieved": [
+          "POLICY-LOGISTICS-SIGNED-MISSING",
+          "POLICY-LOGISTICS-TRACKING",
+          "POLICY-EXCHANGE-TIMELINE"
+        ],
+        "recall": 0.0,
+        "reciprocal_rank": 0.0,
+        "ndcg": 0.0,
+        "zero_hit": true,
+        "slices": [
+          "hard_negative"
+        ],
+        "difficulty": "hard"
+      },
+      {
+        "case_id": "noise_01",
+        "query": "发漂抬投税嚎开错 已经开出来了",
+        "relevant": [
+          "POLICY-INVOICE-TITLE"
+        ],
+        "retrieved": [
+          "POLICY-INVOICE-TITLE",
+          "POLICY-MISSING-EVIDENCE",
+          "POLICY-INVOICE-ELECTRONIC"
+        ],
+        "recall": 1.0,
+        "reciprocal_rank": 1.0,
+        "ndcg": 1.0,
+        "zero_hit": false,
+        "slices": [
+          "typo_noise"
+        ],
+        "difficulty": "hard"
+      },
+      {
+        "case_id": "noise_02",
+        "query": "包果少建 需要面担和开箱录象吗",
+        "relevant": [
+          "POLICY-MISSING-EVIDENCE"
+        ],
+        "retrieved": [
+          "POLICY-MISSING-EVIDENCE",
+          "POLICY-DAMAGE-EVIDENCE",
+          "POLICY-DIGITAL"
+        ],
+        "recall": 1.0,
+        "reciprocal_rank": 1.0,
+        "ndcg": 1.0,
+        "zero_hit": false,
+        "slices": [
+          "typo_noise"
+        ],
+        "difficulty": "hard"
+      },
+      {
+        "case_id": "noise_03",
+        "query": "7天退huo 定zhi商品也阔以吗",
+        "relevant": [
+          "POLICY-RETURN-EXCLUDED"
+        ],
+        "retrieved": [
+          "POLICY-RETURN-7D",
+          "POLICY-RETURN-CONDITION",
+          "POLICY-FOOD"
+        ],
+        "recall": 0.0,
+        "reciprocal_rank": 0.0,
+        "ndcg": 0.0,
+        "zero_hit": true,
+        "slices": [
+          "typo_noise"
+        ],
+        "difficulty": "hard"
+      },
+      {
+        "case_id": "noise_04",
+        "query": "价保的钱退到哪儿 原支付方shi?",
+        "relevant": [
+          "POLICY-PRICE-REFUND"
+        ],
+        "retrieved": [
+          "POLICY-PRICE-REFUND",
+          "POLICY-REFUND-ORIGINAL",
+          "POLICY-PRICE-WINDOW"
+        ],
+        "recall": 1.0,
+        "reciprocal_rank": 1.0,
+        "ndcg": 1.0,
+        "zero_hit": false,
+        "slices": [
+          "typo_noise"
+        ],
+        "difficulty": "hard"
+      },
+      {
+        "case_id": "noise_05",
+        "query": "食品bian质 不是不喜欢 怎么售后",
+        "relevant": [
+          "POLICY-FOOD"
+        ],
+        "retrieved": [
+          "POLICY-FOOD",
+          "POLICY-RETURN-CONDITION",
+          "POLICY-DAMAGE-EVIDENCE"
+        ],
+        "recall": 1.0,
+        "reciprocal_rank": 1.0,
+        "ndcg": 1.0,
+        "zero_hit": false,
+        "slices": [
+          "typo_noise"
+        ],
+        "difficulty": "hard"
+      },
+      {
+        "case_id": "noise_06",
+        "query": "怀疑dao刷 要冻jie账号还是银行卡",
+        "relevant": [
+          "POLICY-PAYMENT-FRAUD"
+        ],
+        "retrieved": [
+          "POLICY-REFUND-TIMELINE",
+          "POLICY-PAYMENT-FRAUD",
+          "POLICY-PAYMENT-FAILED"
+        ],
+        "recall": 1.0,
+        "reciprocal_rank": 0.5,
+        "ndcg": 0.6309297535714575,
+        "zero_hit": false,
+        "slices": [
+          "typo_noise"
+        ],
+        "difficulty": "hard"
+      }
+    ],
+    "reranker": "heuristic",
+    "reranker_failure_count": 0
+  }
+}

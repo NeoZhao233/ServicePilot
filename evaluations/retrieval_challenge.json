@@ -1,0 +1,29 @@
+[
+  {"case_id":"para_01","query":"钱退了个寂寞，卡里几天了还没见着","relevant_policy_ids":["POLICY-REFUND-TIMELINE"],"slice":"colloquial_paraphrase","difficulty":"hard"},
+  {"case_id":"para_02","query":"快递像焊死在中转站，两天没挪窝","relevant_policy_ids":["POLICY-LOGISTICS-DELAY"],"slice":"colloquial_paraphrase","difficulty":"hard"},
+  {"case_id":"para_03","query":"门牌填成旧家的了，车已经开出去了还能救吗","relevant_policy_ids":["POLICY-ADDRESS-AFTER-SHIP"],"slice":"colloquial_paraphrase","difficulty":"hard"},
+  {"case_id":"para_04","query":"码数翻车，想换的那双又卖光了咋整","relevant_policy_ids":["POLICY-EXCHANGE-STOCK"],"slice":"colloquial_paraphrase","difficulty":"hard"},
+  {"case_id":"para_05","query":"账单上同一单薅了我两遍钱","relevant_policy_ids":["POLICY-PAYMENT-DUPLICATE"],"slice":"colloquial_paraphrase","difficulty":"hard"},
+  {"case_id":"para_06","query":"快递说给邻居了，可一圈问下来谁都没拿","relevant_policy_ids":["POLICY-LOGISTICS-SIGNED-MISSING"],"slice":"colloquial_paraphrase","difficulty":"hard"},
+
+  {"case_id":"multi_01","query":"退款审核通过后多久到账，如果原银行卡注销了钱去哪","relevant_policy_ids":["POLICY-REFUND-TIMELINE","POLICY-REFUND-ORIGINAL"],"slice":"multi_policy","difficulty":"hard"},
+  {"case_id":"multi_02","query":"充电器冒烟烫伤手，我现在该怎么做以及需要拍什么证据","relevant_policy_ids":["POLICY-DAMAGE-SAFETY","POLICY-DAMAGE-EVIDENCE"],"slice":"multi_policy","difficulty":"hard"},
+  {"case_id":"multi_03","query":"鞋码不合适，换的尺码没货，原鞋鞋底试穿过是否还能处理","category":"运动鞋服","relevant_policy_ids":["POLICY-EXCHANGE-SIZE","POLICY-EXCHANGE-STOCK"],"slice":"multi_policy","difficulty":"hard"},
+  {"case_id":"multi_04","query":"退货要不要自己付运费，包装盒和吊牌有什么要求","relevant_policy_ids":["POLICY-RETURN-FREIGHT","POLICY-RETURN-CONDITION"],"slice":"multi_policy","difficulty":"hard"},
+  {"case_id":"multi_05","query":"少发配件要交哪些材料，核实后是补发还是退款","relevant_policy_ids":["POLICY-MISSING-EVIDENCE","POLICY-MISSING-RESOLUTION"],"slice":"multi_policy","difficulty":"hard"},
+  {"case_id":"multi_06","query":"刚买就降价，哪些情况不能保价，差价最后怎么退","relevant_policy_ids":["POLICY-PRICE-EXCLUDED","POLICY-PRICE-REFUND"],"slice":"multi_policy","difficulty":"hard"},
+
+  {"case_id":"negative_01","query":"不是付款失败，是同一订单成功扣了两次","relevant_policy_ids":["POLICY-PAYMENT-DUPLICATE"],"slice":"hard_negative","difficulty":"hard"},
+  {"case_id":"negative_02","query":"并非普通延误，承运商已经确认整件丢失","relevant_policy_ids":["POLICY-LOGISTICS-LOST"],"slice":"hard_negative","difficulty":"hard"},
+  {"case_id":"negative_03","query":"不是七天无理由，耳机用了两个月后出现硬件故障","category":"数码产品","relevant_policy_ids":["POLICY-DAMAGE-WARRANTY"],"slice":"hard_negative","difficulty":"hard"},
+  {"case_id":"negative_04","query":"不是商品坏了，是箱内数量比清单少一个","relevant_policy_ids":["POLICY-MISSING-EVIDENCE"],"slice":"hard_negative","difficulty":"hard"},
+  {"case_id":"negative_05","query":"不是改发票抬头，是订单退款后原发票如何处理","relevant_policy_ids":["POLICY-INVOICE-REFUND"],"slice":"hard_negative","difficulty":"hard"},
+  {"case_id":"negative_06","query":"没有签收，物流只是多日不更新，不是签收未收到","relevant_policy_ids":["POLICY-LOGISTICS-DELAY"],"slice":"hard_negative","difficulty":"hard"},
+
+  {"case_id":"noise_01","query":"发漂抬投税嚎开错 已经开出来了","relevant_policy_ids":["POLICY-INVOICE-TITLE"],"slice":"typo_noise","difficulty":"hard"},
+  {"case_id":"noise_02","query":"包果少建 需要面担和开箱录象吗","relevant_policy_ids":["POLICY-MISSING-EVIDENCE"],"slice":"typo_noise","difficulty":"hard"},
+  {"case_id":"noise_03","query":"7天退huo 定zhi商品也阔以吗","relevant_policy_ids":["POLICY-RETURN-EXCLUDED"],"slice":"typo_noise","difficulty":"hard"},
+  {"case_id":"noise_04","query":"价保的钱退到哪儿 原支付方shi?","relevant_policy_ids":["POLICY-PRICE-REFUND"],"slice":"typo_noise","difficulty":"hard"},
+  {"case_id":"noise_05","query":"食品bian质 不是不喜欢 怎么售后","category":"食品","relevant_policy_ids":["POLICY-FOOD"],"slice":"typo_noise","difficulty":"hard"},
+  {"case_id":"noise_06","query":"怀疑dao刷 要冻jie账号还是银行卡","relevant_policy_ids":["POLICY-PAYMENT-FRAUD"],"slice":"typo_noise","difficulty":"hard"}
+]

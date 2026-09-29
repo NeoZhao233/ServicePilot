@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="light" />
+    <title>ServicePilot · 售后智能客服</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <header class="topbar">
+        <div class="brand">
+          <span class="brand-mark">S</span>
+          <div>
+            <strong>ServicePilot</strong>
+            <small>Policy-grounded support agent</small>
+          </div>
+        </div>
+        <a id="trace-viewer-link" href="/traces">查看执行轨迹</a>
+        <div class="status"><span></span> 系统在线 · 离线基线</div>
+      </header>
+
+      <section class="workspace">
+        <aside class="context-panel">
+          <p class="eyebrow">DEMO CONTEXT</p>
+          <h1>售后问题，<br />交给能执行的客服。</h1>
+          <p class="lead">回答有政策依据，操作有权限边界，每一步都可以追踪。</p>
+
+          <div class="user-card">
+            <div class="avatar">赵</div>
+            <div><strong>USER-001</strong><span>演示用户</span></div>
+          </div>
+
+          <p class="section-label">试试这些问题</p>
+          <div class="prompts">
+            <button data-prompt="ORD-1003 的快递到哪了？">查询物流 <span>ORD-1003</span></button>
+            <button data-prompt="我想退掉 ORD-1001">申请退款 <span>ORD-1001</span></button>
+            <button data-prompt="ORD-1002 的耳机坏了">高金额售后 <span>ORD-1002</span></button>
+            <button data-prompt="帮我查 ORD-2001 的物流">越权测试 <span>ORD-2001</span></button>
+          </div>
+
+          <div class="context-actions">
+            <button id="history-button">历史会话</button>
+            <button id="reset">清空当前会话</button>
+          </div>
+        </aside>
+
+        <section class="chat-panel">
+          <div class="panel-head">
+            <div><span class="agent-dot"></span><strong>售后客服</strong></div>
+            <span id="session-label">新会话</span>
+          </div>
+          <div id="messages" class="messages" aria-live="polite">
+            <article class="message assistant">
+              <div class="bubble">你好，我可以处理物流查询、退货退款、商品破损和人工转接。请告诉我订单号和遇到的问题。</div>
+            </article>
+          </div>
+          <div class="pdf-bar">
+            <input id="pdf-file" type="file" accept="application/pdf,.pdf" hidden />
+            <button id="pdf-upload" type="button">上传 PDF</button>
+            <select id="pdf-select" aria-label="当前 PDF"><option value="">未选择文档</option></select>
+            <button id="pdf-delete" type="button" disabled>删除文档</button>
+            <span id="pdf-status" aria-live="polite"></span>
+          </div>
+          <form id="chat-form" class="composer">
+            <textarea id="message-input" rows="1" placeholder="输入售后问题…" required></textarea>
+            <button type="submit" aria-label="发送">发送</button>
+          </form>
+        </section>
+
+        <aside class="trace-panel">
+          <div class="panel-head">
+            <div><strong>Agent Trace</strong><small>实时决策轨迹</small></div>
+            <span id="event-count">0 steps</span>
+          </div>
+          <div id="state-card" class="state-card">
+            <div><span>当前意图</span><strong id="intent">—</strong></div>
+            <div><span>关联订单</span><strong id="order">—</strong></div>
+            <div><span>待执行</span><strong id="pending">—</strong></div>
+          </div>
+          <div id="trace" class="trace-empty">
+            <span class="trace-icon">⌁</span>
+            <p>发送一条消息后，这里会展示意图路由、知识检索、规则判断和工具调用。</p>
+          </div>
+        </aside>
+      </section>
+    </main>
+
+    <dialog id="history-dialog">
+      <div class="dialog-head">
+        <div><strong>历史会话</strong><span>选择一条记录继续处理</span></div>
+        <button id="history-close" aria-label="关闭">×</button>
+      </div>
+      <div id="history-list" class="history-list"></div>
+    </dialog>
+    <script src="/app.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,6 @@
+{
+  "archive": "original_runtime.zip",
+  "sha256": "bf5d1b67387e6b6bee70100643a7013f4b604e207454d613d1b3131e09074052",
+  "original_tests": "64 passed, 1 warning; 2.31s",
+  "purpose": "Frozen original implementation for isolated baseline execution. No credentials or databases included."
+}

@@ -1,0 +1,15 @@
+{
+  "tests": "109 passed, 1 warning in 2.46s",
+  "ruff": "passed",
+  "http_smoke": {
+    "health": "ok",
+    "confirmation": "499.00 CNY",
+    "refund": "REF-0001",
+    "storage": "temporary SQLite",
+    "server_stopped": true
+  },
+  "frozen_business_challenge_passed": 9,
+  "upgraded_business_challenge_passed": 9,
+  "changed_business_case_verdicts": [],
+  "online_model_calls": 0
+}

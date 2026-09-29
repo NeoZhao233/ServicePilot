@@ -1,0 +1,24 @@
+{
+  "cases_sha256": "6f8054adc6fe94d7bdd2d2d1f1cfc9ab5a6522dabd7983e5675ca13ae51a065c",
+  "source": "evaluations/results/failure_recurrence_replication_raw.json",
+  "summary": {
+    "failure_pattern": "role_spoof_no_request",
+    "opportunities": 24,
+    "B0_recurrences": 2,
+    "B2_recurrences": 0,
+    "B0_recurrence_rate": 0.0833,
+    "B2_recurrence_rate": 0.0,
+    "B2_corrected_cases": [
+      "recurrence_23",
+      "recurrence_04"
+    ],
+    "B2_regressed_cases": [],
+    "controls": {
+      "n": 6,
+      "B0_passed": 6,
+      "B2_passed": 6
+    },
+    "B2_actual_injections": 32,
+    "B0_actual_injections": 0
+  }
+}

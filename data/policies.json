@@ -1,0 +1,261 @@
+[
+  {
+    "policy_id": "POLICY-RETURN-7D",
+    "title": "七天无理由退货规则",
+    "content": "商品自签收次日起七天内，在商品完好且不影响二次销售时，可以申请无理由退货。退款申请必须由订单本人确认后提交。",
+    "categories": [],
+    "tags": ["退款", "退货", "七天无理由"]
+  },
+  {
+    "policy_id": "POLICY-DAMAGE-30D",
+    "title": "破损与质量问题处理",
+    "content": "商品破损、故障或存在质量问题时，用户应在签收后三十天内提供照片等证据。审核通过后可以退款、换货或维修。",
+    "categories": [],
+    "tags": ["破损", "故障", "质量问题", "照片"]
+  },
+  {
+    "policy_id": "POLICY-DIGITAL",
+    "title": "数码产品售后补充规则",
+    "content": "数码产品质量问题需要提交故障描述和图片证据。订单金额达到一千元时，由人工客服审核后处理。",
+    "categories": ["数码产品"],
+    "tags": ["数码", "人工审核", "高金额"]
+  },
+  {
+    "policy_id": "POLICY-SPORTSWEAR",
+    "title": "运动鞋服退货标准",
+    "content": "运动鞋服试穿后应保持鞋底、吊牌和包装完好；存在明显使用痕迹时不适用七天无理由退货。",
+    "categories": ["运动鞋服"],
+    "tags": ["鞋服", "试穿", "商品完好"]
+  },
+  {
+    "policy_id": "POLICY-FOOD",
+    "title": "食品类商品售后规则",
+    "content": "食品类商品非质量问题不支持无理由退货。包装破损、临期或变质时可以提交证据申请人工审核。",
+    "categories": ["食品"],
+    "tags": ["食品", "包装破损", "变质"]
+  },
+  {
+    "policy_id": "POLICY-RETURN-CONDITION",
+    "title": "商品完好判定",
+    "content": "退货商品需保持原有品质、功能、配件、商标标识和包装，合理查验不影响完好认定。",
+    "categories": [],
+    "tags": ["退货", "商品完好", "二次销售"]
+  },
+  {
+    "policy_id": "POLICY-RETURN-FREIGHT",
+    "title": "退货运费承担",
+    "content": "质量问题退货运费由商家承担；无理由退货通常由消费者承担，运费险按保单赔付。",
+    "categories": [],
+    "tags": ["退货运费", "运费险", "质量问题"]
+  },
+  {
+    "policy_id": "POLICY-RETURN-EXCLUDED",
+    "title": "无理由退货例外",
+    "content": "定制、鲜活易腐、已拆封数字商品及交付报刊通常不适用七天无理由退货。",
+    "categories": [],
+    "tags": ["退货例外", "定制", "鲜活"]
+  },
+  {
+    "policy_id": "POLICY-REFUND-TIMELINE",
+    "title": "退款到账时效",
+    "content": "退款审核通过后原路退回，银行卡通常一至五个工作日到账，支付机构进度可能不同。",
+    "categories": [],
+    "tags": ["退款", "到账", "时效"]
+  },
+  {
+    "policy_id": "POLICY-REFUND-ORIGINAL",
+    "title": "退款原路返回",
+    "content": "退款优先退回原支付账户；原账户注销时需由支付渠道核验后改用安全退款方式。",
+    "categories": [],
+    "tags": ["原路退款", "支付账户"]
+  },
+  {
+    "policy_id": "POLICY-REFUND-COUPON",
+    "title": "优惠券与退款",
+    "content": "整单退款时可退优惠券按有效期规则返还；部分退款按商品实付金额计算，不折现优惠。",
+    "categories": [],
+    "tags": ["退款", "优惠券", "部分退款"]
+  },
+  {
+    "policy_id": "POLICY-REFUND-REJECTED",
+    "title": "退款驳回复核",
+    "content": "退款申请被驳回后，用户可在售后详情补充凭证并申请一次人工复核。",
+    "categories": [],
+    "tags": ["退款驳回", "复核", "凭证"]
+  },
+  {
+    "policy_id": "POLICY-LOGISTICS-TRACKING",
+    "title": "物流轨迹查询",
+    "content": "订单发货后展示承运商和运单轨迹，长时间未更新可发起物流核查。",
+    "categories": [],
+    "tags": ["物流", "运单", "轨迹"]
+  },
+  {
+    "policy_id": "POLICY-LOGISTICS-DELAY",
+    "title": "物流停滞与延迟",
+    "content": "国内件超过四十八小时无轨迹更新视为可能停滞，可联系承运商并创建催查工单。",
+    "categories": [],
+    "tags": ["物流停滞", "延迟", "催查"]
+  },
+  {
+    "policy_id": "POLICY-LOGISTICS-SIGNED-MISSING",
+    "title": "显示签收但未收到",
+    "content": "物流显示签收但用户未收到时，应核对代收点和签收证明，并在二十四小时内发起核查。",
+    "categories": [],
+    "tags": ["签收未收到", "代收点", "签收证明"]
+  },
+  {
+    "policy_id": "POLICY-LOGISTICS-LOST",
+    "title": "包裹丢失处理",
+    "content": "承运商确认丢失后，平台可依据用户选择安排补发或退款，并追踪赔付。",
+    "categories": [],
+    "tags": ["包裹丢失", "补发", "退款"]
+  },
+  {
+    "policy_id": "POLICY-DAMAGE-EVIDENCE",
+    "title": "破损凭证要求",
+    "content": "破损售后需提供外包装、快递面单、商品整体和破损细节照片，视频可作为补充。",
+    "categories": [],
+    "tags": ["破损", "照片", "凭证"]
+  },
+  {
+    "policy_id": "POLICY-DAMAGE-SAFETY",
+    "title": "安全事故升级",
+    "content": "商品出现起火、爆炸、触电或人身伤害风险时，应立即停止使用并升级最高优先级人工处理。",
+    "categories": [],
+    "tags": ["起火", "安全", "紧急"]
+  },
+  {
+    "policy_id": "POLICY-DAMAGE-WARRANTY",
+    "title": "保修期质量故障",
+    "content": "超过退货期但仍在保修期的质量故障，可按品牌政策申请检测、维修或换机。",
+    "categories": ["数码产品"],
+    "tags": ["保修", "故障", "维修"]
+  },
+  {
+    "policy_id": "POLICY-EXCHANGE-STOCK",
+    "title": "换货库存规则",
+    "content": "换货需目标规格有库存；缺货时用户可等待补货、改换其他规格或申请退款。",
+    "categories": [],
+    "tags": ["换货", "库存", "规格"]
+  },
+  {
+    "policy_id": "POLICY-EXCHANGE-TIMELINE",
+    "title": "换货处理时效",
+    "content": "退回商品验收通过后通常四十八小时内发出换货商品，并生成新物流单号。",
+    "categories": [],
+    "tags": ["换货", "时效", "新物流"]
+  },
+  {
+    "policy_id": "POLICY-EXCHANGE-SIZE",
+    "title": "鞋服尺码换货",
+    "content": "鞋服尺码换货要求吊牌、包装和鞋底完好，换货产生的价差按实结算。",
+    "categories": ["运动鞋服"],
+    "tags": ["尺码", "换货", "吊牌"]
+  },
+  {
+    "policy_id": "POLICY-EXCHANGE-DEVICE",
+    "title": "数码产品换新",
+    "content": "数码产品性能故障经检测确认后，可依售后期限和库存情况维修或换新。",
+    "categories": ["数码产品"],
+    "tags": ["数码", "检测", "换新"]
+  },
+  {
+    "policy_id": "POLICY-PAYMENT-DUPLICATE",
+    "title": "重复扣款处理",
+    "content": "同一订单重复扣款时应核对支付流水，确认多扣后原路退回重复款项。",
+    "categories": [],
+    "tags": ["重复扣款", "支付流水", "退款"]
+  },
+  {
+    "policy_id": "POLICY-PAYMENT-FAILED",
+    "title": "支付失败排查",
+    "content": "支付失败可检查额度、网络和银行风控；未生成订单的预授权通常会自动解除。",
+    "categories": [],
+    "tags": ["支付失败", "预授权", "银行"]
+  },
+  {
+    "policy_id": "POLICY-PAYMENT-FRAUD",
+    "title": "疑似盗刷处置",
+    "content": "疑似账户盗刷应立即冻结敏感操作、保护支付凭证并转交支付安全团队核查。",
+    "categories": [],
+    "tags": ["盗刷", "支付安全", "冻结"]
+  },
+  {
+    "policy_id": "POLICY-INVOICE-ELECTRONIC",
+    "title": "电子发票开具",
+    "content": "订单完成后可申请电子发票，审核通过后发送至账户票夹或预留邮箱。",
+    "categories": [],
+    "tags": ["电子发票", "开票", "邮箱"]
+  },
+  {
+    "policy_id": "POLICY-INVOICE-TITLE",
+    "title": "发票抬头修改",
+    "content": "发票开具前可修改抬头和税号；已开具发票需先红冲再按合规信息重开。",
+    "categories": [],
+    "tags": ["发票抬头", "税号", "重开"]
+  },
+  {
+    "policy_id": "POLICY-INVOICE-REFUND",
+    "title": "退款后的发票处理",
+    "content": "发生整单退款时对应发票需红冲，部分退款按实际退款金额进行票务调整。",
+    "categories": [],
+    "tags": ["退款", "发票红冲", "部分退款"]
+  },
+  {
+    "policy_id": "POLICY-MISSING-EVIDENCE",
+    "title": "少件漏发举证",
+    "content": "少件漏发需提供包裹外观、面单、内件和开箱记录，平台核对出库重量与打包影像。",
+    "categories": [],
+    "tags": ["少件", "漏发", "开箱"]
+  },
+  {
+    "policy_id": "POLICY-MISSING-RESOLUTION",
+    "title": "少件补发或退款",
+    "content": "核实少件后可优先补发缺少商品；无法补发时按缺少商品实付金额退款。",
+    "categories": [],
+    "tags": ["少件", "补发", "退款"]
+  },
+  {
+    "policy_id": "POLICY-ADDRESS-BEFORE-SHIP",
+    "title": "发货前修改地址",
+    "content": "订单进入出库前可申请修改同配送区域地址，涉及风险地区或跨区需取消重拍。",
+    "categories": [],
+    "tags": ["修改地址", "发货前", "配送区域"]
+  },
+  {
+    "policy_id": "POLICY-ADDRESS-AFTER-SHIP",
+    "title": "发货后更改地址",
+    "content": "发货后平台不能保证改址成功，可由承运商评估转寄，产生费用和延误由用户确认。",
+    "categories": [],
+    "tags": ["改地址", "转寄", "发货后"]
+  },
+  {
+    "policy_id": "POLICY-PRICE-WINDOW",
+    "title": "价格保护期限",
+    "content": "带价保标识商品在订单支付后七天内发生符合条件的直接降价，可申请价格保护。",
+    "categories": [],
+    "tags": ["价保", "七天", "降价"]
+  },
+  {
+    "policy_id": "POLICY-PRICE-EXCLUDED",
+    "title": "价格保护例外",
+    "content": "秒杀、赠品、优惠券差异、会员专享和区域活动造成的价格变化通常不计入价保。",
+    "categories": [],
+    "tags": ["价保例外", "秒杀", "优惠券"]
+  },
+  {
+    "policy_id": "POLICY-PRICE-REFUND",
+    "title": "价保差价返还",
+    "content": "价保审核通过后差价退回原支付方式，使用积分支付的部分按积分规则返还。",
+    "categories": [],
+    "tags": ["价保", "差价", "原路返还"]
+  },
+  {
+    "policy_id": "POLICY-PRIVACY-IDENTITY",
+    "title": "订单身份校验",
+    "content": "查询或变更订单前必须校验当前用户与订单归属，不向无关账户披露订单信息。",
+    "categories": [],
+    "tags": ["隐私", "订单归属", "身份校验"]
+  }
+]
